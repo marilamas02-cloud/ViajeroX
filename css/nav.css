@@ -2,3 +2,21 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 120px; /* ajustá este valor al alto que querés */
+  display: flex;
+  align-items: center;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center; /* centra verticalmente el logo y el texto */
+  gap: 8px; /* espacio entre logo y texto si hay texto */
+}
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+
