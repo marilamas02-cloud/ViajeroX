@@ -61,7 +61,7 @@ body {
 .icon {
   font-size: 20px;
 }
-/* Estilo del menú desplegable */
+
 .dropdown-menu {
     background-color: #222;      /* Fondo oscuro */
     border: 1px solid #444;      /* Borde gris oscuro */
@@ -73,7 +73,7 @@ body {
                 /* Ligera transparencia */
 }
 
-/* Estilo de los ítems */
+
 .dropdown-item {
     color: #fff;                  /* Texto blanco */
     padding: 8px 20px;            /* Espaciado interno */
@@ -83,15 +83,12 @@ body {
 /* Hover de los ítems */
 .dropdown-item:hover,
 .dropdown-item:focus {
-    background-color: #555;       /* Fondo al pasar el mouse */
-    color: rgb(229, 2, 2);                  /* Texto amarillo al pasar el mouse */
+    background-color: #ffffff;       /* Fondo al pasar el mouse */
+    color: rgb(255, 255, 255);                  /* Texto amarillo al pasar el mouse */
 }
-
-/* Opcional: estilo solo cuando el menú está abierto */
 .dropdown-menu.show {
     background-color: #ffffff;       /* Fondo un poco distinto al desplegar */
 }
-/* ==== ESTILO GENERAL DE LOS LINKS DEL NAVBAR ==== */
 .navbar .nav-link,
 .navbar .dropdown-toggle {
     position: relative;
@@ -136,8 +133,8 @@ body {
 
 /* Ítems dentro del dropdown */
 .dropdown-item {
-    color: #fff;
-    padding: 8px 20px;
+    color: #ffffff;
+    padding: 15px 40px;
     transition: all 0.2s ease;
 }
 
@@ -153,6 +150,38 @@ body {
     background-color: #000000;
     
 }
+/* Estilo general del panel lateral */
+.modal-style {
+    background-color: #222; /* Fondo oscuro */
+    color: #fff;            /* Texto blanco */
+    border-radius: 10px;    /* Bordes redondeados */
+             /* Espaciado interno */
+}
+
+body.modal-open {
+  overflow-x: hidden;  /* Evita scroll horizontal */
+  overflow-y: hidden;  /* Evita scroll vertical */
+  position: fixed;     /* Fija la página para que no se mueva */
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
