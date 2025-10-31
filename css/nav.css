@@ -61,6 +61,38 @@ body {
 .icon {
   font-size: 20px;
 }
+/* Estilo del menú desplegable */
+.dropdown-menu {
+    background-color: #222;      /* Fondo oscuro */
+    border: 1px solid #444;      /* Borde gris oscuro */
+    border-radius: 8px;          /* Bordes redondeados */
+    min-width: 200px;            /* Ancho mínimo */
+    font-size: 16px;             /* Tamaño de texto */
+    font-family: Arial, sans-serif; /* Fuente */
+    padding: 10px 0;             /* Espaciado vertical */
+    transition: all 0.3s ease;   /* Animación suave */
+    opacity: 0.95;               /* Ligera transparencia */
+}
+
+/* Estilo de los ítems */
+.dropdown-item {
+    color: #fff;                  /* Texto blanco */
+    padding: 8px 20px;            /* Espaciado interno */
+    transition: all 0.2s ease;    /* Animación suave al hover */
+}
+
+/* Hover de los ítems */
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: #555;       /* Fondo al pasar el mouse */
+    color: #ff0;                  /* Texto amarillo al pasar el mouse */
+}
+
+/* Opcional: estilo solo cuando el menú está abierto */
+.dropdown-menu.show {
+    background-color: #333;       /* Fondo un poco distinto al desplegar */
+}
+
 
 
 
