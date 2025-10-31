@@ -24,7 +24,7 @@ body {
 /* From Uiverse.io by eslam-hany */ 
 .button-container {
   display: flex;
-  background-color: rgba(0, 73, 144);
+  background-color: rgb(185, 6, 6);
   width: 250px;
   height: 40px;
   align-items: center;
@@ -65,13 +65,12 @@ body {
 .dropdown-menu {
     background-color: #222;      /* Fondo oscuro */
     border: 1px solid #444;      /* Borde gris oscuro */
-    border-radius: 8px;          /* Bordes redondeados */
-    min-width: 200px;            /* Ancho mínimo */
+    border-radius: 10px;          /* Bordes redondeados */
+    min-width: 100px;            /* Ancho mínimo */
     font-size: 16px;             /* Tamaño de texto */
     font-family: Arial, sans-serif; /* Fuente */
-    padding: 10px 0;             /* Espaciado vertical */
-    transition: all 0.3s ease;   /* Animación suave */
-    opacity: 0.95;               /* Ligera transparencia */
+    padding: 50px 0;             /* Espaciado vertical */
+                /* Ligera transparencia */
 }
 
 /* Estilo de los ítems */
@@ -85,13 +84,78 @@ body {
 .dropdown-item:hover,
 .dropdown-item:focus {
     background-color: #555;       /* Fondo al pasar el mouse */
-    color: #ff0;                  /* Texto amarillo al pasar el mouse */
+    color: rgb(229, 2, 2);                  /* Texto amarillo al pasar el mouse */
 }
 
 /* Opcional: estilo solo cuando el menú está abierto */
 .dropdown-menu.show {
-    background-color: #333;       /* Fondo un poco distinto al desplegar */
+    background-color: #ffffff;       /* Fondo un poco distinto al desplegar */
 }
+/* ==== ESTILO GENERAL DE LOS LINKS DEL NAVBAR ==== */
+.navbar .nav-link,
+.navbar .dropdown-toggle {
+    position: relative;
+    color: rgb(255, 255, 255);           /* Color del texto */
+    text-decoration: none;  /* Sin subrayado por defecto */
+    transition: color 0.3s ease;
+}
+
+/* ==== ESTILO GENERAL DE LOS LINKS DEL NAVBAR ==== */
+.navbar .nav-link,
+.navbar .dropdown-toggle {
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* QUITA la flechita que Bootstrap pone por defecto */
+.navbar .dropdown-toggle::after {
+    display: none !important;
+}
+
+.navbar .nav-link::after,
+.navbar .dropdown-toggle::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 6px;
+    border-radius: 5px;
+    background-color: #ff7d00;
+    transition: width 0.1s ease;
+}
+.navbar .nav-link:hover::after,
+.navbar .dropdown-toggle:hover::before {
+    width: 100%;
+}
+
+
+
+
+/* Ítems dentro del dropdown */
+.dropdown-item {
+    color: #fff;
+    padding: 8px 20px;
+    transition: all 0.2s ease;
+}
+
+/* Hover en los ítems */
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: #ff7d00 
+   
+}
+
+/* Cuando el menú está abierto */
+.dropdown-menu.show {
+    background-color: #000000;
+    
+}
+
+
+
 
 
 
