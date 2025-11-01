@@ -1,8 +1,8 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Streaming de viajes" />
     <meta
@@ -26,8 +26,150 @@
   </head>
   <body>
     <header></header>
-    <main></main>
+    <main>
+      <section
+        class="planes-viajerox text-light py-5"
+        style="
+          background: radial-gradient(circle at top, #061726, #020910 80%);
+          position: relative;
+          overflow: visible;
+        "
+      >
+        <div class="bg-lights" style="position: absolute; z-index: 0"></div>
+
+        <div class="container position-relative" style="z-index: 2">
+          <div class="text-center mb-5">
+            <h1
+              class="fw-bold display-5 mb-3"
+              style="text-shadow: 0 0 20px rgba(255, 255, 255, 0.2)"
+            >
+              Tu Aventura Comienza con
+              <span style="color: #00bfff">ViajeroX</span>
+            </h1>
+            <p class="fs-5 text-secondary">
+              Elegí tu pase de viajero y viví experiencias únicas, descuentos
+              exclusivos y una comunidad global de aventureros
+            </p>
+          </div>
+
+          <div class="row justify-content-center g-4">
+            <div class="col-12 col-md-4">
+              <div
+                class="card border-0 text-light h-100"
+                style="
+                  background: linear-gradient(145deg, #001524, #001524);
+                  border-radius: 20px;
+                  position: relative;
+                  z-index: 1;
+                  box-shadow: 0 10px 40px rgba(255, 125, 0, 0.6);
+                  transition: all 0.3s ease;
+                "
+              >
+                <div class="card-body p-4">
+                  <h3 class="fw-bold text-warning mb-3">EXPLORADOR</h3>
+                  <p class="text-secondary">
+                    Comenzá tu camino viajero con beneficios globales.
+                  </p>
+                  <ul class="list-unstyled text-start my-4">
+                    <li>✅ Descuentos en viajes y experiencias</li>
+                    <li>✅ Sorteos mensuales de merchandising</li>
+                  </ul>
+                  <h4 class="fw-bold">$9.99 / mes</h4>
+                  <a
+                    href="#"
+                    class="btn btn-outline-warning mt-3 w-100 py-2 fw-bold"
+                    >Comenzar</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+              <div
+                class="card border-0 text-light h-100"
+                style="
+                  background: linear-gradient(145deg, #15616d, #15616d);
+                  border-radius: 20px;
+                  position: relative; /* importante */
+                  z-index: 2; /* encima de las otras */
+                  transform: translateY(-10px) scale(1.05);
+                  box-shadow: 0 10px 40px rgba(255, 125, 0, 0.6);
+                  transition: all 0.3s ease;
+                "
+              >
+                <div class="card-body p-4">
+                  <h3 class="fw-bold text-info mb-3">AVENTURERO</h3>
+                  <p>
+                    Sumate a la experiencia completa y aprendé con otros
+                    viajeros.
+                  </p>
+                  <ul class="list-unstyled text-start my-4">
+                    <li>✅ Todo lo del plan Explorador</li>
+                    <li>✅ Material exclusivo (cursos, talleres y relatos)</li>
+                    <li>✅ Experiencias de viajeros reales</li>
+                  </ul>
+                  <h4 class="fw-bold">$19.99 / mes</h4>
+                  <a
+                    href="#"
+                    class="btn btn-info mt-3 w-100 py-2 fw-bold text-dark"
+                    >Subirme a la aventura</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+              <div
+                class="card border-0 text-light h-100"
+                style="
+                  background: linear-gradient(145deg, #001524, #001524);
+                  border-radius: 20px;
+                  position: relative;
+                  z-index: 1;
+                  box-shadow: 0 10px 40px rgba(255, 125, 0, 0.6);
+                  transition: all 0.3s ease;
+                "
+              >
+                <div class="card-body p-4">
+                  <h3 class="fw-bold text-primary mb-3">NÓMADA PREMIUM</h3>
+                  <p class="text-secondary">
+                    El pase total para viajeros de alma libre.
+                  </p>
+                  <ul class="list-unstyled text-start my-4">
+                    <li>✅ Todo lo del plan Aventurero</li>
+                    <li>✅ Acceso a eventos privados y meetups</li>
+                    <li>✅ Comunidad global exclusiva de viajeros</li>
+                  </ul>
+                  <h4 class="fw-bold">$29.99 / mes</h4>
+                  <a href="#" class="btn btn-primary mt-3 w-100 py-2 fw-bold"
+                    >Unirme al club Premium</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-5">
+            <a
+              href="#"
+              class="btn btn-lg fw-bold text-dark px-5 py-3"
+              style="
+                background: linear-gradient(90deg, #ff7d00, #ff7d00);
+                border-radius: 50px;
+                box-shadow: 0 0 30px rgba(255, 125, 0, 0.6);
+              "
+            >
+              ¡Suscribite y empezá tu viaje con ViajeroX!
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
