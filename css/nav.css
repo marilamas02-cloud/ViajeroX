@@ -3,28 +3,28 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 .navbar {
-  padding-top: 0;
-  padding-bottom: 0;
-  height: 110px; /* ajustá este valor al alto que querés */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 150px; 
   display: flex;
   align-items: center;
 }
 .navbar-brand {
   display: flex;
   align-items: center; /* centra verticalmente el logo y el texto */
-  gap: 8px; /* espacio entre logo y texto si hay texto */
+  gap: 0px; /* espacio entre logo y texto si hay texto */
 }
 .navbar {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 .navbar .dropdown-toggle::after {
-  display: none !important;
+  display: none;
 }
 /* From Uiverse.io by eslam-hany */ 
 .button-container {
   display: flex;
-  background-color: rgb(185, 6, 6);
+  background-color: rgb(0, 0, 0);
   width: 250px;
   height: 40px;
   align-items: center;
@@ -61,34 +61,12 @@ body {
 .icon {
   font-size: 20px;
 }
-
-.dropdown-menu {
-    background-color: #222;      /* Fondo oscuro */
-    border: 1px solid #444;      /* Borde gris oscuro */
-    border-radius: 10px;          /* Bordes redondeados */
-    min-width: 100px;            /* Ancho mínimo */
-    font-size: 16px;             /* Tamaño de texto */
-    font-family: Arial, sans-serif; /* Fuente */
-    padding: 50px 0;             /* Espaciado vertical */
-                /* Ligera transparencia */
-}
-
-
-.dropdown-item {
-    color: #fff;                  /* Texto blanco */
-    padding: 8px 20px;            /* Espaciado interno */
-    transition: all 0.2s ease;    /* Animación suave al hover */
-}
-
-/* Hover de los ítems */
 .dropdown-item:hover,
 .dropdown-item:focus {
     background-color: #ffffff;       /* Fondo al pasar el mouse */
     color: rgb(255, 255, 255);                  /* Texto amarillo al pasar el mouse */
 }
-.dropdown-menu.show {
-    background-color: #ffffff;       /* Fondo un poco distinto al desplegar */
-}
+
 .navbar .nav-link,
 .navbar .dropdown-toggle {
     position: relative;
@@ -102,7 +80,7 @@ body {
 .navbar .dropdown-toggle {
     position: relative;
     color: rgb(255, 255, 255);
-    text-decoration: none;
+    
     transition: color 0.3s ease;
 }
 
@@ -133,7 +111,7 @@ body {
 
 /* Ítems dentro del dropdown */
 .dropdown-item {
-    color: #ffffff;
+    color: #000000;
     padding: 15px 40px;
     transition: all 0.2s ease;
 }
@@ -147,23 +125,12 @@ body {
 
 /* Cuando el menú está abierto */
 .dropdown-menu.show {
-    background-color: #000000;
+    background-color: #ffecd1;
     
 }
-/* Estilo general del panel lateral */
-.modal-style {
-    background-color: #222; /* Fondo oscuro */
-    color: #fff;            /* Texto blanco */
-    border-radius: 10px;    /* Bordes redondeados */
-             /* Espaciado interno */
-}
 
-body.modal-open {
-  overflow-x: hidden;  /* Evita scroll horizontal */
-  overflow-y: hidden;  /* Evita scroll vertical */
-  position: fixed;     /* Fija la página para que no se mueva */
-  width: 100%;
-}
+
+
 
 
 
