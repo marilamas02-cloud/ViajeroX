@@ -1,26 +1,30 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 root {
   :root {
-/* Colores primarios */
---color-primary-dark: #001524;
---color-primary-medium: #15616d;
+    /* Colores primarios */
+    --color-primary-dark: #001524;
+    --color-primary-medium: #15616d;
 
-/* Colores secundarios */
---color-secondary-light: #ffecd1;
---color-secondary-accent: #ff7d00;
+    /* Colores secundarios */
+    --color-secondary-light: #ffecd1;
+    --color-secondary-accent: #ff7d00;
 
-/* Color terciario */
---color-tertiary-contrast: #78290f;
+    /* Color terciario */
+    --color-tertiary-contrast: #78290f;
 
-}
-/* tipografia- monserrat */
- --Monserrat:"Monserrat", sans-serif;
+    /* tipografia- monserrat */
+    --Monserrat: "Monserrat", sans-serif;
+
+    /* Tamaños de fuentes */
+    --texto: 12px;
+    --titulares: 24px;
+    --description: 1rem;
+  }
 }
