@@ -17,5 +17,5 @@ root {
 
 }
 /* tipografia- monserrat */
- --Monserrat:var(--Monserrat), sans-serif;
+ --Monserrat:"Monserrat", sans-serif;
 }
