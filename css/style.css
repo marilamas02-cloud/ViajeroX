@@ -39,3 +39,10 @@ root {
   object-fit: cover;
   border-radius: 10px;
 }
+
+.voto:hover {
+  background-color: var(--color-primary-medium);
+  font-size: 1.5rem;
+  color: var(--color-secondary-light);
+  
+}
