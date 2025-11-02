@@ -89,6 +89,7 @@ body {
     display: none !important;
 }
 
+
 .navbar .nav-link::after,
 .navbar .dropdown-toggle::before {
     content: "";
@@ -112,7 +113,13 @@ body {
 /* Ítems dentro del dropdown */
 .dropdown-item {
     color: #000000;
-    padding: 15px 40px;
+    padding: 20px 20px;
+    margin: 0px 20px;
+    width: 300px;
+
+
+    
+
     transition: all 0.2s ease;
 }
 
@@ -128,6 +135,20 @@ body {
     background-color: #ffecd1;
     
 }
+.search-bar {
+  width: 350px;
+  border-radius: 50px;
+  padding: 2px 2px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+.search-bar:focus {
+  outline: none;
+  border-color: #ff7d00;
+  box-shadow: 0 0 8px #ff7d00;
+}
+
 
 
 
