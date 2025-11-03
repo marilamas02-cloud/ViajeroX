@@ -16,68 +16,144 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid d-flex align-items-center justify-content-between flex-wrap">
-            <a class="navbar-brand d-flex align-items-center" href="../index.html">
-                <img src="../assets/img/logoBlanco.png" alt="Logo" height="230" class="d-inline-block align-text-top">
-            </a>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2 search-bar" type="search" placeholder="Buscar..." aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-start" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0" style="gap: 10px; margin-left: 50px;">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            SERV.COMPLEMENTARIOS
-                        </a>
-                        <ul class="dropdown-menu modal-style">
-                            <li><a class="dropdown-item" href="#">Alojamiento</a></li>
-                            <li><a class="dropdown-item" href="#">Transporte</a></li>
-                            <li><a class="dropdown-item" href="#">Asistencia viajero</a></li>
-                            <li><a class="dropdown-item" href="#">Gastronomia</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CARRITO</a>
-                    </li>
-                    <li class="nav-item dropdown dropstart">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            ES/USD
-                        </a>
-                        <ul class="dropdown-menu modal-style1">
-                            <li><a class="dropdown-item" href="#">Acción</a></li>
-                            <li><a class="dropdown-item" href="#">Otra acción</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown dropstart">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            PERFIL
-                        </a>
-                        <ul class="dropdown-menu dropstart modal-style">
-                            <li><a class="dropdown-item" href="#">INICIAR SESION</a></li>
-                            <li><a class="dropdown-item" href="#">REGISTRARSE</a></li>
-                            <li>
-                            <li><a class="dropdown-item" href="#">Ayuda</a></li>
-                            <li><a class="dropdown-item" href="#">Descarga la app</a></li>
-                        </ul>
-                    </li>
-                </ul>
+    <nav class="navbar navbar-expand-lg my-navbar">
+  <div class="container-fluid d-flex align-items-center justify-content-between flex-wrap">
+    <a class="navbar-brand d-flex align-items-center" href="../index.html">
+      <img src="../assets/img/logo.png" alt="Logo" height="230" class="d-inline-block align-text-top">
+    </a>
+
+    <div class="search-container me-3">
+      <input class="input" type="text" placeholder="Buscar...">
+      <svg viewBox="0 0 24 24" class="search__icon">
+        <g>
+          <path
+            d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 
+            4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 
+            3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 
+            11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 
+            7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+          </path>
+        </g>
+      </svg>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-start" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0" style="gap: 15px; margin-left: 50px;">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            SERV.COMPLEMENTARIOS
+          </a>
+          <ul class="dropdown-menu modal-style">
+            <li><a class="dropdown-item" href="#">Alojamiento</a></li>
+            <li><a class="dropdown-item" href="#">Transporte</a></li>
+            <li><a class="dropdown-item" href="#">Asistencia viajero</a></li>
+            <li><a class="dropdown-item" href="#">Gastronomía</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">CARRITO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#currencyModal">
+            ES/USD
+          </a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            PERFIL
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">INICIAR SESIÓN</a></li>
+            <li><a class="dropdown-item" href="#">REGISTRARSE</a></li>
+            <li><a class="dropdown-item" href="#">Mis Suscripciones</a></li>
+            <li><a class="dropdown-item" href="#">Ayuda</a></li>
+            <li><a class="dropdown-item" href="#">Descarga la app</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="modal fade" id="currencyModal" tabindex="-1" aria-labelledby="currencyModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-darK text-white">
+        <h5 class="modal-title" id="currencyModalLabel"></h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <h5 class="mb-3 fw-bold">Language</h5>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-decoration-none text-dark">Español (ES)</a></li>
+                <li><a href="#" class="text-decoration-none text-dark">Inglés (EN)</a></li>
+                <li><a href="#" class="text-decoration-none text-dark">Francés (FR)</a></li>
+                <li><a href="#" class="text-decoration-none text-dark">Alemán (DE)</a></li>
+                <li><a href="#" class="text-decoration-none text-dark">Italiano (IT)</a></li>
+              </ul>
             </div>
+            <div class="col-md-6">
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-decoration-none text-dark">Portugués (PT)</a></li>
+                <li><a href="#" class="text-decoration-none text-dark">Chino (ZH)</a></li>
+                <li><a href="#" class="text-decoration-none text-dark">Japonés (JA)</a></li>
+                <li><a href="#" class="text-decoration-none text-dark">Coreano (KO)</a></li>
+                <li><a href="#" class="text-decoration-none text-dark">Ruso (RU)</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </nav>
+        <hr class="my-4">
+        <h5 class="mb-3 fw-bold">Divisa</h5>
+        <table class="table table-bordered text-center align-middle">
+          <thead class="table-dark">
+            <tr>
+              <th>Moneda</th>
+              <th>Símbolo</th>
+              <th>Valor en USD</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Euro (EUR)</td>
+              <td>€</td>
+              <td>1.07</td>
+            </tr>
+            <tr>
+              <td>Peso Argentino (ARS)</td>
+              <td>$</td>
+              <td>0.0011</td>
+            </tr>
+            <tr>
+              <td>Libra Esterlina (GBP)</td>
+              <td>£</td>
+              <td>1.23</td>
+            </tr>
+            <tr>
+              <td>Yen Japonés (JPY)</td>
+              <td>¥</td>
+              <td>0.0067</td>
+            </tr>
+            <tr>
+              <td>Real Brasileño (BRL)</td>
+              <td>R$</td>
+              <td>0.19</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
 </header>
 <main></main>
 <footer></footer>
