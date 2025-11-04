@@ -214,3 +214,18 @@ body {
 #currencyModal a:hover {
   color: #ff7d00 !important; /* el mismo color naranja que usás */
 }
+.modal-body ul li a {
+  display: block;
+  padding: 4px 0;
+  transition: 0.2s;
+}
+.modal-body ul li a:hover {
+  color: #ff7d00;
+  transform: scale(1.05);
+}
+.modal-content {
+  border-radius: 25px; 
+  border: none; 
+  box-shadow: 0 0 60px   #ff7d00
+}
+
