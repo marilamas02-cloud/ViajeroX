@@ -6,9 +6,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-root {
-  :root {
-    /* Colores primarios */
+:root {    /* Colores primarios */
     --color-primary-dark: #001524;
     --color-primary-medium: #15616d;
 
@@ -27,7 +25,7 @@ root {
     --titulares: 24px;
     --description: 1rem;
   }
-}
+
 .carrusel-app {
   width: 100%;
   height: 800px;
