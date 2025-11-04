@@ -63,11 +63,13 @@ footer {
   }
 
   .store-buttons img {
-    width: 130px;
+    width: 50px;
     height: auto;
     display: block;
     margin-bottom: 10px;
   }
+
+
 
   .footer-bottom {
     text-align: center;
@@ -97,3 +99,7 @@ footer {
   .socials img:hover {
     opacity: 1;
   }
+a {
+    text-decoration: none;
+}
+
