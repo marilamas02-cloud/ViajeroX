@@ -6,8 +6,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-root {
-  :root {
+:root {
+   
     /* Colores primarios */
     --color-primary-dark: #001524;
     --color-primary-medium: #15616d;
@@ -27,7 +27,7 @@ root {
     --titulares: 24px;
     --description: 1rem;
   }
-}
+
 .galeria {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -35,7 +35,7 @@ root {
 }
 .galeria img {
   width: 100%;
-  height: 200px; /* altura uniforme */
+  height: 200px; 
   object-fit: cover;
   border-radius: 10px;
 }
