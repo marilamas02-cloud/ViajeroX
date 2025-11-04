@@ -202,7 +202,8 @@ body {
 }
 #currencyModal .modal-content {
   background-color: #ffecd1; 
-  color: #000; 
+  color: #000;
+    overflow-y: auto; /* scroll si hay muchos idiomas */
 }
 #currencyModal a {
   color: #000 !important;
@@ -228,4 +229,21 @@ body {
   border: none; 
   box-shadow: 0 0 60px   #ff7d00
 }
+.modal-footer {
+  background-color: #f1f1f1;
+  border-top: none;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.modal.fade .modal-dialog {
+  transform: scale(10);
+  transition: transform 0.3s ease-out;
+}
+
+.modal.show .modal-dialog {
+  transform: scale(1);
+}
+
+
+
 
