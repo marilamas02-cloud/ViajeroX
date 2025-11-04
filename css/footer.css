@@ -2,3 +2,98 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+footer {
+    background-color:  #ffecd1;
+    color: #000000;
+    padding: 40px 8%;
+  }
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 30px;
+  }
+
+  .footer-col {
+    flex: 1;
+    min-width: 180px;
+  }
+
+  .footer-col h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: rgb(0, 0, 0);
+  }
+
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-col ul li {
+    margin-bottom: 10px;
+  }
+
+  .footer-col ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+  }
+
+  .footer-col ul li a:hover {
+    color: #000000;
+  }
+
+  .selector {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  select {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color:  #ff7d00;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+  }
+
+  .store-buttons img {
+    width: 130px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    font-size: 13px;
+    color: #000000;
+    margin-top: 25px;
+  }
+
+  .payment-icons img {
+    height: 28px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+
+  .socials {
+    margin-top: 25px;
+  }
+
+  .socials img {
+    width: 34px;
+    height: 34px;
+    margin-right: 10px;
+    vertical-align: middle;
+    filter: saturate(100%);
+  }
+
+  .socials img:hover {
+    opacity: 1;
+  }
