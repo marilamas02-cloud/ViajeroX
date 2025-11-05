@@ -19,6 +19,7 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
   </head>
@@ -33,60 +34,80 @@
       <section class="descuentos-gastronomia">
         <div class="container-gastronomia p-5">
           <h2 class="py-3">Descuentos que no te podes perder!</h2>
-          <div class="row justify-content-center g-4 ">
+          <div class="row justify-content-center g-4">
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-              <div class="card h-100">
+              <div class="card h-100" data-aos="flip-down" data-aos-delay="300">
                 <img
-                src="../assets/img/china-rest.webp"
-                class="card-img-top img-fluid gastronomia-descuentos"
-                alt="..."
+                  src="../assets/img/china-rest.webp"
+                  class="card-img-top img-fluid gastronomia-descuentos"
+                  alt="..."
                 />
-                 <span class="badge text-bg-success position-absolute top-0 end-0 m-2">-15%</span>
+                <span
+                  class="badge text-bg-success position-absolute top-0 end-0 m-2"
+                  >-15%</span
+                >
                 <div class="card-body text-center">
                   <h5 class="card-title">Ming Tao House</h5>
-                  <a href="#" class="btn btn-light">Ver más</a>
+                  <a href="#" class="btn btn-light boton-restaurantes"
+                    >Ver más</a
+                  >
                 </div>
               </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-              <div class="card h-100">
+              <div class="card h-100" data-aos="flip-down" data-aos-delay="600">
                 <img
                   src="../assets/img/roma-rest.jpg"
                   class="card-img-top img-fluid gastronomia-descuentos"
                   alt="..."
                 />
-                 <span class="badge text-bg-success position-absolute top-0 end-0 m-2">-25%</span>
+                <span
+                  class="badge text-bg-success position-absolute top-0 end-0 m-2"
+                  >-25%</span
+                >
                 <div class="card-body text-center">
                   <h5 class="card-title">Luce di Roma</h5>
-                  <a href="#" class="btn btn-light">Ver más</a>
+                  <a href="#" class="btn btn-light boton-restaurantes"
+                    >Ver más</a
+                  >
                 </div>
               </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-              <div class="card h-100">
+              <div class="card h-100" data-aos="flip-down" data-aos-delay="900">
                 <img
                   src="../assets/img/br-gastr.jpg"
                   class="card-img-to img-fluid gastronomia-descuentos"
                   alt="..."
                 />
-                 <span class="badge text-bg-success position-absolute top-0 end-0 m-2">-20%</span>
+                <span
+                  class="badge text-bg-success position-absolute top-0 end-0 m-2"
+                  >-20%</span
+                >
                 <div class="card-body text-center">
                   <h5 class="card-title">Casa da Areia</h5>
-                  <a href="#" class="btn btn-light">Ver más</a>
+                  <a href="#" class="btn btn-light boton-restaurantes"
+                    >Ver más</a
+                  >
                 </div>
               </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-              <div class="card h-100">
+              <div class="card h-100" data-aos="flip-down" data-aos-delay="1200">
                 <img
                   src="../assets/img/machu-picchu-rest.jpg"
                   class="card-img-top img-fluid gastronomia-descuentos"
                   alt="..."
                 />
-                 <span class="badge text-bg-success position-absolute top-0 end-0 m-2">-30%</span>
+                <span
+                  class="badge text-bg-success position-absolute top-0 end-0 m-2"
+                  >-30%</span
+                >
                 <div class="card-body text-center">
                   <h5 class="card-title">Chaska Restobar</h5>
-                  <a href="#" class="btn btn-light">Ver más</a>
+                  <a href="#" class="btn btn-light boton-restaurantes"
+                    >Ver más</a
+                  >
                 </div>
               </div>
             </div>
@@ -332,6 +353,10 @@
       </section>
     </main>
     <footer></footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
       integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
