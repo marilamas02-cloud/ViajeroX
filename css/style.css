@@ -3,6 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+/* Colores primarios */
+--color-primary-dark: #001524;
+--color-primary-medium: #15616d;
+
+/* Colores secundarios */
+--color-secondary-light: #ffecd1;
+--color-secondary-accent: #ff7d00;
+
+/* Color terciario / acento especial */
+--color-tertiary-contrast: #78290f;
+}
+ 
 .carrusel {
   width: 100%;
   max-height: 90vh; 
@@ -73,4 +87,11 @@
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
   text-align: center;
   padding: 10px;
+}
+.boton-comunidad:hover {
+  transform: scale(1.2);
+  background-color: var(--color-tertiary-contrast);
+}
+.boton-comunidad {
+  background-color: var(--color-primary-medium);
 }
