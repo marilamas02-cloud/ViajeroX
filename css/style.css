@@ -32,3 +32,6 @@
   overflow: hidden;  
   position: relative; 
 }
+.img-app:hover {
+  transform: scale(1.2); 
+}
