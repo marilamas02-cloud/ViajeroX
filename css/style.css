@@ -30,3 +30,58 @@
   line-height: 1.2;
 }
 
+
+.planes-viajerox {
+  background: radial-gradient(circle at top, #061726, #020910 80%);
+  position: relative;
+  overflow: visible;
+}
+
+
+.titulo-viajerox span {
+  color: #ff7d00;
+}
+
+.titulo-viajerox {
+  text-shadow: 0 10px 40px rgba(255, 125, 0, 0.6);
+}
+
+
+.boton {
+  background: linear-gradient(90deg, #ff7d00, #ff7d00);
+  border-radius: 50px;
+  box-shadow: 0 0 30px rgba(255, 125, 0, 0.6);
+}
+.boton:hover {
+  transform: scale(1.08);
+}
+
+.card-suscripcion {
+  border: 0;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(255, 125, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+
+.card-suscripcion:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 40px rgba(255, 125, 0, 0.8);
+  z-index: 5;
+}
+
+
+.explorador {
+  background: linear-gradient(145deg, #001524, #001524);
+}
+
+.aventurero {
+  background: linear-gradient(145deg, #15616d, #15616d);
+  transform: translateY(-10px);
+}
+
+.nomada {
+  background: linear-gradient(145deg, #001524, #001524);
+}
+
