@@ -6,7 +6,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-root {
+ 
   :root {
     /* Colores primarios */
     --color-primary-dark: #001524;
@@ -27,7 +27,7 @@ root {
     --titulares: 24px;
     --description: 1rem;
   }
-}
+
 .galeria {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -70,4 +70,11 @@ root {
   height: 100%;
   object-fit: cover; 
   display: block;
+}
+.boton-foro:hover {
+  font-size: 20px;
+  background-color: var(--color-tertiary-contrast);
+}
+.boton-foro {
+  background-color: var(--color-primary-medium);
 }
