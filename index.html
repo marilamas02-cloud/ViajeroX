@@ -176,70 +176,111 @@
       </section>
 
       <section class="experiencias p-3 mb-0">
-        <h2 class="p-5">Experiencias de los viajeros</h2>
-        <div class="container text-center">
-          <div class="row g-4 mb-4">
-            <div class="col-12 col-md-6">
-              <div class="card text-bg-dark">
-                <img
-                  src="./assets/img/e-china.jpg"
-                  class="card-img"
-                  alt="..."
-                />
-                <div class="card-img-overlay">
-                  <h5 class="card-title">
-                    Record de kms corridos en la Muralla China
-                  </h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="card text-bg-dark">
-                <img
-                  src="./assets/img/e-india.jpg"
-                  class="card-img"
-                  alt="..."
-                />
-                <div class="card-img-overlay">
-                  <h5 class="card-title">
-                    Propuesta de casamiento frente al Taj Majal
-                  </h5>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row g-4 mb-4">
-            <div class="col-12 col-md-4">
-              <div class="card text-bg-dark">
-                <img src="./assets/img/e-mex.jpg" class="card-img" alt="..." />
-                <div class="card-img-overlay">
-                  <h5 class="card-title">
-                    Ritual frente a la pirámide Chichén Itzá
-                  </h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-4">
-              <div class="card text-bg-dark">
-                <img src="./assets/img/e-rioj.jpg" class="card-img" alt="..." />
-                <div class="card-img-overlay">
-                  <h5 class="card-title">Volar en Río de Janeiro</h5>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-4">
-              <div class="card text-bg-dark">
-                <img src="./assets/img/e-roma.jpg" class="card-img" alt="..." />
-                <div class="card-img-overlay">
-                  <h5 class="card-title">
-                    Simulación de pelea en la edad media
-                  </h5>
-                </div>
-              </div>
-            </div>
+  <h2 class="p-5 text-center">Experiencias de los viajeros</h2>
+  <div class="container text-center">
+    <div class="row g-4 mb-4">
+      
+      <div
+        class="col-12 col-md-6"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div
+          class="card text-bg-dark"
+          data-bs-toggle="modal"
+          data-bs-target="#modalChina"
+        >
+          <img src="./assets/img/e-china.jpg" class="card-img" alt="China" />
+          <div class="card-img-overlay">
+            <h5 class="card-title">
+              Récord de kms corridos en la Muralla China
+            </h5>
           </div>
         </div>
-      </section>
+      </div>
+
+      
+      <div
+        class="col-12 col-md-6"
+        data-aos="fade-up"
+        data-aos-duration="1200"
+      >
+        <div
+          class="card text-bg-dark"
+          data-bs-toggle="modal"
+          data-bs-target="#modalIndia"
+        >
+          <img src="./assets/img/e-india.jpg" class="card-img" alt="India" />
+          <div class="card-img-overlay">
+            <h5 class="card-title">
+              Propuesta de casamiento frente al Taj Mahal
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4 mb-4">
+      
+      <div
+        class="col-12 col-md-4"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+      >
+        <div
+          class="card text-bg-dark"
+          data-bs-toggle="modal"
+          data-bs-target="#modalMexico"
+        >
+          <img src="./assets/img/e-mex.jpg" class="card-img" alt="México" />
+          <div class="card-img-overlay">
+            <h5 class="card-title">
+              Ritual frente a la pirámide Chichén Itzá
+            </h5>
+          </div>
+        </div>
+      </div>
+
+      
+      <div
+        class="col-12 col-md-4"
+        data-aos="zoom-in"
+        data-aos-duration="1200"
+      >
+        <div
+          class="card text-bg-dark"
+          data-bs-toggle="modal"
+          data-bs-target="#modalRio"
+        >
+          <img src="./assets/img/e-rioj.jpg" class="card-img" alt="Río" />
+          <div class="card-img-overlay">
+            <h5 class="card-title">Volar en Río de Janeiro</h5>
+          </div>
+        </div>
+      </div>
+
+     
+      <div
+        class="col-12 col-md-4"
+        data-aos="zoom-in"
+        data-aos-duration="1400"
+      >
+        <div
+          class="card text-bg-dark"
+          data-bs-toggle="modal"
+          data-bs-target="#modalRoma"
+        >
+          <img src="./assets/img/e-roma.jpg" class="card-img" alt="Roma" />
+          <div class="card-img-overlay">
+            <h5 class="card-title">
+              Simulación de pelea en la edad media
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       <section class="suscripcion p-3 mb-0">
         <img
@@ -589,6 +630,86 @@
         </div>
       </section>
     </main>
+    
+<div class="modal fade" id="modalChina" tabindex="-1" aria-labelledby="modalChinaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalChinaLabel">Récord en la Muralla China</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./assets/img/e-china.jpg" class="img-fluid rounded mb-3" alt="China"/>
+        <p>Un grupo de aventureros rompió su propio récord recorriendo kilómetros sobre la Gran Muralla China. Una experiencia épica entre historia y resistencia física.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="modalIndia" tabindex="-1" aria-labelledby="modalIndiaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalIndiaLabel">Propuesta frente al Taj Mahal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./assets/img/e-india.jpg" class="img-fluid rounded mb-3" alt="India"/>
+        <p>Una historia de amor inolvidable con el Taj Mahal como testigo. El viaje de sus vidas terminó con un “sí” frente al monumento más romántico del mundo.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="modalMexico" tabindex="-1" aria-labelledby="modalMexicoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalMexicoLabel">Ritual frente a Chichén Itzá</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./assets/img/e-mex.jpg" class="img-fluid rounded mb-3" alt="México"/>
+        <p>Participar de un ritual frente a la pirámide de Chichén Itzá fue una experiencia mística y cultural. Conexión con la historia y la energía ancestral de México.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="modalRio" tabindex="-1" aria-labelledby="modalRioLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalRioLabel">Volar en Río de Janeiro</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./assets/img/e-rioj.jpg" class="img-fluid rounded mb-3" alt="Río de Janeiro"/>
+        <p>Una experiencia adrenalínica sobrevolando las playas y montañas de Río de Janeiro. Vistas increíbles y recuerdos que duran toda la vida.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="modalRoma" tabindex="-1" aria-labelledby="modalRomaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalRomaLabel">Simulación de pelea en la Edad Media</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./assets/img/e-roma.jpg" class="img-fluid rounded mb-3" alt="Roma"/>
+        <p>Vivir una simulación de batalla medieval en Roma fue emocionante. Entre historia, dramatización y diversión, una experiencia única para los amantes de la época.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
     <footer></footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
