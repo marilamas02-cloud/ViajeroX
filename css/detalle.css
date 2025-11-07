@@ -98,44 +98,75 @@ a:hover {
 
 /* DETALLE PRODUCTO */
 
+/* === BOTONES DETALLE === */
+.btn-detalle {
+  background-color: var(--color-primary-medium);
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-detalle:hover {
+  background-color: var(--color-tertiary-contrast);
+}
+
+
+
 /* INTRO CARD Y DESCRIPCIÓN */
+//* === INTRO CARD Y DESCRIPCIÓN === */
 .card-intro {
   border: none;
   border-radius: 15px;
-  background-color: var(--color-secondary-light);
+  background-color: var(--color-secondary-light, #ffffff); /* blanco */
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  color: var(--color-tertiary-contrast, #0b3d91);
+  padding: 1.5rem;
 }
 
-/* Movimiento y sombra al pasar el mouse */
+/* Hover SOLO en la card blanca */
 .card-intro:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
 }
 
-/* Estilo para los párrafos dentro de la card */
-.card-intro p {
-  color: #0b3d91; /* azul oscuro */
-  font-weight: 600; /* letra gruesa */
-  transition: transform 0.3s ease; /* se mueve junto con la card */
-}
-
-/* Hacer que los párrafos sigan el movimiento de hover */
-.card-intro:hover p {
-  transform: translateY(-8px);
-}
-
-/* Estilo para los títulos h5 dentro de la card */
+/* Títulos */
 .card-intro h5 {
-  color: var(--color-tertiary-contrast) ;
-  font-weight: 700; /* más grueso que el p */
-  transition: transform 0.3s ease; /* se mueve suavemente con la card */
+  color: var(--color-tertiary-contrast, #0b3d91);
+  font-weight: 700;
+  text-shadow: none; /* más limpio y definido */
+  margin-bottom: 0.75rem;
 }
 
-/* Hacer que los títulos sigan el movimiento de hover */
-.card-intro:hover h5 {
-  transform: translateY(-8px);
+/* Párrafos */
+.card-intro p {
+  color: var(--color-tertiary-contrast, #0b3d91);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  text-shadow: none; /* sin movimiento ni difuminado */
 }
+
+/* Imagen dentro de la card */
+.card-intro img {
+  border-radius: 15px 15px 0 0;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card-intro {
+    margin-bottom: 15px;
+  }
+  .card-intro p {
+    font-size: 0.9rem;
+  }
+}
+
+
 
 
 /* === ACTIVIDADES TURÍSTICAS === */
