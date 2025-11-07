@@ -47,6 +47,7 @@ h3 {
   letter-spacing: 2px;
 }
 
+
 p {
   font-size: var(--texto);
   color: var(--color-secondary-light);
@@ -96,34 +97,41 @@ a:hover {
 
 /* DETALLE PRODUCTO */
 /* CRISTO REDENTOR */
-.cristo-section {
-  color: #fff;
-  text-align: center;
+.card-intro {
+  border: none;
+  border-radius: 15px;
+  background-color: var(--color-secondary-light);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.cristo-gifs {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+/* Movimiento y sombra al pasar el mouse */
+.card-intro:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-.gif-item {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
+/* Estilo para los párrafos dentro de la card */
+.card-intro p {
+  color: #0b3d91; /* azul oscuro */
+  font-weight: 600; /* letra gruesa */
+  transition: transform 0.3s ease; /* se mueve junto con la card */
 }
 
-@media (max-width: 768px) {
-  .cristo-gifs {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-  .gif-item {
-    height: 250px;
-  }
+/* Hacer que los párrafos sigan el movimiento de hover */
+.card-intro:hover p {
+  transform: translateY(-8px);
 }
 
-.cristo-section p {
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
-  font-size: 0.95rem;
+/* Estilo para los títulos h5 dentro de la card */
+.card-intro h5 {
+  color: var(--color-tertiary-contrast) ;
+  font-weight: 700; /* más grueso que el p */
+  transition: transform 0.3s ease; /* se mueve suavemente con la card */
 }
+
+/* Hacer que los títulos sigan el movimiento de hover */
+.card-intro:hover h5 {
+  transform: translateY(-8px);
+}
+
