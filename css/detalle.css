@@ -113,7 +113,7 @@ a:hover {
 
 
 /* INTRO CARD Y DESCRIPCIÓN */
-//* === INTRO CARD Y DESCRIPCIÓN === */
+/* === INTRO CARD Y DESCRIPCIÓN === */
 .card-intro {
   border: none;
   border-radius: 15px;
@@ -121,11 +121,12 @@ a:hover {
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
-  color: var(--color-tertiary-contrast, #0b3d91);
+  color: var(--color-primary-dark, #001524);
   padding: 1.5rem;
+  cursor: pointer; /* da sensación interactiva */
 }
 
-/* Hover SOLO en la card blanca */
+/* Hover: solo se mueve toda la card */
 .card-intro:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
@@ -133,10 +134,16 @@ a:hover {
 
 /* Títulos */
 .card-intro h5 {
-  color: var(--color-tertiary-contrast, #0b3d91);
+  color: var(--color-primary-medium, #15616d);
   font-weight: 700;
-  text-shadow: none; /* más limpio y definido */
+  text-shadow: none;
   margin-bottom: 0.75rem;
+  transition: color 0.3s ease;
+}
+
+/* Cambia color del título levemente al hover (sin moverse) */
+.card-intro:hover h5 {
+  color: #0d4c59; /* tono más oscuro */
 }
 
 /* Párrafos */
@@ -145,7 +152,13 @@ a:hover {
   font-weight: 600;
   font-size: 0.95rem;
   margin-bottom: 0.5rem;
-  text-shadow: none; /* sin movimiento ni difuminado */
+  text-shadow: none;
+  transition: color 0.3s ease;
+}
+
+/* Párrafos acompañan el hover sin sobresalir ni moverse */
+.card-intro:hover p {
+  color: #092b6f; /* leve oscurecimiento, sin movimiento */
 }
 
 /* Imagen dentro de la card */
@@ -156,7 +169,11 @@ a:hover {
   height: auto;
 }
 
-/* Responsive */
+.card-intro .card-body h5 {
+  margin-top: 1rem; /* aumenta la separación respecto a la imagen */
+}
+
+/* === Responsive === */
 @media (max-width: 768px) {
   .card-intro {
     margin-bottom: 15px;
@@ -165,6 +182,7 @@ a:hover {
     font-size: 0.9rem;
   }
 }
+
 
 
 
