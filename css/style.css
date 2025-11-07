@@ -1,209 +1,181 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-
-:root {
-   
-    /* Colores primarios */
-    --color-primary-dark: #001524;
-    --color-primary-medium: #15616d;
-
-    /* Colores secundarios */
-    --color-secondary-light: #ffecd1;
-    --color-secondary-accent: #ff7d00;
-
-    /* Color terciario */
-    --color-tertiary-contrast: #78290f;
-
-    /* tipografia- monserrat */
-    --Monserrat: "Monserrat", sans-serif;
-
-    /* Tamaños de fuentes */
-    --texto: 12px;
-    --titulares: 24px;
-    --description: 1rem;
-  }
-
-
-main {
-    color: var(--bs-body-color);
-}
-h2 {
-    font-size: 1.8rem;
-    text-align: center;
-    font-weight: bold;
-}
-
-.gastronomia-gif .gif img {
+.img-banner {
     width: 100%;
-    height: auto;
+    height: 60vh;
+    max-height: 600px; 
     object-fit: cover;
 }
 
 
-.descuentos-gastronomia {
-    background-color: var(--bs-body-bg); 
-}
-.descuentos-gastronomia .container-gastronomia {
-    padding: 1.5rem 1rem;
-}
-.card-body h5 {
-    font-size: 1rem;
-    margin-bottom: 0.75rem;
-}
-.gastronomia-descuentos {
+.img-maravillas {
     width: 100%;
-    height: 200px; 
+    height: 200px;
     object-fit: cover;
+
 }
-.boton-restaurantes {
-    background-color: var(--color-primary-medium);
-    border: none;
-    font-weight: bold;
-    color: var(--bs-dark); 
-}
-.boton-restaurantes:hover {
-    background-color: var(--color-tertiary-contrast);
-    font-size: 1.15rem; 
+.reseñas .img-fija {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
 }
 
-.galeria {
-    display: grid;
-   
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
-    gap: 15px;
-    padding: 1.5rem; 
-}
-.galeria img {
-    width: 100%;
-    height: 200px; 
-    object-fit: cover;
-    border-radius: 10px;
-}
-.container h2 {
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+.reseñas p {
+  max-width: 120px;
+  min-height: 60px; 
+  font-size: 0.9rem;
+  line-height: 1.2;
 }
 
 
-
-.viajeros h2 {
-    font-size: 1.5rem;
-    padding: 1rem;
-}
-.viajeros p {
-    font-size: 0.9rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-}
-.voto {
-    background-color: var(--color-primary-medium);
-    border: none;
-    font-weight: bold;
-    font-size: 0.9rem;
-}
-.voto:hover {
-    background-color: var(--color-tertiary-contrast);
-    font-size: 1.15rem;
+.planes-viajerox {
+  background: radial-gradient(circle at top, #061726, #020910 80%);
+  position: relative;
+  overflow: visible;
+  height: 100vh;
 }
 
 
-.barra {
-    background-color: var(--bs-secondary-bg);
-    padding: 2rem 0;
-}
-.barra h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-.barra span {
-    font-size: 0.9rem;
-    font-weight: bold;
+.titulo-viajerox span {
+  color: #ff7d00;
 }
 
+.titulo-viajerox {
+  text-shadow: 0 10px 40px rgba(255, 125, 0, 0.6);
+}
+
+
+.boton {
+  background: linear-gradient(90deg, #ff7d00, #ff7d00);
+  border-radius: 50px;
+  box-shadow: 0 0 30px rgba(255, 125, 0, 0.6);
+}
+.boton:hover {
+  transform: scale(1.08);
+}
+
+.card-suscripcion {
+  border: 0;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(255, 125, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+
+.card-suscripcion:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 40px rgba(255, 125, 0, 0.8);
+  z-index: 5;
+}
+
+
+.explorador {
+  background: linear-gradient(145deg, #001524, #001524);
+}
+
+.aventurero {
+  background: linear-gradient(145deg, #15616d, #15616d);
+  transform: translateY(-10px);
+}
+
+.nomada {
+  background: linear-gradient(145deg, #001524, #001524);
+}
 
 
 @media (min-width: 576px) {
-   
-    h2 {
-        font-size: 2rem;
-    }
-
     
-    .gastronomia-descuentos {
-        height: 250px; 
-    }
-    .galeria img {
-        height: 250px; 
-    }
-    .card-body h5 {
-        font-size: 1.25rem;
-    }
-
-    .viajeros h2, .barra h2 {
-        font-size: 2rem;
-    }
-    .viajeros p {
-        font-size: 1rem;
-    }
-    .voto, .boton-restaurantes {
-        font-size: 1rem;
-    }
-   
-    .voto:hover, .boton-restaurantes:hover {
-        font-size: 1.5rem; 
+    .planes-viajerox .container {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
-
 
 @media (min-width: 768px) {
    
-    h2 {
-        font-size: 2.5rem;
-    }
-    .descuentos-gastronomia .container-gastronomia {
-        padding: 3rem 1.5rem;
+
+    .titulo-viajerox {
+        font-size: 3rem; 
     }
 
-    
-    .gastronomia-descuentos {
-        height: 280px;
-    }
-    
-   
-    .viajeros p {
-        font-size: 1.15rem;
-        padding: 0 1rem;
+    .subtitulo-viajerox {
+        font-size: 1.25rem; 
     }
 
-    
-    .barra .col-md-4 {
-        text-align: left;
-        align-items: flex-start;
+    .row.justify-content-center > .col-md-4 {
+      
+        padding-left: 10px;
+        padding-right: 10px;
     }
-    .barra p {
-        font-size: 1.15rem;
+
+    .card-suscripcion .btn {
+        font-size: 0.95rem;
     }
 }
 
 
+
 @media (min-width: 992px) {
-   
-    .gastronomia-descuentos {
-        height: 250px; 
-    }
-    
-    .galeria img {
-        height: 300px; 
+    .titulo-viajerox {
+        font-size: 4rem; 
     }
 
-    .viajeros p {
-        font-size: 1.25rem;
+    .subtitulo-viajerox {
+        font-size: 1.5rem;
+    }
+
+   
+    .planes-viajerox .text-center.mb-5 {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+ 
+  .planes-viajerox {
+    padding-bottom: 2rem;
+  }
+}
+
+
+
+@media (min-width: 1200px) {
+   
+
+    .card-suscripcion .card-body p {
+  
+        min-height: 48px; 
+    }
+}
+
+
+.card-suscripcion.aventurero {
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.4);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+.card-suscripcion.aventurero:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 40px rgba(0, 191, 255, 0.6);
+    z-index: 5;
+}
+
+.boton-cards {
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.boton-cards:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 767.98px) {
+    
+    .card-suscripcion {
+        margin-bottom: 20px; 
     }
 }
