@@ -301,3 +301,26 @@ a:hover {
   top: -8px; /* sube las estrellas sin afectar el flujo */
 }
 
+
+/* === DESTINOS SUGERIDOS === */
+.card-destino {
+  border: none;
+  border-radius: 15px;
+  background-color: var(--color-secondary-light);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-destino:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.img-carddestino {
+  height: 230px;
+  object-fit: cover;
+}
+
+.card-destino .card-titulod {
+  color: var(--color-primary-dark);
+}
