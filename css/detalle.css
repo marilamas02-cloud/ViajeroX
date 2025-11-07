@@ -1,0 +1,68 @@
+/* === RESETEO GENERAL === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* === VARIABLES GLOBALES === */
+:root {
+  /* Colores principales */
+  --color-primary-dark: #001524;
+  --color-primary-medium: #15616d;
+
+  /* Colores secundarios */
+  --color-secondary-light: #ffecd1;
+  --color-secondary-accent: #ff7d00;
+  --color-tertiary-contrast: #78290f;
+
+  /* Tipografía */
+  --fuente-principal: "Montserrat", sans-serif;
+
+  /* Tamaños base */
+  --texto: 16px;
+  --titulares: 24px;
+}
+
+h2 {
+  font-size: var(--titulares);
+  color: var(--color-secondary-light);
+  letter-spacing: 3px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: var(--titulares);
+  color: var(--color-secondary-accent);
+  letter-spacing: 2px;
+}
+
+/* CENTRO DE AYUDA */
+/* === PREGUNTAS Y RESPUESTAS (ACCORDION) === */
+.accordion-button {
+  color: var(--color-primary-dark);
+}
+
+.accordion-button:hover,
+.accordion-button:not(.collapsed) {
+  color: var(--color-tertiary-contrast);
+}
+
+
+/* === BOTÓN DE AYUDA === */
+.btn-ayuda {
+  background-color: var(--color-primary-medium);   
+  color: var(--color-secondary-light);                 
+  border: none;                /* sin borde */
+  transition: all 0.3s ease;   /* animación suave */
+}
+
+.btn-ayuda:hover {
+  background-color: var(--color-tertiary-contrast);  
+  color: var(--color-secondary-light);                 /* mantiene el texto blanco */
+  transform: translateY(-2px); /* leve efecto de elevación */
+  box-shadow: 0 4px 10px rgba(255, 125, 0, 0.4);
+}
