@@ -1,31 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 
  
-  :root {
+:root {
+   
     /* Colores primarios */
     --color-primary-dark: #001524;
     --color-primary-medium: #15616d;
 
-    /* Colores secundarios */
-    --color-secondary-light: #ffecd1;
-    --color-secondary-accent: #ff7d00;
+@media (min-width: 768px) {
+   
 
-    /* Color terciario */
-    --color-tertiary-contrast: #78290f;
+    .titulo-viajerox {
+        font-size: 3rem; 
+    }
 
-    /* tipografia- monserrat */
-    --Monserrat: "Monserrat", sans-serif;
+    .subtitulo-viajerox {
+        font-size: 1.25rem; 
+    }
 
-    /* Tamaños de fuentes */
-    --texto: 12px;
-    --titulares: 24px;
-    --description: 1rem;
+    .row.justify-content-center > .col-md-4 {
+      
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .card-suscripcion .btn {
+        font-size: 0.95rem;
+    }
+}
+
+
+
+@media (min-width: 992px) {
+    .titulo-viajerox {
+        font-size: 4rem; 
+    }
+
+    .subtitulo-viajerox {
+        font-size: 1.5rem;
+    }
+
+   
+    .planes-viajerox .text-center.mb-5 {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+ 
+  .planes-viajerox {
+    padding-bottom: 2rem;
   }
 
 
