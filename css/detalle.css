@@ -271,3 +271,33 @@ a:hover {
 .accordion-button:not(.collapsed) {
   color: var(--color-tertiary-contrast);
 }
+
+
+/* === RESEÑAS === */
+.reseña-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reseña-card img {
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.reseña-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.reseña-card:hover img {
+  transform: scale(1.05);
+}
+
+.rating {
+  position: relative;
+  top: -8px; /* sube las estrellas sin afectar el flujo */
+}
+
