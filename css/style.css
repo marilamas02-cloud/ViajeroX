@@ -117,152 +117,77 @@
     max-width: 350px;
 }
 
-.galeria-viajeros img {
-    
-    height: 400px;
-    object-fit: cover;
-}
-
-
-.foro-viajero .col-12.col-md-6.bg-light {
-    height: 400px;
-    
-}
-
-
-.reseñas .card {
-    max-width: 350px;
-}
 
 
 @media (min-width: 576px) {
-    
-   
-    .descuentos h2 {
-        font-size: 1.75rem;
-    }
-    
-    .descuentos p.fs-4 {
-        font-size: 1.15rem;
-    }
-    
-    
-    .reseñas-alojamiento .d-flex {
-        justify-content: center;
-    }
+  .carruselApp {
+    height: 300px;
+    object-fit: cover;
+  }
 
-   
-    .galeria-viajeros img {
-        height: 350px; 
-    }
-    
+  .descargar-app h2 {
+    font-size: 1.8rem;
+  }
+
+  .descargar-app p {
+    font-size: 1rem;
+  }
+
+  .img-app {
+    max-width: 120px;
+    height: auto;
+  }
 }
 
 
-
 @media (min-width: 768px) {
-    
-    h2.p-2 {
-        font-size: 2rem;
-    }
+  .carruselApp {
+    height: auto;
+    object-fit: cover;
+  }
 
-    
-    .descuentos p.fs-4 {
-        font-size: 1.25rem;
-    }
+  .descargar-app h2 {
+    font-size: 2rem;
+  }
 
-   
-    .descuentos .card-img-top-wrapper img {
-        height: 100%;
-        object-fit: cover;
-    }
-    
-    
-    .reseñas-alojamiento .d-flex {
-       
-        justify-content: flex-start;
-    }
-    
-    .reseñas-alojamiento .row.justify-content-evenly {
-        justify-content: center;
-    }
+  .descargar-app p {
+    font-size: 1.1rem;
+  }
 
-    
-    .reseñas .card {
-        max-width: 300px;
-    }
-    
-    
-    .reseñas .card-body p.card-text {
-        font-size: 0.95rem;
-    }
+  .img-app {
+    width: 160px;
+  }
 
-    
-    .foro-viajero .row-cols-2 {
-        display: flex; 
-    }
-    
-    .foro-viajero .col-12.col-md-6 {
-       
-        height: 400px;
-    }
-    
-    .galeria-viajeros img {
-        
-        height: 300px; 
-    }
+  .descargar-app .row {
+    text-align: left;
+  }
 }
 
 
 @media (min-width: 992px) {
-    
-    .descuentos .container {
-        max-width: 1140px;
-    }
+  .carruselApp {
+    height: auto;
+    object-fit: cover;
+  }
 
-   
-    .descuentos .card-img-overlay {
-        padding: 1.5rem;
-    }
-    
-    .descuentos .card-title {
-        font-size: 1.75rem;
-    }
-    
-    .descuentos .card-text {
-        font-size: 1.1rem;
-    }
-    
-    
-    .reseñas h2 {
-        font-size: 2.5rem;
-    }
+  .descargar-app h2 {
+    font-size: 2.3rem;
+  }
 
-    
-    .reseñas-alojamiento {
-        padding: 4rem 2rem;
-    }
+  .descargar-app p {
+    font-size: 1.2rem;
+  }
 
-    
-    .reseñas .card {
-        max-width: 400px;
-    }
-    
-  
-    .galeria-viajeros img {
-        height: 500px; 
-    }
+  .img-app {
+    width: 180px;
+  }
+
+  .descargar-app .row {
+    align-items: center;
+  }
 }
 
-
-@media (min-width: 1200px) {
-    
-    .descuentos .container {
-        max-width: 1320px;
-    }
-    
-    
-    .galeria-viajeros img {
-        height: 600px; 
-    }
+.img-app:hover {
+  transform: scale(1.05);
+  box-shadow: #15616d 0 5px 20px;
 }
