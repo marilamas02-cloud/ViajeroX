@@ -1,181 +1,237 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.img-banner {
-    width: 100%;
-    height: 60vh;
-    max-height: 600px; 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+ 
+  :root {
+    /* Colores primarios */
+    --color-primary-dark: #001524;
+    --color-primary-medium: #15616d;
+
+    /* Colores secundarios */
+    --color-secondary-light: #ffecd1;
+    --color-secondary-accent: #ff7d00;
+
+    /* Color terciario */
+    --color-tertiary-contrast: #78290f;
+
+    /* tipografia- monserrat */
+    --Monserrat: "Monserrat", sans-serif;
+
+    /* Tamaños de fuentes */
+    --texto: 12px;
+    --titulares: 24px;
+    --description: 1rem;
+  }
+
+
+
+.voto:hover {
+  background-color: var(--color-primary-medium);
+  font-size: 1.5rem;
+  color: var(--color-secondary-light);
+  
+}
+.boton-alojamiento:hover {
+  background-color: var(--color-primary-medium);
+  font-size: 1.5rem;
+  color: var(--color-secondary-accent);
+}
+.reseñas-alojamiento {
+  background-image: url(../assets/img/viajerosbanner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+ 
+}
+.card-img-top-wrapper {
+  height: 250px; 
+  overflow: hidden;
+}
+
+.card-img-top-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+}
+.boton-foro:hover {
+  font-size: 20px;
+  background-color: var(--color-tertiary-contrast);
+}
+.boton-foro {
+  background-color: var(--color-primary-medium);
+}
+
+.galeria-viajeros img {
+   
+    height: 400px;
     object-fit: cover;
 }
 
 
-.img-maravillas {
-    width: 100%;
-    height: 200px;
+.foro-viajero .col-12.col-md-6.bg-light {
+    height: 400px; 
+    border-radius: 0.375rem 0.375rem 0 0; 
+}
+
+
+.reseñas .card {
+    max-width: 350px;
+}
+
+.galeria-viajeros img {
+    
+    height: 400px;
     object-fit: cover;
-
-}
-.reseñas .img-fija {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-}
-
-.reseñas p {
-  max-width: 120px;
-  min-height: 60px; 
-  font-size: 0.9rem;
-  line-height: 1.2;
 }
 
 
-.planes-viajerox {
-  background: radial-gradient(circle at top, #061726, #020910 80%);
-  position: relative;
-  overflow: visible;
-  height: 100vh;
+.foro-viajero .col-12.col-md-6.bg-light {
+    height: 400px;
+    
 }
 
 
-.titulo-viajerox span {
-  color: #ff7d00;
-}
-
-.titulo-viajerox {
-  text-shadow: 0 10px 40px rgba(255, 125, 0, 0.6);
-}
-
-
-.boton {
-  background: linear-gradient(90deg, #ff7d00, #ff7d00);
-  border-radius: 50px;
-  box-shadow: 0 0 30px rgba(255, 125, 0, 0.6);
-}
-.boton:hover {
-  transform: scale(1.08);
-}
-
-.card-suscripcion {
-  border: 0;
-  border-radius: 20px;
-  box-shadow: 0 10px 40px rgba(255, 125, 0, 0.6);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
-
-
-.card-suscripcion:hover {
-  transform: scale(1.08);
-  box-shadow: 0 0 40px rgba(255, 125, 0, 0.8);
-  z-index: 5;
-}
-
-
-.explorador {
-  background: linear-gradient(145deg, #001524, #001524);
-}
-
-.aventurero {
-  background: linear-gradient(145deg, #15616d, #15616d);
-  transform: translateY(-10px);
-}
-
-.nomada {
-  background: linear-gradient(145deg, #001524, #001524);
+.reseñas .card {
+    max-width: 350px;
 }
 
 
 @media (min-width: 576px) {
     
-    .planes-viajerox .container {
-        padding-left: 15px;
-        padding-right: 15px;
+   
+    .descuentos h2 {
+        font-size: 1.75rem;
     }
+    
+    .descuentos p.fs-4 {
+        font-size: 1.15rem;
+    }
+    
+    
+    .reseñas-alojamiento .d-flex {
+        justify-content: center;
+    }
+
+   
+    .galeria-viajeros img {
+        height: 350px; 
+    }
+    
 }
+
+
 
 @media (min-width: 768px) {
+    
+    h2.p-2 {
+        font-size: 2rem;
+    }
+
+    
+    .descuentos p.fs-4 {
+        font-size: 1.25rem;
+    }
+
    
-
-    .titulo-viajerox {
-        font-size: 3rem; 
+    .descuentos .card-img-top-wrapper img {
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    
+    .reseñas-alojamiento .d-flex {
+       
+        justify-content: flex-start;
+    }
+    
+    .reseñas-alojamiento .row.justify-content-evenly {
+        justify-content: center;
     }
 
-    .subtitulo-viajerox {
-        font-size: 1.25rem; 
+    
+    .reseñas .card {
+        max-width: 300px;
     }
-
-    .row.justify-content-center > .col-md-4 {
-      
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .card-suscripcion .btn {
+    
+    
+    .reseñas .card-body p.card-text {
         font-size: 0.95rem;
     }
-}
 
+    
+    .foro-viajero .row-cols-2 {
+        display: flex; 
+    }
+    
+    .foro-viajero .col-12.col-md-6 {
+       
+        height: 400px;
+    }
+    
+    .galeria-viajeros img {
+        
+        height: 300px; 
+    }
+}
 
 
 @media (min-width: 992px) {
-    .titulo-viajerox {
-        font-size: 4rem; 
-    }
-
-    .subtitulo-viajerox {
-        font-size: 1.5rem;
+    
+    .descuentos .container {
+        max-width: 1140px;
     }
 
    
-    .planes-viajerox .text-center.mb-5 {
-        max-width: 800px;
-        margin-left: auto;
-        margin-right: auto;
+    .descuentos .card-img-overlay {
+        padding: 1.5rem;
     }
- 
-  .planes-viajerox {
-    padding-bottom: 2rem;
-  }
-}
+    
+    .descuentos .card-title {
+        font-size: 1.75rem;
+    }
+    
+    .descuentos .card-text {
+        font-size: 1.1rem;
+    }
+    
+    
+    .reseñas h2 {
+        font-size: 2.5rem;
+    }
 
+    
+    .reseñas-alojamiento {
+        padding: 4rem 2rem;
+    }
+
+    
+    .reseñas .card {
+        max-width: 400px;
+    }
+    
+  
+    .galeria-viajeros img {
+        height: 500px; 
+    }
+}
 
 
 @media (min-width: 1200px) {
-   
-
-    .card-suscripcion .card-body p {
-  
-        min-height: 48px; 
-    }
-}
-
-
-.card-suscripcion.aventurero {
-    box-shadow: 0 0 20px rgba(0, 191, 255, 0.4);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-
-.card-suscripcion.aventurero:hover {
-    transform: scale(1.08);
-    box-shadow: 0 0 40px rgba(0, 191, 255, 0.6);
-    z-index: 5;
-}
-
-.boton-cards {
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
-}
-.boton-cards:hover {
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-}
-
-@media (max-width: 767.98px) {
     
-    .card-suscripcion {
-        margin-bottom: 20px; 
+    .descuentos .container {
+        max-width: 1320px;
+    }
+    
+    
+    .galeria-viajeros img {
+        height: 600px; 
     }
 }
