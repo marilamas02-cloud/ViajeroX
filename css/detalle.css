@@ -117,11 +117,11 @@ a:hover {
 .card-intro {
   border: none;
   border-radius: 15px;
-  background-color: var(--color-secondary-light, #ffffff); /* blanco */
+  background-color: var(--color-secondary-light); /* blanco */
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
-  color: var(--color-primary-dark, #001524);
+  color: var(--color-primary-dark);
   padding: 1.5rem;
   cursor: pointer; /* da sensación interactiva */
 }
@@ -134,7 +134,7 @@ a:hover {
 
 /* Títulos */
 .card-intro h5 {
-  color: var(--color-primary-medium, #15616d);
+  color: var(--color-primary-medium);
   font-weight: 700;
   text-shadow: none;
   margin-bottom: 0.75rem;
@@ -143,12 +143,12 @@ a:hover {
 
 /* Cambia color del título levemente al hover (sin moverse) */
 .card-intro:hover h5 {
-  color: #0d4c59; /* tono más oscuro */
+  color: var(--color-primary-medium); /* tono más oscuro */
 }
 
 /* Párrafos */
 .card-intro p {
-  color: var(--color-tertiary-contrast, #0b3d91);
+  color: var(--color-primary-dark);
   font-weight: 600;
   font-size: 0.95rem;
   margin-bottom: 0.5rem;
@@ -158,7 +158,7 @@ a:hover {
 
 /* Párrafos acompañan el hover sin sobresalir ni moverse */
 .card-intro:hover p {
-  color: #092b6f; /* leve oscurecimiento, sin movimiento */
+  color: var(--color-tertiary-contrast); /* leve oscurecimiento, sin movimiento */
 }
 
 /* Imagen dentro de la card */
@@ -217,7 +217,7 @@ a:hover {
 
 
 
-* === ITINERARIO (CÓMO LLEGAR) === */
+/* * === ITINERARIO (CÓMO LLEGAR) === */ 
 .icon-circle {
   width: 30px;
   height: 30px;
@@ -324,3 +324,20 @@ a:hover {
 .card-destino .card-titulod {
   color: var(--color-primary-dark);
 }
+
+/* MODAL */
+article.modal p {
+  font-size: var(--texto);
+  line-height: 1.6;
+  color: var(--color-secondary-light);
+}
+
+/* === TÍTULOS DE LOS MODALES === */
+.modal-article h5 {
+  font-weight: 800; /* más grueso */
+  font-size: var(--texto); /* un poco más grande */
+  color: var(--color-primary-medium);
+  letter-spacing: 0.5px; /* opcional: da más definición */
+  text-transform: uppercase; /* opcional: para resaltar aún más */
+}
+
