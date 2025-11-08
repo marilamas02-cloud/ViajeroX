@@ -47,11 +47,16 @@ h3 {
   letter-spacing: 2px;
 }
 
+h5 {font-size: var(--titulares);
+  letter-spacing: 2px;
+}
+
 
 p {
   font-size: var(--texto);
   color: var(--color-secondary-light);
   font-weight: 600;
+  letter-spacing: 2px;
 }
 
 /* === ENLACES === */
