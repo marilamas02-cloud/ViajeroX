@@ -855,11 +855,3 @@ h2 {
   transform: scale(1.1);
   box-shadow: #ff7d00 0 8px 20px;
 }
-.boton-creadores {
-  background-color: var(--color-primary-medium);
-}
-.boton-creadores:hover {
-  background-color: var(--color-tertiary-contrast);
-  transform: scale(1.2);
-  box-shadow: #ff7d00 0 2px 10px;
-}
