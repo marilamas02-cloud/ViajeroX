@@ -831,8 +831,8 @@ h2 {
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  align-items: center; 
-  justify-content: flex-end; 
+  align-items: center;
+  justify-content: flex-end;
   padding-right: 5%;
   color: var(--color-primary-dark);
 }
@@ -843,8 +843,7 @@ h2 {
   background-position: center;
 }
 .marca:hover {
-  transform: scale(2.0);
-
+  transform: scale(2);
 }
 .boton-colaboraciones {
   background-color: var(--color-primary-medium);
@@ -861,4 +860,11 @@ h2 {
   background-repeat: no-repeat;
   width: 100%;
   height: 80vh;
+}
+.card-text-millas {
+  text-align: left;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
