@@ -898,3 +898,9 @@ h2 {
   transform: scale(1.05);
   box-shadow: #15616d 0 5px 20px;
 }
+.img-colaboraciones {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background-position: top;
+}
