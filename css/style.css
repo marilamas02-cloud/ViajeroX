@@ -855,3 +855,10 @@ h2 {
   transform: scale(1.1);
   box-shadow: #ff7d00 0 8px 20px;
 }
+.hero-millas {
+  background-image: url(../assets/img/millasbanner.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80vh;
+}
