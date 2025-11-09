@@ -842,3 +842,15 @@ h2 {
   object-fit: cover;
   background-position: center;
 }
+.marca:hover {
+  transform: scale(2.0);
+
+}
+.boton-colaboraciones {
+  background-color: var(--color-primary-medium);
+  border-radius: 20vh;
+}
+.boton-colaboraciones:hover {
+  background-color: var(--color-tertiary-contrast);
+  transform: scale(1.05);
+}
