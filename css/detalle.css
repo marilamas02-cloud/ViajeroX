@@ -714,6 +714,33 @@ section h3 {
 }
 
 /* CONTACTO FORM */
+/* Formulario centrado y ancho mejorado */
+.form-wrapper {
+  max-width: 750px; /* Más ancho que antes */
+  width: 100%;
+  margin: 40px auto 0 auto; /* Separación superior desde el hr */
+  padding: 20px; /* Padding interior para mejor visual */
+  background-color: var(--color-secondary-light); /* Color de fondo suave */
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1); /* Sombra sutil */
+}
+
+
+/* Título */
+.contacto-titulo {
+  font-size: var(--titulares);
+  color: var(--color-secondary-light);
+  letter-spacing: 3px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 10px; /* Un poquito más cerca del hr */
+}
+
+/* Ajuste textarea más alto */
+.form-floating textarea.form-control {
+  min-height: 180px;
+}
+
 
 
 
@@ -721,8 +748,11 @@ section h3 {
 
 
 /* CONTACTO MAPA*/
-.contacto-titulo {
-  margin-bottom: 40px; /* Separación del título respecto al mapa */
+.contacto-identificador  {
+  margin-bottom: 40px; 
+  color: var(--color-secondary-accent); /* Color específico */
+  font-size: var(--titulares); /* Ajusta tamaño si querés */
+  font-weight: 700; /* Negrita */
 }
 
 .contacto-map-container {
