@@ -34,85 +34,59 @@
 <section class="contacto-section py-5">
   <div class="container">
     <h2 class="mb-4 text-center">Contáctanos</h2>
-        <!-- Formulario debajo del mapa -->
-        <form>
-          <!-- Nombre -->
-          <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="floatingName" placeholder="Tu nombre">
-            <label for="floatingName">Nombre</label>
-          </div>
 
-          <!-- Email -->
-          <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
-            <label for="floatingEmail">Email</label>
-          </div>
+    <!-- Formulario centrado con ancho reducido -->
+    <div class="form-wrapper mx-auto">
+      <form>
+        <!-- Nombre -->
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingName" placeholder="Tu nombre">
+          <label for="floatingName">Nombre</label>
+        </div>
 
-          <!-- Comentario -->
-          <div class="form-floating mb-3">
-            <textarea class="form-control" placeholder="Escribe tu mensaje aquí" id="floatingMessage" style="height: 150px"></textarea>
-            <label for="floatingMessage">Comentario</label>
-          </div>
+        <!-- Email -->
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+          <label for="floatingEmail">Email</label>
+        </div>
 
-          <!-- Botón Enviar -->
-          <div class="d-grid">
-            <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
-          </div>
-        </form>
+        <!-- Comentario -->
+        <div class="form-floating mb-3">
+          <textarea class="form-control" placeholder="Escribe tu mensaje aquí" id="floatingMessage" style="height: 150px"></textarea>
+          <label for="floatingMessage">Comentario</label>
+        </div>
 
-      </div>
+        <!-- Botón Enviar -->
+        <div class="d-grid">
+          <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+        </div>
+      </form>
     </div>
+
   </div>
 </section>
+
 
 <section class="contacto-section py-5" id="contacto-viajero-x">
-  <h3 class="mb-4 fw-bold text-center">Cómo llegar a ViajeroX</h3>
+  <!-- Título -->
+  <h3 class="fw-bold text-center contacto-titulo">Cómo llegar a ViajeroX</h3>
 
-  <div class="row justify-content-center align-items-start g-0 pt-3"><!-- Sin gutter -->
-    
-    <!-- ITINERARIO -->
-    <div class="col-md-5 col-lg-4 px-0"><!-- Sin padding horizontal -->
-      <div class="itinerario-list text-center">
-        <div class="itinerario-item mb-2">
-          <div class="icon-circle end-icon mb-1">
-            <i class="fa-solid fa-location-dot"></i>
-          </div>
-          <h4 class="fw-bold">Plaza Independencia</h4>
-          <p class="small text-muted">Punto de partida</p>
-        </div>
-
-        <div class="itinerario-item mb-2">
-          <div class="icon-circle travel-icon mb-1">
-            <i class="fa-solid fa-car-side"></i>
-          </div>
-          <h4 class="fw-bold">A pie</h4>
-          <p class="small text-muted">Tiempo demora: 15 min</p>
-        </div>
-
-        <div class="itinerario-item">
-          <div class="icon-circle start-icon mb-1">
-            <i class="fa-solid fa-flag-checkered"></i>
-          </div>
-          <h4 class="fw-bold">ViajeroX</h4>
-          <p class="small text-muted">Entrada principal</p>
-        </div>
-      </div>
+  <!-- Mapa -->
+  <div class="d-flex justify-content-center mb-4">
+    <div class="contacto-map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3363.123456789012!2d-65.210123456789!3d-26.824567890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225b1234567890%3A0xabcdef1234567890!2sRollingCode%20School%20-%20Gral.%20Jos%C3%A9%20Mar%C3%ADa%20Paz%20550%2C%20San%20Miguel%20de%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1700000000000!5m2!1ses!2sar"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </div>
-
-    <!-- MAPA -->
-    <div class="col-md-7 col-lg-7 px-0"><!-- Sin padding horizontal -->
-      <div class="contacto-map-container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3363.123456789012!2d-65.210123456789!3d-26.824567890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225b1234567890%3A0xabcdef1234567890!2sRollingCode%20School%20-%20Gral.%20Jos%C3%A9%20Mar%C3%ADa%20Paz%20576%2C%20San%20Miguel%20de%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1700000000000!5m2!1ses!2sar"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-    </div>
-
   </div>
+
+  <!-- Dirección -->
+  <p class="text-center fs-5 fw-semibold">Gral. José María Paz 576, T4000 San Miguel de Tucumán, Tucumán</p>
 </section>
+
 
 
 
