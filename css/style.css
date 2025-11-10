@@ -876,3 +876,6 @@ h2 {
   transform: scale(1.1);
   box-shadow: #ff7d00 0 8px 20px;
 }
+.misiones-cumplidas {
+  background-color: var(--color-primary-medium);
+}
