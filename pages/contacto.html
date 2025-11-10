@@ -26,7 +26,54 @@
   <body>
     <header></header>
    <main>
+<section class="contacto-section py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4 text-center">Contáctanos</h2>
+      <div class="row justify-content-center mb-5">
+        <div class="col-12 col-md-8 col-lg-6">
+          <form>
+            <!-- Nombre -->
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="floatingName" placeholder="Tu nombre">
+              <label for="floatingName">Nombre</label>
+            </div>
 
+            <!-- Email -->
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+              <label for="floatingEmail">Email</label>
+            </div>
+
+            <!-- Comentario -->
+            <div class="form-floating mb-3">
+              <textarea class="form-control" placeholder="Escribe tu mensaje aquí" id="floatingMessage" style="height: 120px"></textarea>
+              <label for="floatingMessage">Comentario</label>
+            </div>
+
+            <!-- Botón Enviar -->
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Mapa en un article -->
+      <article class="mapa mb-5">
+        <h3 class="text-center mb-3">Nuestra Ubicación</h3>
+        <div class="ratio ratio-16x9">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.01923584703!2d-122.41941508468157!3d37.774929779759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5cdd7c05%3A0x1234567890abcdef!2sViajero%20X!5e0!3m2!1ses!2sar!4v1700000000000!5m2!1ses!2sar" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </article>
+
+    </div>
+  </section>
 
 
    </main>
