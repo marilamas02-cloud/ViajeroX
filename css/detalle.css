@@ -346,3 +346,48 @@ article.modal p {
   text-transform: uppercase; /* opcional: para resaltar aún más */
 }
 
+/* TRANSPORTE */
+
+ /* CARD PRINCIPAL */
+    .cardMovil {
+      max-width: 900px;
+      margin: 3rem auto;
+      border-radius: 1.5rem;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      background-color: var(--color-secondary-light);
+      transition: transform 0.3s ease;
+    }
+
+    .cardMovil:hover {
+      transform: translateY(-5px);
+    }
+
+    .cardMovil img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+    }
+
+    .cardMovil-body {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .cardMovil-title {
+  font-weight: 900; /* súper negrita */
+  letter-spacing: 0.5px; /* opcional: separa un poco las letras */
+  color: var(--color-primary-dark);
+}
+
+    .cardMovil-text {
+      font-size: 1.1rem;
+      color: var(--color-tertiary-contrast);
+    }
+
+    .texto-sombra {
+  color: var(--color-primary-medium);
+  font-size: var(--texto);
+  letter-spacing: 1px; 
+  font-weight: 700; 
+}
