@@ -868,3 +868,11 @@ h2 {
   flex-direction: column;
   gap: 6px;
 }
+.boton-milla {
+  background-color: var(--color-primary-medium);
+}
+.boton-milla:hover {
+  background-color: var(--color-tertiary-contrast);
+  transform: scale(1.1);
+  box-shadow: #ff7d00 0 8px 20px;
+}
