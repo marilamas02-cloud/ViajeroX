@@ -879,3 +879,11 @@ h2 {
 .misiones-cumplidas {
   background-color: var(--color-primary-medium);
 }
+.boton-mision {
+   background-color: var(--color-primary-dark);
+}
+.boton-mision:hover {
+  background-color: var(--color-tertiary-contrast);
+  transform: scale(1.1);
+  box-shadow: #ff7d00 0 8px 20px;
+}
