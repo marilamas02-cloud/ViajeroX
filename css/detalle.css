@@ -546,3 +546,52 @@ article.modal p {
     font-size: 0.95rem;
   }
 }
+
+
+/* VIDEOS CARD */
+/* Título principal de la sección */
+section h3 {
+  color: var(--color-secondary-accent);        /* color del h3, por ejemplo azul */
+  font-size: var(--titulares);       /* tamaño del título */
+  font-weight: 700;      /* grosor */
+  margin-bottom: 1.5rem; /* espacio debajo */
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4); /* opcional: sombra */
+}
+
+/* Títulos de las cards */
+.cardOverlay h5 {
+  color: var(--color-secondary-light);        /* color del h5, por ejemplo amarillo */
+  font-size: var(--titulares);    /* tamaño */
+  font-weight: 600;      /* grosor */
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7); /* sombra más fuerte */
+}
+
+
+.cardPrincipal {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.hoverPrincipal img {
+  transition: transform 0.6s ease;
+}
+
+.hoverPrincipal:hover img {
+  transform: scale(1.05);
+}
+
+.cardOverlay {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+
+}
+
+
+
