@@ -423,3 +423,14 @@ article.modal p {
       margin-top: 2rem;
       margin-bottom: 1.5rem;
     }
+
+
+       /* RESEÑA */
+
+.reseñas .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.reseñas .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.1);
+}
