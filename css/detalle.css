@@ -440,3 +440,32 @@ article.modal p {
   height: 120px;
   object-fit: cover;
 }
+
+/* COMUNIDAD */
+
+/* PRINCIPAL */
+.card-comunidad {
+  background-color: var(--color-secondary-light);
+  border-radius: 1rem;        /* esquinas redondeadas */
+  max-width: 900px;           /* más ancho */
+  width: 100%;                /* responsiva */
+  margin: 0 auto;             /* centrada */
+  transition: all 0.3s ease;
+  overflow: hidden;           /* que la imagen respete el border-radius */
+}
+
+.card-img-comunidad {
+  object-fit: cover;
+  height: 250px;              /* altura que te gustó */
+  border-radius: 1rem 1rem 0 0;
+}
+
+/* H2 dentro de la card */
+.card-comunidad h2 {
+  color: var(--color-primary-dark);      
+  font-size: var(--titulares);              
+}
+
+.card-comunidad p {
+  color: var(--color-tertiary-contrast); 
+}
