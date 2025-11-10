@@ -595,3 +595,108 @@ section h3 {
 
 
 
+/* COMUNIDAD MANSORY */
+/* === MASONRY GRID === */
+.viajerox-masonry {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-auto-rows: 220px;
+  gap: 15px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* === ITEMS === */
+.viajerox-masonry-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.viajerox-masonry-item--tall {
+  grid-row: span 2;
+}
+
+.viajerox-masonry-item--wide {
+  grid-column: span 2;
+}
+
+/* === IMÁGENES === */
+.viajerox-masonry-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+/* === TEXTO SUPERPUESTO === */
+/* === TEXTO SUPERPUESTO === */
+.viajerox-masonry-item h4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 1rem;
+  font-size: var(--titulares); /* tamaño del h4 */
+  line-height: 1.3;
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+  color: var(--color-secondary-light); /* color deseado */
+  font-weight: 600; /* grosor */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* sombra opcional */
+}
+
+
+/* === EFECTO HOVER === */
+.viajerox-masonry-item:hover img {
+  transform: scale(1.08);
+  filter: brightness(0.8);
+}
+
+.viajerox-masonry-item:hover {
+  box-shadow: 0 8px 20px rgba(255, 125, 0, 0.4);
+}
+
+/* === RESPONSIVE === */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .viajerox-masonry {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+    gap: 10px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 576px) {
+  .viajerox-masonry {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .viajerox-masonry-item--wide,
+  .viajerox-masonry-item--tall {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .viajerox-masonry-item {
+    height: 300px;
+  }
+
+  .viajerox-masonry-item h4 {
+    font-size: 0.9rem;
+  }
+}
+
+
+
