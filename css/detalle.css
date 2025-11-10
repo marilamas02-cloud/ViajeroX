@@ -434,3 +434,12 @@ article.modal p {
   transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(255, 255, 255, 0.1);
 }
+
+
+/* ASISTENCIA VIAJERO */
+.banner-principal {
+  width: 100%;
+  height: 60vh; /* ajustá el alto que quieras */
+  object-fit: cover;
+  object-position: center;
+}
