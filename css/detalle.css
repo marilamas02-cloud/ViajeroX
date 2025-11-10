@@ -391,3 +391,35 @@ article.modal p {
   letter-spacing: 1px; 
   font-weight: 700; 
 }
+
+/* CARDS DE DESCUENTOS */
+    .cardTransporte {
+      background-color: var(--color-secondary-light);
+      border-radius: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .cardTransporte:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .cardTransporte-title {
+      font-weight: 600;
+      color: var(--color-primary-medium);
+    }
+
+    .cardTransporte-text {
+  color: var(--color-tertiary-contrast);
+  font-size: var(--titulares);
+ 
+}
+
+
+    /* TÍTULO GENERAL */
+    .titulo-transporte {
+      text-align: center;
+      font-weight: 700;
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+    }
