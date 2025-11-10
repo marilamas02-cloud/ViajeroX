@@ -469,3 +469,80 @@ article.modal p {
 .card-comunidad p {
   color: var(--color-tertiary-contrast); 
 }
+
+
+
+/* MUSICA */
+/* TIPOGRAFIA */
+/* Contenedor de texto de la sección Spotify */
+.spotify-text h4 {
+  color: var(--color-secondary-light);        /* color que quieras para el título */
+  font-size: var(--titulares);       /* tamaño del h4 */
+  font-weight: 700;      /* grosor */
+  margin-bottom: 1rem;   /* espacio debajo del título */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.spotify-text p {
+  color: var(--color-secondary-light);        /* color del párrafo */
+  font-size: var(--texto);     /* tamaño del párrafo */
+  line-height: 1.5;      /* altura de línea más cómoda */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+
+
+
+/* CARD MUSICA*/
+.spotify-section {
+  position: relative;
+  background: url("../assets/copacabanaPlayaGIF.gif") center/cover no-repeat;
+  color: var(--color-secondary-light);
+  border-top: 4px solid #fca311;
+  border-bottom: 4px solid #fca311;
+  overflow: hidden;
+}
+
+/* Capa oscura encima de la imagen para mejorar la lectura */
+.spotify-section {
+  position: relative;
+  background: url("../assets/img/musicaCopacabana.gif") center/cover no-repeat;
+  color: var(--color-secondary-light);
+  border-top: 4px solid #fca311;
+  border-bottom: 4px solid #fca311;
+  overflow: hidden;
+}
+
+.spotify-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 33, 61, 0.7);
+  z-index: 0;
+}
+
+.spotify-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.spotify-embed {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .spotify-embed {
+    max-width: 100%;
+  }
+  .spotify-section h4 {
+    font-size: 1.4rem;
+  }
+  .spotify-section p {
+    font-size: 0.95rem;
+  }
+}
