@@ -698,5 +698,18 @@ section h3 {
   }
 }
 
+/* VIAJEROS HABLANDO */
 
+/* Estilos solo para h5 y p de "viajeros hablando" */
+.viajeros-hablando .card-title {
+  color: var(--color-primary-medium);       /* color del h5 */
+  font-size: var(--titulares);   /* tamaño del h5 */
+  font-weight: 600;      /* grosor */
+}
+
+.viajeros-hablando .card-text {
+  color: var(--color-secondary-light);        /* color del p */
+  font-size: var(--texto);       /* tamaño del p */
+  line-height: 1.5;      /* altura de línea más cómoda */
+}
 
