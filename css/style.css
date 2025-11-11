@@ -1064,3 +1064,18 @@ h2 {
 .login-box {
   background-color: var(--color-primary-medium);
 }
+.boton-admin {
+  display: inline-block;
+  background-color: var(--color-primary-dark);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.boton-admin:hover {
+  background-color: var(--color-tertiary-contrast);
+  transform: scale(1.05);
+}
