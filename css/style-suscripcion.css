@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img-banner {
+    width: 100%;
+    height: 60vh;
+    max-height: 600px; 
+    object-fit: cover;
+}
+
+
+.img-maravillas {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+}
+.reseñas .img-fija {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.reseñas p {
+  max-width: 120px;
+  min-height: 60px; 
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+
+
+.planes-viajerox {
+  background: radial-gradient(circle at top, #061726, #020910 80%);
+  position: relative;
+  overflow: visible;
+  height: 100vh;
+}
+
+
+.titulo-viajerox span {
+  color: #ff7d00;
+}
+
+.titulo-viajerox {
+  text-shadow: 0 10px 40px rgba(255, 125, 0, 0.6);
+}
+
+
+.boton {
+  background: linear-gradient(90deg, #ff7d00, #ff7d00);
+  border-radius: 50px;
+  box-shadow: 0 0 30px rgba(255, 125, 0, 0.6);
+}
+.boton:hover {
+  transform: scale(1.08);
+}
+
+.card-suscripcion {
+  border: 0;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(255, 125, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+
+.card-suscripcion:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 40px rgba(255, 125, 0, 0.8);
+  z-index: 5;
+}
+
+
+.explorador {
+  background: linear-gradient(145deg, #001524, #001524);
+}
+
+.aventurero {
+  background: linear-gradient(145deg, #15616d, #15616d);
+  transform: translateY(-10px);
+}
+
+.nomada {
+  background: linear-gradient(145deg, #001524, #001524);
+}
+
+
+@media (min-width: 576px) {
+    
+    .planes-viajerox .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+   
+
+    .titulo-viajerox {
+        font-size: 3rem; 
+    }
+
+    .subtitulo-viajerox {
+        font-size: 1.25rem; 
+    }
+
+    .row.justify-content-center > .col-md-4 {
+      
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .card-suscripcion .btn {
+        font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+      
+      .card-suscripcion {
+          margin-bottom: 20px; 
+      }
+  }
+
+
+
+@media (min-width: 992px) {
+    .titulo-viajerox {
+        font-size: 4rem; 
+    }
+
+    .subtitulo-viajerox {
+        font-size: 1.5rem;
+    }
+
+   
+    .planes-viajerox .text-center.mb-5 {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+ 
+  .planes-viajerox {
+    padding-bottom: 2rem;
+  }
+}
+
+
+@media (min-width: 1200px) {
+   
+
+    .card-suscripcion .card-body p {
+  
+        min-height: 48px; 
+    }
+}
+
+
+.card-suscripcion.aventurero {
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.4);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+.card-suscripcion.aventurero:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 40px rgba(0, 191, 255, 0.6);
+    z-index: 5;
+}
+
+.boton-cards {
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.boton-cards:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
