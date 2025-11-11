@@ -1063,3 +1063,8 @@ h2 {
 .container-admin {
   background-color: var(--color-primary-medium);
 }
+.a-admin:hover {
+  background-color: var(--color-primary-medium);
+  border-radius: 15px;
+  padding: 10px;
+}
