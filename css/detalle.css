@@ -26,12 +26,6 @@
   --titulares: 24px;
 }
 
-/* === TIPOGRAFÍA GLOBAL === */
-body {
-  font-family: var(--fuente-principal);
-  font-size: var(--texto);
-  color: var(--color-secondary-light);
-}
 
 h2 {
   font-size: var(--titulares);
