@@ -1,7 +1,51 @@
+body{
+    background-image: url(../assets/img/loginfond.jpg);
+}
+
+
 .boton{
-    background-color: #78290F;
+    background-color:#15616D;
 }
 
 .boton:hover{
-    background-color: #933414;
+    background-color: #78290F;
+}
+
+.form-control{
+    background-color: transparent;
+}
+
+.text-center{
+    text-align: center;
+    color: black;
+}
+.login-container{
+   
+    border: 2px solid;
+    border-radius: 10px;
+    font-size: 18px;
+    box-shadow: 7px 13px 37px #000000;
+}
+
+
+.form-label{
+    color: #000000;
+}
+
+/* .conte{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px
+} */
+
+
+.conteinerLogin{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+    
 }
