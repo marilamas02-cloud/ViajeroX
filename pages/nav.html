@@ -74,90 +74,100 @@
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header bg-dark text-white">
-                    <h5 class="modal-title" id="currencyModalLabel"></h5> <button type="button"
-                        class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    <h5 class="modal-title" id="currencyModalLabel"></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
                 </div>
+
+                <!-- IDIOMA -->
                 <div class="modal-body">
                     <h5 class="mb-3 fw-bold">Idioma</h5>
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6">
-                                <ul class="list-unstyled">
-                                    <li><a href="#" class="text-decoration-none text-dark">English (United States)</a>
-                                    </li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Español (México)</a></li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Bahasa Indonesia</a></li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Bahasa Melayu</a></li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Čeština</a></li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Deutsch (Österreich)</a></li>
-                                    <li><a href="#" class="text-decoration-none text-dark">简体中文</a></li>
-                                    <li><a href="#" class="text-decoration-none text-dark">繁體中文（台灣）</a></li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Italiano</a></li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Magyar</a></li>
+                                <ul class="list-unstyled language-list">
+                                    <li><label><input type="radio" name="language"> English (United States)</label></li>
+                                    <li><label><input type="radio" name="language"> Español (México)</label></li>
+                                    <li><label><input type="radio" name="language"> Bahasa Indonesia</label></li>
+                                    <li><label><input type="radio" name="language"> Bahasa Melayu</label></li>
+                                    <li><label><input type="radio" name="language"> Čeština</label></li>
+                                    <li><label><input type="radio" name="language"> Deutsch (Österreich)</label></li>
+                                    <li><label><input type="radio" name="language"> 简体中文</label></li>
+                                    <li><label><input type="radio" name="language"> 繁體中文（台灣）</label></li>
+                                    <li><label><input type="radio" name="language"> Italiano</label></li>
+                                    <li><label><input type="radio" name="language"> Magyar</label></li>
                                 </ul>
                             </div>
+
                             <div class="col-md-6">
-                                <ul class="list-unstyled">
-                                    <li><a href="#" class="text-decoration-none text-dark">Polski</a></li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Română</a></li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Српски</a></li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Türkçe</a></li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Русский</a></li>
-                                    <li><a href="#" class="text-decoration-none text-dark">한국어</a></li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Français</a></li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Deutsch (Schweiz)</a></li>
+                                <ul class="list-unstyled language-list">
+                                    <li><label><input type="radio" name="language"> Polski</label></li>
+                                    <li><label><input type="radio" name="language"> Română</label></li>
+                                    <li><label><input type="radio" name="language"> Српски</label></li>
+                                    <li><label><input type="radio" name="language"> Türkçe</label></li>
+                                    <li><label><input type="radio" name="language"> Русский</label></li>
+                                    <li><label><input type="radio" name="language"> 한국어</label></li>
+                                    <li><label><input type="radio" name="language"> Français</label></li>
+                                    <li><label><input type="radio" name="language"> Deutsch (Schweiz)</label></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- DIVISA -->
                 <div class="modal-body">
                     <h5 class="mb-3 fw-bold">Divisa</h5>
                     <div class="container">
                         <div class="row">
                             <div class="col-md-4">
-                                <ul class="list-unstyled">
-                                    <li><a href="#" class="text-decoration-none text-dark">Dólar americano $</a> </li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Dólar australiano A$</a></li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Dólar canadiense C$</a></li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Euro €</a></li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Franco suizo CHF</a></li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Libra esterlina £</a></li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Baht tailandés ฿</a></li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Corona checa Kč</a></li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Corona danesa DKK</a></li>
+                                <ul class="list-unstyled currency-list">
+                                    <li><label><input type="radio" name="currency"> Dólar americano $</label></li>
+                                    <li><label><input type="radio" name="currency"> Dólar australiano A$</label></li>
+                                    <li><label><input type="radio" name="currency"> Dólar canadiense C$</label></li>
+                                    <li><label><input type="radio" name="currency"> Euro €</label></li>
+                                    <li><label><input type="radio" name="currency"> Franco suizo CHF</label></li>
+                                    <li><label><input type="radio" name="currency"> Libra esterlina £</label></li>
+                                    <li><label><input type="radio" name="currency"> Baht tailandés ฿</label></li>
+                                    <li><label><input type="radio" name="currency"> Corona checa Kč</label></li>
+                                    <li><label><input type="radio" name="currency"> Corona danesa DKK</label></li>
                                 </ul>
                             </div>
+
                             <div class="col-md-4">
-                                <ul class="list-unstyled">
-                                    <li><a href="#" class="text-decoration-none text-dark">Dírham EAU د.إ</a></li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Dírham marroquí د.م.‏</a>
+                                <ul class="list-unstyled currency-list">
+                                    <li><label><input type="radio" name="currency"> Dírham EAU د.إ</label></li>
+                                    <li><label><input type="radio" name="currency"> Dírham marroquí د.م.‏</label></li>
+                                    <li><label><input type="radio" name="currency"> Dólar de Hong Kong HK$</label></li>
+                                    <li><label><input type="radio" name="currency"> Dólar de Nueva Zelanda NZ$</label>
                                     </li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Dólar de Hong Kong HK$</a>
-                                    </li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Dólar de Nueva Zelanda
-                                            NZ$</a> </li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Dólar de Singapur S$</a></li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Dólar vietnamita ₫</a></li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Forinto húngaro Ft</a></li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Franco suizo CHF</a></li>
+                                    <li><label><input type="radio" name="currency"> Dólar de Singapur S$</label></li>
+                                    <li><label><input type="radio" name="currency"> Dólar vietnamita ₫</label></li>
+                                    <li><label><input type="radio" name="currency"> Forinto húngaro Ft</label></li>
+                                    <li><label><input type="radio" name="currency"> Franco suizo CHF</label></li>
+                                </ul>
                             </div>
+
                             <div class="col-md-4">
-                                <ul class="list-unstyled">
-                                    <li><a href="#" class="text-decoration-none text-dark">Peso argentino $</a></li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Peso dominicano RD$</a></li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Bolívar venezolano Bs.</a>
-                                    </li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Real brasileño R$</a> </li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Sol peruano S/</a></li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Yen japonés ¥</a></li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Yuan chino ¥</a></li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Won surcoreano ₩</a></li>
-                                    <li><a href="#" class="text-decoration-none text-dark">Rupia india ₹</a></li>
+                                <ul class="list-unstyled currency-list">
+                                    <li><label><input type="radio" name="currency"> Peso argentino $</label></li>
+                                    <li><label><input type="radio" name="currency"> Peso dominicano RD$</label></li>
+                                    <li><label><input type="radio" name="currency"> Bolívar venezolano Bs.</label></li>
+                                    <li><label><input type="radio" name="currency"> Real brasileño R$</label></li>
+                                    <li><label><input type="radio" name="currency"> Sol peruano S/</label></li>
+                                    <li><label><input type="radio" name="currency"> Yen japonés ¥</label></li>
+                                    <li><label><input type="radio" name="currency"> Yuan chino ¥</label></li>
+                                    <li><label><input type="radio" name="currency"> Won surcoreano ₩</label></li>
+                                    <li><label><input type="radio" name="currency"> Rupia india ₹</label></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </header>
 <main></main>
 <footer></footer>

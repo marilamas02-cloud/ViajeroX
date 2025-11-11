@@ -277,4 +277,39 @@ body {
   transform: scale(1.6);
   color: #ff7d00
 }
+.language-list label,
+.currency-list label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 5px 0;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.language-list label:hover,
+.currency-list label:hover {
+  color: #ff9800;
+}
+.language-list input,
+.currency-list input {
+  display: none;
+}
+.language-list input:checked + span,
+.currency-list input:checked + span {
+  color: #ff9800;
+  border-bottom: 2px solid #ff9800;
+  font-weight: 600;
+}
+.language-list label:has(input:checked)::after,
+.currency-list label:has(input:checked)::after {
+  content: "✔️";
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+
 
