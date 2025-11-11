@@ -1068,3 +1068,28 @@ h2 {
   border-radius: 15px;
   padding: 10px;
 }
+.barra-lateral {
+      width: 250px;
+      background-color: var(--color-primary-medium);
+      position: fixed;
+      height: 100%;
+      padding-top: 1rem;
+      
+      
+    }
+    .barra-lateral a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+      margin: 5px 10px;
+      
+      
+    }
+    .barra-lateral a:hover {
+      background-color: var(--color-primary-dark);
+      color: white;
+      transform: scale(1.08);
+    }
