@@ -19,6 +19,10 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -26,8 +30,8 @@
   <body>
     <header></header>
     <main>
-      <section class="tarjetas-estadisticas py-5">
-        <div class="container text-center">
+      <section class="tarjetas-estadisticas">
+        <div class="container text-center p-5">
           <div class="row">
             <div class="col">
               <div class="card" style="width: 18rem">
@@ -56,31 +60,62 @@
           </div>
         </div>
       </section>
-      <section class="tabla d-flex justify-content-center">
-        <div class="card w-75 mb-3">
-          <div class="card-body">
-            <h5 class="card-title text-center">Próximos streamings</h5>
-            <table>
-              <thead>
-                <th>#</th>
-                <th>Destino</th>
-                <th>Fecha</th>
-                <th>Duración</th>
-                <th>Acciones</th>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Bali, Indonesia</td>
-                  <td>15/11/2025</td>
-                  <td>2h 30min</td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-            <a href="#" class="btn btn-primary">Button</a>
-          </div>
-        </div>
+      <section class="tabla p-5">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Destino</th>
+              <th scope="col">Fecha</th>
+              <th scope="col">Duración</th>
+              <th scope="col">Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Roma, Italia</td>
+              <td>20/11/2025</td>
+              <td>2h 30min</td>
+              <td>
+                <button class="btn btn-sm btn-outline-light">
+                  <i class="bi bi-pencil"></i>
+                </button>
+                <button class="btn btn-sm btn-outline-danger">
+                  <i class="bi bi-trash"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Rio de Janeiro, Brasil</td>
+              <td>21/11/2025</td>
+              <td>1h 45min</td>
+              <td>
+                <button class="btn btn-sm btn-outline-light">
+                  <i class="bi bi-pencil"></i>
+                </button>
+                <button class="btn btn-sm btn-outline-danger">
+                  <i class="bi bi-trash"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Machu Picchu, Perú</td>
+              <td>22/11/2025</td>
+              <td>1h 20min</td>
+              <td>
+                <button class="btn btn-sm btn-outline-light">
+                  <i class="bi bi-pencil"></i>
+                </button>
+                <button class="btn btn-sm btn-outline-danger">
+                  <i class="bi bi-trash"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </main>
     <footer></footer>
