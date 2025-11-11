@@ -116,7 +116,14 @@
     .card-suscripcion .btn {
         font-size: 0.95rem;
     }
-}
+  }
+  
+  @media (max-width: 767.98px) {
+      
+      .card-suscripcion {
+          margin-bottom: 20px; 
+      }
+  }
 
 
 
@@ -140,7 +147,6 @@
     padding-bottom: 2rem;
   }
 }
-
 
 
 @media (min-width: 1200px) {
@@ -171,11 +177,4 @@
 .boton-cards:hover {
   transform: translateY(-3px) scale(1.02);
   box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-}
-
-@media (max-width: 767.98px) {
-    
-    .card-suscripcion {
-        margin-bottom: 20px; 
-    }
 }
