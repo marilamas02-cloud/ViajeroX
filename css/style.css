@@ -571,7 +571,6 @@ h2 {
   background: radial-gradient(circle at top, #061726, #020910 80%);
   position: relative;
   overflow: visible;
-  
 }
 
 .titulo-viajerox span {
@@ -929,7 +928,6 @@ h2 {
   }
 }
 
-
 @media (min-width: 992px) {
   .hero-colaboraciones {
     height: 80vh;
@@ -975,7 +973,7 @@ h2 {
   background-color: var(--color-primary-medium);
 }
 .boton-mision {
-   background-color: var(--color-primary-dark);
+  background-color: var(--color-primary-dark);
 }
 .boton-mision:hover {
   background-color: var(--color-tertiary-contrast);
@@ -984,9 +982,7 @@ h2 {
 }
 
 @media (max-width: 576px) {
-  
   .misiones-cumplidas .card {
-    
     max-width: 100%;
     margin-bottom: 1.5rem;
   }
@@ -1010,10 +1006,8 @@ h2 {
     font-size: 0.95rem;
     padding: 10px;
     border-radius: 10px;
-    
   }
 }
-
 
 @media (min-width: 768px) and (max-width: 991px) {
   .misiones .col-4,
@@ -1040,7 +1034,6 @@ h2 {
     padding: 10px 18px;
   }
 }
-
 
 @media (min-width: 992px) {
   .misiones .col-4,
@@ -1069,27 +1062,28 @@ h2 {
   padding: 10px;
 }
 .barra-lateral {
-      width: 250px;
-      background-color: var(--color-primary-medium);
-      position: fixed;
-      height: 100%;
-      padding-top: 1rem;
-      
-      
-    }
-    .barra-lateral a {
-      color: white;
-      text-decoration: none;
-      padding: 10px 20px;
-      display: flex;
-      align-items: center;
-      border-radius: 10px;
-      margin: 5px 10px;
-      
-      
-    }
-    .barra-lateral a:hover {
-      background-color: var(--color-primary-dark);
-      color: white;
-      transform: scale(1.08);
-    }
+  width: 250px;
+  background-color: var(--color-primary-medium);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding-top: 1rem;
+}
+.barra-lateral a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin: 5px 10px;
+}
+.barra-lateral a:hover {
+  background-color: var(--color-primary-dark);
+  color: white;
+  transform: scale(1.08);
+}
+main {
+  margin-left: 220px;
+}
