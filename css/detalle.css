@@ -26,12 +26,6 @@
   --titulares: 24px;
 }
 
-/* === TIPOGRAFÍA GLOBAL === */
-body {
-  font-family: var(--fuente-principal);
-  font-size: var(--texto);
-  color: var(--color-secondary-light);
-}
 
 h2 {
   font-size: var(--titulares);
@@ -47,11 +41,16 @@ h3 {
   letter-spacing: 2px;
 }
 
+h5 {font-size: var(--titulares);
+  letter-spacing: 2px;
+}
+
 
 p {
   font-size: var(--texto);
   color: var(--color-secondary-light);
   font-weight: 600;
+  letter-spacing: 2px;
 }
 
 /* === ENLACES === */
@@ -341,3 +340,100 @@ article.modal p {
   text-transform: uppercase; /* opcional: para resaltar aún más */
 }
 
+/* TRANSPORTE */
+
+ /* CARD PRINCIPAL */
+    .cardMovil {
+      max-width: 900px;
+      margin: 3rem auto;
+      border-radius: 1.5rem;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      background-color: var(--color-secondary-light);
+      transition: transform 0.3s ease;
+    }
+
+    .cardMovil:hover {
+      transform: translateY(-5px);
+    }
+
+    .cardMovil img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+    }
+
+    .cardMovil-body {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .cardMovil-title {
+  font-weight: 900; /* súper negrita */
+  letter-spacing: 0.5px; /* opcional: separa un poco las letras */
+  color: var(--color-primary-dark);
+}
+
+    .cardMovil-text {
+      font-size: 1.1rem;
+      color: var(--color-tertiary-contrast);
+    }
+
+    .texto-sombra {
+  color: var(--color-primary-medium);
+  font-size: var(--texto);
+  letter-spacing: 1px; 
+  font-weight: 700; 
+}
+
+/* CARDS DE DESCUENTOS */
+    .cardTransporte {
+      background-color: var(--color-secondary-light);
+      border-radius: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .cardTransporte:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .cardTransporte-title {
+      font-weight: 600;
+      color: var(--color-primary-medium);
+    }
+
+    .cardTransporte-text {
+  color: var(--color-tertiary-contrast);
+  font-size: var(--titulares);
+ 
+}
+
+
+    /* TÍTULO GENERAL */
+    .titulo-transporte {
+      text-align: center;
+      font-weight: 700;
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+
+       /* RESEÑA */
+
+.reseñas .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.reseñas .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.1);
+}
+
+
+/* ASISTENCIA VIAJERO */
+.banner-principal {
+  width: 100%;
+  height: 60vh; /* ajustá el alto que quieras */
+  object-fit: cover;
+  object-position: center;
+}
