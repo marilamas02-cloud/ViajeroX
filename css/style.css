@@ -1087,3 +1087,22 @@ h2 {
 main {
   margin-left: 220px;
 }
+.card-admin {
+  background-color: var(--color-primary-medium);
+  
+}
+.card-admin:hover {
+  transform: scale(1.08);
+  box-shadow: #15616d 0 7px 15px;
+}
+.boton-adminpanel {
+  background-color: var(--color-primary-dark);
+  border: 0;
+  border-radius: 30px;
+  padding: 5px;
+}
+.boton-adminpanel:hover {
+  background-color: #78290f;
+  transform: scale(1.05);
+  box-shadow: #ff7d00 0 7px 15px;
+}
