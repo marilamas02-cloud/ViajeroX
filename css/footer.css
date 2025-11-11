@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-body {
+.body {
   font-family: "Montserrat", sans-serif;
 }
 footer {
@@ -16,43 +16,53 @@ footer {
     padding-bottom: 30px;
   }
 
-  .footer-col {
+  .footer-columnas {
     flex: 1;
     min-width: 180px;
   }
 
-  .footer-col h4 {
+  .footer-columnas h4 {
     font-size: 16px;
     margin-bottom: 15px;
     color: rgb(0, 0, 0);
   }
 
-  .footer-col ul {
+  .footer-columnas ul {
     list-style: none;
     padding: 0;
     margin: 0;
   }
 
-  .footer-col ul li {
+  .footer-columnas ul li {
     margin-bottom: 10px;
   }
 
-  .footer-col ul li a {
-    text-decoration: none;
-    color: #000000;
-    font-size: 14px;
-  }
+.footer-columnas ul li a {
+  display: inline-block;         
+  text-decoration: underline;
+  text-decoration-color: inherit;    
+  color: #000000;
+  font-size: 13px;
+  font-weight: 500;
+  transform-origin: center;          
+  transition: color 0.6s ease,       
+              transform 0.6s ease,
+              text-decoration-color 0.6s ease;
+}
 
-  .footer-col ul li a:hover {
-    color: #000000;
-  }
+.footer-columnas ul li a:hover {
+  color: #ff9800;
+  transform: scale(1.08);            
+  text-decoration-color: #ff9800;
+}
+
+ 
 
   .selector {
     display: flex;
     flex-direction: column;
     gap: 15px;
   }
-
   select {
     padding: 10px;
     border: none;
@@ -61,16 +71,17 @@ footer {
     color: rgb(0, 0, 0);
     font-size: 14px;
   }
-
   .store-buttons img {
     width: 50px;
     height: auto;
     display: block;
     margin-bottom: 10px;
+    cursor: pointer;
   }
-
-
-
+ .store-buttons img:hover {
+    transform: scale(1.65);
+    transition: all 0.9s ease;
+}
   .footer-bottom {
     text-align: center;
     font-size: 13px;
@@ -97,9 +108,14 @@ footer {
   }
 
   .socials img:hover {
-    opacity: 1;
+    transform: scale(1.65);
+    transition: all 0.9s ease;
   }
 a {
     text-decoration: none;
 }
+
+
+
+
 
