@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Streaming de viajes" />
+    <meta
+      name="keywords"
+      content="Streaming, viajes, 7Maravillas, paisajes, turismo"
+    />
+    <meta
+      name="author"
+      content="Marisol Lamas, Ornella Ricobelli, Facundo Camano, Octavio Fernandez Caram"
+    />
+    <title>Streaming de viajes</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/5cc9154e02.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../../css/detalle.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header></header>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+    <section class="container-fluid py-5 min-vh-100 d-flex flex-column justify-content-center"> 
+      <div class="row g-4">
+        <!-- COLUMNA PRINCIPAL -->
+        <div class="col-lg-8 mx-auto">
+
+<!-- Intro Chichén Itzá -->
+          <section class="cristo-section my-5 text-center">
+            <!-- TÍTULO -->
+            <h2 class="mb-4 fw-bold">Chichén Itzá</h2>
+            <hr />
+          </section>
+
+<!-- INTRO CARD Y DESCRIPCIÒN -->
+          <div class="container">
+            <div class="row justify-content-center g-4">
+              <!-- Card 1: Imagen -->
+              <div class="col-12 col-md-8 col-lg-6">
+                <div class="card-intro shadow-sm">
+                  <img
+                    class="card-img-top rounded"
+                    src="../../assets/img/Chichen_Itza_CB.jpg"
+                    alt="Chichén Itzá"
+                    style="max-width: 100%; height: auto"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Ubicación</h5>
+                    <p class="card-text mb-1"><strong>Ciudad:</strong> Yucatán</p>
+                    <p class="card-text mb-0"><strong>País:</strong> Mexico</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2: Descripción de Cristo Redentor -->
+              <div class="col-12 col-md-8 col-lg-6">
+                <div class="card-intro shadow-sm h-100">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Descripción</h5>
+                    <p class="card-text">
+                     Es uno de los sitios arqueológicos más emblemáticos del mundo y un símbolo icónico de la civilización maya. Ubicado en el estado de Yucatán, México, fue construido entre los siglos VI y X, alcanzando su apogeo en el período Clásico Terminal. Sus majestuosas pirámides, templos y observatorios reflejan el avanzado conocimiento astronómico y arquitectónico de los mayas. Visitarlo es una experiencia única, recorriendo estructuras históricas como la Pirámide de Kukulkán, el Templo de los Guerreros y el Observatorio, y descubriendo la riqueza cultural de esta antigua ciudad.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+ <!-- SECCIÓN DE CARDS ACTIVIDAD TURÍSTICA-->
+          <section class="container my-5">
+            <h3 class="text-center mt-4 mb-5 fw-bold">
+              Actividades Turísticas
+            </h3>
+  <div class="row g-4 d-flex align-items-stretch">
+              <!-- Card 1 -->
+              <div class="col-sm-6 col-lg-4 d-flex">
+                <div class="card shadow-sm border-0 flex-fill">
+                  <img
+                    src="../../assets/img/rivieraMaya01.jpeg"
+                    class="card-img-top"
+                    alt="riviera maya"
+                  />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-start">Riviera Maya</h5>
+                    <p class="card-text text-start mb-3">
+                      Disfrutar de playas paradisíacas, parques eco-arqueológicos como Xcaret o Xel-Há, y visitas a sitios arqueológicos como Tulum o Cobá.
+                    </p>
+                    <button
+                      class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalMaya"
+                    >
+                      Ver más
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="col-sm-6 col-lg-4 d-flex">
+                <div class="card shadow-sm border-0 flex-fill">
+                  <img
+                    src="../../assets/img/cancun01.webp"
+                    class="card-img-top"
+                    alt="cancun"
+                  />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-start">Cancún</h5>
+                    <p class="card-text text-start mb-3">
+                     Relajarse en playas, practicar deportes acuáticos, hacer excursiones a Isla Mujeres o tours de aventura acuática.
+                    </p>
+                    <button
+                      class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalCancun"
+                    >
+                      Ver más
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="col-sm-6 col-lg-4 d-flex">
+                <div class="card shadow-sm border-0 flex-fill">
+                  <img
+                    src="../../assets/img/chichen01.jpg"
+                    class="card-img-top"
+                    alt="Chichén Itzá"
+                  />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-start">Chichén Itzá</h5>
+                    <p class="card-text text-start mb-3">
+                      Recorrer la emblemática pirámide de Kukulkán, el Templo de los Guerreros y el Observatorio, aprendiendo sobre la cultura y astronomía maya.
+                    </p>
+                    <button
+                      class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalChichen"
+                    >
+                      Ver más
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="col-sm-6 col-lg-4 d-flex">
+                <div class="card shadow-sm border-0 flex-fill">
+                  <img src="../../assets/img/cenotes01.jpg" alt="cenotes" />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-start">Cenotes</h5>
+                    <p class="card-text text-start mb-3">
+                      Nadar, bucear o hacer snorkel en cenotes como Ik Kil, Suytun, o en ríos subterráneos como Río Secreto.
+                    </p>
+                    <button
+                      class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalCenotes"
+                    >
+                      Ver más
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 5 -->
+              <div class="col-sm-6 col-lg-4 d-flex">
+                <div class="card shadow-sm border-0 flex-fill">
+                  <img
+                    src="../../assets/img/valladolid01.jpg"
+                    class="card-img-top"
+                    alt="valladolid"
+                  />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-start">Valladolid</h5>
+                    <p class="card-text text-start mb-3">
+                    Pasear por el centro colonial, visitar mercados locales, iglesias y cenotes cercanos como Zací o Suytun.
+                    </p>
+                    <button
+                      class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalValla"
+                    >
+                      Ver más
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 6 -->
+              <div class="col-sm-6 col-lg-4 d-flex">
+                <div class="card shadow-sm border-0 flex-fill">
+                  <img
+                    src="../../assets/img/celes01.jpeg"
+                    class="card-img-top"
+                    alt="biosfera Celestún"
+                  />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-start">Biosfera Celestún</h5>
+                    <p class="card-text text-start mb-3">
+                      Avistamiento de flamencos, aves y fauna local en manglares, además de disfrutar de playas vírgenes y tours en lancha.
+                    </p>
+                    <button
+                      class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalCeles"
+                    >
+                      Ver más
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+<!-- BLOQUE MAPA + ITINERARIO -->
+<section class="itinerario-section mt-5 pt-5" id="mapa-chichen-itza">
+  <h3 class="mb-4 fw-bold text-center">
+    Cómo llegar a Chichén Itzá
+  </h3>
+
+  <div class="row justify-content-center align-items-start g-4 pt-3">
+    <!-- ITINERARIO -->
+    <div class="col-md-5 col-lg-4">
+      <div class="itinerario-list text-center">
+        <!-- Punto de partida -->
+        <div class="itinerario-item mb-4">
+          <div class="icon-circle end-icon mb-2">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <h4 class="fw-bold">Cancún</h4>
+          <p class="small text-muted">Punto de partida</p>
+        </div>
+
+        <!-- Medio de transporte 1 -->
+        <div class="itinerario-item mb-4">
+          <div class="icon-circle travel-icon mb-2">
+            <i class="fa-solid fa-car-side"></i>
+          </div>
+          <h4 class="fw-bold">Auto / Bus </h4>
+          <p class="small text-muted">Auto: 2 hs</p>
+          <p class="small text-muted">Bus: 3 hs</p>
+        </div>
+
+        <!-- Llegada -->
+        <div class="itinerario-item">
+          <div class="icon-circle start-icon mb-2">
+            <i class="fa-solid fa-flag-checkered"></i>
+          </div>
+          <h4 class="fw-bold">Chichén Itzá</h4>
+          <p class="small text-muted">Entrada principal</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAPA -->
+    <div class="col-md-7 col-lg-7">
+      <div class="map-container shadow-sm rounded overflow-hidden">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777.188689673221!2d-88.56862118458948!3d20.682938386371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f567e9f8c2b26d3%3A0x34ad2c1f1c08f92a!2sChich%C3%A9n%20Itz%C3%A1!5e0!3m2!1ses!2smx!4v1731012345000!5m2!1ses!2smx"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- PREGUNTAS Y RESPUESTAS CHICHÉN ITZÁ -->
+<section class="py-5 mt-5 pt-5" aria-labelledby="faq-title">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8">
+        <h3 id="faq-title" class="text-center mb-5 fw-bold">
+          Todo lo que debes saber antes de visitar</h3>
+
+        <div class="accordion" id="faqAccordionDetalle">
+          <!-- Artículo 1 -->
+          <article class="accordion-item bg-secondary border-0 mb-3">
+            <h3 class="accordion-header" id="headingOneD">
+              <button
+                class="accordion-button collapsed bg-secondary fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOneD"
+                aria-expanded="false"
+                aria-controls="collapseOneD"
+              >
+                ¿Cuál es el horario de visita de Chichén Itzá?
+              </button>
+            </h3>
+            <div
+              id="collapseOneD"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingOneD"
+              data-bs-parent="#faqAccordionDetalle"
+            >
+              <div class="accordion-body bg-dark">
+                <p>
+                  Chichén Itzá abre todos los días de 8:00 a 17:00 horas. La última entrada es una hora antes del cierre. 
+                  Se recomienda llegar temprano para evitar las multitudes y el calor.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Artículo 2 -->
+          <article class="accordion-item bg-secondary border-0 mb-3">
+            <h3 class="accordion-header" id="headingTwoD">
+              <button
+                class="accordion-button collapsed bg-secondary fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwoD"
+                aria-expanded="false"
+                aria-controls="collapseTwoD"
+              >
+                ¿Cómo se llega a Chichén Itzá?
+              </button>
+            </h3>
+            <div
+              id="collapseTwoD"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwoD"
+              data-bs-parent="#faqAccordionDetalle"
+            >
+              <div class="accordion-body bg-dark">
+                <p>
+                  Chichén Itzá se encuentra en el estado de Yucatán. Se puede llegar en auto desde Cancún (~2.5–3 horas) o Mérida (~2 horas), 
+                  o en bus desde Cancún, Playa del Carmen o Mérida con la empresa ADO.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Artículo 3 -->
+          <article class="accordion-item bg-secondary border-0 mb-3">
+            <h3 class="accordion-header" id="headingThreeD">
+              <button
+                class="accordion-button collapsed bg-secondary fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThreeD"
+                aria-expanded="false"
+                aria-controls="collapseThreeD"
+              >
+                ¿Cuánto cuesta la entrada a Chichén Itzá?
+              </button>
+            </h3>
+            <div
+              id="collapseThreeD"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThreeD"
+              data-bs-parent="#faqAccordionDetalle"
+            >
+              <div class="accordion-body bg-dark">
+                <p>
+                  La entrada general es de aproximadamente <strong>533 MXN</strong> (alrededor de 25 USD) para adultos. 
+                  Hay descuentos para estudiantes y menores de edad, y entrada gratuita para niños menores de 4 años.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Artículo 4 -->
+          <article class="accordion-item bg-secondary border-0 mb-3">
+            <h3 class="accordion-header" id="headingFourD">
+              <button
+                class="accordion-button collapsed bg-secondary fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFourD"
+                aria-expanded="false"
+                aria-controls="collapseFourD"
+              >
+                ¿Qué debo llevar para visitar Chichén Itzá?
+              </button>
+            </h3>
+            <div
+              id="collapseFourD"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFourD"
+              data-bs-parent="#faqAccordionDetalle"
+            >
+              <div class="accordion-body bg-dark">
+                <p>
+                  Lleva ropa ligera y cómoda, sombrero o gorra, protector solar, agua y cámara. 
+                  Evita mochilas grandes, ya que no se permite el acceso con ellas dentro del sitio arqueológico.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Artículo 5 -->
+          <article class="accordion-item bg-secondary border-0 mb-3">
+            <h3 class="accordion-header" id="headingFiveD">
+              <button
+                class="accordion-button collapsed bg-secondary fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFiveD"
+                aria-expanded="false"
+                aria-controls="collapseFiveD"
+              >
+                ¿Cuál es la mejor época para visitar Chichén Itzá?
+              </button>
+            </h3>
+            <div
+              id="collapseFiveD"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFiveD"
+              data-bs-parent="#faqAccordionDetalle"
+            >
+              <div class="accordion-body bg-dark">
+                <p>
+                  La mejor época es de noviembre a abril, cuando las temperaturas son más agradables y hay menos lluvias. 
+                  Evita la temporada de verano y Semana Santa si buscas menos aglomeraciones.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Artículo 6 -->
+          <article class="accordion-item bg-secondary border-0 mb-3">
+            <h3 class="accordion-header" id="headingSixD">
+              <button
+                class="accordion-button collapsed bg-secondary fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSixD"
+                aria-expanded="false"
+                aria-controls="collapseSixD"
+              >
+                ¿Hay visitas guiadas o tours en grupo?
+              </button>
+            </h3>
+            <div
+              id="collapseSixD"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingSixD"
+              data-bs-parent="#faqAccordionDetalle"
+            >
+              <div class="accordion-body bg-dark">
+                <p>
+                  Sí, hay <strong>visitas guiadas en español, inglés y otros idiomas</strong> que incluyen explicaciones sobre la pirámide de Kukulkán, 
+                  el Templo de los Guerreros y el Observatorio. También hay tours combinados con cenotes cercanos y Valladolid. 
+                  Se recomienda reservar con anticipación.
+                </p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN DE RESEÑAS -->
+          <section class="container py-5">
+            <h3 class="text-center mb-5 fw-bold">
+              Reseñas de Nuestros Viajeros
+            </h3>
+
+            <div class="row g-4 justify-content-center">
+              <!-- Reseña 1 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card reseña-card h-100 shadow-sm">
+                  <img
+                    src="../../assets/img/reseñaChichen01.jpg"
+                    class="card-img-top"
+                    alt="familia chichen itza"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-primary fw-bold">
+                      Diego Martinez
+                    </h5>
+                    <p class="card-text text-muted">
+                      "Muy buena la comunidad viajera, me gusta la asesoría
+                      personalizada para los viajes"
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent border-0 text-end">
+                    <div class="rating text-warning">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Reseña 2 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card reseña-card h-100 shadow-sm">
+                  <img
+                    src="../../assets/img/reseñaChichen02.jpg"
+                    class="card-img-top"
+                    alt="pareja chichen itza"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-primary fw-bold">
+                      Lorenzo Reynoso
+                    </h5>
+                    <p class="card-text text-muted">
+                      “Súper recomendado, fue una experiencia increíble y el
+                      viaje superó todas mis expectativas.”
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent border-0 text-end">
+                    <div class="rating text-warning">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Reseña 3 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card reseña-card h-100 shadow-sm">
+                  <img
+                    src="../../assets/img/reseñaChichen03.webp"
+                    alt="pareja chichen itza"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-primary fw-bold">Nicolas Lazarte</h5>
+                    <p class="card-text text-muted">
+                      “Gracias a la comunidad viajera pude resolver todas mis
+                      dudas con la asesoría y disfrutar por completo del viaje.”
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent border-0 text-end">
+                    <div class="rating text-warning">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+ <!-- DESTINOS SUGERIDOS -->
+          <section class="container my-5">
+            <h3 class="text-center mb-4 fw-bold">Destinos Sugeridos</h3>
+
+            <div class="row justify-content-center g-4">
+              <!-- Card 1 -->
+              <div class="col-md-6 col-lg-3">
+                <div class="card card-destino h-100 text-center">
+                  <img
+                    src="../../assets/img/cr.jpg"
+                    class="card-img-top img-carddestino"
+                    alt="coliseo romano"
+                  />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-titulod">Coliseo</h5>
+                    <a
+                      href="#"
+                      class="btn btn-detalle btn-sm w-50 mt-auto ms-auto"
+                      >Ver más</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="col-md-6 col-lg-3">
+                <div class="card card-destino h-100 text-center">
+                  <img
+                    src="../../assets/img/machuIntro.jpg"
+                    class="card-img-top img-carddestino"
+                    alt="Coliseo Romano"
+                  />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-titulod">Machu Picchu</h5>
+                    <a
+                      href="#"
+                      class="btn btn-detalle btn-sm w-50 mt-auto ms-auto"
+                      >Ver más</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="col-md-6 col-lg-3">
+                <div class="card card-destino h-100 text-center">
+                  <img
+                    src="../../assets/img/Petra-jordania.jpg"
+                    class="card-img-top img-carddestino"
+                    alt="Petra"
+                  />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-titulod">Petra</h5>
+                    <a
+                      href="#"
+                      class="btn btn-detalle btn-sm w-50 mt-auto ms-auto"
+                      >Ver más</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="col-md-6 col-lg-3">
+                <div class="card card-destino h-100 text-center">
+                  <img
+                    src="../../assets/img/tm.webp"
+                    class="card-img-top img-carddestino"
+                    alt="Taj Mahal"
+                  />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-titulod">Taj Mahal</h5>
+                    <a
+                      href="#"
+                      class="btn btn-detalle btn-sm w-50 mt-auto ms-auto"
+                      >Ver más</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>         
+
+
+
+
+
+
+
+        </div>
+      </div>
+      </section>
+    </main>
+    <footer></footer>
+
+   
+<!-- MODAL RIVIERA MAYA -->
+<article
+  class="modal fade modal-article"
+  id="modalMaya"
+  tabindex="-1"
+  aria-labelledby="MayaLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 bg-dark text-light">
+      <div class="modal-body p-0">
+        <img
+          src="../../assets/img/rivieraMaya02.webp"
+          class="img-fluid w-100"
+          alt="Riviera Maya"
+        />
+        <div class="p-3">
+          <h5 class="mb-2" id="MayaLabel">Riviera Maya</h5>
+          <p class="card-text text-start mb-3">
+            El recorrido por la Riviera Maya es una experiencia cultural y natural única. En sus distintos destinos se encuentran playas de arena blanca, cenotes de aguas cristalinas, parques eco-arqueológicos como Xcaret y Xel-Há, y sitios mayas emblemáticos como Tulum y Cobá. Puede recorrerse en excursiones de un día o planificarse un viaje de varios días para explorar toda la región. Se recomienda hacerlo con tours guiados o transporte organizado y reservar entradas con anticipación, especialmente en temporada alta.
+          </p>
+          <button
+            type="button"
+            class="btn btn-detalle"
+            data-bs-dismiss="modal"
+          >
+            Cerrar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+      <!-- MODAL CANCUN-->
+      <article class="modal fade modal-article"
+        id="modalCancun"
+        tabindex="-1"
+        aria-labelledby="CancunLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content border-0 bg-dark text-light">
+            <div class="modal-body p-0">
+              <!-- Imagen destacada -->
+              <img
+                src="../../assets/img/cancun02.jpeg"
+                class="img-fluid w-100"
+                alt="Cancun"
+              />
+              <div class="p-3">
+                <h5 class="mb-2" id="CancunLabel">Cancún</h5>
+                <p class="card-text text-start mb-3">
+                Cancún es uno de los destinos turísticos más famosos de México y un ícono del Caribe. Destaca por sus playas de arena blanca, su mar turquesa y sus impresionantes paisajes naturales. Es tradición disfrutar del sol, nadar en sus aguas cristalinas y explorar los arrecifes de coral cercanos. Ubicada en la costa este de México, combina naturaleza, diversión y cultura, siendo una parada obligada para todo visitante que busca playas paradisíacas y actividades acuáticas.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-detalle"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- MODAL CHICHEN ITZA-->
+      <article
+       class="modal fade modal-article"
+        id="modalChichen"
+        tabindex="-1"
+        aria-labelledby="ChichenLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content border-0 bg-dark text-light">
+            <div class="modal-body p-0">
+              <!-- Imagen destacada -->
+              <img
+                src="../../assets/img/chichen02.avif"
+                class="img-fluid w-100"
+                alt="Chichen Itza"
+              />
+              <div class="p-3">
+                <h5 class="mb-2" id="ChichenLabel">
+                 Chichen Itza
+                </h5>
+                <p class="card-text text-start mb-3">
+           Chichén Itzá es uno de los sitios arqueológicos más emblemáticos de México y un ícono de la civilización maya. Ubicado en el corazón de la península de Yucatán, destaca por su majestuosa Pirámide de Kukulkán, el Templo de los Guerreros y el Observatorio, que reflejan el avanzado conocimiento astronómico y arquitectónico de los mayas. Rodeado de estructuras históricas y espacios ceremoniales, combina historia, cultura y misterio, siendo un punto de visita imprescindible para todo viajero interesado en la riqueza del legado maya.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-detalle"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- MODAL CENOTES -->
+      <article  class="modal fade modal-article"
+        id="modalCenotes"
+        tabindex="-1"
+        aria-labelledby="CenotesLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content border-0 bg-dark text-light">
+            <div class="modal-body p-0">
+              <!-- Imagen destacada -->
+              <img
+                src="../../assets/img/cenotes02.jpg"
+                class="img-fluid w-100"
+                alt="Cenotes"
+              />
+              <div class="p-3">
+                <h5 class="mb-2" id="CenotesLabel">Cenotes</h5>
+                <p class="card-text text-start mb-3">
+                Los cenotes de Yucatán son formaciones naturales únicas y uno de los tesoros más emblemáticos de México. De origen geológico, destacan por sus impresionantes aguas cristalinas, grutas y estructuras subterráneas que alguna vez formaron parte de ríos y cuevas prehistóricas. Ubicados en distintos puntos de la península, combinan naturaleza, aventura y cultura maya, siendo una experiencia imprescindible para quienes buscan nadar, bucear o explorar paisajes naturales sorprendentes.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-detalle"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- MODAL VALLADOLID -->
+      <article class="modal fade modal-article"
+        id="modalValla"
+        tabindex="-1"
+        aria-labelledby="VallaLabel"
+        aria-hidden="true">   
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content border-0 bg-dark text-light">
+            <div class="modal-body p-0">
+              <!-- Imagen destacada -->
+              <img
+                src="../../assets/img/valladolid02.png"
+                class="img-fluid w-100"
+                alt="Valladolid"
+              />
+              <div class="p-3">
+                <h5 class="mb-2" id="VallaLabel">Valladolid</h5>
+                <p class="card-text text-start mb-3">
+                Valladolid es una de las ciudades coloniales mejor conservadas de México y un símbolo de la historia y cultura yucateca. Fundada en el siglo XVI, destaca por su arquitectura colorida, sus plazas y sus edificios históricos, como la iglesia de San Gervasio y el Convento de San Bernardino de Siena. Ubicada en el corazón del estado de Yucatán, combina arte, historia y tradición, siendo una parada esencial para quienes desean explorar la riqueza cultural y colonial de la región.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-detalle"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- MODAL BIOSFERA CELESTÚN -->
+      <article
+        class="modal fade modal-article"
+        id="modalCeles"
+        tabindex="-1"
+        aria-labelledby="CelesLabel"
+        aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content border-0 bg-dark text-light">
+            <div class="modal-body p-0">
+              <!-- Imagen destacada -->
+              <img
+                src="../../assets/img/celes02.avif"
+                class="img-fluid w-100"
+                alt="Biosfera Celestún"
+              />
+              <div class="p-3">
+                <h5 class="mb-2" id="CelesLabel">Biosfera Celestún</h5>
+                <p class="card-text text-start mb-3">
+                La Reserva de la Biosfera Celestún es uno de los destinos naturales más fascinantes de Yucatán, reconocida por su gran diversidad de fauna y paisajes únicos. Ubicada en la costa noroeste del estado, destaca por sus manglares, playas vírgenes y especialmente por la presencia de flamencos rosados que habitan la zona. Rodeada de rutas de observación y pequeñas comunidades locales, combina naturaleza, aventura y cultura, siendo un punto de encuentro imperdible para los amantes de la biodiversidad y la fotografía.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-detalle"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+     </article>
+
+     
+
+
+
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
