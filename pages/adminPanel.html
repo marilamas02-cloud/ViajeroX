@@ -117,6 +117,97 @@
           </tbody>
         </table>
       </section>
+      <section class="formulario-admin d-flex justify-content-center">
+        <div class="container-admin p-5 w-50">
+          <h4 class="mb-5 text-center">Subir nuevo Streaming</h4>
+          <form class="row g-3">
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label"
+                >Título del streaming</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom01"
+                placeholder="Ej: Gastronomía en Roma"
+                value="Mark"
+                required
+              />
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">Fecha</label>
+              <input
+                type="date"
+                class="form-control"
+                id="validationCustom02"
+                value="Otto"
+                required
+              />
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustomUsername" class="form-label"
+                >Duración</label
+              >
+              <div class="input-group has-validation">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationCustomUsername"
+                  placeholder="Ej: 1h 30min"
+                  aria-describedby="inputGroupPrepend"
+                  required
+                />
+                <div class="invalid-feedback">Please choose a username.</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label"
+                >Descripción</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="validationCustom03"
+                placeholder="Breve descripción del streaming..."
+                required
+              />
+              <div class="invalid-feedback">Please provide a valid city.</div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom04" class="form-label"
+                >Categoría / Destino</label
+              >
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Seleccionar...</option>
+                <option>Italia</option>
+                <option>India</option>
+                <option>Brasil</option>
+                <option>Machu Picchu</option>
+                Argentina
+                <option>Otros</option>
+              </select>
+              <div class="invalid-feedback">Please select a valid state.</div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom04" class="form-label">Archivo</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Seleccionar...</option>
+                <option>Video</option>
+                <option>Imagen</option>
+              </select>
+              <div class="invalid-feedback">Please select a valid state.</div>
+            </div>
+
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary mt-4 w-100">
+                <i class="bi bi-cloud-arrow-up"></i> Publicar streaming
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
     <footer></footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
