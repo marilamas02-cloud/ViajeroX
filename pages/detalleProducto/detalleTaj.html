@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Streaming de viajes" />
+    <meta
+      name="keywords"
+      content="Streaming, viajes, 7Maravillas, paisajes, turismo"
+    />
+    <meta
+      name="author"
+      content="Marisol Lamas, Ornella Ricobelli, Facundo Camano, Octavio Fernandez Caram"
+    />
+    <title>Streaming de viajes</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/5cc9154e02.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../../css/detalle.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header></header>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+      <section class="container-fluid py-5 min-vh-100 d-flex flex-column justify-content-center">
+      <div class="row g-4">
+        <!-- COLUMNA PRINCIPAL -->
+        <div class="col-lg-8 mx-auto">
+
+<!-- Intro COLISEO -->
+          <section class="cristo-section my-5 text-center">
+            <!-- TÍTULO -->
+            <h2 class="mb-4 fw-bold">Taj mahal</h2>
+            <hr />
+          </section>
+
+<!-- INTRO CARD Y DESCRIPCIÒN -->
+          <div class="container">
+            <div class="row justify-content-center g-4">
+              <!-- Card 1: Imagen -->
+              <div class="col-12 col-md-8 col-lg-6">
+                <div class="card-intro shadow-sm">
+                  <img
+                    class="card-img-top rounded"
+                    src="../../assets/img/taj03.webp"
+                    alt="taj mahal"
+                    style="max-width: 100%; height: auto"
+                  />
+                  <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Ubicación</h5>
+                    <p class="card-text mb-1"><strong>Ciudad:</strong> Agra</p>
+                    <p class="card-text mb-0"><strong>País:</strong> India</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2: Descripción de Taj mahal -->
+              <div class="col-12 col-md-8 col-lg-6">
+                <div class="card-intro shadow-sm h-100">
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Descripción</h5>
+                    <p class="card-text">
+                     El Taj Mahal, ubicado en Agra, India, es uno de los monumentos más icónicos del mundo y símbolo del amor eterno. Construido en el siglo XVII por el emperador Shah Jahan en honor a su esposa Mumtaz Mahal, destaca por su elegante arquitectura de mármol blanco y su perfecta simetría. Admirarlo al amanecer o al atardecer es una experiencia verdaderamente mágica que deja una huella imborrable en todo visitante.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+
+           <!-- SECCIÓN DE CARDS ACTIVIDAD TURÍSTICA-->
+          <section class="container my-5">
+            <h3 class="text-center mt-4 mb-5 fw-bold">
+              Actividades Turísticas
+            </h3>
+  <div class="row g-4 d-flex align-items-stretch">
+              <!-- Card 1 -->
+              <div class="col-sm-6 col-lg-4 d-flex">
+                <div class="card shadow-sm border-0 flex-fill">
+                  <img
+                    src="../../assets/img/fuerteAgra01.jpg"
+                    class="card-img-top"
+                    alt="Fuerte Agra"
+                  />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-start">Fuerte Agra</h5>
+                    <p class="card-text text-start mb-3">
+                      Una imponente fortaleza de piedra roja declarado patrimonio mundial por la Unesco.
+                    </p>
+                    <button
+                      class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalAgra"
+                    >
+                      Ver más
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="col-sm-6 col-lg-4 d-flex">
+                <div class="card shadow-sm border-0 flex-fill">
+                  <img
+                    src="../../assets/img/barcaYamura01.jpg"
+                    class="card-img-top"
+                    alt="barca rio yamura"
+                  />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-start">Barca en Yamura</h5>
+                    <p class="card-text text-start mb-3">
+                     Pasear en barca por el río Yamuna y disfrutar de las vistas al Taj Mahal.
+                    </p>
+                    <button
+                      class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalBarca"
+                    >
+                      Ver más
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="col-sm-6 col-lg-4 d-flex">
+                <div class="card shadow-sm border-0 flex-fill">
+                  <img
+                    src="../../assets/img/taj05.jpeg"
+                    class="card-img-top"
+                    alt="taj mahal"
+                  />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-start">Taj mahal</h5>
+                    <p class="card-text text-start mb-3">
+                      Es una joya del arte mogol y símbolo del amor eterno, famoso por la cúpula.
+
+                    </p>
+                    <button
+                      class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalTaj"
+                    >
+                      Ver más
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="col-sm-6 col-lg-4 d-flex">
+                <div class="card shadow-sm border-0 flex-fill">
+                  <img src="../../assets/img/babyTaj01.jpg" alt="mausoleo baby taj" />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-start">Mausoleo Baby Taj</h5>
+                    <p class="card-text text-start mb-3">
+                     Destaca por sus intrincados detalles de mármol y piedras preciosas. 
+                    </p>
+                    <button
+                      class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalBaby"
+                    >
+                      Ver más
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 5 -->
+              <div class="col-sm-6 col-lg-4 d-flex">
+                <div class="card shadow-sm border-0 flex-fill">
+                  <img
+                    src="../../assets/img/sikri01.webp"
+                    class="card-img-top"
+                    alt="Fatehpur Sikri"
+                  />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-start">Fatehpur Sikri</h5>
+                    <p class="card-text text-start mb-3">
+                    Antigua capital del Imperio mogol, impresiona por su arquitectura monumental.
+                    </p>
+                    <button
+                      class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalSikri"
+                    >
+                      Ver más
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 6 -->
+              <div class="col-sm-6 col-lg-4 d-flex">
+                <div class="card shadow-sm border-0 flex-fill">
+                  <img
+                    src="../../assets/img/bazarAgra01.jpg"
+                    class="card-img-top"
+                    alt="bazar de agra"
+                  />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-start">Bazar de Agra</h5>
+                    <p class="card-text text-start mb-3">
+                      Experiencia de compras con artesanías, textiles y recuerdos típicos.
+                    </p>
+                    <button
+                      class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalBazar"
+                    >
+                      Ver más
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section> 
+
+<!-- BLOQUE MAPA + ITINERARIO -->
+<section class="itinerario-section mt-5 pt-5" id="mapa-tajmahal">
+  <h3 class="mb-4 fw-bold text-center">
+    Cómo llegar al Taj Mahal
+  </h3>
+
+  <div class="row justify-content-center align-items-start g-4 pt-3">
+    <!-- ITINERARIO -->
+    <div class="col-md-5 col-lg-4">
+      <div class="itinerario-list text-center">
+        <!-- Punto de partida -->
+        <div class="itinerario-item mb-4">
+          <div class="icon-circle end-icon mb-2">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <h4 class="fw-bold">Nueva Delhi - India</h4>
+          <p class="small text-muted">Punto de partida</p>
+        </div>
+
+        <!-- Medio de transporte 1 -->
+        <div class="itinerario-item mb-4">
+          <div class="icon-circle travel-icon mb-2">
+            <i class="fa-solid fa-train"></i>
+          </div>
+          <h4 class="fw-bold">Tren / Autobús</h4>
+          <p class="small text-muted">Tren: 3 hs</p>
+          <p class="small text-muted">Autobús: 5 hs</p>
+        </div>
+
+        <!-- Llegada -->
+        <div class="itinerario-item">
+          <div class="icon-circle start-icon mb-2">
+            <i class="fa-solid fa-flag-checkered"></i>
+          </div>
+          <h4 class="fw-bold">Taj Mahal</h4>
+          <p class="small text-muted">Entrada principal</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAPA -->
+    <div class="col-md-7 col-lg-7">
+      <div class="map-container shadow-sm rounded overflow-hidden">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.662681267969!2d78.03988281542932!3d27.175149983030816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3974770b1e3e10ff%3A0xa2e4d8aa5b824f09!2sTaj%20Mahal!5e0!3m2!1ses!2sin!4v1731012345000!5m2!1ses!2sin"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Preguntas y Respuestas -->
+<section class="py-5 mt-5 pt-5" aria-labelledby="faq-title">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8">
+        <h3 id="faq-title" class="text-center mb-5 fw-bold">
+          Todo lo que debes saber antes de viajar
+        </h3>
+
+        <div class="accordion" id="faqAccordionTaj">
+          <!-- Artículo 1 -->
+          <article class="accordion-item bg-secondary border-0 mb-3">
+            <h3 class="accordion-header" id="headingOneT">
+              <button
+                class="accordion-button collapsed bg-secondary fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOneT"
+                aria-expanded="false"
+                aria-controls="collapseOneT"
+              >
+                ¿Cuál es el horario de visita del Taj Mahal?
+              </button>
+            </h3>
+            <div
+              id="collapseOneT"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingOneT"
+              data-bs-parent="#faqAccordionTaj"
+            >
+              <div class="accordion-body bg-dark">
+                <p>
+                  El Taj Mahal abre todos los días desde las 6:00 hasta las 18:30 hs. 
+                  Se recomienda visitarlo al amanecer o al atardecer para evitar multitudes y aprovechar la luz ideal para fotos.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Artículo 2 -->
+          <article class="accordion-item bg-secondary border-0 mb-3">
+            <h3 class="accordion-header" id="headingTwoT">
+              <button
+                class="accordion-button collapsed bg-secondary fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwoT"
+                aria-expanded="false"
+                aria-controls="collapseTwoT"
+              >
+                ¿Cómo se llega al Taj Mahal?
+              </button>
+            </h3>
+            <div
+              id="collapseTwoT"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwoT"
+              data-bs-parent="#faqAccordionTaj"
+            >
+              <div class="accordion-body bg-dark">
+                <p>
+                  Se puede llegar desde Nueva Delhi en tren rápido, coche privado o autobús. 
+                  Desde Agra, la ciudad donde se encuentra el Taj Mahal, es accesible en taxi o tuk-tuk. 
+                  El acceso principal es por la entrada sur.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Artículo 3 -->
+          <article class="accordion-item bg-secondary border-0 mb-3">
+            <h3 class="accordion-header" id="headingThreeT">
+              <button
+                class="accordion-button collapsed bg-secondary fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThreeT"
+                aria-expanded="false"
+                aria-controls="collapseThreeT"
+              >
+                ¿Cuánto cuesta la entrada al Taj Mahal?
+              </button>
+            </h3>
+            <div
+              id="collapseThreeT"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThreeT"
+              data-bs-parent="#faqAccordionTaj"
+            >
+              <div class="accordion-body bg-dark">
+                <p>
+                  La entrada general para turistas extranjeros es de aproximadamente <strong>1100 INR</strong> (unos 13-15 USD) e incluye el acceso a los jardines y el mausoleo principal. 
+                  Niños menores de 15 años pueden entrar gratis.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Artículo 4 -->
+          <article class="accordion-item bg-secondary border-0 mb-3">
+            <h3 class="accordion-header" id="headingFourT">
+              <button
+                class="accordion-button collapsed bg-secondary fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFourT"
+                aria-expanded="false"
+                aria-controls="collapseFourT"
+              >
+                ¿Qué debo llevar para visitar el Taj Mahal?
+              </button>
+            </h3>
+            <div
+              id="collapseFourT"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFourT"
+              data-bs-parent="#faqAccordionTaj"
+            >
+              <div class="accordion-body bg-dark">
+                <p>
+                  Lleva calzado cómodo, sombrero, agua y protector solar. 
+                  No se permiten mochilas grandes, trípodes ni alimentos dentro del recinto.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Artículo 5 -->
+          <article class="accordion-item bg-secondary border-0 mb-3">
+            <h3 class="accordion-header" id="headingFiveT">
+              <button
+                class="accordion-button collapsed bg-secondary fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFiveT"
+                aria-expanded="false"
+                aria-controls="collapseFiveT"
+              >
+                ¿Cuál es la mejor época para visitar el Taj Mahal?
+              </button>
+            </h3>
+            <div
+              id="collapseFiveT"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFiveT"
+              data-bs-parent="#faqAccordionTaj"
+            >
+              <div class="accordion-body bg-dark">
+                <p>
+                  La mejor época es entre octubre y marzo, cuando el clima es más fresco y seco. 
+                  Evita los meses de verano, que pueden ser extremadamente calurosos.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Artículo 6 -->
+          <article class="accordion-item bg-secondary border-0 mb-3">
+            <h3 class="accordion-header" id="headingSixT">
+              <button
+                class="accordion-button collapsed bg-secondary fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSixT"
+                aria-expanded="false"
+                aria-controls="collapseSixT"
+              >
+                ¿Hay visitas guiadas o tours en grupo?
+              </button>
+            </h3>
+            <div
+              id="collapseSixT"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingSixT"
+              data-bs-parent="#faqAccordionTaj"
+            >
+              <div class="accordion-body bg-dark">
+                <p>
+                  Sí, se ofrecen <strong>visitas guiadas en varios idiomas</strong> que incluyen el mausoleo, jardines y alrededores. 
+                  Es recomendable reservar con anticipación, especialmente durante la temporada alta.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- SECCIÓN DE RESEÑAS -->
+          <section class="container py-5">
+            <h3 class="text-center mb-5 fw-bold">
+              Reseñas de Nuestros Viajeros
+            </h3>
+
+            <div class="row g-4 justify-content-center">
+              <!-- Reseña 1 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card reseña-card h-100 shadow-sm">
+                  <img
+                    src="../../assets/img/reseñaTaj01.jpg"
+                    class="card-img-top"
+                    alt="mujer taj mahal"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-primary fw-bold">
+                      Maria Rodriguez
+                    </h5>
+                    <p class="card-text text-muted">
+                      "Muy buena la comunidad viajera, me gusta la asesoría
+                      personalizada para los viajes"
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent border-0 text-end">
+                    <div class="rating text-warning">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Reseña 2 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card reseña-card h-100 shadow-sm">
+                  <img
+                    src="../../assets/img/reseñaTaj02.webp"
+                    class="card-img-top"
+                    alt="hombre taj mahal"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-primary fw-bold">
+                      Antonio Ramirez
+                    </h5>
+                    <p class="card-text text-muted">
+                      “Súper recomendado, fue una experiencia increíble y el
+                      viaje superó todas mis expectativas.”
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent border-0 text-end">
+                    <div class="rating text-warning">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Reseña 3 -->
+              <div class="col-md-6 col-lg-4">
+                <div class="card reseña-card h-100 shadow-sm">
+                  <img
+                    src="../../assets/img/reseñaTaj03.avif"
+                    alt="pareja taj mahal"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-primary fw-bold">Thiago Aguero</h5>
+                    <p class="card-text text-muted">
+                      “Gracias a la comunidad viajera pude resolver todas mis
+                      dudas con la asesoría y disfrutar por completo del viaje.”
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent border-0 text-end">
+                    <div class="rating text-warning">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+<!-- DESTINOS SUGERIDOS -->
+          <section class="container my-5">
+            <h3 class="text-center mb-4 fw-bold">Destinos Sugeridos</h3>
+
+            <div class="row justify-content-center g-4">
+              <!-- Card 1 -->
+              <div class="col-md-6 col-lg-3">
+                <div class="card card-destino h-100 text-center">
+                  <img
+                    src="../../assets/img/Chichen_Itza_CB.jpg"
+                    class="card-img-top img-carddestino"
+                    alt="Chichén Itzá"
+                  />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-titulod">Chichén Itzá</h5>
+                    <a
+                      href="#"
+                      class="btn btn-detalle btn-sm w-50 mt-auto ms-auto"
+                      >Ver más</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="col-md-6 col-lg-3">
+                <div class="card card-destino h-100 text-center">
+                  <img
+                    src="../../assets/img/machuIntro.jpg"
+                    class="card-img-top img-carddestino"
+                    alt="Coliseo Romano"
+                  />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-titulod">Machu Picchu</h5>
+                    <a
+                      href="#"
+                      class="btn btn-detalle btn-sm w-50 mt-auto ms-auto"
+                      >Ver más</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="col-md-6 col-lg-3">
+                <div class="card card-destino h-100 text-center">
+                  <img
+                    src="../../assets/img/Petra-jordania.jpg"
+                    class="card-img-top img-carddestino"
+                    alt="Petra"
+                  />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-titulod">Petra</h5>
+                    <a
+                      href="#"
+                      class="btn btn-detalle btn-sm w-50 mt-auto ms-auto"
+                      >Ver más</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="col-md-6 col-lg-3">
+                <div class="card card-destino h-100 text-center">
+                  <img
+                    src="../../assets/img/cr.jpg"
+                    class="card-img-top img-carddestino"
+                    alt="coliseo"
+                  />
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-titulod">Coliseo</h5>
+                    <a
+                      href="#"
+                      class="btn btn-detalle btn-sm w-50 mt-auto ms-auto"
+                      >Ver más</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+
+
+
+
+        </div>
+      </div>
+      </section>
+    </main>
+    <footer></footer>
+
+    <!-- MODAL FUERTE AGRA-->
+<article
+  class="modal fade modal-article"
+  id="modalAgra"
+  tabindex="-1"
+  aria-labelledby="AgraLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 bg-dark text-light">
+      <div class="modal-body p-0">
+        <img
+          src="../../assets/img/fuerteAgra02.jpg"
+          class="img-fluid w-100"
+          alt="fuerte Agra"
+        />
+        <div class="p-3">
+          <h5 class="mb-2" id="AgriaLabel">Fuerte Agra</h5>
+          <p class="card-text text-start mb-3">
+     Este imponente complejo, construido en arenisca roja, alberga palacios, jardines y mezquitas que reflejan la grandeza del Imperio Mogol. Entre sus joyas destacan el Palacio Jahangir, la Diwan-i-Khas y la Mezquita Moti. La visita puede realizarse en unas pocas horas, aunque recorrer cada rincón del fuerte requiere un día completo. Se recomienda hacerlo con un guía para comprender mejor la historia y la arquitectura, y llegar temprano para evitar las multitudes, sobre todo en temporada alta.
+          </p>
+          <button
+            type="button"
+            class="btn btn-detalle"
+            data-bs-dismiss="modal"
+          >
+            Cerrar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+      <!-- MODAL BARCA -->
+      <article class="modal fade modal-article"
+        id="modalBarca"
+        tabindex="-1"
+        aria-labelledby="BarcaLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content border-0 bg-dark text-light">
+            <div class="modal-body p-0">
+              <!-- Imagen destacada -->
+              <img
+                src="../../assets/img/barcaYamura02.jpg"
+                class="img-fluid w-100"
+                alt="Barca del río Yamura"
+              />
+              <div class="p-3">
+                <h5 class="mb-2" id="BarcaLabel">Barca del río Yamura</h5>
+                <p class="card-text text-start mb-3">
+                 Navegar por sus aguas permite disfrutar de vistas únicas del Fuerte de Agra y del entorno histórico que rodea el río, mientras se observan actividades cotidianas de la vida local. Es una oportunidad para combinar historia, naturaleza y cultura, disfrutando de un paseo relajante al atardecer. Esta actividad es ideal para quienes buscan una perspectiva diferente de la ciudad y capturar momentos fotográficos inolvidables.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-detalle"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- MODAL TAJ MAHAL -->
+      <article  class="modal fade modal-article"
+        id="modalTaj"
+        tabindex="-1"
+        aria-labelledby="TajLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content border-0 bg-dark text-light">
+            <div class="modal-body p-0">
+              <!-- Imagen destacada -->
+              <img
+                src="../../assets/img/taj04.webp"
+                class="img-fluid w-100"
+                alt="Taj mahal"
+              />
+              <div class="p-3">
+                <h5 class="mb-2" id="TajLabel">Taj mahal</h5>
+                <p class="card-text text-start mb-3">
+                Construido en el siglo XVII por el emperador Shah Jahan como homenaje a su esposa Mumtaz Mahal, simboliza el amor eterno. Ubicado en la ciudad de Agra, combina historia, arte y belleza arquitectónica, siendo una visita imprescindible para quienes recorren India.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-detalle"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- MODAL BABY TAJ -->
+      <article class="modal fade modal-article"
+        id="modalBaby"
+        tabindex="-1"
+        aria-labelledby="BabyLabel"
+        aria-hidden="true">   
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content border-0 bg-dark text-light">
+            <div class="modal-body p-0">
+              <!-- Imagen destacada -->
+              <img
+                src="../../assets/img/babyTaj02.jpg"
+                class="img-fluid w-100"
+                alt="Baby taj"
+              />
+              <div class="p-3">
+                <h5 class="mb-2" id="BabyLabel">Mausoleo Baby Taj</h5>
+                <p class="card-text text-start mb-3">
+                 Conocido como la Tumba de I timād-ud-Daulah, es una joya arquitectónica de Agra y considerado un precursor del Taj Mahal. Construido en el siglo XVII, destaca por su delicado trabajo en mármol blanco y sus finos detalles de incrustaciones de piedras preciosas, que lo convierten en un ejemplo exquisito del arte mogol. Combina historia, arquitectura y belleza ornamental
+                <button
+                  type="button"
+                  class="btn btn-detalle"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- MODAL SIKRI-->
+      <article
+        class="modal fade modal-article"
+        id="modalSikri"
+        tabindex="-1"
+        aria-labelledby="SikriLabel"
+        aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content border-0 bg-dark text-light">
+            <div class="modal-body p-0">
+              <!-- Imagen destacada -->
+              <img
+                src="../../assets/img/sikri02.jpg"
+                class="img-fluid w-100"
+                alt="Fatehpur Sikri"
+              />
+              <div class="p-3">
+                <h5 class="mb-2" id="SikriLabel">Fatehpur Sikri</h5>
+                <p class="card-text text-start mb-3">
+               Construida en el siglo XVI por el emperador Akbar como su capital, conserva palacios, mezquitas y plazas que muestran la grandeza del Imperio Mogol. Destacan lugares como la Buland Darwaza y la mezquita Jama Masjid, que combinan arte, religión y poder imperial. Rodeada de calles y jardines que reflejan la vida de la época, Fatehpur Sikri es una visita imprescindible para quienes exploran la riqueza cultural de India.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-detalle"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+     </article>
+
+      <!-- MODAL BAZAR-->
+      <article
+       class="modal fade modal-article"
+        id="modalBazar"
+        tabindex="-1"
+        aria-labelledby="BazarLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content border-0 bg-dark text-light">
+            <div class="modal-body p-0">
+              <!-- Imagen destacada -->
+              <img
+                src="../../assets/img/bazarAgra02.jpg"
+                class="img-fluid w-100"
+                alt="Bazar de agra"
+              />
+              <div class="p-3">
+                <h5 class="mb-2" id="BazarLabel">
+                 Bazar de Agra
+                </h5>
+                <p class="card-text text-start mb-3">
+            Sus calles estrechas y animadas están repletas de tiendas que venden desde artesanías y textiles hasta especias y joyería típica. Destaca por ser un espacio donde se mezcla la historia con la cultura local, ofreciendo una experiencia auténtica de la vida india. Rodeado de monumentos históricos y cercano al río Yamuna, combina comercio, tradición y cultura, siendo una parada obligada para quienes quieren sumergirse en el corazón de Agra.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-detalle"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+ 
+
+
+  
+
+
+
+
+
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

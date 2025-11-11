@@ -1,0 +1,439 @@
+/* === RESETEO GENERAL === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* === VARIABLES GLOBALES === */
+:root {
+  /* Colores principales */
+  --color-primary-dark: #001524;
+  --color-primary-medium: #15616d;
+
+  /* Colores secundarios */
+  --color-secondary-light: #ffecd1;
+  --color-secondary-accent: #ff7d00;
+  --color-tertiary-contrast: #78290f;
+
+  /* Tipografía */
+  --fuente-principal: "Montserrat", sans-serif;
+
+  /* Tamaños base */
+  --texto: 16px;
+  --titulares: 24px;
+}
+
+
+h2 {
+  font-size: var(--titulares);
+  color: var(--color-secondary-light);
+  letter-spacing: 3px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: var(--titulares);
+  color: var(--color-secondary-accent);
+  letter-spacing: 2px;
+}
+
+h5 {font-size: var(--titulares);
+  letter-spacing: 2px;
+}
+
+
+p {
+  font-size: var(--texto);
+  color: var(--color-secondary-light);
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+/* === ENLACES === */
+a {
+  color: var(--color-secondary-accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-tertiary-contrast);
+}
+
+
+
+
+/* CENTRO DE AYUDA */
+/* === PREGUNTAS Y RESPUESTAS (ACCORDION) === */
+.accordion-button {
+  color: var(--color-primary-dark);
+}
+
+.accordion-button:hover,
+.accordion-button:not(.collapsed) {
+  color: var(--color-tertiary-contrast);
+}
+
+
+/* === BOTÓN DE AYUDA === */
+.btn-ayuda {
+  background-color: var(--color-primary-medium);   
+  color: var(--color-secondary-light);                 
+  border: none;                /* sin borde */
+  transition: all 0.3s ease;   /* animación suave */
+}
+
+.btn-ayuda:hover {
+  background-color: var(--color-tertiary-contrast);  
+  color: var(--color-secondary-light);                 /* mantiene el texto blanco */
+  transform: translateY(-2px); /* leve efecto de elevación */
+  box-shadow: 0 4px 10px rgba(255, 125, 0, 0.4);
+}
+
+
+/* DETALLE PRODUCTO */
+
+/* === BOTONES DETALLE === */
+.btn-detalle {
+  background-color: var(--color-primary-medium);
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-detalle:hover {
+  background-color: var(--color-tertiary-contrast);
+}
+
+
+
+/* INTRO CARD Y DESCRIPCIÓN */
+/* === INTRO CARD Y DESCRIPCIÓN === */
+.card-intro {
+  border: none;
+  border-radius: 15px;
+  background-color: var(--color-secondary-light); /* blanco */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  color: var(--color-primary-dark);
+  padding: 1.5rem;
+  cursor: pointer; /* da sensación interactiva */
+}
+
+/* Hover: solo se mueve toda la card */
+.card-intro:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Títulos */
+.card-intro h5 {
+  color: var(--color-primary-medium);
+  font-weight: 700;
+  text-shadow: none;
+  margin-bottom: 0.75rem;
+  transition: color 0.3s ease;
+}
+
+/* Cambia color del título levemente al hover (sin moverse) */
+.card-intro:hover h5 {
+  color: var(--color-primary-medium); /* tono más oscuro */
+}
+
+/* Párrafos */
+.card-intro p {
+  color: var(--color-primary-dark);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  text-shadow: none;
+  transition: color 0.3s ease;
+}
+
+/* Párrafos acompañan el hover sin sobresalir ni moverse */
+.card-intro:hover p {
+  color: var(--color-tertiary-contrast); /* leve oscurecimiento, sin movimiento */
+}
+
+/* Imagen dentro de la card */
+.card-intro img {
+  border-radius: 15px 15px 0 0;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card-intro .card-body h5 {
+  margin-top: 1rem; /* aumenta la separación respecto a la imagen */
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .card-intro {
+    margin-bottom: 15px;
+  }
+  .card-intro p {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
+/* === ACTIVIDADES TURÍSTICAS === */
+.card {
+  background-color: #1e1e1e;
+  border-radius: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.card .btn {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+}
+
+.card .card-title {
+  font-weight: 700;
+  color: var(--color-primary-medium);
+}
+
+.modal-content {
+  background-color: #1c1c1c;
+}
+
+
+
+/* * === ITINERARIO (CÓMO LLEGAR) === */ 
+.icon-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: var(--color-secondary-light);
+  margin: 0 auto;
+}
+
+.start-icon { background-color: #198754; }
+.end-icon { background-color: #dc3545; }
+.travel-icon { background-color: #0d6efd; }
+
+.itinerario-list {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.itinerario-item {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.itinerario-item h4 {
+  margin-bottom: 0.25rem;
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 420px;
+  border: 0;
+  border-radius: 12px;
+}
+
+
+/* === PREGUNTAS Y RESPUESTAS (ACCORDION) === */
+.accordion-button {
+  color: var(--color-primary-dark);
+}
+
+.accordion-button:hover,
+.accordion-button:not(.collapsed) {
+  color: var(--color-tertiary-contrast);
+}
+
+
+/* === RESEÑAS === */
+.reseña-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reseña-card img {
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.reseña-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.reseña-card:hover img {
+  transform: scale(1.05);
+}
+
+.rating {
+  position: relative;
+  top: -8px; /* sube las estrellas sin afectar el flujo */
+}
+
+
+/* === DESTINOS SUGERIDOS === */
+.card-destino {
+  border: none;
+  border-radius: 15px;
+  background-color: var(--color-secondary-light);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-destino:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.img-carddestino {
+  height: 230px;
+  object-fit: cover;
+}
+
+.card-destino .card-titulod {
+  color: var(--color-primary-dark);
+}
+
+/* MODAL */
+article.modal p {
+  font-size: var(--texto);
+  line-height: 1.6;
+  color: var(--color-secondary-light);
+}
+
+/* === TÍTULOS DE LOS MODALES === */
+.modal-article h5 {
+  font-weight: 800; /* más grueso */
+  font-size: var(--texto); /* un poco más grande */
+  color: var(--color-primary-medium);
+  letter-spacing: 0.5px; /* opcional: da más definición */
+  text-transform: uppercase; /* opcional: para resaltar aún más */
+}
+
+/* TRANSPORTE */
+
+ /* CARD PRINCIPAL */
+    .cardMovil {
+      max-width: 900px;
+      margin: 3rem auto;
+      border-radius: 1.5rem;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      background-color: var(--color-secondary-light);
+      transition: transform 0.3s ease;
+    }
+
+    .cardMovil:hover {
+      transform: translateY(-5px);
+    }
+
+    .cardMovil img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+    }
+
+    .cardMovil-body {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .cardMovil-title {
+  font-weight: 900; /* súper negrita */
+  letter-spacing: 0.5px; /* opcional: separa un poco las letras */
+  color: var(--color-primary-dark);
+}
+
+    .cardMovil-text {
+      font-size: 1.1rem;
+      color: var(--color-tertiary-contrast);
+    }
+
+    .texto-sombra {
+  color: var(--color-primary-medium);
+  font-size: var(--texto);
+  letter-spacing: 1px; 
+  font-weight: 700; 
+}
+
+/* CARDS DE DESCUENTOS */
+    .cardTransporte {
+      background-color: var(--color-secondary-light);
+      border-radius: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .cardTransporte:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .cardTransporte-title {
+      font-weight: 600;
+      color: var(--color-primary-medium);
+    }
+
+    .cardTransporte-text {
+  color: var(--color-tertiary-contrast);
+  font-size: var(--titulares);
+ 
+}
+
+
+    /* TÍTULO GENERAL */
+    .titulo-transporte {
+      text-align: center;
+      font-weight: 700;
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+
+       /* RESEÑA */
+
+.reseñas .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.reseñas .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.1);
+}
+
+
+/* ASISTENCIA VIAJERO */
+.banner-principal {
+  width: 100%;
+  height: 60vh; /* ajustá el alto que quieras */
+  object-fit: cover;
+  object-position: center;
+}

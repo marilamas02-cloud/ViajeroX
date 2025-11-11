@@ -1,0 +1,1132 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colores primarios */
+  --color-primary-dark: #001524;
+  --color-primary-medium: #15616d;
+
+  /* Colores secundarios */
+  --color-secondary-light: #ffecd1;
+  --color-secondary-accent: #ff7d00;
+
+  /* Color terciario / acento especial */
+  --color-tertiary-contrast: #78290f;
+  /* 🧱 Tipografía */
+  --fuente-principal: "Montserrat", sans-serif;
+
+  --texto: 16px;
+  --titulares: 24px;
+  --description: 1rem;
+}
+
+.carrusel {
+  width: 100%;
+  max-height: 90vh;
+  overflow: hidden;
+}
+
+.carrusel .carousel-item img {
+  width: 100%;
+
+  max-height: 90vh;
+  object-fit: cover;
+}
+
+.img-maravillas {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.reseñas .img-fija {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.reseñas p {
+  max-width: 120px;
+  min-height: 60px;
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+.experiencias .card {
+  position: relative;
+  overflow: hidden;
+  border: none;
+}
+
+.experiencias .card-img {
+  filter: blur(3px) brightness(70%);
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.experiencias .card:hover .card-img {
+  filter: blur(1px) brightness(80%);
+  transform: scale(1.05);
+}
+
+.experiencias .card-img-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experiencias .card-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding: 10px;
+}
+.boton-comunidad:hover {
+  transform: scale(1.2);
+  background-color: var(--color-tertiary-contrast);
+}
+.boton-comunidad {
+  background-color: var(--color-primary-medium);
+}
+
+.siete-maravillas .card {
+  width: 90%;
+  max-width: 320px;
+}
+.siete-maravillas h2 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+.img-maravillas {
+  height: 200px;
+  object-fit: cover;
+}
+
+.experiencias h2 {
+  font-size: 1.8rem;
+}
+.experiencias .card-img-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: flex-end;
+}
+.experiencias .card-img-overlay h5 {
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.reseñas h2 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+.reseñas .img-fija {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.reseñas p {
+  font-size: 0.85rem;
+}
+
+.cursos h4 {
+  font-size: 1.25rem;
+}
+
+.img-banner {
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.zona-beneficios h2 {
+  font-size: 1.8rem;
+}
+.boton-comunidad {
+  font-size: 1rem;
+}
+
+@media (min-width: 576px) {
+  .siete-maravillas .card {
+    width: 18rem;
+    max-width: none;
+  }
+  .img-maravillas {
+    height: 250px;
+  }
+
+  .experiencias .card-img-overlay h5 {
+    font-size: 1.25rem;
+  }
+
+  .reseñas p {
+    font-size: 0.9rem;
+  }
+  .reseñas .img-fija {
+    width: 120px;
+    height: 120px;
+  }
+  .img-banner {
+    height: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+  .siete-maravillas h2,
+  .experiencias h2,
+  .reseñas h2,
+  .zona-beneficios h2 {
+    font-size: 2.2rem;
+  }
+
+  .img-banner {
+    height: 400px;
+  }
+
+  .boton-comunidad {
+    font-size: 1.25rem;
+  }
+
+  .reseñas .img-fija {
+    width: 90px;
+    height: 90px;
+  }
+  .reseñas p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .siete-maravillas h2,
+  .experiencias h2,
+  .reseñas h2,
+  .zona-beneficios h2 {
+    font-size: 2.8rem;
+  }
+
+  .experiencias .card-img-overlay h5 {
+    font-size: 1.5rem;
+  }
+
+  .img-banner {
+    height: 500px;
+  }
+
+  .reseñas .img-fija {
+    width: 140px;
+    height: 140px;
+  }
+  .reseñas p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .img-banner {
+    height: 600px;
+  }
+}
+
+.voto:hover {
+  background-color: var(--color-primary-medium);
+  font-size: 1.5rem;
+  color: var(--color-secondary-light);
+}
+.boton-alojamiento:hover {
+  background-color: var(--color-primary-medium);
+  font-size: 1.5rem;
+  color: var(--color-secondary-accent);
+}
+.reseñas-alojamiento {
+  background-image: url(../assets/img/viajerosbanner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+.card-img-top-wrapper {
+  height: 250px;
+  overflow: hidden;
+}
+
+.card-img-top-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.boton-foro:hover {
+  font-size: 20px;
+  background-color: var(--color-tertiary-contrast);
+}
+.boton-foro {
+  background-color: var(--color-primary-medium);
+}
+
+.galeria-viajeros img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.foro-viajero .col-12.col-md-6.bg-light {
+  height: 400px;
+  border-radius: 0.375rem 0.375rem 0 0;
+}
+
+.reseñas .card {
+  max-width: 350px;
+}
+
+.galeria-viajeros img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.foro-viajero .col-12.col-md-6.bg-light {
+  height: 400px;
+}
+
+.reseñas .card {
+  max-width: 350px;
+}
+
+@media (min-width: 576px) {
+  .descuentos h2 {
+    font-size: 1.75rem;
+  }
+
+  .descuentos p.fs-4 {
+    font-size: 1.15rem;
+  }
+
+  .reseñas-alojamiento .d-flex {
+    justify-content: center;
+  }
+
+  .galeria-viajeros img {
+    height: 350px;
+  }
+}
+
+@media (min-width: 768px) {
+  h2.p-2 {
+    font-size: 2rem;
+  }
+
+  .descuentos p.fs-4 {
+    font-size: 1.25rem;
+  }
+
+  .descuentos .card-img-top-wrapper img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .reseñas-alojamiento .d-flex {
+    justify-content: flex-start;
+  }
+
+  .reseñas-alojamiento .row.justify-content-evenly {
+    justify-content: center;
+  }
+
+  .reseñas .card {
+    max-width: 300px;
+  }
+
+  .reseñas .card-body p.card-text {
+    font-size: 0.95rem;
+  }
+
+  .foro-viajero .row-cols-2 {
+    display: flex;
+  }
+
+  .foro-viajero .col-12.col-md-6 {
+    height: 400px;
+  }
+
+  .galeria-viajeros img {
+    height: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  .descuentos .container {
+    max-width: 1140px;
+  }
+
+  .descuentos .card-img-overlay {
+    padding: 1.5rem;
+  }
+
+  .descuentos .card-title {
+    font-size: 1.75rem;
+  }
+
+  .descuentos .card-text {
+    font-size: 1.1rem;
+  }
+
+  .reseñas h2 {
+    font-size: 2.5rem;
+  }
+
+  .reseñas-alojamiento {
+    padding: 4rem 2rem;
+  }
+
+  .reseñas .card {
+    max-width: 400px;
+  }
+
+  .galeria-viajeros img {
+    height: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .descuentos .container {
+    max-width: 1320px;
+  }
+
+  .galeria-viajeros img {
+    height: 600px;
+  }
+}
+
+main {
+  color: var(--bs-body-color);
+}
+h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.gastronomia-gif .gif img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.descuentos-gastronomia {
+  background-color: var(--bs-body-bg);
+}
+.descuentos-gastronomia .container-gastronomia {
+  padding: 1.5rem 1rem;
+}
+.card-body h5 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+.gastronomia-descuentos {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.boton-restaurantes {
+  background-color: var(--color-primary-medium);
+  border: none;
+  font-weight: bold;
+  color: var(--bs-dark);
+}
+.boton-restaurantes:hover {
+  background-color: var(--color-tertiary-contrast);
+  font-size: 1.15rem;
+}
+
+.galeria {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 1.5rem;
+}
+.galeria img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.container h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.viajeros h2 {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.viajeros p {
+  font-size: 0.9rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.voto {
+  background-color: var(--color-primary-medium);
+  border: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.voto:hover {
+  background-color: var(--color-tertiary-contrast);
+  font-size: 1.15rem;
+}
+
+.barra {
+  background-color: var(--bs-secondary-bg);
+  padding: 2rem 0;
+}
+.barra h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.barra span {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+@media (min-width: 576px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  .gastronomia-descuentos {
+    height: 250px;
+  }
+  .galeria img {
+    height: 250px;
+  }
+  .card-body h5 {
+    font-size: 1.25rem;
+  }
+
+  .viajeros h2,
+  .barra h2 {
+    font-size: 2rem;
+  }
+  .viajeros p {
+    font-size: 1rem;
+  }
+  .voto,
+  .boton-restaurantes {
+    font-size: 1rem;
+  }
+
+  .voto:hover,
+  .boton-restaurantes:hover {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+  .descuentos-gastronomia .container-gastronomia {
+    padding: 3rem 1.5rem;
+  }
+
+  .gastronomia-descuentos {
+    height: 280px;
+  }
+
+  .viajeros p {
+    font-size: 1.15rem;
+    padding: 0 1rem;
+  }
+
+  .barra .col-md-4 {
+    text-align: left;
+    align-items: flex-start;
+  }
+  .barra p {
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .gastronomia-descuentos {
+    height: 250px;
+  }
+
+  .galeria img {
+    height: 300px;
+  }
+
+  .viajeros p {
+    font-size: 1.25rem;
+  }
+}
+
+.planes-viajerox {
+  background: radial-gradient(circle at top, #061726, #020910 80%);
+  position: relative;
+  overflow: visible;
+  
+}
+
+.titulo-viajerox span {
+  color: #ff7d00;
+}
+
+.titulo-viajerox {
+  text-shadow: 0 10px 40px rgba(255, 125, 0, 0.6);
+}
+
+.boton {
+  background: linear-gradient(90deg, #ff7d00, #ff7d00);
+  border-radius: 50px;
+  box-shadow: 0 0 30px rgba(255, 125, 0, 0.6);
+}
+.boton:hover {
+  transform: scale(1.08);
+}
+
+.card-suscripcion {
+  border: 0;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(255, 125, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card-suscripcion:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 40px rgba(255, 125, 0, 0.8);
+  z-index: 5;
+}
+
+.explorador {
+  background: linear-gradient(145deg, #001524, #001524);
+}
+
+.aventurero {
+  background: linear-gradient(145deg, #15616d, #15616d);
+  transform: translateY(-10px);
+}
+
+.nomada {
+  background: linear-gradient(145deg, #001524, #001524);
+}
+
+@media (min-width: 576px) {
+  .planes-viajerox .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .titulo-viajerox {
+    font-size: 3rem;
+  }
+
+  .subtitulo-viajerox {
+    font-size: 1.25rem;
+  }
+
+  .row.justify-content-center > .col-md-4 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .card-suscripcion .btn {
+    font-size: 0.95rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .titulo-viajerox {
+    font-size: 4rem;
+  }
+
+  .subtitulo-viajerox {
+    font-size: 1.5rem;
+  }
+
+  .planes-viajerox .text-center.mb-5 {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .planes-viajerox {
+    padding-bottom: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-suscripcion .card-body p {
+    min-height: 48px;
+  }
+}
+
+.card-suscripcion.aventurero {
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.4);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card-suscripcion.aventurero:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 40px rgba(0, 191, 255, 0.6);
+  z-index: 5;
+}
+
+.boton-cards {
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.boton-cards:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 767.98px) {
+  .card-suscripcion {
+    margin-bottom: 20px;
+  }
+}
+
+.voto:hover {
+  background-color: var(--color-primary-medium);
+  font-size: 1.5rem;
+  color: var(--color-secondary-light);
+}
+.boton-alojamiento:hover {
+  background-color: var(--color-primary-medium);
+  font-size: 1.5rem;
+  color: var(--color-secondary-accent);
+}
+.reseñas-alojamiento {
+  background-image: url(../assets/img/viajerosbanner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+.card-img-top-wrapper {
+  height: 250px;
+  overflow: hidden;
+}
+
+.card-img-top-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.boton-foro:hover {
+  font-size: 20px;
+  background-color: var(--color-tertiary-contrast);
+}
+.boton-foro {
+  background-color: var(--color-primary-medium);
+}
+
+.galeria-viajeros img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.foro-viajero .col-12.col-md-6.bg-light {
+  height: 400px;
+  border-radius: 0.375rem 0.375rem 0 0;
+}
+
+.reseñas .card {
+  max-width: 350px;
+}
+
+@media (min-width: 576px) {
+  .carruselApp {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .descargar-app h2 {
+    font-size: 1.8rem;
+  }
+
+  .descargar-app p {
+    font-size: 1rem;
+  }
+
+  .img-app {
+    max-width: 120px;
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .carruselApp {
+    height: auto;
+    object-fit: cover;
+  }
+
+  .descargar-app h2 {
+    font-size: 2rem;
+  }
+
+  .descargar-app p {
+    font-size: 1.1rem;
+  }
+
+  .img-app {
+    width: 160px;
+  }
+
+  .descargar-app .row {
+    text-align: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .carruselApp {
+    height: auto;
+    object-fit: cover;
+  }
+
+  .descargar-app h2 {
+    font-size: 2.3rem;
+  }
+
+  .descargar-app p {
+    font-size: 1.2rem;
+  }
+
+  .img-app {
+    width: 180px;
+  }
+
+  .descargar-app .row {
+    align-items: center;
+  }
+}
+
+.img-app:hover {
+  transform: scale(1.05);
+  box-shadow: #15616d 0 5px 20px;
+}
+.img-colaboraciones {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  background-position: top;
+}
+.hero-colaboraciones {
+  background-image: url(../assets/img/banner-col.jpg);
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 5%;
+  color: var(--color-primary-dark);
+}
+.img-servicios-colaboraciones {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: center;
+}
+.marca:hover {
+  transform: scale(2);
+}
+.boton-colaboraciones {
+  background-color: var(--color-primary-medium);
+  border-radius: 20vh;
+}
+.boton-colaboraciones:hover {
+  background-color: var(--color-tertiary-contrast);
+  transform: scale(1.1);
+  box-shadow: #ff7d00 0 8px 20px;
+}
+@media (max-width: 576px) {
+  .hero-colaboraciones {
+    height: 50vh;
+    background-position: center;
+  }
+
+  .hero-colaboraciones h2 {
+    font-size: 1.4rem;
+    padding: 0 1rem;
+  }
+
+  .creadoresContenido h2,
+  .servicios h2,
+  .marcas h2,
+  .propuesta-colaboraciones h2 {
+    font-size: 1.4rem;
+  }
+
+  .creadoresContenido .card,
+  .servicios .card {
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  .servicios .card .row.g-0 {
+    flex-direction: column;
+  }
+
+  .servicios .card img {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  .marcas img {
+    width: 60%;
+    margin: 1rem 0;
+  }
+
+  .propuesta-colaboraciones p {
+    font-size: 1rem;
+  }
+
+  .boton-colaboraciones {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .hero-colaboraciones {
+    height: 60vh;
+  }
+
+  .hero-colaboraciones h2 {
+    font-size: 1.8rem;
+  }
+
+  .creadoresContenido .card,
+  .servicios .card {
+    width: 100%;
+    margin: 1rem auto;
+    height: auto;
+  }
+
+  .marcas img {
+    width: 55%;
+  }
+
+  .propuesta-colaboraciones h2 {
+    font-size: 1.8rem;
+  }
+
+  .propuesta-colaboraciones p {
+    font-size: 1.1rem;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .hero-colaboraciones {
+    height: 80vh;
+  }
+
+  .hero-colaboraciones h2 {
+    font-size: 2.5rem;
+  }
+
+  .creadoresContenido .card {
+    width: 18rem;
+  }
+
+  .servicios .card {
+    max-width: 540px;
+  }
+
+  .marcas img {
+    width: 45%;
+  }
+
+  .propuesta-colaboraciones h2 {
+    font-size: 2.2rem;
+  }
+}
+
+.card-text-millas {
+  text-align: left;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.boton-milla {
+  background-color: var(--color-primary-medium);
+}
+.boton-milla:hover {
+  background-color: var(--color-tertiary-contrast);
+  transform: scale(1.1);
+  box-shadow: #ff7d00 0 8px 20px;
+}
+.misiones-cumplidas {
+  background-color: var(--color-primary-medium);
+}
+.boton-mision {
+   background-color: var(--color-primary-dark);
+}
+.boton-mision:hover {
+  background-color: var(--color-tertiary-contrast);
+  transform: scale(1.1);
+  box-shadow: #ff7d00 0 8px 20px;
+}
+
+@media (max-width: 576px) {
+  
+  .misiones-cumplidas .card {
+    
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .misiones .card,
+  .misiones-cumplidas .card {
+    width: 100%;
+    margin: 0;
+  }
+
+  .misiones h2,
+  .misiones-cumplidas h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .boton-milla,
+  .boton-mision {
+    display: block;
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 10px;
+    border-radius: 10px;
+    
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .misiones .col-4,
+  .misiones-cumplidas .col {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 2rem;
+  }
+
+  .misiones .card,
+  .misiones-cumplidas .card {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .misiones h2,
+  .misiones-cumplidas h2 {
+    font-size: 1.7rem;
+  }
+
+  .boton-milla,
+  .boton-mision {
+    font-size: 1rem;
+    padding: 10px 18px;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .misiones .col-4,
+  .misiones-cumplidas .col {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+
+  .misiones .card,
+  .misiones-cumplidas .card {
+    width: 18rem;
+  }
+
+  .boton-milla,
+  .boton-mision {
+    padding: 8px 16px;
+    font-size: 1rem;
+  }
+}
+
+.login-box {
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1 solid black;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+}
+.login-admin {
+  background-image: url(../assets/img/admin-fondo.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  
+  
+}
+.login-box input {
+  background: transparent; 
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 10px 15px;
+  color: white; 
+  width: 100%;
+  margin-bottom: 15px;
+  
+}
+.boton-admin {
+  display: inline-block;
+  background-color: var(--color-primary-dark);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.boton-admin:hover {
+  background-color: var(--color-tertiary-contrast);
+  transform: scale(1.05);
+}
+@media (max-width: 576px) {
+  .login-admin {
+    padding-top: 20vh;
+  }
+
+  .login-box {
+    padding: 1.5rem;
+    backdrop-filter: blur(8px);
+  }
+}
+
+
+@media (min-width: 768px) {
+  .login-admin {
+    padding: 15vh;
+  }
+
+  .login-box {
+    width: 60%;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .login-box {
+    width: 400px;
+  }
+}
