@@ -172,20 +172,6 @@ a:hover {
   margin-top: 1rem; /* aumenta la separación respecto a la imagen */
 }
 
-/* === Responsive === */
-@media (max-width: 768px) {
-  .card-intro {
-    margin-bottom: 15px;
-  }
-  .card-intro p {
-    font-size: 0.9rem;
-  }
-}
-
-
-
-
-
 /* === ACTIVIDADES TURÍSTICAS === */
 .card {
   background-color: #1e1e1e;
@@ -531,18 +517,7 @@ article.modal p {
   margin: 0 auto;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-  .spotify-embed {
-    max-width: 100%;
-  }
-  .spotify-section h4 {
-    font-size: 1.4rem;
-  }
-  .spotify-section p {
-    font-size: 0.95rem;
-  }
-}
+
 
 
 /* COMUNIDAD MANSORY */
@@ -618,13 +593,6 @@ article.modal p {
 /* === RESPONSIVE === */
 
 /* Tablets */
-@media (max-width: 992px) {
-  .viajerox-masonry {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-auto-rows: 200px;
-    gap: 10px;
-  }
-}
 
 /* Celulares */
 @media (max-width: 576px) {
@@ -632,18 +600,45 @@ article.modal p {
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
   }
-
+  
   .viajerox-masonry-item--wide,
   .viajerox-masonry-item--tall {
     grid-column: span 1;
     grid-row: span 1;
   }
-
+  
   .viajerox-masonry-item {
     height: 300px;
   }
-
+  
   .viajerox-masonry-item h4 {
     font-size: 0.9rem;
+  }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .spotify-embed {
+    max-width: 100%;
+  }
+  .spotify-section h4 {
+    font-size: 1.4rem;
+  }
+  .spotify-section p {
+    font-size: 0.95rem;
+  }
+  .card-intro {
+    margin-bottom: 15px;
+  }
+  .card-intro p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .viajerox-masonry {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+    gap: 10px;
   }
 }
