@@ -428,6 +428,13 @@ article.modal p {
 .viajerox-masonry-item:hover {
   box-shadow: 0 8px 20px rgba(255, 125, 0, 0.4);
 }
+.reseñas-traslados .img-reseña {
+  width: 120px; /* tamaño uniforme */
+  height: 120px;
+  object-fit: cover; /* recorta sin deformar */
+  border-radius: 50%;
+  border: 3px solid var(--color-secondary-accent); /* opcional, quita si no querés borde */
+}
 @media (max-width: 576px) {
   .viajerox-masonry {
     grid-template-columns: 1fr;
