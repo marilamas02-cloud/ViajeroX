@@ -928,6 +928,7 @@ h2 {
   }
 }
 
+
 @media (min-width: 992px) {
   .hero-colaboraciones {
     height: 80vh;
@@ -1061,8 +1062,15 @@ h2 {
   border-radius: 15px;
   padding: 10px;
 }
+
+.barra-lateral-cel {
+  width: 100%;
+  height: 20vh;
+  background-color: var(--color-primary-medium);
+}
+
 .barra-lateral {
-  width: 250px;
+  width: 30vh;
   background-color: var(--color-primary-medium);
   position: fixed;
   top: 0;
@@ -1084,9 +1092,7 @@ h2 {
   color: white;
   transform: scale(1.08);
 }
-main {
-  margin-left: 220px;
-}
+
 .card-admin {
   background-color: var(--color-primary-medium);
   
@@ -1114,4 +1120,379 @@ main {
 }
 .boton-adminNav:hover {
   background-color: var(--color-tertiary-contrast);
+}
+/* media query dispositivo celular */
+
+@media all and (min-width: 577px) {}
+
+  /* media query dispositivo tablet */
+
+@media all and (min-width: 577px) and (max-width: 768px){
+.siete-maravillas .card {
+    width: 18rem;
+    max-width: none;
+  }
+  .img-maravillas {
+    height: 250px;
+  }
+
+  .experiencias .card-img-overlay h5 {
+    font-size: 1.25rem;
+  }
+
+  .reseñas p {
+    font-size: 0.9rem;
+  }
+  .reseñas .img-fija {
+    width: 120px;
+    height: 120px;
+  }
+  .img-banner {
+    height: 300px;
+  }
+ .descuentos h2 {
+    font-size: 1.75rem;
+  }
+
+  .descuentos p.fs-4 {
+    font-size: 1.15rem;
+  }
+
+  .reseñas-alojamiento .d-flex {
+    justify-content: center;
+  }
+
+  .galeria-viajeros img {
+    height: 350px;
+  }
+
+h2 {
+    font-size: 2rem;
+  }
+
+  .gastronomia-descuentos {
+    height: 250px;
+  }
+  .galeria img {
+    height: 250px;
+  }
+  .card-body h5 {
+    font-size: 1.25rem;
+  }
+
+  .viajeros h2,
+  .barra h2 {
+    font-size: 2rem;
+  }
+  .viajeros p {
+    font-size: 1rem;
+  }
+  .voto,
+  .boton-restaurantes {
+    font-size: 1rem;
+  }
+
+  .voto:hover,
+  .boton-restaurantes:hover {
+    font-size: 1.5rem;
+  }
+
+  .planes-viajerox .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+ .carruselApp {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .descargar-app h2 {
+    font-size: 1.8rem;
+  }
+
+  .descargar-app p {
+    font-size: 1rem;
+  }
+
+  .img-app {
+    max-width: 120px;
+    height: auto;
+  }
+
+ .hero-colaboraciones {
+    height: 50vh;
+    background-position: center;
+  }
+
+  .hero-colaboraciones h2 {
+    font-size: 1.4rem;
+    padding: 0 1rem;
+  }
+
+  .creadoresContenido h2,
+  .servicios h2,
+  .marcas h2,
+  .propuesta-colaboraciones h2 {
+    font-size: 1.4rem;
+  }
+
+  .creadoresContenido .card,
+  .servicios .card {
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  .servicios .card .row.g-0 {
+    flex-direction: column;
+  }
+
+  .servicios .card img {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  .marcas img {
+    width: 60%;
+    margin: 1rem 0;
+  }
+
+  .propuesta-colaboraciones p {
+    font-size: 1rem;
+  }
+
+  .boton-colaboraciones {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+.misiones-cumplidas .card {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .misiones .card,
+  .misiones-cumplidas .card {
+    width: 100%;
+    margin: 0;
+  }
+
+  .misiones h2,
+  .misiones-cumplidas h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .boton-milla,
+  .boton-mision {
+    display: block;
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+ .barra-admin {
+  display: none;
+ }
+ .barra-lateral-cel {
+    
+    width: 100%;
+    height: 20vh;
+  }
+  
+  
+}
+
+/* media query dispositivo large */
+ @media all and (min-width: 769px) and (max-width:991px) {
+.siete-maravillas h2,
+  .experiencias h2,
+  .reseñas h2,
+  .zona-beneficios h2 {
+    font-size: 2.2rem;
+  }
+
+  .img-banner {
+    height: 400px;
+  }
+
+  .boton-comunidad {
+    font-size: 1.25rem;
+  }
+
+  .reseñas .img-fija {
+    width: 90px;
+    height: 90px;
+  }
+  .reseñas p {
+    font-size: 0.8rem;
+  }
+
+  h2.p-2 {
+    font-size: 2rem;
+  }
+
+  .descuentos p.fs-4 {
+    font-size: 1.25rem;
+  }
+
+  .descuentos .card-img-top-wrapper img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .reseñas-alojamiento .d-flex {
+    justify-content: flex-start;
+  }
+
+  .reseñas-alojamiento .row.justify-content-evenly {
+    justify-content: center;
+  }
+
+  .reseñas .card {
+    max-width: 300px;
+  }
+
+  .reseñas .card-body p.card-text {
+    font-size: 0.95rem;
+  }
+
+  .foro-viajero .row-cols-2 {
+    display: flex;
+  }
+
+  .foro-viajero .col-12.col-md-6 {
+    height: 400px;
+  }
+
+  .galeria-viajeros img {
+    height: 300px;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  .descuentos-gastronomia .container-gastronomia {
+    padding: 3rem 1.5rem;
+  }
+
+  .gastronomia-descuentos {
+    height: 280px;
+  }
+
+  .viajeros p {
+    font-size: 1.15rem;
+    padding: 0 1rem;
+  }
+
+  .barra .col-md-4 {
+    text-align: left;
+    align-items: flex-start;
+  }
+  .barra p {
+    font-size: 1.15rem;
+  }
+
+ .titulo-viajerox {
+    font-size: 3rem;
+  }
+
+  .subtitulo-viajerox {
+    font-size: 1.25rem;
+  }
+
+  .row.justify-content-center > .col-md-4 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .card-suscripcion .btn {
+    font-size: 0.95rem;
+  }
+
+ .carruselApp {
+    height: auto;
+    object-fit: cover;
+  }
+
+  .descargar-app h2 {
+    font-size: 2rem;
+  }
+
+  .descargar-app p {
+    font-size: 1.1rem;
+  }
+
+  .img-app {
+    width: 160px;
+  }
+
+  .descargar-app .row {
+    text-align: left;
+  }
+
+ .hero-colaboraciones {
+    height: 60vh;
+  }
+
+  .hero-colaboraciones h2 {
+    font-size: 1.8rem;
+  }
+
+  .creadoresContenido .card,
+  .servicios .card {
+    width: 100%;
+    margin: 1rem auto;
+    height: auto;
+  }
+
+  .marcas img {
+    width: 55%;
+  }
+
+  .propuesta-colaboraciones h2 {
+    font-size: 1.8rem;
+  }
+
+  .propuesta-colaboraciones p {
+    font-size: 1.1rem;
+  }
+
+
+ .misiones .col-4,
+  .misiones-cumplidas .col {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 2rem;
+  }
+
+  .misiones .card,
+  .misiones-cumplidas .card {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .misiones h2,
+  .misiones-cumplidas h2 {
+    font-size: 1.7rem;
+  }
+
+  .boton-milla,
+  .boton-mision {
+    font-size: 1rem;
+    padding: 10px 18px;
+  }
+
+   .barra-lateral-cel {
+    display: none;
+    width: 100%;
+    height: 20vh;
+  }
+}
+/* media query dispositivo extra large */
+@media all and (min-width: 992px){
+   .barra-lateral-cel {
+    display: none;
+    width: 100%;
+    height: 20vh;
+  }
 }
