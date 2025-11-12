@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../assets/img/fontMaj.jpeg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.form-regist{
+   
+    width: 400px;
+    margin: auto;
+    margin-top: 100px;
+    border:2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: rgb(0, 0, 0);
+    box-shadow: 7px 13px 37px #000000;
+    backdrop-filter: blur(10px) ;
+}
+
+.form-regist h4{
+    color:  #FFECD1;
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+.controls{
+    width: 100%;
+    /* background: #FFECD1; */
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid ;
+    font-family: 'calibri';
+    font-size:18px;
+    color:rgb(0, 0, 0);
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+}
+
+.controls::placeholder{
+    color: white;
+}
+
+.form-regist p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    color:  #FFECD1;
+}
+
+.form-regist a {
+    color:  #FFECD1;
+    text-decoration: none;
+}
+
+.form-regist a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+.form-regist .botons{
+    width: 100%;
+    background-color: #15616D;
+    border: none;
+    padding: 12px;
+    color:white;
+    margin: 16px 0;
+    font-size: 16px;
+
+}
+
+.botons:hover{
+    background-color: #78290F;
+}

@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Streaming de viajes" />
+    <meta
+      name="keywords"
+      content="Streaming, viajes, 7Maravillas, paisajes, turismo"
+    />
+    <meta
+      name="author"
+      content="Marisol Lamas, Ornella Ricobelli, Facundo Camano, Octavio Fernandez Caram"
+    />
+    <title>Streaming de viajes</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/5cc9154e02.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../../css/detalle.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section
+        class="container-fluid py-5 min-vh-100 d-flex flex-column justify-content-center"
+      >
+        <div class="row g-4">
+          <div class="col-lg-8 mx-auto">
+            <section class="cristo-section my-5 text-center">
+              <h2 class="mb-4 fw-bold">Machu Picchu</h2>
+              <hr />
+            </section>
+            <div class="container">
+              <div class="row justify-content-center g-4">
+                <div class="col-12 col-md-8 col-lg-6">
+                  <div
+                    class="card-intro shadow-sm"
+                    data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                  >
+                    <img
+                      class="card-img-top rounded"
+                      src="../../assets/img/machuIntro.jpg"
+                      alt="Cristo Redentor"
+                      style="max-width: 100%; height: auto"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title fw-bold">Ubicación</h5>
+                      <p class="card-text mb-1">
+                        <strong>Ciudad:</strong> Cusco
+                      </p>
+                      <p class="card-text mb-0"><strong>País:</strong> Peru</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-8 col-lg-6">
+                  <div
+                    class="card-intro shadow-sm h-100"
+                    data-aos="fade-left"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="600"
+                    data-aos-duration="600"
+                  >
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">Descripción</h5>
+                      <p class="card-text">
+                        Es una de las maravillas más emblemáticas del mundo y el
+                        símbolo más reconocido del Perú. Ubicada a más de 2.400
+                        metros sobre el nivel del mar, entre las montañas de los
+                        Andes y la selva tropical, Machu Picchu fue construida
+                        en el siglo XV durante el apogeo del Imperio Inca. Sus
+                        terrazas, templos y estructuras de piedra muestran el
+                        avanzado conocimiento arquitectónico de esta
+                        civilización. Visitarla es una experiencia única, ya sea
+                        llegando en tren desde Cusco o recorriendo el Camino
+                        Inca, con vistas y paisajes impresionantes.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <section class="container my-5">
+              <h3 class="text-center mt-4 mb-5 fw-bold">
+                Actividades Turísticas
+              </h3>
+              <div class="row g-4 d-flex align-items-stretch">
+                <div class="col-sm-6 col-lg-4 d-flex">
+                  <div
+                    class="card shadow-sm border-0 flex-fill"
+                    data-aos="flip-right"
+                    data-aos-delay="300"
+                  >
+                    <img
+                      src="../../assets/img/caminoInca01.webp"
+                      class="card-img-top"
+                      alt="Camino Inca"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title text-start">Camino Inca</h5>
+                      <p class="card-text text-start mb-3">
+                        Es una ruta de senderismo que conecta el Valle Sagrado
+                        con la majestuosa ciudad perdida de los incas, ofrece un
+                        largo camino.
+                      </p>
+                      <button
+                        class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalInca"
+                      >
+                        Ver más
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 d-flex">
+                  <div
+                    class="card shadow-sm border-0 flex-fill"
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="4000"
+                    data-aos-delay="600"
+                  >
+                    <img
+                      src="../../assets/img/ollan03.jpg"
+                      class="card-img-top"
+                      alt="Ollantaytambo"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title text-start">Ollantaytambo</h5>
+                      <p class="card-text text-start mb-3">
+                        Pueblo andino de calles empedradas y canales incas,
+                        mantiene su cultura y tradiciones convirtiendose en un
+                        Valle Sagrado.
+                      </p>
+                      <button
+                        class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalOllan"
+                      >
+                        Ver más
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 d-flex">
+                  <div
+                    class="card shadow-sm border-0 flex-fill"
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="4000"
+                    data-aos-delay="900"
+                  >
+                    <img
+                      src="../../assets/img/machu02.jpg"
+                      class="card-img-top"
+                      alt="Machu picchu"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title text-start">Machu Picchu</h5>
+                      <p class="card-text text-start mb-3">
+                        Antigua ciudad inca enclavada en los Andes, deslumbra
+                        con su arquitectura sagrada, vistas imponentes y una
+                        gran historia.
+                      </p>
+                      <button
+                        class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalMachu"
+                      >
+                        Ver más
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 d-flex">
+                  <div
+                    class="card shadow-sm border-0 flex-fill"
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="4000"
+                    data-aos-delay="1200"
+                  >
+                    <img
+                      src="../../assets/img/aguas02.jpeg"
+                      alt="Aguas calientes"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title text-start">Aguas Calientes</h5>
+                      <p class="card-text text-start mb-3">
+                        Puerta de entrada a Machu Picchu, combina encanto
+                        andino, aguas termales naturales y vistas únicas de la
+                        selva montañosa.
+                      </p>
+                      <button
+                        class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalAguas"
+                      >
+                        Ver más
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 d-flex">
+                  <div
+                    class="card shadow-sm border-0 flex-fill"
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="4000"
+                    data-aos-delay="1500"
+                  >
+                    <img
+                      src="../../assets/img/rafting04.jpg"
+                      class="card-img-top"
+                      alt="Rafting"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title text-start">Rafting</h5>
+                      <p class="card-text text-start mb-3">
+                        Ofrece travesías emocionantes por ríos como el Urubamba
+                        y el Apurímac, entre montañas, selvas y paisajes andinos
+                        impresionantes.
+                      </p>
+                      <button
+                        class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalRafting"
+                      >
+                        Ver más
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 d-flex">
+                  <div
+                    class="card shadow-sm border-0 flex-fill"
+                    data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="4000"
+                    data-aos-delay="1800"
+                  >
+                    <img
+                      src="../../assets/img/bici02.jpg"
+                      class="card-img-top"
+                      alt="Ciclismo montaña"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title text-start">Ciclismo Montaña</h5>
+                      <p class="card-text text-start mb-3">
+                        El ciclismo de montaña en Perú ofrece rutas
+                        espectaculares cerca de Machu Picchu, entre valles,
+                        selvas y antiguos caminos incas.
+                      </p>
+                      <button
+                        class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalBici"
+                      >
+                        Ver más
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="itinerario-section mt-5 pt-5" id="mapa-machu">
+              <h3 class="mb-4 fw-bold text-center">
+                Cómo llegar a Machu Picchu
+              </h3>
+              <div
+                class="row justify-content-center align-items-start g-4 pt-3"
+              >
+                <div class="col-md-5 col-lg-4">
+                  <div
+                    class="itinerario-list text-center"
+                    data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                  >
+                    <ol class="list-unstyled">
+                      <li class="itinerario-item mb-4">
+                        <div class="icon-circle end-icon mb-2">
+                          <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                          <span class="visually-hidden">Punto de partida</span>
+                        </div>
+                        <h4 class="fw-bold">Cusco</h4>
+                        <p class="small text-muted">Inicio del viaje</p>
+                      </li>
+                      <li class="itinerario-item mb-4">
+                        <div class="icon-circle travel-icon mb-2">
+                          <i class="fa-solid fa-train" aria-hidden="true"></i>
+                          <span class="visually-hidden"
+                            >Transporte en tren</span
+                          >
+                        </div>
+                        <h4 class="fw-bold">Bus - Tren</h4>
+                        <p class="small text-muted">
+                          Bus a Ollantaytambo: 1 hora
+                        </p>
+                        <p class="small text-muted">
+                          Tren hacia Aguas Calientes: 1 hora 30 min
+                        </p>
+                      </li>
+                      <li class="itinerario-item">
+                        <div class="icon-circle start-icon mb-2">
+                          <i class="fa-solid fa-flag-checkered" aria-hidden="true"></i>
+                          <span class="visually-hidden">Destino final</span>
+                        </div>
+                        <h4 class="fw-bold">Machu Picchu</h4>
+                        <p class="small text-muted">
+                          Entrada principal al santuario
+                        </p>
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+                <div class="col-md-7 col-lg-7">
+                  <figure
+                    class="map-container shadow-sm rounded overflow-hidden"
+                  >
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.2460044273284!2d-72.54715112573194!3d-13.163141087187644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91aa0d1f1b7b8f2f%3A0xaca0a7b35af5044!2sSantuario%20Hist%C3%B3rico%20de%20Machu%20Picchu!5e0!3m2!1ses!2sar!4v1731012345000!5m2!1ses!2sar"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                      title="Mapa del Santuario Histórico de Machu Picchu"
+                    ></iframe>
+                    <figcaption class="small text-center mt-2 text-muted">
+                      Ubicación del Santuario Histórico de Machu Picchu
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </section>
+            <section
+              class="py-5 mt-5 pt-5"
+              aria-labelledby="faq-title"
+              data-aos="fade-up"
+              data-aos-duration="300"
+              data-aos-delay="600"
+            >
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-12 col-md-10 col-lg-8">
+                    <h3 id="faq-title" class="text-center mb-5 fw-bold">
+                      Todo lo que debes saber antes de visitar Machu Picchu
+                    </h3>
+                    <div class="accordion" id="faqAccordionDetalle">
+                      <article
+                        class="accordion-item bg-secondary border-0 mb-3"
+                      >
+                        <h3 class="accordion-header" id="headingOneD">
+                          <button
+                            class="accordion-button collapsed bg-secondary fw-bold"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseOneD"
+                            aria-expanded="false"
+                            aria-controls="collapseOneD"
+                          >
+                            ¿Cuál es el horario de visita a Machu Picchu?
+                          </button>
+                        </h3>
+                        <div
+                          id="collapseOneD"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingOneD"
+                          data-bs-parent="#faqAccordionDetalle"
+                        >
+                          <div class="accordion-body bg-dark">
+                            <p>
+                              El sitio arqueológico abre todos los días desde
+                              las 6:00 hasta las 17:30 hs. Se recomienda
+                              ingresar temprano para disfrutar del amanecer y
+                              evitar las horas de mayor afluencia.
+                            </p>
+                          </div>
+                        </div>
+                      </article>
+                      <article
+                        class="accordion-item bg-secondary border-0 mb-3"
+                      >
+                        <h3 class="accordion-header" id="headingTwoD">
+                          <button
+                            class="accordion-button collapsed bg-secondary fw-bold"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwoD"
+                            aria-expanded="false"
+                            aria-controls="collapseTwoD"
+                          >
+                            ¿Cómo se llega a Machu Picchu?
+                          </button>
+                        </h3>
+                        <div
+                          id="collapseTwoD"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingTwoD"
+                          data-bs-parent="#faqAccordionDetalle"
+                        >
+                          <div class="accordion-body bg-dark">
+                            <p>
+                              Se puede llegar en tren desde Cusco o Urubamba
+                              hasta Aguas Calientes y luego en bus o caminando
+                              hasta la entrada. También es posible llegar a pie
+                              por el famoso Camino Inca.
+                            </p>
+                          </div>
+                        </div>
+                      </article>
+                      <article
+                        class="accordion-item bg-secondary border-0 mb-3"
+                      >
+                        <h3 class="accordion-header" id="headingThreeD">
+                          <button
+                            class="accordion-button collapsed bg-secondary fw-bold"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseThreeD"
+                            aria-expanded="false"
+                            aria-controls="collapseThreeD"
+                          >
+                            ¿Cuánto cuesta la entrada a Machu Picchu?
+                          </button>
+                        </h3>
+                        <div
+                          id="collapseThreeD"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingThreeD"
+                          data-bs-parent="#faqAccordionDetalle"
+                        >
+                          <div class="accordion-body bg-dark">
+                            <p>
+                              El precio varía según el tipo de visita: solo
+                              Machu Picchu, Machu Picchu + Huayna Picchu o Machu
+                              Picchu + Montaña. Para turistas extranjeros, los
+                              precios van desde 150 a 250 soles.
+                            </p>
+                          </div>
+                        </div>
+                      </article>
+                      <article
+                        class="accordion-item bg-secondary border-0 mb-3"
+                      >
+                        <h3 class="accordion-header" id="headingFourD">
+                          <button
+                            class="accordion-button collapsed bg-secondary fw-bold"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseFourD"
+                            aria-expanded="false"
+                            aria-controls="collapseFourD"
+                          >
+                            ¿Qué debo llevar para visitar Machu Picchu?
+                          </button>
+                        </h3>
+                        <div
+                          id="collapseFourD"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingFourD"
+                          data-bs-parent="#faqAccordionDetalle"
+                        >
+                          <div class="accordion-body bg-dark">
+                            <p>
+                              Se recomienda llevar calzado cómodo, protector
+                              solar, gorra, agua, repelente y una cámara. No se
+                              permiten paraguas grandes, trípodes ni mochilas
+                              voluminosas.
+                            </p>
+                          </div>
+                        </div>
+                      </article>
+                      <article
+                        class="accordion-item bg-secondary border-0 mb-3"
+                      >
+                        <h3 class="accordion-header" id="headingFiveD">
+                          <button
+                            class="accordion-button collapsed bg-secondary fw-bold"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseFiveD"
+                            aria-expanded="false"
+                            aria-controls="collapseFiveD"
+                          >
+                            ¿Cuál es la mejor época para visitar Machu Picchu?
+                          </button>
+                        </h3>
+                        <div
+                          id="collapseFiveD"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingFiveD"
+                          data-bs-parent="#faqAccordionDetalle"
+                        >
+                          <div class="accordion-body bg-dark">
+                            <p>
+                              La mejor temporada es entre mayo y octubre,
+                              durante la estación seca. Los meses de junio y
+                              julio ofrecen los días más despejados, ideales
+                              para la fotografía.
+                            </p>
+                          </div>
+                        </div>
+                      </article>
+                      <article
+                        class="accordion-item bg-secondary border-0 mb-3"
+                      >
+                        <h3 class="accordion-header" id="headingSixD">
+                          <button
+                            class="accordion-button collapsed bg-secondary fw-bold"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseSixD"
+                            aria-expanded="false"
+                            aria-controls="collapseSixD"
+                          >
+                            ¿Hay servicios o restricciones dentro del sitio?
+                          </button>
+                        </h3>
+                        <div
+                          id="collapseSixD"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingSixD"
+                          data-bs-parent="#faqAccordionDetalle"
+                        >
+                          <div class="accordion-body bg-dark">
+                            <p>
+                              Dentro del complejo no hay baños ni venta de
+                              alimentos. Todo debe adquirirse antes de ingresar.
+                              Está prohibido fumar, comer y salirse de los
+                              senderos señalizados.
+                            </p>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="container py-5">
+              <h3 class="text-center mb-5 fw-bold">
+                Reseñas de Nuestros Viajeros
+              </h3>
+              <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                  <div class="card reseña-card h-100 shadow-sm">
+                    <img
+                      src="../../assets/img/reseñamachu01.jpg"
+                      class="card-img-top"
+                      alt="grupo en macchu picchu"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-primary fw-bold">
+                        Mora Bianchi
+                      </h5>
+                      <p class="card-text text-muted">
+                        "Muy buena la comunidad viajera, me gusta la asesoría
+                        personalizada para los viajes"
+                      </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 text-end">
+                      <div class="rating text-warning">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="card reseña-card h-100 shadow-sm">
+                    <img
+                      src="../../assets/img/reseñaMachu02.jpg"
+                      class="card-img-top"
+                      alt="pareja en machu picchu"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-primary fw-bold">
+                        Gabriel Herrera
+                      </h5>
+                      <p class="card-text text-muted">
+                        “Súper recomendado, fue una experiencia increíble y el
+                        viaje superó todas mis expectativas.”
+                      </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 text-end">
+                      <div class="rating text-warning">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="card reseña-card h-100 shadow-sm">
+                    <img
+                      src="../../assets/img/reseñaMachu03.jpg"
+                      alt="grupo en machu picchu"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-primary fw-bold">
+                        Daniel Marquez
+                      </h5>
+                      <p class="card-text text-muted">
+                        “Gracias a la comunidad viajera pude resolver todas mis
+                        dudas con la asesoría y disfrutar por completo del
+                        viaje.”
+                      </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 text-end">
+                      <div class="rating text-warning">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="container my-5">
+              <h3 class="text-center mb-4 fw-bold">Destinos Sugeridos</h3>
+              <div class="row justify-content-center g-4">
+                <div class="col-md-6 col-lg-3">
+                  <div class="card card-destino h-100 text-center">
+                    <img
+                      src="../../assets/img/Chichen_Itza_CB.jpg"
+                      class="card-img-top img-carddestino"
+                      alt="Chichén Itzá"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-titulod">Chichén Itzá</h5>
+                      <a
+                        href="../../pages/detalleProducto/detalleChichen.html"
+                        class="btn btn-detalle btn-sm w-50 mt-auto ms-auto"
+                        >Ver más</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="card card-destino h-100 text-center">
+                    <img
+                      src="../../assets/img/cr.jpg"
+                      class="card-img-top img-carddestino"
+                      alt="Coliseo Romano"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-titulod">Coliseo Romano</h5>
+                      <a
+                        href="../../pages/detalleProducto/detalleColiseo.html"
+                        class="btn btn-detalle btn-sm w-50 mt-auto ms-auto"
+                        >Ver más</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="card card-destino h-100 text-center">
+                    <img
+                      src="../../assets/img/Petra-jordania.jpg"
+                      class="card-img-top img-carddestino"
+                      alt="Petra"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-titulod">Petra</h5>
+                      <a
+                        href="../../pages/detalleProducto/detallePetra.html"
+                        class="btn btn-detalle btn-sm w-50 mt-auto ms-auto"
+                        >Ver más</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="card card-destino h-100 text-center">
+                    <img
+                      src="../../assets/img/tm.webp"
+                      class="card-img-top img-carddestino"
+                      alt="Taj Mahal"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-titulod">Taj Mahal</h5>
+                      <a
+                        href="../../pages/detalleProducto/detalleTaj.html"
+                        class="btn btn-detalle btn-sm w-50 mt-auto ms-auto"
+                        >Ver más</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+    <article
+      class="modal fade modal-article"
+      id="modalInca"
+      tabindex="-1"
+      aria-labelledby="IncaLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 bg-dark text-light">
+          <div class="modal-body p-0">
+            <img
+              src="../../assets/img/caminoInca02.jpg"
+              class="img-fluid w-100"
+              alt="Camino Inca"
+            />
+            <div class="p-3">
+              <h5 class="mb-2" id="CristoLabel">Camino Inca</h5>
+              <p class="card-text text-start mb-3">
+                El Camino a Machu Picchu es una antigua ruta sagrada que recorre
+                montañas, valles y restos arqueológicos del Imperio Inca. El
+                trayecto clásico dura 4 días y 3 noches, aunque hay una versión
+                corta de 2 días. Comienza en el kilómetro 82 de la vía
+                Cusco,Aguas Calientes y finaliza en la Puerta del Sol (Inti
+                Punku), con una vista impresionante de Machu Picchu. Para
+                recorrerlo, se debe contratar una agencia autorizada, ya que el
+                acceso diario es limitado.
+              </p>
+              <button
+                type="button"
+                class="btn btn-detalle"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article
+      class="modal fade modal-article"
+      id="modalOllan"
+      tabindex="-1"
+      aria-labelledby="OllanLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 bg-dark text-light">
+          <div class="modal-body p-0">
+            <img
+              src="../../assets/img/ollan02.jpg"
+              class="img-fluid w-100"
+              alt="Ollantaytambo"
+            />
+            <div class="p-3">
+              <h5 class="mb-2" id="CopaLabel">Ollantaytambo</h5>
+              <p class="card-text text-start mb-3">
+                Ollantaytambo es un pintoresco pueblo inca en el Valle Sagrado,
+                considerado la antesala de Machu Picchu. Destaca por sus
+                terrazas, templos y calles empedradas que conservan el trazado
+                original. Fue un importante centro militar, religioso y
+                agrícola, y hoy es un punto de partida frecuente para el tren o
+                el Camino Inca, combinando historia, arquitectura ancestral y
+                cultura viva.
+              </p>
+              <button
+                type="button"
+                class="btn btn-detalle"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article
+      class="modal fade modal-article"
+      id="modalMachu"
+      tabindex="-1"
+      aria-labelledby="MachuLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 bg-dark text-light">
+          <div class="modal-body p-0">
+            <img
+              src="../../assets/img/machu04.jpeg"
+              class="img-fluid w-100"
+              alt="Machu picchu"
+            />
+            <div class="p-3">
+              <h5 class="mb-2" id="MachuLabel">Machu picchu</h5>
+              <p class="card-text text-start mb-3">
+                Machu Picchu es una majestuosa ciudadela inca ubicada en lo alto
+                de las montañas del Valle Sagrado, considerada una de las
+                maravillas del mundo y símbolo del Perú. Construida en el siglo
+                XV durante el gobierno de Pachacútec, destaca por sus
+                impresionantes terrazas, templos y estructuras de piedra
+                perfectamente ensambladas. Rodeada de naturaleza exuberante, fue
+                un importante centro ceremonial y espiritual del Imperio Inca.
+                Hoy es el destino final del famoso Camino Inca y una experiencia
+                única que conecta al visitante con la historia y la cultura de
+                esta civilización.
+              </p>
+              <button
+                type="button"
+                class="btn btn-detalle"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article
+      class="modal fade modal-article"
+      id="modalAguas"
+      tabindex="-1"
+      aria-labelledby="AguasLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 bg-dark text-light">
+          <div class="modal-body p-0">
+            <img
+              src="../../assets/img/aguas03.jpg"
+              class="img-fluid w-100"
+              alt="Aguas Calientes"
+            />
+            <div class="p-3">
+              <h5 class="mb-2" id="AguasLabel">Aguas Calientes</h5>
+              <p class="card-text text-start mb-3">
+                Aguas Calientes, o Machu Picchu Pueblo, es una pequeña localidad
+                entre montañas y ríos en el Valle Sagrado, al pie de la
+                ciudadela inca. Es la puerta de entrada a Machu Picchu y el
+                punto final del tren desde Cusco u Ollantaytambo, ofreciendo
+                aguas termales, mercados artesanales y gastronomía local, ideal
+                para descansar antes o después de visitar la maravilla del
+                mundo.
+              </p>
+              <button
+                type="button"
+                class="btn btn-detalle"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article
+      class="modal fade modal-article"
+      id="modalRafting"
+      tabindex="-1"
+      aria-labelledby="RaftingLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 bg-dark text-light">
+          <div class="modal-body p-0">
+            <img
+              src="../../assets/img/rafting02.jpeg"
+              class="img-fluid w-100"
+              alt="Rafting"
+            />
+            <div class="p-3">
+              <h5 class="mb-2" id="RaftingLabel">Rafting</h5>
+              <p class="card-text text-start mb-3">
+                El rafting cerca de Machu Picchu se practica principalmente en
+                el río Urubamba, atravesando el Valle Sagrado entre montañas y
+                paisajes andinos. Las zonas más populares son Ollantaytambo,
+                Chuquicahuana y Santa María, con rápidos de nivel II a IV, aptos
+                para principiantes y expertos, convirtiendo la aventura en una
+                experiencia emocionante rumbo a la ciudadela inca.
+              </p>
+              <button
+                type="button"
+                class="btn btn-detalle"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article
+      class="modal fade modal-article"
+      id="modalBici"
+      tabindex="-1"
+      aria-labelledby="BiciLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 bg-dark text-light">
+          <div class="modal-body p-0">
+            <img
+              src="../../assets/img/bici01.avif"
+              class="img-fluid w-100"
+              alt="ciclismo montaña"
+            />
+            <div class="p-3">
+              <h5 class="mb-2" id="BiciLabel">Ciclismo Montaña</h5>
+              <p class="card-text text-start mb-3">
+                El ciclismo de montaña cerca de Machu Picchu se realiza en los
+                senderos del Valle Sagrado, especialmente en Ollantaytambo,
+                Pisac y la ruta hacia Santa Teresa. Las rutas ofrecen paisajes
+                montañosos, ríos y restos arqueológicos, y generalmente se
+                realizan con guía o en grupo para mayor seguridad y orientación,
+                combinando aventura, naturaleza e historia cerca de Aguas
+                Calientes y la ciudadela inca.
+              </p>
+              <button
+                type="button"
+                class="btn btn-detalle"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <footer></footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
