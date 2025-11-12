@@ -1201,7 +1201,7 @@ h2 {
     display: none;
   }
 
-  main {
+  .adminPanel-main {
     margin-left: 260px;
   }
   .tarjetas-estadisticas .container .card {
