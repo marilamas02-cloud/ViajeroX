@@ -23,6 +23,7 @@
       src="https://kit.fontawesome.com/5cc9154e02.js"
       crossorigin="anonymous"
     ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="../../css/detalle.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -31,901 +32,955 @@
     <header></header>
     <!-- CONTENIDO PRINCIPAL -->
     <main>
-      <section class="container-fluid py-5 min-vh-100 d-flex flex-column justify-content-center">
-      <div class="row g-4">
-        <!-- COLUMNA PRINCIPAL -->
-        <div class="col-lg-8 mx-auto">
-          <!-- Intro Cristo -->
-          <section class="cristo-section my-5 text-center">
-            <!-- TÍTULO -->
-            <h2 class="mb-4 fw-bold">Cristo Redentor</h2>
-            <hr />
-          </section>
+      <section
+        class="container-fluid py-5 min-vh-100 d-flex flex-column justify-content-center"
+      >
+        <div class="row g-4">
+          <!-- COLUMNA PRINCIPAL -->
+          <div class="col-lg-8 mx-auto">
+            <!-- Intro Cristo -->
+            <section class="cristo-section my-5 text-center">
+              <!-- TÍTULO -->
+              <h2 class="mb-4 fw-bold">Cristo Redentor</h2>
+              <hr />
+            </section>
 
-          <!-- INTRO CARD Y DESCRIPCIÒN -->
-          <div class="container">
-            <div class="row justify-content-center g-4">
-              <!-- Card 1: Imagen -->
-              <div class="col-12 col-md-8 col-lg-6">
-                <div class="card-intro shadow-sm">
-                  <img
-                    class="card-img-top rounded"
-                    src="../../assets/img/cristoImg.webp"
-                    alt="Cristo Redentor"
-                    style="max-width: 100%; height: auto"
-                  />
-                  <div class="card-body text-center">
-                    <h5 class="card-title fw-bold">Ubicación</h5>
-                    <p class="card-text mb-1">
-                      <strong>Ciudad:</strong> Río de Janeiro
-                    </p>
-                    <p class="card-text mb-0"><strong>País:</strong> Brasil</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card 2: Descripción de Cristo Redentor -->
-              <div class="col-12 col-md-8 col-lg-6">
-                <div class="card-intro shadow-sm h-100">
-                  <div class="card-body">
-                    <h5 class="card-title fw-bold">Descripción</h5>
-                    <p class="card-text">
-                      Es uno de los monumentos más emblemáticos de Brasil y del
-                      mundo, ubicado en la cima del Cerro del Corcovado en Río
-                      de Janeiro. Con una altura de 30 metros y brazos
-                      extendidos, esta icónica estatua de Jesús domina el
-                      paisaje, ofreciendo vistas panorámicas impresionantes de
-                      la ciudad, la Bahía de Guanabara y el Pan de Azúcar.
-                      Construido entre 1922 y 1931, representa la fe y la
-                      hospitalidad del pueblo brasileño, atrayendo a millones de
-                      turistas cada año. La visita incluye senderos rodeados de
-                      naturaleza, opciones de transporte como el tren del
-                      Corcovado o vehículos privados, y la posibilidad de
-                      disfrutar de fotografías únicas y momentos memorables en
-                      un entorno lleno de historia y cultura.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- SECCIÓN DE CARDS ACTIVIDAD TURÍSTICA-->
-          <section class="container my-5">
-            <h3 class="text-center mt-4 mb-5 fw-bold">
-              Actividades Turísticas
-            </h3>
-
-            <div class="row g-4 d-flex align-items-stretch">
-              <!-- Card 1 -->
-              <div class="col-sm-6 col-lg-4 d-flex">
-                <div class="card shadow-sm border-0 flex-fill">
-                  <img
-                    src="../../assets/img/cristoReden02.jpg"
-                    class="card-img-top"
-                    alt="Cristo redentor"
-                  />
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title text-start">Cristo Redentor</h5>
-                    <p class="card-text text-start mb-3">
-                      Ubicado en la cima del Cerro del Corcovado en Río de
-                      Janeiro
-                    </p>
-                    <button
-                      class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
-                      data-bs-toggle="modal"
-                      data-bs-target="#modalCristo"
-                    >
-                      Ver más
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card 2 -->
-              <div class="col-sm-6 col-lg-4 d-flex">
-                <div class="card shadow-sm border-0 flex-fill">
-                  <img
-                    src="../../assets/img/cocapabana03.webp"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title text-start">Copacabana</h5>
-                    <p class="card-text text-start mb-3">
-                      Famosa playa de Río con arena blanca y vibrante vida
-                      nocturna.
-                    </p>
-                    <button
-                      class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
-                      data-bs-toggle="modal"
-                      data-bs-target="#modalCopa"
-                    >
-                      Ver más
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card 3 -->
-              <div class="col-sm-6 col-lg-4 d-flex">
-                <div class="card shadow-sm border-0 flex-fill">
-                  <img
-                    src="../../assets/img/parqueLage01.jpg"
-                    class="card-img-top"
-                    alt="Parque Lage"
-                  />
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title text-start">Parque Lage</h5>
-                    <p class="card-text text-start mb-3">
-                      Paseá por jardines tropicales, senderos históricos y
-                      disfrutá de la mansión y vistas del Corcovado.
-                    </p>
-                    <button
-                      class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
-                      data-bs-toggle="modal"
-                      data-bs-target="#modalLage"
-                    >
-                      Ver más
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card 4 -->
-              <div class="col-sm-6 col-lg-4 d-flex">
-                <div class="card shadow-sm border-0 flex-fill">
-                  <img src="../../assets/img/carnavalImg.jpg" alt="carnaval" />
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title text-start">Carnaval</h5>
-                    <p class="card-text text-start mb-3">
-                      Disfrutá de la fiesta más colorida y famosa de Brasil.
-                    </p>
-                    <button
-                      class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
-                      data-bs-toggle="modal"
-                      data-bs-target="#modalCarna"
-                    >
-                      Ver más
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card 5 -->
-              <div class="col-sm-6 col-lg-4 d-flex">
-                <div class="card shadow-sm border-0 flex-fill">
-                  <img
-                    src="../../assets/img/panAzucar02.jpg"
-                    class="card-img-top"
-                    alt="pan azucar"
-                  />
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title text-start">Pan de Azúcar</h5>
-                    <p class="card-text text-start mb-3">
-                      Subí en teleférico y disfrutá de vistas panorámicas únicas
-                      de Río.
-                    </p>
-                    <button
-                      class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
-                      data-bs-toggle="modal"
-                      data-bs-target="#modalPan"
-                    >
-                      Ver más
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Card 6 -->
-              <div class="col-sm-6 col-lg-4 d-flex">
-                <div class="card shadow-sm border-0 flex-fill">
-                  <img
-                    src="../../assets/img/caboBrasil01.jpeg"
-                    class="card-img-top"
-                    alt="Arraial do Cabo"
-                  />
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title text-start">Arraial do Cabo</h5>
-                    <p class="card-text text-start mb-3">
-                      Conocida por sus playas de arena blanca y aguas turquesa
-                      ideales para relajarse.
-                    </p>
-                    <button
-                      class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
-                      data-bs-toggle="modal"
-                      data-bs-target="#modalCabo"
-                    >
-                      Ver más
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- BLOQUE MAPA + ITINERARIO -->
-          <section class="itinerario-section mt-5 pt-5" id="mapa-cristo">
-            <h3 class="mb-4 fw-bold text-center">
-              Cómo llegar al Cristo Redentor
-            </h3>
-
-            <div class="row justify-content-center align-items-start g-4 pt-3">
-              <!-- ITINERARIO -->
-              <div class="col-md-5 col-lg-4">
-                <div class="itinerario-list text-center">
-                  <!-- Punto de partida -->
-                  <div class="itinerario-item mb-4">
-                    <div class="icon-circle end-icon mb-2">
-                      <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                    <h4 class="fw-bold">Copacabana</h4>
-                    <p class="small text-muted">Punto de partida</p>
-                  </div>
-
-                  <!-- Medio de transporte -->
-                  <div class="itinerario-item mb-4">
-                    <div class="icon-circle travel-icon mb-2">
-                      <i class="fa-solid fa-bus-simple"></i>
-                    </div>
-                    <h4 class="fw-bold">Van oficial</h4>
-                    <p class="small text-muted">Duración aproximada: 50 min</p>
-                  </div>
-
-                  <!-- Llegada -->
-                  <div class="itinerario-item">
-                    <div class="icon-circle start-icon mb-2">
-                      <i class="fa-solid fa-flag-checkered"></i>
-                    </div>
-                    <h4 class="fw-bold">Cristo Redentor</h4>
-                    <p class="small text-muted">Entrada principal</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- MAPA -->
-              <div class="col-md-7 col-lg-7">
-                <div class="map-container shadow-sm rounded overflow-hidden">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.731173261388!2d-43.21149468503528!3d-22.95191698498395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99801df52e27a1%3A0xf67cfde29d0a9f93!2sCristo%20Redentor!5e0!3m2!1ses!2sar!4v1730785900000!5m2!1ses!2sar"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                  >
-                  </iframe>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- Preguntas y Respuestas -->
-          <section class="py-5 mt-5 pt-5" aria-labelledby="faq-title">
+            <!-- INTRO CARD Y DESCRIPCIÒN -->
             <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-lg-8">
-                  <h3 id="faq-title" class="text-center mb-5 fw-bold">
-                    Todo lo que debes saber antes de visitar
-                  </h3>
-
-                  <div class="accordion" id="faqAccordionDetalle">
-                    <!-- Artículo 1 -->
-                    <article class="accordion-item bg-secondary border-0 mb-3">
-                      <h3 class="accordion-header" id="headingOneD">
-                        <button
-                          class="accordion-button collapsed bg-secondary fw-bold"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseOneD"
-                          aria-expanded="false"
-                          aria-controls="collapseOneD"
-                        >
-                          ¿Cuál es el horario de visita al Cristo Redentor?
-                        </button>
-                      </h3>
-                      <div
-                        id="collapseOneD"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="headingOneD"
-                        data-bs-parent="#faqAccordionDetalle"
-                      >
-                        <div class="accordion-body bg-dark">
-                          <p>
-                            El Cristo Redentor está abierto todos los días de
-                            8:00 a 19:00 hs. Se recomienda visitar temprano para
-                            evitar multitudes.
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-
-                    <!-- Artículo 2 -->
-                    <article class="accordion-item bg-secondary border-0 mb-3">
-                      <h3 class="accordion-header" id="headingTwoD">
-                        <button
-                          class="accordion-button collapsed bg-secondary fw-bold"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseTwoD"
-                          aria-expanded="false"
-                          aria-controls="collapseTwoD"
-                        >
-                          ¿Cómo puedo llegar al Cristo Redentor?
-                        </button>
-                      </h3>
-                      <div
-                        id="collapseTwoD"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="headingTwoD"
-                        data-bs-parent="#faqAccordionDetalle"
-                      >
-                        <div class="accordion-body bg-dark">
-                          <p>
-                            Se puede acceder mediante el tren del Corcovado
-                            desde el barrio Cosme Velho, en van oficial, taxi o
-                            auto particular hasta la estación. El viaje dura
-                            entre 20 y 50 minutos dependiendo del transporte.
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-
-                    <!-- Artículo 3 -->
-                    <article class="accordion-item bg-secondary border-0 mb-3">
-                      <h3 class="accordion-header" id="headingThreeD">
-                        <button
-                          class="accordion-button collapsed bg-secondary fw-bold"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseThreeD"
-                          aria-expanded="false"
-                          aria-controls="collapseThreeD"
-                        >
-                          ¿Cuánto cuesta la entrada al Cristo Redentor?
-                        </button>
-                      </h3>
-                      <div
-                        id="collapseThreeD"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="headingThreeD"
-                        data-bs-parent="#faqAccordionDetalle"
-                      >
-                        <div class="accordion-body bg-dark">
-                          <p>
-                            Los precios varían según el tipo de transporte y
-                            edad del visitante. Para adultos, el tren del
-                            Corcovado cuesta aproximadamente 90 BRL, mientras
-                            que niños y estudiantes tienen descuentos.
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-
-                    <!-- Artículo 4 -->
-                    <article class="accordion-item bg-secondary border-0 mb-3">
-                      <h3 class="accordion-header" id="headingFourD">
-                        <button
-                          class="accordion-button collapsed bg-secondary fw-bold"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseFourD"
-                          aria-expanded="false"
-                          aria-controls="collapseFourD"
-                        >
-                          ¿Qué debo llevar para la visita?
-                        </button>
-                      </h3>
-                      <div
-                        id="collapseFourD"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="headingFourD"
-                        data-bs-parent="#faqAccordionDetalle"
-                      >
-                        <div class="accordion-body bg-dark">
-                          <p>
-                            Se recomienda llevar agua, protector solar, gorra,
-                            cámara o celular, y ropa cómoda. Durante días
-                            lluviosos, es útil un impermeable, ya que el clima
-                            puede cambiar rápidamente en la montaña.
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-
-                    <!-- Artículo 5 -->
-                    <article class="accordion-item bg-secondary border-0 mb-3">
-                      <h3 class="accordion-header" id="headingFiveD">
-                        <button
-                          class="accordion-button collapsed bg-secondary fw-bold"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseFiveD"
-                          aria-expanded="false"
-                          aria-controls="collapseFiveD"
-                        >
-                          ¿Puedo tomar fotos y videos?
-                        </button>
-                      </h3>
-                      <div
-                        id="collapseFiveD"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="headingFiveD"
-                        data-bs-parent="#faqAccordionDetalle"
-                      >
-                        <div class="accordion-body bg-dark">
-                          <p>
-                            Sí, se permite la fotografía y grabación para uso
-                            personal. Se recomienda respetar las normas del
-                            lugar y no obstaculizar el paso de otros visitantes.
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-
-                    <!-- Artículo 6 -->
-                    <article class="accordion-item bg-secondary border-0 mb-3">
-                      <h3 class="accordion-header" id="headingSixD">
-                        <button
-                          class="accordion-button collapsed bg-secondary fw-bold"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseSixD"
-                          aria-expanded="false"
-                          aria-controls="collapseSixD"
-                        >
-                          ¿Hay accesibilidad para personas con movilidad
-                          reducida?
-                        </button>
-                      </h3>
-                      <div
-                        id="collapseSixD"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="headingSixD"
-                        data-bs-parent="#faqAccordionDetalle"
-                      >
-                        <div class="accordion-body bg-dark">
-                          <p>
-                            Sí, tanto el tren del Corcovado como los accesos y
-                            plataformas están adaptados para sillas de ruedas y
-                            personas con movilidad reducida. Se recomienda
-                            consultar horarios especiales si se necesita
-                            asistencia adicional.
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- SECCIÓN DE RESEÑAS -->
-          <section class="container py-5">
-            <h3 class="text-center mb-5 fw-bold">
-              Reseñas de Nuestros Viajeros
-            </h3>
-
-            <div class="row g-4 justify-content-center">
-              <!-- Reseña 1 -->
-              <div class="col-md-6 col-lg-4">
-                <div class="card reseña-card h-100 shadow-sm">
-                  <img
-                    src="../../assets/img/reseñaCristo1.jpg"
-                    class="card-img-top"
-                    alt="Viajero en la montaña"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title text-primary fw-bold">
-                      Lara Hernández
-                    </h5>
-                    <p class="card-text text-muted">
-                      "Muy buena la comunidad viajera, me gusta la asesoría
-                      personalizada para los viajes"
-                    </p>
-                  </div>
-                  <div class="card-footer bg-transparent border-0 text-end">
-                    <div class="rating text-warning">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
+              <div class="row justify-content-center g-4">
+                <!-- Card 1: Imagen -->
+                <div class="col-12 col-md-8 col-lg-6">
+                  <div class="card-intro shadow-sm" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+                    <img
+                      class="card-img-top rounded"
+                      src="../../assets/img/cristoImg.webp"
+                      alt="Cristo Redentor"
+                      style="max-width: 100%; height: auto"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title fw-bold">Ubicación</h5>
+                      <p class="card-text mb-1">
+                        <strong>Ciudad:</strong> Río de Janeiro
+                      </p>
+                      <p class="card-text mb-0">
+                        <strong>País:</strong> Brasil
+                      </p>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <!-- Reseña 2 -->
-              <div class="col-md-6 col-lg-4">
-                <div class="card reseña-card h-100 shadow-sm">
-                  <img
-                    src="../../assets/img/reseñaCristo2.avif"
-                    class="card-img-top"
-                    alt="Viajero en la playa"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title text-primary fw-bold">
-                      Lautaro Landucci
-                    </h5>
-                    <p class="card-text text-muted">
-                      “Súper recomendado, fue una experiencia increíble y el
-                      viaje superó todas mis expectativas.”
-                    </p>
-                  </div>
-                  <div class="card-footer bg-transparent border-0 text-end">
-                    <div class="rating text-warning">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Reseña 3 -->
-              <div class="col-md-6 col-lg-4">
-                <div class="card reseña-card h-100 shadow-sm">
-                  <img
-                    src="../../assets/img/reseñaCristo3.jpg"
-                    alt="Pareja viajando"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title text-primary fw-bold">Jordi Barea</h5>
-                    <p class="card-text text-muted">
-                      “Gracias a la comunidad viajera pude resolver todas mis
-                      dudas con la asesoría y disfrutar por completo del viaje.”
-                    </p>
-                  </div>
-                  <div class="card-footer bg-transparent border-0 text-end">
-                    <div class="rating text-warning">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
+                <!-- Card 2: Descripción de Cristo Redentor -->
+                <div class="col-12 col-md-8 col-lg-6">
+                  <div
+                    class="card-intro shadow-sm h-100" data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="600"
+     data-aos-duration="600">
+                    <div class="card-body">
+                      <h5 class="card-title fw-bold">Descripción</h5>
+                      <p class="card-text">
+                        Es uno de los monumentos más emblemáticos de Brasil y
+                        del mundo, ubicado en la cima del Cerro del Corcovado en
+                        Río de Janeiro. Con una altura de 30 metros y brazos
+                        extendidos, esta icónica estatua de Jesús domina el
+                        paisaje, ofreciendo vistas panorámicas impresionantes de
+                        la ciudad, la Bahía de Guanabara y el Pan de Azúcar.
+                        Construido entre 1922 y 1931, representa la fe y la
+                        hospitalidad del pueblo brasileño, atrayendo a millones
+                        de turistas cada año. La visita incluye senderos
+                        rodeados de naturaleza, opciones de transporte como el
+                        tren del Corcovado o vehículos privados, y la
+                        posibilidad de disfrutar de fotografías únicas y
+                        momentos memorables en un entorno lleno de historia y
+                        cultura.
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
 
-          <!-- DESTINOS SUGERIDOS -->
-          <section class="container my-5">
-            <h3 class="text-center mb-4 fw-bold">Destinos Sugeridos</h3>
+            <!-- SECCIÓN DE CARDS ACTIVIDAD TURÍSTICA-->
+            <section class="container my-5">
+              <h3 class="text-center mt-4 mb-5 fw-bold">
+                Actividades Turísticas
+              </h3>
 
-            <div class="row justify-content-center g-4">
-              <!-- Card 1 -->
-              <div class="col-md-6 col-lg-3">
-                <div class="card card-destino h-100 text-center">
-                  <img
-                    src="../../assets/img/Chichen_Itza_CB.jpg"
-                    class="card-img-top img-carddestino"
-                    alt="Chichén Itzá"
-                  />
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-titulod">Chichén Itzá</h5>
-                    <a
-                      href="#"
-                      class="btn btn-detalle btn-sm w-50 mt-auto ms-auto"
-                      >Ver más</a
-                    >
+              <div class="row g-4 d-flex align-items-stretch">
+                <!-- Card 1 -->
+                <div class="col-sm-6 col-lg-4 d-flex">
+                  <div class="card shadow-sm border-0 flex-fill" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="300">
+                    <img
+                      src="../../assets/img/cristoReden02.jpg"
+                      class="card-img-top"
+                      alt="Cristo redentor"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title text-start">Cristo Redentor</h5>
+                      <p class="card-text text-start mb-3">
+                        Ubicado en la cima del Cerro del Corcovado en Río de
+                        Janeiro
+                      </p>
+                      <button
+                        class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalCristo"
+                      >
+                        Ver más
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-sm-6 col-lg-4 d-flex">
+                  <div class="card shadow-sm border-0 flex-fill" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="600">
+                    <img
+                      src="../../assets/img/cocapabana03.webp"
+                      class="card-img-top"
+                      alt=""
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title text-start">Copacabana</h5>
+                      <p class="card-text text-start mb-3">
+                        Famosa playa de Río con arena blanca y vibrante vida
+                        nocturna.
+                      </p>
+                      <button
+                        class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalCopa"
+                      >
+                        Ver más
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-sm-6 col-lg-4 d-flex">
+                  <div class="card shadow-sm border-0 flex-fill" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="900">
+                    <img
+                      src="../../assets/img/parqueLage01.jpg"
+                      class="card-img-top"
+                      alt="Parque Lage"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title text-start">Parque Lage</h5>
+                      <p class="card-text text-start mb-3">
+                        Paseá por jardines tropicales, senderos históricos y
+                        disfrutá de la mansión y vistas del Corcovado.
+                      </p>
+                      <button
+                        class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalLage"
+                      >
+                        Ver más
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-sm-6 col-lg-4 d-flex">
+                  <div class="card shadow-sm border-0 flex-fill" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="300">
+                    <img
+                      src="../../assets/img/carnavalImg.jpg"
+                      alt="carnaval"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title text-start">Carnaval</h5>
+                      <p class="card-text text-start mb-3">
+                        Disfrutá de la fiesta más colorida y famosa de Brasil.
+                      </p>
+                      <button
+                        class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalCarna"
+                      >
+                        Ver más
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-sm-6 col-lg-4 d-flex">
+                  <div class="card shadow-sm border-0 flex-fill" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="600">
+                    <img
+                      src="../../assets/img/panAzucar02.jpg"
+                      class="card-img-top"
+                      alt="pan azucar"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title text-start">Pan de Azúcar</h5>
+                      <p class="card-text text-start mb-3">
+                        Subí en teleférico y disfrutá de vistas panorámicas
+                        únicas de Río.
+                      </p>
+                      <button
+                        class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalPan"
+                      >
+                        Ver más
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-sm-6 col-lg-4 d-flex">
+                  <div class="card shadow-sm border-0 flex-fill" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="900">
+                    <img
+                      src="../../assets/img/caboBrasil01.jpeg"
+                      class="card-img-top"
+                      alt="Arraial do Cabo"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title text-start">Arraial do Cabo</h5>
+                      <p class="card-text text-start mb-3">
+                        Conocida por sus playas de arena blanca y aguas turquesa
+                        ideales para relajarse.
+                      </p>
+                      <button
+                        class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalCabo"
+                      >
+                        Ver más
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
+            </section>
 
-              <!-- Card 2 -->
-              <div class="col-md-6 col-lg-3">
-                <div class="card card-destino h-100 text-center">
-                  <img
-                    src="../../assets/img/cr.jpg"
-                    class="card-img-top img-carddestino"
-                    alt="Coliseo Romano"
-                  />
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-titulod">Coliseo Romano</h5>
-                    <a
-                      href="#"
-                      class="btn btn-detalle btn-sm w-50 mt-auto ms-auto"
-                      >Ver más</a
+            <!-- BLOQUE MAPA + ITINERARIO -->
+            <section class="itinerario-section mt-5 pt-5" id="mapa-cristo">
+              <h3 class="mb-4 fw-bold text-center">
+                Cómo llegar al Cristo Redentor
+              </h3>
+
+              <div
+                class="row justify-content-center align-items-start g-4 pt-3"
+              >
+                <!-- ITINERARIO -->
+                <div class="col-md-5 col-lg-4">
+                  <div class="itinerario-list text-center" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+                    <!-- Punto de partida -->
+                    <div class="itinerario-item mb-4">
+                      <div class="icon-circle end-icon mb-2">
+                        <i class="fa-solid fa-location-dot"></i>
+                      </div>
+                      <h4 class="fw-bold">Copacabana</h4>
+                      <p class="small text-muted">Punto de partida</p>
+                    </div>
+
+                    <!-- Medio de transporte -->
+                    <div class="itinerario-item mb-4">
+                      <div class="icon-circle travel-icon mb-2">
+                        <i class="fa-solid fa-bus-simple"></i>
+                      </div>
+                      <h4 class="fw-bold">Van oficial</h4>
+                      <p class="small text-muted">
+                        Duración aproximada: 50 min
+                      </p>
+                    </div>
+
+                    <!-- Llegada -->
+                    <div class="itinerario-item">
+                      <div class="icon-circle start-icon mb-2">
+                        <i class="fa-solid fa-flag-checkered"></i>
+                      </div>
+                      <h4 class="fw-bold">Cristo Redentor</h4>
+                      <p class="small text-muted">Entrada principal</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- MAPA -->
+                <div class="col-md-7 col-lg-7">
+                  <div class="map-container shadow-sm rounded overflow-hidden">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.731173261388!2d-43.21149468503528!3d-22.95191698498395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99801df52e27a1%3A0xf67cfde29d0a9f93!2sCristo%20Redentor!5e0!3m2!1ses!2sar!4v1730785900000!5m2!1ses!2sar"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
                     >
+                    </iframe>
                   </div>
                 </div>
               </div>
+            </section>
 
-              <!-- Card 3 -->
-              <div class="col-md-6 col-lg-3">
-                <div class="card card-destino h-100 text-center">
-                  <img
-                    src="../../assets/img/Petra-jordania.jpg"
-                    class="card-img-top img-carddestino"
-                    alt="Petra"
-                  />
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-titulod">Petra</h5>
-                    <a
-                      href="#"
-                      class="btn btn-detalle btn-sm w-50 mt-auto ms-auto"
-                      >Ver más</a
-                    >
+            <!-- Preguntas y Respuestas -->
+            <section class="py-5 mt-5 pt-5" aria-labelledby="faq-title">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-12 col-md-10 col-lg-8">
+                    <h3 id="faq-title" class="text-center mb-5 fw-bold">
+                      Todo lo que debes saber antes de visitar
+                    </h3>
+
+                    <div class="accordion" id="faqAccordionDetalle">
+                      <!-- Artículo 1 -->
+                      <article
+                        class="accordion-item bg-secondary border-0 mb-3"
+                      >
+                        <h3 class="accordion-header" id="headingOneD">
+                          <button
+                            class="accordion-button collapsed bg-secondary fw-bold"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseOneD"
+                            aria-expanded="false"
+                            aria-controls="collapseOneD"
+                          >
+                            ¿Cuál es el horario de visita al Cristo Redentor?
+                          </button>
+                        </h3>
+                        <div
+                          id="collapseOneD"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingOneD"
+                          data-bs-parent="#faqAccordionDetalle"
+                        >
+                          <div class="accordion-body bg-dark">
+                            <p>
+                              El Cristo Redentor está abierto todos los días de
+                              8:00 a 19:00 hs. Se recomienda visitar temprano
+                              para evitar multitudes.
+                            </p>
+                          </div>
+                        </div>
+                      </article>
+
+                      <!-- Artículo 2 -->
+                      <article
+                        class="accordion-item bg-secondary border-0 mb-3"
+                      >
+                        <h3 class="accordion-header" id="headingTwoD">
+                          <button
+                            class="accordion-button collapsed bg-secondary fw-bold"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwoD"
+                            aria-expanded="false"
+                            aria-controls="collapseTwoD"
+                          >
+                            ¿Cómo puedo llegar al Cristo Redentor?
+                          </button>
+                        </h3>
+                        <div
+                          id="collapseTwoD"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingTwoD"
+                          data-bs-parent="#faqAccordionDetalle"
+                        >
+                          <div class="accordion-body bg-dark">
+                            <p>
+                              Se puede acceder mediante el tren del Corcovado
+                              desde el barrio Cosme Velho, en van oficial, taxi
+                              o auto particular hasta la estación. El viaje dura
+                              entre 20 y 50 minutos dependiendo del transporte.
+                            </p>
+                          </div>
+                        </div>
+                      </article>
+
+                      <!-- Artículo 3 -->
+                      <article
+                        class="accordion-item bg-secondary border-0 mb-3"
+                      >
+                        <h3 class="accordion-header" id="headingThreeD">
+                          <button
+                            class="accordion-button collapsed bg-secondary fw-bold"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseThreeD"
+                            aria-expanded="false"
+                            aria-controls="collapseThreeD"
+                          >
+                            ¿Cuánto cuesta la entrada al Cristo Redentor?
+                          </button>
+                        </h3>
+                        <div
+                          id="collapseThreeD"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingThreeD"
+                          data-bs-parent="#faqAccordionDetalle"
+                        >
+                          <div class="accordion-body bg-dark">
+                            <p>
+                              Los precios varían según el tipo de transporte y
+                              edad del visitante. Para adultos, el tren del
+                              Corcovado cuesta aproximadamente 90 BRL, mientras
+                              que niños y estudiantes tienen descuentos.
+                            </p>
+                          </div>
+                        </div>
+                      </article>
+
+                      <!-- Artículo 4 -->
+                      <article
+                        class="accordion-item bg-secondary border-0 mb-3"
+                      >
+                        <h3 class="accordion-header" id="headingFourD">
+                          <button
+                            class="accordion-button collapsed bg-secondary fw-bold"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseFourD"
+                            aria-expanded="false"
+                            aria-controls="collapseFourD"
+                          >
+                            ¿Qué debo llevar para la visita?
+                          </button>
+                        </h3>
+                        <div
+                          id="collapseFourD"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingFourD"
+                          data-bs-parent="#faqAccordionDetalle"
+                        >
+                          <div class="accordion-body bg-dark">
+                            <p>
+                              Se recomienda llevar agua, protector solar, gorra,
+                              cámara o celular, y ropa cómoda. Durante días
+                              lluviosos, es útil un impermeable, ya que el clima
+                              puede cambiar rápidamente en la montaña.
+                            </p>
+                          </div>
+                        </div>
+                      </article>
+
+                      <!-- Artículo 5 -->
+                      <article
+                        class="accordion-item bg-secondary border-0 mb-3"
+                      >
+                        <h3 class="accordion-header" id="headingFiveD">
+                          <button
+                            class="accordion-button collapsed bg-secondary fw-bold"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseFiveD"
+                            aria-expanded="false"
+                            aria-controls="collapseFiveD"
+                          >
+                            ¿Puedo tomar fotos y videos?
+                          </button>
+                        </h3>
+                        <div
+                          id="collapseFiveD"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingFiveD"
+                          data-bs-parent="#faqAccordionDetalle"
+                        >
+                          <div class="accordion-body bg-dark">
+                            <p>
+                              Sí, se permite la fotografía y grabación para uso
+                              personal. Se recomienda respetar las normas del
+                              lugar y no obstaculizar el paso de otros
+                              visitantes.
+                            </p>
+                          </div>
+                        </div>
+                      </article>
+
+                      <!-- Artículo 6 -->
+                      <article
+                        class="accordion-item bg-secondary border-0 mb-3"
+                      >
+                        <h3 class="accordion-header" id="headingSixD">
+                          <button
+                            class="accordion-button collapsed bg-secondary fw-bold"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseSixD"
+                            aria-expanded="false"
+                            aria-controls="collapseSixD"
+                          >
+                            ¿Hay accesibilidad para personas con movilidad
+                            reducida?
+                          </button>
+                        </h3>
+                        <div
+                          id="collapseSixD"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="headingSixD"
+                          data-bs-parent="#faqAccordionDetalle"
+                        >
+                          <div class="accordion-body bg-dark">
+                            <p>
+                              Sí, tanto el tren del Corcovado como los accesos y
+                              plataformas están adaptados para sillas de ruedas
+                              y personas con movilidad reducida. Se recomienda
+                              consultar horarios especiales si se necesita
+                              asistencia adicional.
+                            </p>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
                   </div>
                 </div>
               </div>
+            </section>
 
-              <!-- Card 4 -->
-              <div class="col-md-6 col-lg-3">
-                <div class="card card-destino h-100 text-center">
-                  <img
-                    src="../../assets/img/tm.webp"
-                    class="card-img-top img-carddestino"
-                    alt="Taj Mahal"
-                  />
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-titulod">Taj Mahal</h5>
-                    <a
-                      href="#"
-                      class="btn btn-detalle btn-sm w-50 mt-auto ms-auto"
-                      >Ver más</a
-                    >
+            <!-- SECCIÓN DE RESEÑAS -->
+            <section class="container py-5">
+              <h3 class="text-center mb-5 fw-bold">
+                Reseñas de Nuestros Viajeros
+              </h3>
+
+              <div class="row g-4 justify-content-center">
+                <!-- Reseña 1 -->
+                <div class="col-md-6 col-lg-4">
+                  <div class="card reseña-card h-100 shadow-sm">
+                    <img
+                      src="../../assets/img/reseñaCristo1.jpg"
+                      class="card-img-top"
+                      alt="Viajero en la montaña"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-primary fw-bold">
+                        Lara Hernández
+                      </h5>
+                      <p class="card-text text-muted">
+                        "Muy buena la comunidad viajera, me gusta la asesoría
+                        personalizada para los viajes"
+                      </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 text-end">
+                      <div class="rating text-warning">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Reseña 2 -->
+                <div class="col-md-6 col-lg-4">
+                  <div class="card reseña-card h-100 shadow-sm">
+                    <img
+                      src="../../assets/img/reseñaCristo2.avif"
+                      class="card-img-top"
+                      alt="Viajero en la playa"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-primary fw-bold">
+                        Lautaro Landucci
+                      </h5>
+                      <p class="card-text text-muted">
+                        “Súper recomendado, fue una experiencia increíble y el
+                        viaje superó todas mis expectativas.”
+                      </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 text-end">
+                      <div class="rating text-warning">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Reseña 3 -->
+                <div class="col-md-6 col-lg-4">
+                  <div class="card reseña-card h-100 shadow-sm">
+                    <img
+                      src="../../assets/img/reseñaCristo3.jpg"
+                      alt="Pareja viajando"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-primary fw-bold">
+                        Jordi Barea
+                      </h5>
+                      <p class="card-text text-muted">
+                        “Gracias a la comunidad viajera pude resolver todas mis
+                        dudas con la asesoría y disfrutar por completo del
+                        viaje.”
+                      </p>
+                    </div>
+                    <div class="card-footer bg-transparent border-0 text-end">
+                      <div class="rating text-warning">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </section>
+            </section>
+
+            <!-- DESTINOS SUGERIDOS -->
+            <section class="container my-5">
+              <h3 class="text-center mb-4 fw-bold">Destinos Sugeridos</h3>
+
+              <div class="row justify-content-center g-4">
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-3">
+                  <div class="card card-destino h-100 text-center">
+                    <img
+                      src="../../assets/img/Chichen_Itza_CB.jpg"
+                      class="card-img-top img-carddestino"
+                      alt="Chichén Itzá"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-titulod">Chichén Itzá</h5>
+                      <a
+                        href="#"
+                        class="btn btn-detalle btn-sm w-50 mt-auto ms-auto"
+                        >Ver más</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-3">
+                  <div class="card card-destino h-100 text-center">
+                    <img
+                      src="../../assets/img/cr.jpg"
+                      class="card-img-top img-carddestino"
+                      alt="Coliseo Romano"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-titulod">Coliseo Romano</h5>
+                      <a
+                        href="#"
+                        class="btn btn-detalle btn-sm w-50 mt-auto ms-auto"
+                        >Ver más</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-3">
+                  <div class="card card-destino h-100 text-center">
+                    <img
+                      src="../../assets/img/Petra-jordania.jpg"
+                      class="card-img-top img-carddestino"
+                      alt="Petra"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-titulod">Petra</h5>
+                      <a
+                        href="#"
+                        class="btn btn-detalle btn-sm w-50 mt-auto ms-auto"
+                        >Ver más</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-md-6 col-lg-3">
+                  <div class="card card-destino h-100 text-center">
+                    <img
+                      src="../../assets/img/tm.webp"
+                      class="card-img-top img-carddestino"
+                      alt="Taj Mahal"
+                    />
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-titulod">Taj Mahal</h5>
+                      <a
+                        href="#"
+                        class="btn btn-detalle btn-sm w-50 mt-auto ms-auto"
+                        >Ver más</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
-      </div>
       </section>
     </main>
 
     <footer></footer>
 
-   <!-- ARTÍCULO CRISTO REDENTOR -->
-<article
-  class="modal fade modal-article"
-  id="modalCristo"
-  tabindex="-1"
-  aria-labelledby="CristoLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content border-0 bg-dark text-light">
-      <div class="modal-body p-0">
-        <img
-          src="../../assets/img/cristoReden01.jpg"
-          class="img-fluid w-100"
-          alt="Cristo Redentor"
-        />
-        <div class="p-3">
-          <h5 class="mb-2" id="CristoLabel">Cristo Redentor</h5>
-          <p class="card-text text-start mb-3">
-            El Cristo Redentor es un icónico monumento de Río de Janeiro,
-            ubicado en la cima del Cerro del Corcovado. Para visitarlo,
-            podés tomar el tren del Corcovado desde el barrio Cosme Velho,
-            un recorrido de aproximadamente 20-25 minutos, o subir en
-            auto/taxi hasta la estación. Desde la cima, se disfrutan
-            vistas panorámicas de la ciudad, la Bahía de Guanabara y el
-            Pan de Azúcar.
-          </p>
-          <button
-            type="button"
-            class="btn btn-detalle"
-            data-bs-dismiss="modal"
-          >
-            Cerrar
-          </button>
+    <!-- ARTÍCULO CRISTO REDENTOR -->
+    <article
+      class="modal fade modal-article"
+      id="modalCristo"
+      tabindex="-1"
+      aria-labelledby="CristoLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 bg-dark text-light">
+          <div class="modal-body p-0">
+            <img
+              src="../../assets/img/cristoReden01.jpg"
+              class="img-fluid w-100"
+              alt="Cristo Redentor"
+            />
+            <div class="p-3">
+              <h5 class="mb-2" id="CristoLabel">Cristo Redentor</h5>
+              <p class="card-text text-start mb-3">
+                El Cristo Redentor es un icónico monumento de Río de Janeiro,
+                ubicado en la cima del Cerro del Corcovado. Para visitarlo,
+                podés tomar el tren del Corcovado desde el barrio Cosme Velho,
+                un recorrido de aproximadamente 20-25 minutos, o subir en
+                auto/taxi hasta la estación. Desde la cima, se disfrutan vistas
+                panorámicas de la ciudad, la Bahía de Guanabara y el Pan de
+                Azúcar.
+              </p>
+              <button
+                type="button"
+                class="btn btn-detalle"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</article>
+    </article>
 
-
-      <!-- Modal Copacabana -->
-      <article class="modal fade modal-article"
-        id="modalCopa"
-        tabindex="-1"
-        aria-labelledby="CopaLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content border-0 bg-dark text-light">
-            <div class="modal-body p-0">
-              <!-- Imagen destacada -->
-              <img
-                src="../../assets/img/copacabana01.jpg"
-                class="img-fluid w-100"
-                alt="Playa copacabana"
-              />
-              <div class="p-3">
-                <h5 class="mb-2" id="CopaLabel">Copacabana</h5>
-                <p class="card-text text-start mb-3">
-                  Copacabana es una famosa playa de Río de Janeiro, conocida por
-                  su arena blanca, mar vibrante y animada vida urbana. Para
-                  llegar, podés tomar un taxi, autobús o metro hasta la zona de
-                  Copacabana, un trayecto aproximado de 20-30 minutos desde el
-                  centro de la ciudad. Desde la playa, se pueden disfrutar
-                  vistas al océano, la montaña del Pan de Azúcar y el ambiente
-                  único de sus quioscos y paseos.
-                </p>
-                <button
-                  type="button"
-                  class="btn btn-detalle"
-                  data-bs-dismiss="modal"
-                >
-                  Cerrar
-                </button>
-              </div>
+    <!-- Modal Copacabana -->
+    <article
+      class="modal fade modal-article"
+      id="modalCopa"
+      tabindex="-1"
+      aria-labelledby="CopaLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 bg-dark text-light">
+          <div class="modal-body p-0">
+            <!-- Imagen destacada -->
+            <img
+              src="../../assets/img/copacabana01.jpg"
+              class="img-fluid w-100"
+              alt="Playa copacabana"
+            />
+            <div class="p-3">
+              <h5 class="mb-2" id="CopaLabel">Copacabana</h5>
+              <p class="card-text text-start mb-3">
+                Copacabana es una famosa playa de Río de Janeiro, conocida por
+                su arena blanca, mar vibrante y animada vida urbana. Para
+                llegar, podés tomar un taxi, autobús o metro hasta la zona de
+                Copacabana, un trayecto aproximado de 20-30 minutos desde el
+                centro de la ciudad. Desde la playa, se pueden disfrutar vistas
+                al océano, la montaña del Pan de Azúcar y el ambiente único de
+                sus quioscos y paseos.
+              </p>
+              <button
+                type="button"
+                class="btn btn-detalle"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
             </div>
           </div>
         </div>
-      </article>
+      </div>
+    </article>
 
-      <!-- Modal Parque Lage -->
-      <article  class="modal fade modal-article"
-        id="modalLage"
-        tabindex="-1"
-        aria-labelledby="LageLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content border-0 bg-dark text-light">
-            <div class="modal-body p-0">
-              <!-- Imagen destacada -->
-              <img
-                src="../../assets/img/parqueLage02.jpg"
-                class="img-fluid w-100"
-                alt="Parque Lage"
-              />
-              <div class="p-3">
-                <h5 class="mb-2" id="LageLabel">Parque Lage</h5>
-                <p class="card-text text-start mb-3">
-                  El Parque Lage es un encantador parque público y centro
-                  cultural en Río de Janeiro, famoso por su mansión histórica,
-                  jardines y senderos rodeados de vegetación tropical. Para
-                  visitarlo, podés llegar en autobús, taxi o caminando desde el
-                  barrio Jardim Botânico, con un recorrido de aproximadamente
-                  10-20 minutos desde zonas cercanas. Desde allí, se pueden
-                  disfrutar de paseos por los jardines, vistas del Corcovado y
-                  exposiciones culturales dentro de la mansión.
-                </p>
-                <button
-                  type="button"
-                  class="btn btn-detalle"
-                  data-bs-dismiss="modal"
-                >
-                  Cerrar
-                </button>
-              </div>
+    <!-- Modal Parque Lage -->
+    <article
+      class="modal fade modal-article"
+      id="modalLage"
+      tabindex="-1"
+      aria-labelledby="LageLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 bg-dark text-light">
+          <div class="modal-body p-0">
+            <!-- Imagen destacada -->
+            <img
+              src="../../assets/img/parqueLage02.jpg"
+              class="img-fluid w-100"
+              alt="Parque Lage"
+            />
+            <div class="p-3">
+              <h5 class="mb-2" id="LageLabel">Parque Lage</h5>
+              <p class="card-text text-start mb-3">
+                El Parque Lage es un encantador parque público y centro cultural
+                en Río de Janeiro, famoso por su mansión histórica, jardines y
+                senderos rodeados de vegetación tropical. Para visitarlo, podés
+                llegar en autobús, taxi o caminando desde el barrio Jardim
+                Botânico, con un recorrido de aproximadamente 10-20 minutos
+                desde zonas cercanas. Desde allí, se pueden disfrutar de paseos
+                por los jardines, vistas del Corcovado y exposiciones culturales
+                dentro de la mansión.
+              </p>
+              <button
+                type="button"
+                class="btn btn-detalle"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
             </div>
           </div>
         </div>
-      </article>
+      </div>
+    </article>
 
-      <!-- Modal Carnaval -->
-      <article class="modal fade modal-article"
-        id="modalCarna"
-        tabindex="-1"
-        aria-labelledby="CarnaLabel"
-        aria-hidden="true">   
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content border-0 bg-dark text-light">
-            <div class="modal-body p-0">
-              <!-- Imagen destacada -->
-              <img
-                src="../../assets/img/carnaval02.jpg"
-                class="img-fluid w-100"
-                alt="Carnaval"
-              />
-              <div class="p-3">
-                <h5 class="mb-2" id="CarnaLabel">Carnaval</h5>
-                <p class="card-text text-start mb-3">
-                  El Carnaval de Río de Janeiro es la fiesta más famosa de
-                  Brasil, conocida por sus desfiles de samba, disfraces
-                  coloridos y vibrante música. Para disfrutarlo, podés asistir
-                  al Sambódromo o recorrer las calles de la ciudad durante los
-                  días de celebración, que suelen ser de febrero a marzo. Desde
-                  allí, se vive un espectáculo único de alegría, baile y
-                  tradición cultural.
-                </p>
-                <button
-                  type="button"
-                  class="btn btn-detalle"
-                  data-bs-dismiss="modal"
-                >
-                  Cerrar
-                </button>
-              </div>
+    <!-- Modal Carnaval -->
+    <article
+      class="modal fade modal-article"
+      id="modalCarna"
+      tabindex="-1"
+      aria-labelledby="CarnaLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 bg-dark text-light">
+          <div class="modal-body p-0">
+            <!-- Imagen destacada -->
+            <img
+              src="../../assets/img/carnaval02.jpg"
+              class="img-fluid w-100"
+              alt="Carnaval"
+            />
+            <div class="p-3">
+              <h5 class="mb-2" id="CarnaLabel">Carnaval</h5>
+              <p class="card-text text-start mb-3">
+                El Carnaval de Río de Janeiro es la fiesta más famosa de Brasil,
+                conocida por sus desfiles de samba, disfraces coloridos y
+                vibrante música. Para disfrutarlo, podés asistir al Sambódromo o
+                recorrer las calles de la ciudad durante los días de
+                celebración, que suelen ser de febrero a marzo. Desde allí, se
+                vive un espectáculo único de alegría, baile y tradición
+                cultural.
+              </p>
+              <button
+                type="button"
+                class="btn btn-detalle"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
             </div>
           </div>
         </div>
-      </article>
+      </div>
+    </article>
 
-      <!-- Modal Pan Azucar -->
-      <article
-        class="modal fade modal-article"
-        id="modalPan"
-        tabindex="-1"
-        aria-labelledby="PanLabel"
-        aria-hidden="true">
-         <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content border-0 bg-dark text-light">
-            <div class="modal-body p-0">
-              <!-- Imagen destacada -->
-              <img
-                src="../../assets/img/panAzucar01.jpg"
-                class="img-fluid w-100"
-                alt="pan Azucar"
-              />
-              <div class="p-3">
-                <h5 class="mb-2" id="PanLabel">Pan Azúcar</h5>
-                <p class="card-text text-start mb-3">
-                  El Pan de Azúcar es un famoso cerro de Río de Janeiro con
-                  vistas espectaculares de la ciudad y el mar. Para visitarlo,
-                  tomá el teleférico desde la Praia Vermelha, que ofrece un
-                  recorrido panorámico hasta la cima. Desde allí, se puede
-                  disfrutar de vistas de la Bahía de Guanabara, Copacabana y el
-                  Cristo Redentor.
-                </p>
-                <button
-                  type="button"
-                  class="btn btn-detalle"
-                  data-bs-dismiss="modal"
-                >
-                  Cerrar
-                </button>
-              </div>
+    <!-- Modal Pan Azucar -->
+    <article
+      class="modal fade modal-article"
+      id="modalPan"
+      tabindex="-1"
+      aria-labelledby="PanLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 bg-dark text-light">
+          <div class="modal-body p-0">
+            <!-- Imagen destacada -->
+            <img
+              src="../../assets/img/panAzucar01.jpg"
+              class="img-fluid w-100"
+              alt="pan Azucar"
+            />
+            <div class="p-3">
+              <h5 class="mb-2" id="PanLabel">Pan Azúcar</h5>
+              <p class="card-text text-start mb-3">
+                El Pan de Azúcar es un famoso cerro de Río de Janeiro con vistas
+                espectaculares de la ciudad y el mar. Para visitarlo, tomá el
+                teleférico desde la Praia Vermelha, que ofrece un recorrido
+                panorámico hasta la cima. Desde allí, se puede disfrutar de
+                vistas de la Bahía de Guanabara, Copacabana y el Cristo
+                Redentor.
+              </p>
+              <button
+                type="button"
+                class="btn btn-detalle"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
             </div>
           </div>
         </div>
-     </article>
+      </div>
+    </article>
 
-      <!-- Modal Paseo en Arraial do Cabo-->
-      <article
-       class="modal fade modal-article"
-        id="modalCabo"
-        tabindex="-1"
-        aria-labelledby="CaboLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content border-0 bg-dark text-light">
-            <div class="modal-body p-0">
-              <!-- Imagen destacada -->
-              <img
-                src="../../assets/img/caboBrasil02.avif"
-                class="img-fluid w-100"
-                alt="Arraial do Cabo"
-              />
-              <div class="p-3">
-                <h5 class="mb-2" id="CaboLabel">
-                  Arraial do Cabo
-                </h5>
-                <p class="card-text text-start mb-3">
-                  Arraial do Cabo es un destino costero en Brasil famoso por sus
-                  playas de arena blanca y aguas turquesa cristalinas. Para
-                  llegar, podés tomar un autobús o auto desde Cabo Frío, un
-                  trayecto de aproximadamente 30-40 minutos. Desde allí, se
-                  puede disfrutar de playas como Praia do Forno, practicar
-                  buceo, paseos en barco y admirar paisajes naturales
-                  impresionantes.
-                </p>
-                <button
-                  type="button"
-                  class="btn btn-detalle"
-                  data-bs-dismiss="modal"
-                >
-                  Cerrar
-                </button>
-              </div>
+    <!-- Modal Paseo en Arraial do Cabo-->
+    <article
+      class="modal fade modal-article"
+      id="modalCabo"
+      tabindex="-1"
+      aria-labelledby="CaboLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 bg-dark text-light">
+          <div class="modal-body p-0">
+            <!-- Imagen destacada -->
+            <img
+              src="../../assets/img/caboBrasil02.avif"
+              class="img-fluid w-100"
+              alt="Arraial do Cabo"
+            />
+            <div class="p-3">
+              <h5 class="mb-2" id="CaboLabel">Arraial do Cabo</h5>
+              <p class="card-text text-start mb-3">
+                Arraial do Cabo es un destino costero en Brasil famoso por sus
+                playas de arena blanca y aguas turquesa cristalinas. Para
+                llegar, podés tomar un autobús o auto desde Cabo Frío, un
+                trayecto de aproximadamente 30-40 minutos. Desde allí, se puede
+                disfrutar de playas como Praia do Forno, practicar buceo, paseos
+                en barco y admirar paisajes naturales impresionantes.
+              </p>
+              <button
+                type="button"
+                class="btn btn-detalle"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
             </div>
           </div>
         </div>
-      </article>
-
+      </div>
+    </article>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
