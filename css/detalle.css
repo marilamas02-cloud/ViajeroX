@@ -26,6 +26,9 @@ h3 {
   color: var(--color-secondary-light);
   letter-spacing: 2px;
 }
+h4 {font-size: var(--titulares);
+  letter-spacing: 2px;
+}
 h5 {font-size: var(--titulares);
   letter-spacing: 2px;
 }
@@ -435,10 +438,6 @@ article.modal p {
   border-radius: 50%;
   border: 3px solid var(--color-secondary-accent); 
 }
-/* ===============================
-   SECCIÓN NUEVOS DESTINOS
-   =============================== */
-/* ======= CARD PRINCIPAL ======= */
 .cardPrincipal {
   position: relative;
   overflow: hidden;
@@ -446,7 +445,6 @@ article.modal p {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   cursor: pointer;
 }
-
 .cardPrincipal img {
   width: 100%;
   height: 100%;
@@ -454,39 +452,31 @@ article.modal p {
   transition: transform 0.6s ease;
   border-radius: 1rem;
 }
-
 .cardPrincipal:hover {
   transform: translateY(-6px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
-
 .cardPrincipal:hover img {
   transform: scale(1.05);
 }
-
-/* ======= OVERLAY SIEMPRE VISIBLE ======= */
 .cardOverlay {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: auto;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0)); /* degradado elegante */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0)); 
   display: flex;
   align-items: flex-end;
   border-radius: 1rem;
   padding: 1rem;
 }
-
-/* ======= CONTENIDO INTERIOR ======= */
 .overlay-content {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* separa título y botón */
+  justify-content: space-between; 
 }
-
-/* Título centrado al pie */
 .overlay-content h5 {
   flex: 1;
   text-align: center;
@@ -495,8 +485,6 @@ article.modal p {
   color: #fff;
   margin: 0;
 }
-
-/* Botón a la derecha */
 .overlay-content .btn-detalle {
   background-color: var(--color-primary-medium);
   color: var(--color-secondary-light);
@@ -506,30 +494,19 @@ article.modal p {
   padding: 0.5rem 1.25rem;
   transition: all 0.3s ease;
 }
-
 .overlay-content .btn-detalle:hover {
   background-color: var(--color-tertiary-contrast);
   color: var(--color-secondary-light);
   transform: scale(1.05);
 }
-
-/* ======= RESPONSIVE ======= */
-@media (max-width: 768px) {
-  .overlay-content {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .overlay-content h5 {
-    font-size: 1.1rem;
-  }
-
-  .overlay-content .btn-detalle {
-    font-size: 0.9rem;
-    padding: 0.4rem 1rem;
-  }
+.banner-asistencia-img {
+  height: 60vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0; 
 }
+
 
 
 
@@ -570,6 +547,21 @@ article.modal p {
   .card-intro p {
     font-size: 0.9rem;
   }
+  .overlay-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .overlay-content h5 {
+    font-size: 1.1rem;
+  }
+
+  .overlay-content .btn-detalle {
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+  }
+
 }
 @media (max-width: 992px) {
   .viajerox-masonry {
