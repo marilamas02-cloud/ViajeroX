@@ -630,7 +630,7 @@ h2 {
 
   main {
     margin-left: 0;
-    padding-top: 80px; /* espacio para la barra fija */
+    padding-top: 80px; 
   }
  
   .tarjetas-estadisticas .container .card {
@@ -810,7 +810,7 @@ h2 {
     border-radius: 10px;
   }
 
- /* Mostrar barra lateral y ocultar versión móvil */
+ 
   .barra-admin {
     display: block;
     
@@ -822,14 +822,14 @@ h2 {
     display: none;
   }
 
-  /* Ajustar el contenido principal */
+
   main {
-    margin-left: 220px; /* espacio para la barra lateral */
+    margin-left: 220px; 
     padding: 2rem 1rem;
   }
 
 
-  /* Ajustar tabla */
+ 
   .tabla .table {
     padding: 1.2rem;
     width: 95%;
@@ -1212,11 +1212,6 @@ h2 {
   }
 }
 
-<<<<<<< HEAD
-
-
-
-=======
 .login-box {
   background-color: transparent;
   border-radius: 10px;
@@ -1286,4 +1281,3 @@ h2 {
     width: 400px;
   }
 }
->>>>>>> 9fab35b91ed9b4913ecb6784a6b45ece7a3ff58d
