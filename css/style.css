@@ -1490,6 +1490,139 @@ h2 {
 }
 /* media query dispositivo extra large */
 @media all and (min-width: 992px){
+
+.siete-maravillas h2,
+  .experiencias h2,
+  .reseñas h2,
+  .zona-beneficios h2 {
+    font-size: 2.8rem;
+  }
+
+  .experiencias .card-img-overlay h5 {
+    font-size: 1.5rem;
+  }
+
+  .img-banner {
+    height: 500px;
+  }
+
+  .reseñas .img-fija {
+    width: 140px;
+    height: 140px;
+  }
+  .reseñas p {
+    font-size: 1rem;
+  }
+
+.descuentos .container {
+    max-width: 1140px;
+  }
+
+  .descuentos .card-img-overlay {
+    padding: 1.5rem;
+  }
+
+  .descuentos .card-title {
+    font-size: 1.75rem;
+  }
+
+  .descuentos .card-text {
+    font-size: 1.1rem;
+  }
+
+  .reseñas h2 {
+    font-size: 2.5rem;
+  }
+
+  .reseñas-alojamiento {
+    padding: 4rem 2rem;
+  }
+
+  .reseñas .card {
+    max-width: 400px;
+  }
+
+  .galeria-viajeros img {
+    height: 500px;
+  }
+
+  .gastronomia-descuentos {
+    height: 250px;
+  }
+
+  .galeria img {
+    height: 300px;
+  }
+
+  .viajeros p {
+    font-size: 1.25rem;
+  }
+
+.titulo-viajerox {
+    font-size: 4rem;
+  }
+
+  .subtitulo-viajerox {
+    font-size: 1.5rem;
+  }
+
+  .planes-viajerox .text-center.mb-5 {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .planes-viajerox {
+    padding-bottom: 2rem;
+  }
+
+  .carruselApp {
+    height: auto;
+    object-fit: cover;
+  }
+
+  .descargar-app h2 {
+    font-size: 2.3rem;
+  }
+
+  .descargar-app p {
+    font-size: 1.2rem;
+  }
+
+  .img-app {
+    width: 180px;
+  }
+
+  .descargar-app .row {
+    align-items: center;
+  }
+
+  .hero-colaboraciones {
+    height: 80vh;
+  }
+
+  .hero-colaboraciones h2 {
+    font-size: 2.5rem;
+  }
+
+  .creadoresContenido .card {
+    width: 18rem;
+  }
+
+  .servicios .card {
+    max-width: 540px;
+  }
+
+  .marcas img {
+    width: 45%;
+  }
+
+  .propuesta-colaboraciones h2 {
+    font-size: 2.2rem;
+  }
+
+  
+
    .barra-lateral-cel {
     display: none;
     width: 100%;
