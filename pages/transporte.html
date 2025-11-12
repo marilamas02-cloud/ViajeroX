@@ -23,6 +23,7 @@
       src="https://kit.fontawesome.com/5cc9154e02.js"
       crossorigin="anonymous"
     ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="../css/detalle.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -30,10 +31,9 @@
   <body>
     <header></header>
     <main>
-      <!-- Principal -->
  <section>
     <div class="cardMovil">
-      <img src="../assets/img/transporteGIF.gif" alt="GIF de transporte" />
+      <img src="../assets/img/transporteGIF.gif" alt="transporte auto" />
       <div class="cardMovil-body">
         <h3 class="cardMovil-title">Transporte Exclusivo</h3>
         <p class="cardMovil-text">
@@ -47,16 +47,15 @@
       </div>
     </div>
   </section>
-
-  <!-- DESCUENTOS -->
  <section class="container my-5">
     <h3 class="titulo-transporte text-center mb-5">
       Ofertas que te llevan lejos
     </h3>
     <div class="row">
-      <!-- Card 1 -->
       <div class="col-md-4 mb-4">
-        <div class="cardTransporte p-4 text-center shadow-sm h-100">
+        <div class="cardTransporte p-4 text-center shadow-sm h-100"  data-aos="flip-down"
+                data-aos-duration="4000"
+                data-aos-delay="300">
           <h5 class="cardTransporte-title mb-3">Traslados al Aeropuerto</h5>
           <p class="cardTransporte-text">
             Descuento exclusivo en transfers desde y hacia aeropuertos internacionales.
@@ -64,10 +63,10 @@
           <a href="#" class="btn btn-detalle">Ver más</a>
         </div>
       </div>
-
-      <!-- Card 2 -->
       <div class="col-md-4 mb-4">
-        <div class="cardTransporte p-4 text-center shadow-sm h-100">
+        <div class="cardTransporte p-4 text-center shadow-sm h-100" data-aos="flip-down"
+                data-aos-duration="4000"
+                data-aos-delay="900">
           <h5 class="cardTransporte-title mb-3">Alquiler de Autos</h5>
           <p class="cardTransporte-text">
             Hasta 30% off en vehículos seleccionados para tus viajes por carretera.
@@ -75,10 +74,10 @@
           <a href="#" class="btn btn-detalle">Ver más</a>
         </div>
       </div>
-
-      <!-- Card 3 -->
       <div class="col-md-4 mb-4">
-        <div class="cardTransporte p-4 text-center shadow-sm h-100">
+        <div class="cardTransporte p-4 text-center shadow-sm h-100" data-aos="flip-down"
+                data-aos-duration="4000"
+                data-aos-delay="1200">
           <h5 class="cardTransporte-title mb-3">Pasajes de Tren</h5>
           <p class="cardTransporte-text">
             Promociones especiales en trenes turísticos y de alta velocidad.
@@ -86,10 +85,10 @@
           <a href="#" class="btn btn-detalle">Ver más</a>
         </div>
       </div>
-
-      <!-- Card 4 -->
       <div class="col-md-4 mb-4">
-        <div class="cardTransporte p-4 text-center shadow-sm h-100">
+        <div class="cardTransporte p-4 text-center shadow-sm h-100" data-aos="flip-down"
+                data-aos-duration="4000"
+                data-aos-delay="1500">
           <h5 class="cardTransporte-title mb-3">Bus Turístico</h5>
           <p class="cardTransporte-text">
             Recorridos panorámicos por las principales ciudades con precios especiales.
@@ -97,10 +96,10 @@
           <a href="#" class="btn btn-detalle">Ver más</a>
         </div>
       </div>
-
-      <!-- Card 5 -->
       <div class="col-md-4 mb-4">
-        <div class="cardTransporte p-4 text-center shadow-sm h-100">
+        <div class="cardTransporte p-4 text-center shadow-sm h-100" data-aos="flip-down"
+                data-aos-duration="4000"
+                data-aos-delay="1800">
           <h5 class="cardTransporte-title mb-3">Rides Compartidos</h5>
           <p class="cardTransporte-text">
             Ahorra viajando con otros miembros de la comunidad Viajero X.
@@ -108,10 +107,10 @@
           <a href="#" class="btn btn-detalle">Ver más</a>
         </div>
       </div>
-
-      <!-- Card 6 -->
       <div class="col-md-4 mb-4">
-        <div class="cardTransporte p-4 text-center shadow-sm h-100">
+        <div class="cardTransporte p-4 text-center shadow-sm h-100" data-aos="flip-down"
+                data-aos-duration="4000"
+                data-aos-delay="2100">
           <h5 class="cardTransporte-title mb-3">Viajes de Grupo</h5>
           <p class="cardTransporte-text">
             Descuentos especiales para reservas de transporte grupales o familiares.
@@ -121,19 +120,15 @@
       </div>
     </div>
   </section>
-
-  <!-- RESEÑA -->
 <section class="reseñas-traslados py-5">
   <div class="container text-center">
     <h3 class="fw-bold mb-5">Reseñas de nuestros viajeros</h3>
-
     <div class="row g-4 justify-content-center">
-      <!-- Card 1 -->
       <div class="col-12 col-md-4">
         <div class="card bg-dark text-light shadow-lg p-4">
           <img src="../assets/img/reseñaTransporte01.avif" 
                class="rounded-circle mx-auto mb-3 img-reseña" 
-               alt="Viajero 1">
+               alt="hombre viajero">
           <h5 class="fw-bold mb-1">Lautaro Marquez</h5>
           <p class="text-secondary mb-2">Chichén Itzá 🇲🇽</p>
           <p class="card-text fst-italic">
@@ -148,13 +143,11 @@
           </div>
         </div>
       </div>
-
-      <!-- Card 2 -->
       <div class="col-12 col-md-4">
         <div class="card bg-dark text-light shadow-lg p-4">
           <img src="../assets/img/reseñaTransporte02.jpg" 
                class="rounded-circle mx-auto mb-3 img-reseña" 
-               alt="Viajero 2">
+               alt="pareja viajera">
           <h5 class="fw-bold mb-1">Lorena Martinez</h5>
           <p class="text-secondary mb-2">Río de Janeiro 🇧🇷</p>
           <p class="card-text fst-italic">
@@ -169,13 +162,11 @@
           </div>
         </div>
       </div>
-
-      <!-- Card 3 -->
       <div class="col-12 col-md-4">
         <div class="card bg-dark text-light shadow-lg p-4">
           <img src="../assets/img/reseñaTransporte03.jpeg" 
                class="rounded-circle mx-auto mb-3 img-reseña" 
-               alt="Viajero 3">
+               alt="hombre viajero">
           <h5 class="fw-bold mb-1">Lucas Ruiz</h5>
           <p class="text-secondary mb-2">Machu Picchu 🇵🇪</p>
           <p class="card-text fst-italic">
@@ -190,14 +181,9 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
-</section>
-
-
-
-        
+</section>    
     </main>
     <footer></footer>
     <script
@@ -205,5 +191,9 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
