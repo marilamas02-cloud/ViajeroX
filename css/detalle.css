@@ -429,12 +429,111 @@ article.modal p {
   box-shadow: 0 8px 20px rgba(255, 125, 0, 0.4);
 }
 .reseñas-traslados .img-reseña {
-  width: 120px; /* tamaño uniforme */
+  width: 120px; 
   height: 120px;
-  object-fit: cover; /* recorta sin deformar */
+  object-fit: cover; 
   border-radius: 50%;
-  border: 3px solid var(--color-secondary-accent); /* opcional, quita si no querés borde */
+  border: 3px solid var(--color-secondary-accent); 
 }
+/* ===============================
+   SECCIÓN NUEVOS DESTINOS
+   =============================== */
+/* ======= CARD PRINCIPAL ======= */
+.cardPrincipal {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.cardPrincipal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+  border-radius: 1rem;
+}
+
+.cardPrincipal:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.cardPrincipal:hover img {
+  transform: scale(1.05);
+}
+
+/* ======= OVERLAY SIEMPRE VISIBLE ======= */
+.cardOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0)); /* degradado elegante */
+  display: flex;
+  align-items: flex-end;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+/* ======= CONTENIDO INTERIOR ======= */
+.overlay-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* separa título y botón */
+}
+
+/* Título centrado al pie */
+.overlay-content h5 {
+  flex: 1;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+}
+
+/* Botón a la derecha */
+.overlay-content .btn-detalle {
+  background-color: var(--color-primary-medium);
+  color: var(--color-secondary-light);
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  padding: 0.5rem 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.overlay-content .btn-detalle:hover {
+  background-color: var(--color-tertiary-contrast);
+  color: var(--color-secondary-light);
+  transform: scale(1.05);
+}
+
+/* ======= RESPONSIVE ======= */
+@media (max-width: 768px) {
+  .overlay-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .overlay-content h5 {
+    font-size: 1.1rem;
+  }
+
+  .overlay-content .btn-detalle {
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+  }
+}
+
+
+
+
 @media (max-width: 576px) {
   .viajerox-masonry {
     grid-template-columns: 1fr;

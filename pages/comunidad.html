@@ -23,6 +23,7 @@
       src="https://kit.fontawesome.com/5cc9154e02.js"
       crossorigin="anonymous"
     ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="../css/detalle.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -33,7 +34,8 @@
 
 <!-- PRINCIPAL -->
 <section class="container my-5">
-  <div class="card-comunidad border-0 shadow-lg">
+  <div class="card-comunidad border-0 shadow-lg"  data-aos="fade-up"
+              data-aos-duration="1000">
     <img src="../assets/img/viajeroGIF.gif" class="card-img-top card-img-comunidad" alt="viajeros gif">
     <div class="card-body text-center py-4">
       <h2 class="card-title fw-bold mb-3 text-uppercase">Únete a la Comunidad Viajera</h2>
@@ -83,103 +85,117 @@
 </section>
 
 
-<!-- VIDEOS DESTINOS -->
- <section class="container-fluid py-4 pb-5 my-5">
-        <h3 class="fw-bold mb-4 px-3 text-center">
-          Nuevos destinos por descubrir
-        </h3>
-        <div class="row g-4 px-3">
-          <!-- card 1 -->
-          <div class="col-12 col-md-6 col-lg-3">
-            <div class="cardPrincipal border-0 shadow-sm hoverPrincipal">
-              <img
-                src="../assets/img/cardVideo01.jpg"
-                class="img-fluid rounded-4"
-                alt="Funicular Tünel"
-              />
-              <div class="cardOverlay text-center text-white p-3">
-               
-                <h5 class="fw-bold mb-3">Estambul</h5>
-                <button
-                  type="button"
-                  class="btn btn-detalle"
-                  data-bs-toggle="modal"
-                  data-bs-target="#Estambul"
-                >
-                  Ver más
-                </button>
-              </div>
-            </div>
-          </div>
-<!-- card 2 -->
-          <div class="col-12 col-md-6 col-lg-3">
-            <div class="cardPrincipal border-0 shadow-sm hoverPrincipal">
-              <img
-                src="../assets/img/cardVideo02.jpg"
-                class="img-fluid rounded-4"
-                alt="Capadocia globos"
-              />
-              <div class="cardOverlay text-center text-white p-3">
-                
-                <h5 class="fw-bold mb-3">Capadocia</h5>
-                <button
-                  type="button"
-                  class="btn btn-detalle"
-                  data-bs-toggle="modal"
-                  data-bs-target="#Capadocia"
-                >
-                  Ver más
-                </button>
-              </div>
-            </div>
-          </div>
 
-<!-- card 3 -->
-          <div class="col-12 col-md-6 col-lg-3">
-            <div class="cardPrincipal border-0 shadow-sm hoverPrincipal">
-              <img
-                src="../assets/img/cardVideo03.jpg"
-                class="img-fluid rounded-4"
-                alt="japon"
-              />
-              <div class="cardOverlay text-center text-white p-3">
-                
-                <h5 class="fw-bold mb-3">Tokyo</h5>
-                <button
-                  type="button"
-                  class="btn btn-detalle"
-                  data-bs-toggle="modal"
-                  data-bs-target="#Japon"
-                >
-                  Ver más
-                </button>
-              </div>
-            </div>
-          </div>
-<!-- card 4 -->
-          <div class="col-12 col-md-6 col-lg-3">
-            <div class="cardPrincipal border-0 shadow-sm hoverPrincipal">
-              <img
-                src="../assets/img/cardVideo04.jpg"
-                class="img-fluid rounded-4"
-                alt="Barcelona sagrada familia"
-              />
-              <div class="cardOverlay text-center text-white p-3">
-                
-                <h5 class="fw-bold mb-3">Barcelona</h5>
-                <button
-                  type="button"
-                  class="btn btn-detalle"
-                  data-bs-toggle="modal"
-                  data-bs-target="#Barcelona"
-                >
-                  Ver más
-                </button>
-              </div>
-            </div>
+<!-- VIDEOS DESTINOS -->
+<section class="container-fluid py-4 pb-5 my-5 destinos-nuevos">
+  <h3 class="fw-bold mb-4 px-3 text-center">
+    Nuevos destinos por descubrir
+  </h3>
+
+  <div class="row g-4 px-3">
+    <!-- card 1 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="cardPrincipal border-0 shadow-sm hoverPrincipal" data-aos="zoom-in"
+              data-aos-duration="1000">
+        <img
+          src="../assets/img/cardVideo01.jpg"
+          class="img-fluid rounded-4"
+          alt="Funicular Tünel"
+        />
+        <div class="cardOverlay text-white p-3">
+          <div class="overlay-content">
+            <h5 class="fw-bold mb-0">Estambul</h5>
+            <button
+              type="button"
+              class="btn btn-detalle"
+              data-bs-toggle="modal"
+              data-bs-target="#Estambul"
+            >
+              Ver más
+            </button>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+
+    <!-- card 2 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="cardPrincipal border-0 shadow-sm hoverPrincipal" data-aos="zoom-in"
+              data-aos-duration="1200">
+        <img
+          src="../assets/img/cardVideo02.jpg"
+          class="img-fluid rounded-4"
+          alt="Capadocia globos"
+        />
+        <div class="cardOverlay text-white p-3">
+          <div class="overlay-content">
+            <h5 class="fw-bold mb-0">Capadocia</h5>
+            <button
+              type="button"
+              class="btn btn-detalle"
+              data-bs-toggle="modal"
+              data-bs-target="#Capadocia"
+            >
+              Ver más
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- card 3 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="cardPrincipal border-0 shadow-sm hoverPrincipal" data-aos="zoom-in"
+              data-aos-duration="1400">
+        <img
+          src="../assets/img/cardVideo03.jpg"
+          class="img-fluid rounded-4"
+          alt="Tokyo"
+        />
+        <div class="cardOverlay text-white p-3">
+          <div class="overlay-content">
+            <h5 class="fw-bold mb-0">Tokyo</h5>
+            <button
+              type="button"
+              class="btn btn-detalle"
+              data-bs-toggle="modal"
+              data-bs-target="#Japon"
+            >
+              Ver más
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- card 4 -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="cardPrincipal border-0 shadow-sm hoverPrincipal" data-aos="zoom-in"
+              data-aos-duration="1600">
+        <img
+          src="../assets/img/cardVideo04.jpg"
+          class="img-fluid rounded-4"
+          alt="Barcelona sagrada familia"
+        />
+        <div class="cardOverlay text-white p-3">
+          <div class="overlay-content">
+            <h5 class="fw-bold mb-0">Barcelona</h5>
+            <button
+              type="button"
+              class="btn btn-detalle"
+              data-bs-toggle="modal"
+              data-bs-target="#Barcelona"
+            >
+              Ver más
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
   <!-- COMUNIDAD -->
 <article class="reseña-experiencia container my-5">
@@ -226,7 +242,8 @@
   <div class="row g-4 px-3">
  <!-- CARD 1 -->
     <div class="col-12 col-sm-6 col-lg-4">
-      <div class="card h-100">
+      <div class="card h-100" data-aos="flip-right"
+            data-aos-delay="300">
         <img src="../assets/img/hablandoJapon.webp" class="card-img-top" alt="Destino 1">
         <div class="card-body">
           <h5 class="card-title">Kyoto</h5>
@@ -240,7 +257,10 @@
 
     <!-- CARD 2 -->
     <div class="col-12 col-sm-6 col-lg-4">
-      <div class="card h-100">
+      <div class="card h-100"  data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="4000"
+            data-aos-delay="600">
         <img src="../assets/img/hablandoAustralia.jpg" class="card-img-top" alt="Destino 2">
         <div class="card-body">
           <h5 class="card-title">Sídney</h5>
@@ -254,7 +274,10 @@
 
     <!-- CARD 3 -->
     <div class="col-12 col-sm-6 col-lg-4">
-      <div class="card h-100">
+      <div class="card h-100"  data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="4000"
+            data-aos-delay="900">
         <img src="../assets/img/hablandoGrecia.webp" class="card-img-top" alt="Destino 3">
         <div class="card-body">
           <h5 class="card-title">Grecia</h5>
@@ -268,7 +291,10 @@
 
     <!-- CARD 4 -->
     <div class="col-12 col-sm-6 col-lg-4">
-      <div class="card h-100">
+      <div class="card h-100"  data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="4000"
+            data-aos-delay="1200">
         <img src="../assets/img/hablandoTailandia.jpg" class="card-img-top" alt="Destino 4">
         <div class="card-body">
           <h5 class="card-title">Tailandia</h5>
@@ -282,7 +308,10 @@
 
     <!-- CARD 5 -->
     <div class="col-12 col-sm-6 col-lg-4">
-      <div class="card h-100">
+      <div class="card h-100"   data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="4000"
+            data-aos-delay="1500">
         <img src="../assets/img/hablandoLondres.webp" class="card-img-top" alt="Destino 5">
         <div class="card-body">
           <h5 class="card-title">Londres</h5>
@@ -296,7 +325,10 @@
 
     <!-- CARD 6 -->
     <div class="col-12 col-sm-6 col-lg-4">
-      <div class="card h-100">
+      <div class="card h-100" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="4000"
+            data-aos-delay="1800">
         <img src="../assets/img/hablandoIslandia.webp" class="card-img-top" alt="Destino 6">
         <div class="card-body">
           <h5 class="card-title">Islandia</h5>
@@ -529,5 +561,9 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
