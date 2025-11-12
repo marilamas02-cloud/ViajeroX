@@ -1063,10 +1063,22 @@ h2 {
   padding: 10px;
 }
 
-.barra-lateral-cel {
+.barra-admin-cel {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
   width: 100%;
-  height: 20vh;
-  background-color: var(--color-primary-medium);
+  background-color: #222;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 999;
+}
+
+.barra-admin-cel a {
+  color: white;
+  margin: 0 15px;
+  font-size: 1.3rem;
 }
 
 .barra-lateral {
@@ -1122,8 +1134,73 @@ h2 {
   background-color: var(--color-tertiary-contrast);
 }
 /* media query dispositivo celular */
+@media all and (max-width: 576px) {
+  .barra-admin {
+    display: none;
+  }
 
-@media all and (min-width: 577px) {}
+  .barra-admin-cel {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 12vh;
+    background: var(--color-primary-medium);
+    z-index: 999;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 1rem;
+  }
+
+  .barra-admin-cel h4 {
+    font-size: 1rem;
+    color: #fff;
+    margin: 0;
+    display: none;
+  }
+
+  .barra-admin-cel .barra-lateral-cel {
+    display: flex;
+    align-items: center;  
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    width: 100%;
+    gap: 0.5rem;
+
+  }
+
+  .barra-admin-cel .barra-lateral-cel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .barra-admin-cel a i {
+    font-size: 1.4rem;
+    color: #fff;
+    flex-shrink: 0;
+  }
+
+  main {
+    margin-left: 0;
+    padding-top: 80px; /* espacio para la barra fija */
+  }
+ 
+  .tarjetas-estadisticas .container .card {
+    margin-top: 2rem;
+    padding: 1rem;
+    
+   
+   
+  }
+
+  .tabla .table {
+    padding: 1rem;
+  }
+}
 
   /* media query dispositivo tablet */
 
@@ -1291,13 +1368,30 @@ h2 {
     border-radius: 10px;
   }
 
- .barra-admin {
-  display: none;
- }
- .barra-lateral-cel {
+ /* Mostrar barra lateral y ocultar versión móvil */
+  .barra-admin {
+    display: block;
     
-    width: 100%;
-    height: 20vh;
+  }
+.barra-lateral {
+  width: 25%;
+}
+  .barra-admin-cel {
+    display: none;
+  }
+
+  /* Ajustar el contenido principal */
+  main {
+    margin-left: 220px; /* espacio para la barra lateral */
+    padding: 2rem 1rem;
+  }
+
+
+  /* Ajustar tabla */
+  .tabla .table {
+    padding: 1.2rem;
+    width: 95%;
+    margin: 0 auto;
   }
   
   
@@ -1487,6 +1581,21 @@ h2 {
     width: 100%;
     height: 20vh;
   }
+  .barra-admin {
+    display: block;
+  }
+
+  .barra-admin-cel {
+    display: none;
+  }
+
+  main {
+    margin-left: 240px;
+  }
+  .tarjetas-estadisticas .container .card {
+    margin-top: 1rem;
+   
+  }
 }
 /* media query dispositivo extra large */
 @media all and (min-width: 992px){
@@ -1643,4 +1752,25 @@ h2 {
     width: 100%;
     height: 20vh;
   }
+  .barra-admin {
+    display: block;
+  }
+
+  .barra-admin-cel {
+    display: none;
+  }
+
+  main {
+    margin-left: 260px;
+  }
+  .tarjetas-estadisticas .container .card {
+    margin-top: 1rem;
+    
+   
+   
+  }
 }
+
+
+
+
