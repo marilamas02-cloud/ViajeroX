@@ -284,13 +284,13 @@ h2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
-.voto {
+.voto-gastronomia {
   background-color: var(--color-primary-medium);
   border: none;
   font-weight: bold;
   font-size: 0.9rem;
 }
-.voto:hover {
+.voto-gastronomia:hover {
   background-color: var(--color-tertiary-contrast);
   font-size: 1.15rem;
 }
@@ -308,6 +308,51 @@ h2 {
   font-weight: bold;
 }
 
+
+
+  .bar {
+    width: 100%;
+    height: 25px;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+
+  .fill {
+    height: 100%;
+    width: 0;
+    background: #4CAF50;
+    border-radius: 10px;
+    animation: change-color 2s forwards;
+  }
+
+  .bar1 .fill { --final-width: 65%; }
+  .bar2 .fill { --final-width: 35%; }
+  .bar3 .fill { --final-width: 85%; }
+
+@keyframes change-color {
+  0% { width: 10%; }
+  10% { width: calc(var(--final-width) * 0.1); }
+  20% { width: calc(var(--final-width) * 0.2); }
+  30% { width: calc(var(--final-width) * 0.3); }
+  40% { width: calc(var(--final-width) * 0.4); }
+  50% { width: calc(var(--final-width) * 0.5); }
+  60% { width: calc(var(--final-width) * 0.6); }
+  70% { width: calc(var(--final-width) * 0.7); }
+  80% { width: calc(var(--final-width) * 0.8); }
+  90% { width: calc(var(--final-width) * 0.9); }
+  100% { width: var(--final-width); }
+}
+
+
+
+.element {
+  background: grey;
+  width: 150px;
+  height: 150px;
+  animation: change-color 2s 0s;
+}
 .planes-viajerox {
   background: radial-gradient(circle at top, #061726, #020910 80%);
   position: relative;
@@ -705,12 +750,12 @@ h2 {
   .viajeros p {
     font-size: 1rem;
   }
-  .voto,
+  .voto-gastronomia,
   .boton-restaurantes {
     font-size: 1rem;
   }
 
-  .voto:hover,
+  .voto-gastronomia:hover,
   .boton-restaurantes:hover {
     font-size: 1.5rem;
   }
