@@ -32,46 +32,40 @@ Este proyecto es una página web enfocada en el **frontend**, inspirada en la te
 ## 📂  Estructura del proyecto
 
 
-👤 **Administrador:** Control completo página web
+👤 **Perfil:** 
+- Administrador: Control completo página web.
+- Iniciar sesión: Acceso al perfil del usuario.
+- Registro: Crear nueva cuenta.
+- Colaboración: Participación en contenido o proyectos.
+- Centro ayuda: Asistencia al usuario
+- Descarga app: Acceder a la app de forma explicativa.
 
-🏠 **Inicio / Detalle:** Novedades y cards interactivas
-Información maravillas del mundo
+🏠 **Comunidad:** 
+- Suscripción: Acceso a la comunidad
+- Comunidad: Noticias y reseñas de viajeros.
+- Comercialización: Merchandising exclusivo.
+- Contacto: Comunicación directa con la empresa.
+- Nosotros: Información equipo de trabajo.
 
-🔑 **Registro / Login / Contacto / Nosotros / Centro Ayuda / Descarga App:**
+✅ **Servicios Complementarios:** Beneficios exclusivos. Descuentos especiales para suscriptores.😎
 
-- Registro y login usuarios.
+- Transporte: Rutas rápidas y seguras.
 
-- Contacto rápido con empresa.
+- Alojamiento: Hospedaje cómodo y accesible.
 
-- Información equipo de trabajo.
+- Gastronomía: Sabores locales y variados.
 
-- Centro ayuda al usuario.
+- Asistencia Viajero: Ayuda inmediata al turista.
 
-- Descarga aplicación explicativa.
+- Guías Ebooks: Información práctica y detallada.
+ 
+- Sumar millas: Descuentos para el usuario.
 
-💳 **Suscripción / Comunidad:**
+🌅 **Inicio / Detalle:**
 
-- Gestión de suscripciones activas.
+- Inicio: Presenta las 7 maravillas del mundo con imágenes impactantes y cards interactivas que invitan a explorar cada destino.
 
-- Espacio comunidad y colaboración.
-
-🛎️ Servicio Complementarios
----
-
-🚌 Transporte: Rutas rápidas y seguras
-
-🏨 Alojamiento: Hospedaje cómodo y accesible
-
-🍽️ Gastronomía: Sabores locales y variados
-
-🆘 Asistencia Viajero: Ayuda inmediata al turista
-
-✈️ Sumar Millas: Beneficios por cada viaje
-
-🤝 Colaboración: Participación en proyectos conjuntos
-
-📚 Guías Ebooks: Información práctica y detallada
-
+- Detalle: Al hacer clic en una maravilla, se muestra información histórica, consejos de viaje, fotos, videos y opiniones de otros viajeros, ofreciendo una guía completa y visualmente atractiva para planificar la visita.
 
 ## ▶️ Tecnologías utilizadas
 
@@ -88,8 +82,18 @@ Información maravillas del mundo
 
 
 
-## ☑️ Características del Proyecto
+## ☑️ Descripción del Proyecto
 
-La página cuenta con formularios funcionales de login, registro y contacto (solo frontend). Está diseñada para ser responsive en todos los dispositivos, garantizando una experiencia óptima en móviles, tablets y desktops. 
+La página web está diseñada para ofrecer una experiencia de viaje interactiva y moderna. Incluye formularios funcionales de login, registro y contacto (solo frontend) y es completamente responsive, adaptándose perfectamente a móviles, tablets y desktops.
 
-Las secciones incluyen animaciones interactivas que responden al usuario, haciendo la navegación más dinámica. Además, se aplican modales de video e información para mostrar contenido detallado de cada lugar, y cards interactivas en la página principal que permiten acceder a más información de manera atractiva y organizada. Por último, la navegación es responsiva gracias a un navbar adaptativo, que mantiene la coherencia en todo el sitio.
+## ✨ Características principales
+
+**Animaciones interactivas:** Elementos que responden a la interacción del usuario, haciendo la navegación más dinámica y atractiva.
+
+**Modales de video e información:** Para mostrar contenido detallado de cada lugar de forma elegante.
+
+**Cards interactivas:** En la página principal, permiten explorar información adicional de manera organizada y visualmente atractiva.
+
+**Navbar adaptativo:** Navegación responsiva que mantiene la coherencia en todo el sitio.
+
+Con este diseño, los usuarios pueden explorar las 7 maravillas del mundo de manera intuitiva, divertida y visualmente impactante.
