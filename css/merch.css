@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+   
+    /* Colores primarios */
+    --color-primary-dark: #001524;
+    --color-primary-medium: #15616d;
+
+    /* Colores secundarios */
+    --color-secondary-light: #ffecd1;
+    --color-secondary-accent: #ff7d00;
+
+    /* Color terciario */
+    --color-tertiary-contrast: #78290f;
+
+    /* tipografia- monserrat */
+    --Monserrat: "Monserrat", sans-serif;
+
+    /* Tamaños de fuentes */
+    --texto: 12px;
+    --titulares: 24px;
+    --description: 1rem;
+  }
+.product-card {
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  }
