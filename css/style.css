@@ -161,6 +161,33 @@
   font-size: 1.5rem;
   color: var(--color-secondary-accent);
 }
+.card-img-top-wrapper {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.card-img-top-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.card-img-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  z-index: 2;
+}
+
+.card-img-overlay h5,
+.card-img-overlay p {
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+}
+
 .reseñas-alojamiento {
   background-image: url(../assets/img/viajerosbanner.jpg);
   background-repeat: no-repeat;
@@ -169,11 +196,6 @@
   width: 100%;
   height: auto;
 }
-.card-img-top-wrapper {
-  height: 250px;
-  overflow: hidden;
-}
-
 .card-img-top-wrapper img {
   width: 100%;
   height: 100%;
@@ -308,44 +330,68 @@ h2 {
   font-weight: bold;
 }
 
-
-
-  .bar {
-    width: 100%;
-    height: 25px;
-    background: #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 10px;
-  }
-
-  .fill {
-    height: 100%;
-    width: 0;
-    background: #4CAF50;
-    border-radius: 10px;
-    animation: change-color 2s forwards;
-  }
-
-  .bar1 .fill { --final-width: 65%; }
-  .bar2 .fill { --final-width: 35%; }
-  .bar3 .fill { --final-width: 85%; }
-
-@keyframes change-color {
-  0% { width: 10%; }
-  10% { width: calc(var(--final-width) * 0.1); }
-  20% { width: calc(var(--final-width) * 0.2); }
-  30% { width: calc(var(--final-width) * 0.3); }
-  40% { width: calc(var(--final-width) * 0.4); }
-  50% { width: calc(var(--final-width) * 0.5); }
-  60% { width: calc(var(--final-width) * 0.6); }
-  70% { width: calc(var(--final-width) * 0.7); }
-  80% { width: calc(var(--final-width) * 0.8); }
-  90% { width: calc(var(--final-width) * 0.9); }
-  100% { width: var(--final-width); }
+.bar {
+  width: 100%;
+  height: 25px;
+  background: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
 }
 
+.fill {
+  height: 100%;
+  width: 0;
+  background: #4caf50;
+  border-radius: 10px;
+  animation: change-color 2s forwards;
+}
 
+.bar1 .fill {
+  --final-width: 65%;
+}
+.bar2 .fill {
+  --final-width: 35%;
+}
+.bar3 .fill {
+  --final-width: 85%;
+}
+
+@keyframes change-color {
+  0% {
+    width: 10%;
+  }
+  10% {
+    width: calc(var(--final-width) * 0.1);
+  }
+  20% {
+    width: calc(var(--final-width) * 0.2);
+  }
+  30% {
+    width: calc(var(--final-width) * 0.3);
+  }
+  40% {
+    width: calc(var(--final-width) * 0.4);
+  }
+  50% {
+    width: calc(var(--final-width) * 0.5);
+  }
+  60% {
+    width: calc(var(--final-width) * 0.6);
+  }
+  70% {
+    width: calc(var(--final-width) * 0.7);
+  }
+  80% {
+    width: calc(var(--final-width) * 0.8);
+  }
+  90% {
+    width: calc(var(--final-width) * 0.9);
+  }
+  100% {
+    width: var(--final-width);
+  }
+}
 
 .element {
   background: grey;
@@ -596,7 +642,6 @@ h2 {
 
 .card-admin {
   background-color: var(--color-primary-medium);
-  
 }
 .card-admin:hover {
   transform: scale(1.08);
@@ -653,14 +698,13 @@ h2 {
 
   .barra-admin-cel .barra-lateral-cel {
     display: flex;
-    align-items: center;  
+    align-items: center;
     flex-wrap: nowrap;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     width: 100%;
     gap: 0.5rem;
-
   }
 
   .barra-admin-cel .barra-lateral-cel::-webkit-scrollbar {
@@ -675,14 +719,12 @@ h2 {
 
   .adminPanel-main {
     margin-left: 0;
-    padding-top: 80px; 
+    padding-top: 80px;
   }
- 
+
   .tarjetas-estadisticas .container .card {
     margin-top: 2rem;
     padding: 1rem;
-    
-   
   }
 
   .tabla .table {
@@ -690,8 +732,8 @@ h2 {
   }
 }
 
-@media all and (min-width: 577px) and (max-width: 768px){
-.siete-maravillas .card {
+@media all and (min-width: 577px) and (max-width: 768px) {
+  .siete-maravillas .card {
     width: 18rem;
     max-width: none;
   }
@@ -713,7 +755,7 @@ h2 {
   .img-banner {
     height: 300px;
   }
- .descuentos h2 {
+  .descuentos h2 {
     font-size: 1.75rem;
   }
 
@@ -729,7 +771,7 @@ h2 {
     height: 350px;
   }
 
-h2 {
+  h2 {
     font-size: 2rem;
   }
 
@@ -765,7 +807,7 @@ h2 {
     padding-right: 15px;
   }
 
- .carruselApp {
+  .carruselApp {
     height: 300px;
     object-fit: cover;
   }
@@ -783,7 +825,7 @@ h2 {
     height: auto;
   }
 
- .hero-colaboraciones {
+  .hero-colaboraciones {
     height: 50vh;
     background-position: center;
   }
@@ -828,7 +870,7 @@ h2 {
     padding: 0.75rem 1.5rem;
   }
 
-.misiones-cumplidas .card {
+  .misiones-cumplidas .card {
     max-width: 100%;
     margin-bottom: 1.5rem;
   }
@@ -854,37 +896,30 @@ h2 {
     border-radius: 10px;
   }
 
- 
   .barra-admin {
     display: block;
-    
   }
-.barra-lateral {
-  width: 25%;
-}
+  .barra-lateral {
+    width: 25%;
+  }
   .barra-admin-cel {
     display: none;
   }
 
-
   .adminPanel-main {
-    margin-left: 220px; 
+    margin-left: 220px;
     padding: 2rem 1rem;
   }
 
-
- 
   .tabla .table {
     padding: 1.2rem;
     width: 95%;
     margin: 0 auto;
   }
-  
-  
 }
 
- @media all and (min-width: 769px) and (max-width:991px) {
-.siete-maravillas h2,
+@media all and (min-width: 769px) and (max-width: 991px) {
+  .siete-maravillas h2,
   .experiencias h2,
   .reseñas h2,
   .zona-beneficios h2 {
@@ -971,7 +1006,7 @@ h2 {
     font-size: 1.15rem;
   }
 
- .titulo-viajerox {
+  .titulo-viajerox {
     font-size: 3rem;
   }
 
@@ -988,7 +1023,7 @@ h2 {
     font-size: 0.95rem;
   }
 
- .carruselApp {
+  .carruselApp {
     height: auto;
     object-fit: cover;
   }
@@ -1009,7 +1044,7 @@ h2 {
     text-align: left;
   }
 
- .hero-colaboraciones {
+  .hero-colaboraciones {
     height: 60vh;
   }
 
@@ -1036,8 +1071,7 @@ h2 {
     font-size: 1.1rem;
   }
 
-
- .misiones .col-4,
+  .misiones .col-4,
   .misiones-cumplidas .col {
     flex: 0 0 50%;
     max-width: 50%;
@@ -1061,7 +1095,7 @@ h2 {
     padding: 10px 18px;
   }
 
-   .barra-lateral-cel {
+  .barra-lateral-cel {
     display: none;
     width: 100%;
     height: 20vh;
@@ -1079,13 +1113,11 @@ h2 {
   }
   .tarjetas-estadisticas .container .card {
     margin-top: 1rem;
-   
   }
 }
 
-@media all and (min-width: 992px){
-
-.siete-maravillas h2,
+@media all and (min-width: 992px) {
+  .siete-maravillas h2,
   .experiencias h2,
   .reseñas h2,
   .zona-beneficios h2 {
@@ -1108,7 +1140,7 @@ h2 {
     font-size: 1rem;
   }
 
-.descuentos .container {
+  .descuentos .container {
     max-width: 1140px;
   }
 
@@ -1152,7 +1184,7 @@ h2 {
     font-size: 1.25rem;
   }
 
-.titulo-viajerox {
+  .titulo-viajerox {
     font-size: 4rem;
   }
 
@@ -1215,7 +1247,7 @@ h2 {
     font-size: 2.2rem;
   }
 
-.misiones .col-4,
+  .misiones .col-4,
   .misiones-cumplidas .col {
     flex: 0 0 33.33%;
     max-width: 33.33%;
@@ -1232,7 +1264,7 @@ h2 {
     font-size: 1rem;
   }
 
-   .barra-lateral-cel {
+  .barra-lateral-cel {
     display: none;
     width: 100%;
     height: 20vh;
@@ -1250,9 +1282,6 @@ h2 {
   }
   .tarjetas-estadisticas .container .card {
     margin-top: 1rem;
-    
-   
-   
   }
 }
 
@@ -1261,7 +1290,7 @@ h2 {
   border-radius: 10px;
   border: 1 solid black;
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);
 }
 .login-admin {
   background-image: url(../assets/img/admin-fondo.webp);
@@ -1269,18 +1298,15 @@ h2 {
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
-  
-  
 }
 .login-box input {
-  background: transparent; 
+  background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 8px;
   padding: 10px 15px;
-  color: white; 
+  color: white;
   width: 100%;
   margin-bottom: 15px;
-  
 }
 .boton-admin {
   display: inline-block;
@@ -1308,7 +1334,6 @@ h2 {
   }
 }
 
-
 @media (min-width: 768px) {
   .login-admin {
     padding: 15vh;
@@ -1318,7 +1343,6 @@ h2 {
     width: 60%;
   }
 }
-
 
 @media (min-width: 992px) {
   .login-box {
