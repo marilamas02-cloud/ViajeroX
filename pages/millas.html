@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Streaming de viajes" />
+    <meta
+      name="keywords"
+      content="Streaming, viajes, 7Maravillas, paisajes, turismo"
+    />
+    <meta
+      name="author"
+      content="Marisol Lamas, Ornella Ricobelli, Facundo Camano, Octavio Fernandez Caram"
+    />
+    <title>ViajeroX</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/5cc9154e02.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../assets/img/logoBlanco.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section class="hero-millas">
+        <img
+          src="../assets/img/millasbanner.png"
+          class="img-fluid"
+          alt="Millas banner"
+        />
+      </section>
+      <section class="misiones">
+        <h2 class="py-5">
+          ¡Completá las misiones y ganate millas para tu próximo destino!
+        </h2>
+        <div class="container text-center justify-content-justify pb-4">
+          <div class="row justify-content-start align-items-stretch g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div
+                class="card text-center mb-3 h-100 d-flex flex-column"
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0"
+                
+              >
+                <div
+                  class="card-body d-flex flex-column justify-content-between"
+                >
+                  <h2 class="card-title">Misiones Premium o de Marca</h2>
+                  <p class="card-text-millas">
+                    <span
+                      ><i
+                        class="bi bi-check2-circle text-primary"
+                        aria-hidden="true"
+                      ></i>
+                      <span class="visually-hidden">Acción completada</span>
+                      Usar un código de descuento en una reserva real → +3.000
+                      millas.</span
+                    >
+                    <span
+                      ><i
+                        class="bi bi-check2-circle text-primary"
+                        aria-hidden="true"
+                      ></i
+                      ><span class="visually-hidden">Acción completada</span
+                      >Comprar una experiencia del streaming (curso, guía, etc.)
+                      → +2.000 millas.</span
+                    >
+                    <span
+                      ><i
+                        class="bi bi-check2-circle text-primary"
+                        aria-hidden="true"
+                      ></i
+                      ><span class="visually-hidden">Acción completada</span>
+                      Probar un producto de una marca aliada → +1.500
+                      millas.</span
+                    >
+                    <span
+                      ><i
+                        class="bi bi-check2-circle text-primary"
+                        aria-hidden="true"
+                      ></i
+                      ><span class="visually-hidden">Acción completada</span>
+                      Compartir feedback sobre una campaña o destino → +400
+                      millas.</span
+                    >
+                  </p>
+
+                  <a href="./404.html" class="btn boton-milla mt-auto"
+                    >Obtener</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div
+                class="card text-center mb-3 h-100 d-flex flex-column"
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="600"
+                data-aos-offset="0"
+                
+              >
+                <div
+                  class="card-body d-flex flex-column justify-content-between"
+                >
+                  <h2 class="card-title">Misiones Especiales o de Bonus</h2>
+                  <p class="card-text-millas">
+                    <span
+                      ><i
+                        class="bi bi-check2-circle text-primary"
+                        aria-hidden="true"
+                      ></i
+                      ><span class="visually-hidden">Acción completada</span>
+                      Código sorpresa del streaming → +2.500 millas</span
+                    >
+                    <span
+                      ><i
+                        class="bi bi-check2-circle text-primary"
+                        aria-hidden="true"
+                      ></i
+                      >Desbloquear un logro secreto (ej. mirar 5 transmisiones
+                      seguidas) → +1.500 millas</span
+                    >
+                    <span
+                      ><i
+                        class="bi bi-check2-circle text-primary"
+                        aria-hidden="true"
+                      ></i
+                      ><span class="visually-hidden">Acción completada</span
+                      >Cumplir todas las misiones del mes → +5.000 millas</span
+                    >
+                    <span
+                      ><i
+                        class="bi bi-check2-circle text-primary"
+                        aria-hidden="true"
+                      ></i
+                      ><span class="visually-hidden">Acción completada</span>
+                      Participar en un evento o colaboración en vivo → +2.000
+                      millas</span
+                    >
+                  </p>
+
+                  <a href="./404.html" class="btn boton-milla mt-auto"
+                    >Obtener</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div
+                class="card text-center mb-3 h-100 d-flex flex-column"
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="900"
+                data-aos-offset="0"
+                
+              >
+                <div
+                  class="card-body d-flex flex-column justify-content-between"
+                >
+                  <h2 class="card-title">Misiones de Crecimiento</h2>
+                  <p class="card-text-millas">
+                    <span
+                      ><i
+                        class="bi bi-check2-circle text-primary"
+                        aria-hidden="true"
+                      ></i
+                      ><span class="visually-hidden">Acción completada</span>
+                      Invitar a un amigo a unirse → +1.000 millas</span
+                    >
+                    <span
+                      ><i
+                        class="bi bi-check2-circle text-primary"
+                        aria-hidden="true"
+                      ></i
+                      ><span class="visually-hidden">Acción completada</span
+                      >Traer a 5 nuevos suscriptores → +3.000 millas</span
+                    >
+                    <span
+                      ><i
+                        class="bi bi-check2-circle text-primary"
+                        aria-hidden="true"
+                      ></i
+                      ><span class="visually-hidden">Acción completada</span
+                      >Crear una publicación recomendando el streaming → +800
+                      millas</span
+                    >
+                    <span
+                      ><i
+                        class="bi bi-check2-circle text-primary"
+                        aria-hidden="true"
+                      ></i
+                      ><span class="visually-hidden">Acción completada</span>
+                      Compartir tu experiencia en redes sociales (con hashtag
+                      oficial) → +700 millas</span
+                    >
+                  </p>
+
+                  <a href="./404.html" class="btn boton-milla mt-auto"
+                    >Obtener</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div
+                class="card text-center mb-3 h-100 d-flex flex-column"
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="1200"
+                data-aos-offset="0"
+               
+              >
+                <div
+                  class="card-body d-flex flex-column justify-content-between"
+                >
+                  <h2 class="card-title">Misiones de Experiencia Viajera</h2>
+                  <p class="card-text-millas">
+                    <span
+                      ><i
+                        class="bi bi-check2-circle text-primary"
+                        aria-hidden="true"
+                      ></i
+                      ><span class="visually-hidden">Acción completada</span
+                      >Publicar una foto de un viaje reciente → +800
+                      millas</span
+                    >
+                    <span
+                      ><i
+                        class="bi bi-check2-circle text-primary"
+                        aria-hidden="true"
+                      ></i
+                      ><span class="visually-hidden">Acción completada</span
+                      >Participar en un reto de viajes → +1.000 millas</span
+                    >
+                    <span
+                      ><i
+                        class="bi bi-check2-circle text-primary"
+                        aria-hidden="true"
+                      ></i
+                      ><span class="visually-hidden">Acción completada</span
+                      >Recomendar un destino low-cost → +500 millas</span
+                    >
+                    <span
+                      ><i
+                        class="bi bi-check2-circle text-primary"
+                        aria-hidden="true"
+                      ></i
+                      ><span class="visually-hidden">Acción completada</span>
+                      Enviar un video corto contando una anécdota de viaje →
+                      +1.200 millas</span
+                    >
+                  </p>
+
+                  <a href="./404.html" class="btn boton-milla mt-auto"
+                    >Obtener</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div
+                class="card text-center mb-3 h-100 d-flex flex-column"
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="1500"
+                data-aos-offset="0"
+                
+              >
+                <div
+                  class="card-body d-flex flex-column justify-content-between"
+                >
+                  <h2 class="card-title">Misiones de Comunidad y Eventos</h2>
+                  <p class="card-text-millas">
+                    <span
+                      ><i
+                        class="bi bi-check2-circle text-primary"
+                        aria-hidden="true"
+                      ></i
+                      ><span class="visually-hidden">Acción completada</span>
+                      Participar en un evento en vivo del streaming → +1.000
+                      millas</span
+                    >
+                    <span
+                      ><i
+                        class="bi bi-check2-circle text-primary"
+                        aria-hidden="true"
+                      ></i
+                      ><span class="visually-hidden">Acción completada</span
+                      >Participar en un evento temático del mes → +2.000
+                      millas</span
+                    >
+                    <span
+                      ><i
+                        class="bi bi-check2-circle text-primary"
+                        aria-hidden="true"
+                      ></i
+                      ><span class="visually-hidden">Acción completada</span
+                      >Colaborar como voluntario o moderador en un evento→ +2500
+                      millas</span
+                    >
+                    <span
+                      ><i
+                        class="bi bi-check2-circle text-primary"
+                        aria-hidden="true"
+                      ></i
+                      ><span class="visually-hidden">Acción completada</span>
+                      Participar en un encuentro local de la comunidad → +3000
+                      millas</span
+                    >
+                  </p>
+
+                  <a href="./404.html" class="btn boton-milla mt-auto"
+                    >Obtener</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div
+                class="card text-center mb-3 h-100 d-flex flex-column"
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="1800"
+                data-aos-offset="0"
+                
+              >
+                <div
+                  class="card-body d-flex flex-column justify-content-between"
+                >
+                  <h2 class="card-title">Misiones Combinadas</h2>
+                  <p class="card-text-millas">
+                    <span
+                      ><i
+                        class="bi bi-check2-circle text-primary"
+                        aria-hidden="true"
+                      ></i
+                      ><span class="visually-hidden">Acción completada</span>
+                      Comentar en el grupo tu aprendizaje favorito del curso →
+                      +600 millas</span
+                    >
+                    <span
+                      ><i
+                        class="bi bi-check2-circle text-primary"
+                        aria-hidden="true"
+                      ></i
+                      ><span class="visually-hidden">Acción completada</span
+                      >Compartir tu práctica del curso (ej. edición de video,
+                      itinerario, etc.) → +1.200 millas</span
+                    >
+                    <span
+                      ><i
+                        class="bi bi-check2-circle text-primary"
+                        aria-hidden="true"
+                      ></i
+                      ><span class="visually-hidden">Acción completada</span
+                      >Participar en un live con un instructor o invitado →
+                      +1.000 millas</span
+                    >
+                    <span
+                      ><i
+                        class="bi bi-check2-circle text-primary"
+                        aria-hidden="true"
+                      ></i
+                      ><span class="visually-hidden">Acción completada</span>
+                      Completar un reto grupal del curso (por equipos) → +2.000
+                      millas</span
+                    >
+                  </p>
+
+                  <a href="./404.html" class="btn boton-milla mt-auto"
+                    >Obtener</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="misiones-cumplidas">
+        <h2>Comunidad en Acción</h2>
+        <p class="text-center mb-5">
+          Nuestros viajeros completan misiones, suman millas y desbloquean
+          recompensas únicas.
+        </p>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div
+                class="card bg-transparent border-0"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+                data-aos-delay="300"
+                style="width: 18rem"
+              >
+                <img
+                  src="../assets/img/viajero1.webp"
+                  class="card-img-top img-fluid rounded-circle"
+                  alt="Franco"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Franco</h5>
+                  <p class="card-text">Nivel 3 • Explorador Avanzado</p>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Animated striped example"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div
+                      class="progress-bar progress-bar-striped progress-bar-animated"
+                      style="width: 75%"
+                    ></div>
+                  </div>
+                  <span>Completó 3 de 4 misiones esta semana</span>
+                  <br />
+                  <a href="./404.html" class="btn boton-mision mt-4">
+                    Ver misiones activas</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div
+                class="card bg-transparent border-0"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+                data-aos-delay="600"
+                style="width: 18rem"
+              >
+                <img
+                  src="../assets/img/viajero2.jpg"
+                  class="card-img-top img-fluid rounded-circle"
+                  alt="Lucas"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Lucas</h5>
+                  <p class="card-text">Nivel 2 • Aventurero</p>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Animated striped example"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div
+                      class="progress-bar progress-bar-striped progress-bar-animated"
+                      style="width: 50%"
+                    ></div>
+                  </div>
+                  <span>Participó en un evento y sumó +1.500 millas</span>
+                  <br />
+                  <a href="./404.html" class="btn boton-mision mt-4">
+                    Seguir explorando</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div
+                class="card bg-transparent border-0"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+                data-aos-delay="900"
+                style="width: 18rem"
+              >
+                <img
+                  src="../assets/img/viajero3.jpg"
+                  class="card-img-top img-fluid rounded-circle"
+                  alt="Camila"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Camila</h5>
+                  <p class="card-text">Nivel 1 • Nueva viajera</p>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Animated striped example"
+                    aria-valuenow="20"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div
+                      class="progress-bar progress-bar-striped progress-bar-animated"
+                      style="width: 20%"
+                    ></div>
+                  </div>
+                  <span
+                    >Recién comenzó sus misiones y ya está sumando millas.</span
+                  >
+                  <br />
+                  <a href="./404.html" class="btn boton-mision mt-4"
+                    >Unirme a la comunidad</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
