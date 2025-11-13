@@ -330,75 +330,6 @@ h2 {
   font-weight: bold;
 }
 
-.bar {
-  width: 100%;
-  height: 25px;
-  background: #ddd;
-  border-radius: 10px;
-  overflow: hidden;
-  margin-bottom: 10px;
-}
-
-.fill {
-  height: 100%;
-  width: 0;
-  background: #4caf50;
-  border-radius: 10px;
-  animation: change-color 2s forwards;
-}
-
-.bar1 .fill {
-  --final-width: 65%;
-}
-.bar2 .fill {
-  --final-width: 35%;
-}
-.bar3 .fill {
-  --final-width: 85%;
-}
-
-@keyframes change-color {
-  0% {
-    width: 10%;
-  }
-  10% {
-    width: calc(var(--final-width) * 0.1);
-  }
-  20% {
-    width: calc(var(--final-width) * 0.2);
-  }
-  30% {
-    width: calc(var(--final-width) * 0.3);
-  }
-  40% {
-    width: calc(var(--final-width) * 0.4);
-  }
-  50% {
-    width: calc(var(--final-width) * 0.5);
-  }
-  60% {
-    width: calc(var(--final-width) * 0.6);
-  }
-  70% {
-    width: calc(var(--final-width) * 0.7);
-  }
-  80% {
-    width: calc(var(--final-width) * 0.8);
-  }
-  90% {
-    width: calc(var(--final-width) * 0.9);
-  }
-  100% {
-    width: var(--final-width);
-  }
-}
-
-.element {
-  background: grey;
-  width: 150px;
-  height: 150px;
-  animation: change-color 2s 0s;
-}
 .planes-viajerox {
   background: radial-gradient(circle at top, #061726, #020910 80%);
   position: relative;
@@ -561,27 +492,6 @@ h2 {
   transform: scale(1.1);
   box-shadow: #ff7d00 0 8px 20px;
 }
-.misiones {
-  background-image: url(../assets/img/milla.webp);
-}
-.misiones .card:hover {
-  border-color: #00cfff;
-  box-shadow: 0 0 25px var(--color-secondary-accent);
-  transform: translateY(-4px)
-  scale(1.05);
-}
-.misiones .card {
-  width: 100%;
-  max-width: 25rem; 
-  margin: 0 auto;
-  border-radius: 1rem;
-  transition: transform 0.3s ease;
-  border: 2px solid #007bff;
-  transition: border-color 0.3s ease;
-  background-color: transparent;
-  background: rgba(0, 0, 0, 0.6)
-   
-}
 
 .card-text-millas {
   text-align: left;
@@ -589,7 +499,6 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  
 }
 .boton-milla {
   background-color: var(--color-primary-medium);
@@ -664,6 +573,7 @@ h2 {
 
 .card-admin {
   background-color: var(--color-primary-medium);
+  
 }
 .card-admin:hover {
   transform: scale(1.08);
@@ -720,13 +630,14 @@ h2 {
 
   .barra-admin-cel .barra-lateral-cel {
     display: flex;
-    align-items: center;
+    align-items: center;  
     flex-wrap: nowrap;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     width: 100%;
-    
+    gap: 0.5rem;
+
   }
 
   .barra-admin-cel .barra-lateral-cel::-webkit-scrollbar {
@@ -741,27 +652,23 @@ h2 {
 
   .adminPanel-main {
     margin-left: 0;
-    padding-top: 80px;
+    padding-top: 80px; 
   }
-
+ 
   .tarjetas-estadisticas .container .card {
     margin-top: 2rem;
     padding: 1rem;
+    
+   
   }
 
   .tabla .table {
     padding: 1rem;
   }
- 
-  .misiones .card {
-    max-width: 90%;
-  }
 }
 
-
-
-@media all and (min-width: 577px) and (max-width: 768px) {
-  .siete-maravillas .card {
+@media all and (min-width: 577px) and (max-width: 768px){
+.siete-maravillas .card {
     width: 18rem;
     max-width: none;
   }
@@ -783,7 +690,7 @@ h2 {
   .img-banner {
     height: 300px;
   }
-  .descuentos h2 {
+ .descuentos h2 {
     font-size: 1.75rem;
   }
 
@@ -799,7 +706,7 @@ h2 {
     height: 350px;
   }
 
-  h2 {
+h2 {
     font-size: 2rem;
   }
 
@@ -820,12 +727,12 @@ h2 {
   .viajeros p {
     font-size: 1rem;
   }
-  .voto-gastronomia,
+  .voto,
   .boton-restaurantes {
     font-size: 1rem;
   }
 
-  .voto-gastronomia:hover,
+  .voto:hover,
   .boton-restaurantes:hover {
     font-size: 1.5rem;
   }
@@ -835,7 +742,7 @@ h2 {
     padding-right: 15px;
   }
 
-  .carruselApp {
+ .carruselApp {
     height: 300px;
     object-fit: cover;
   }
@@ -853,7 +760,7 @@ h2 {
     height: auto;
   }
 
-  .hero-colaboraciones {
+ .hero-colaboraciones {
     height: 50vh;
     background-position: center;
   }
@@ -898,7 +805,7 @@ h2 {
     padding: 0.75rem 1.5rem;
   }
 
-  .misiones-cumplidas .card {
+.misiones-cumplidas .card {
     max-width: 100%;
     margin-bottom: 1.5rem;
   }
@@ -924,30 +831,37 @@ h2 {
     border-radius: 10px;
   }
 
+ 
   .barra-admin {
     display: block;
+    
   }
-  .barra-lateral {
-    width: 25%;
-  }
+.barra-lateral {
+  width: 25%;
+}
   .barra-admin-cel {
     display: none;
   }
 
+
   .adminPanel-main {
-    margin-left: 220px;
+    margin-left: 220px; 
     padding: 2rem 1rem;
   }
 
+
+ 
   .tabla .table {
     padding: 1.2rem;
     width: 95%;
     margin: 0 auto;
   }
+  
+  
 }
 
-@media all and (min-width: 769px) and (max-width: 991px) {
-  .siete-maravillas h2,
+ @media all and (min-width: 769px) and (max-width:991px) {
+.siete-maravillas h2,
   .experiencias h2,
   .reseñas h2,
   .zona-beneficios h2 {
@@ -1034,7 +948,7 @@ h2 {
     font-size: 1.15rem;
   }
 
-  .titulo-viajerox {
+ .titulo-viajerox {
     font-size: 3rem;
   }
 
@@ -1051,7 +965,7 @@ h2 {
     font-size: 0.95rem;
   }
 
-  .carruselApp {
+ .carruselApp {
     height: auto;
     object-fit: cover;
   }
@@ -1072,7 +986,7 @@ h2 {
     text-align: left;
   }
 
-  .hero-colaboraciones {
+ .hero-colaboraciones {
     height: 60vh;
   }
 
@@ -1099,7 +1013,8 @@ h2 {
     font-size: 1.1rem;
   }
 
-  .misiones .col-4,
+
+ .misiones .col-4,
   .misiones-cumplidas .col {
     flex: 0 0 50%;
     max-width: 50%;
@@ -1108,7 +1023,7 @@ h2 {
 
   .misiones .card,
   .misiones-cumplidas .card {
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
   }
 
@@ -1123,7 +1038,7 @@ h2 {
     padding: 10px 18px;
   }
 
-  .barra-lateral-cel {
+   .barra-lateral-cel {
     display: none;
     width: 100%;
     height: 20vh;
@@ -1141,11 +1056,13 @@ h2 {
   }
   .tarjetas-estadisticas .container .card {
     margin-top: 1rem;
+   
   }
 }
 
-@media all and (min-width: 992px) {
-  .siete-maravillas h2,
+@media all and (min-width: 992px){
+
+.siete-maravillas h2,
   .experiencias h2,
   .reseñas h2,
   .zona-beneficios h2 {
@@ -1168,7 +1085,7 @@ h2 {
     font-size: 1rem;
   }
 
-  .descuentos .container {
+.descuentos .container {
     max-width: 1140px;
   }
 
@@ -1212,7 +1129,7 @@ h2 {
     font-size: 1.25rem;
   }
 
-  .titulo-viajerox {
+.titulo-viajerox {
     font-size: 4rem;
   }
 
@@ -1275,20 +1192,44 @@ h2 {
     font-size: 2.2rem;
   }
 
-  .misiones .col-4,
+.misiones .col-4,
   .misiones-cumplidas .col {
     flex: 0 0 33.33%;
     max-width: 33.33%;
   }
 
-  .misiones .card {
-    max-width: 25rem; 
+  .misiones .card,
+  .misiones-cumplidas .card {
+    width: 18rem;
   }
 
   .boton-milla,
   .boton-mision {
     padding: 8px 16px;
     font-size: 1rem;
+  }
+
+   .barra-lateral-cel {
+    display: none;
+    width: 100%;
+    height: 20vh;
+  }
+  .barra-admin {
+    display: block;
+  }
+
+  .barra-admin-cel {
+    display: none;
+  }
+
+  .adminPanel-main {
+    margin-left: 260px;
+  }
+  .tarjetas-estadisticas .container .card {
+    margin-top: 1rem;
+    
+   
+   
   }
 
   .barra-lateral-cel {

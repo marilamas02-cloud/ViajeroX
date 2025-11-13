@@ -57,7 +57,25 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item"> <a class="nav-link" href="#"><i class="bi bi-cart3 me-1"></i> CARRITO</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-people-fill me-1"></i> COMUNIDAD
+                        </a>
+                        <ul class="dropdown-menu modal-style">
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person-badge me-2"></i>Suscripción</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-people me-2"></i>Nuestra comunidad</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-airplane-engines me-2"></i>Sumar
+                                    millas</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-shop me-2"></i>Merchandising</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-envelope-paper me-2"></i>Contacto</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-info-circle me-2"></i>Nosotros</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item"> <a class="nav-link" href="#" data-bs-toggle="modal"
                             data-bs-target="#currencyModal"> <i class="bi bi-translate me-1"></i> ES/USD </a> </li>
@@ -89,8 +107,6 @@
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                         aria-label="Cerrar"></button>
                 </div>
-
-                <!-- IDIOMA -->
                 <div class="modal-body">
                     <h5 class="mb-3 fw-bold">Idioma</h5>
                     <div class="container">
@@ -124,8 +140,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- DIVISA -->
                 <div class="modal-body">
                     <h5 class="mb-3 fw-bold">Divisa</h5>
                     <div class="container">
@@ -143,7 +157,6 @@
                                     <li><label><input type="radio" name="currency"> Corona danesa DKK</label></li>
                                 </ul>
                             </div>
-
                             <div class="col-md-4">
                                 <ul class="list-unstyled currency-list">
                                     <li><label><input type="radio" name="currency"> Dírham EAU د.إ</label></li>
@@ -157,7 +170,6 @@
                                     <li><label><input type="radio" name="currency"> Franco suizo CHF</label></li>
                                 </ul>
                             </div>
-
                             <div class="col-md-4">
                                 <ul class="list-unstyled currency-list">
                                     <li><label><input type="radio" name="currency"> Peso argentino $</label></li>
@@ -177,7 +189,6 @@
             </div>
         </div>
     </div>
-
 </header>
 <main></main>
 <footer></footer>
@@ -185,5 +196,4 @@
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
 </body>
-
 </html>
