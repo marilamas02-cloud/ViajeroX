@@ -43,7 +43,9 @@ section{
  }
 
 .content{
-    margin: 20px;
+    padding: 150px;
+    max-width: 1200px;
+    margin: 20px ;
     flex: 50%;
     border: 2px solid  #FF7D00;
     box-shadow:  5px 5px 15px #FF7D00;
@@ -51,7 +53,16 @@ section{
 .card-inf .content{
     flex-grow: 1;
     flex-shrink: 1;
+    padding: 30px;
+    text-align: center;
 
+}
+.card-inf{
+    width: 300px ;
+    height: 30s0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .container-cards{
     max-width: 1200px;
