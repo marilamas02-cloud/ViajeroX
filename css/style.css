@@ -561,6 +561,27 @@ h2 {
   transform: scale(1.1);
   box-shadow: #ff7d00 0 8px 20px;
 }
+.misiones {
+  background-image: url(../assets/img/milla.webp);
+}
+.misiones .card:hover {
+  border-color: #00cfff;
+  box-shadow: 0 0 25px var(--color-secondary-accent);
+  transform: translateY(-4px)
+  scale(1.05);
+}
+.misiones .card {
+  width: 100%;
+  max-width: 25rem; 
+  margin: 0 auto;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+  border: 2px solid #007bff;
+  transition: border-color 0.3s ease;
+  background-color: transparent;
+  background: rgba(0, 0, 0, 0.6)
+   
+}
 
 .card-text-millas {
   text-align: left;
@@ -568,6 +589,7 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 6px;
+  
 }
 .boton-milla {
   background-color: var(--color-primary-medium);
@@ -730,7 +752,13 @@ h2 {
   .tabla .table {
     padding: 1rem;
   }
+ 
+  .misiones .card {
+    max-width: 90%;
+  }
 }
+
+
 
 @media all and (min-width: 577px) and (max-width: 768px) {
   .siete-maravillas .card {
@@ -1080,7 +1108,7 @@ h2 {
 
   .misiones .card,
   .misiones-cumplidas .card {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -1253,9 +1281,8 @@ h2 {
     max-width: 33.33%;
   }
 
-  .misiones .card,
-  .misiones-cumplidas .card {
-    width: 18rem;
+  .misiones .card {
+    max-width: 25rem; 
   }
 
   .boton-milla,
