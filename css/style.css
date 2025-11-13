@@ -704,7 +704,7 @@ h2 {
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     width: 100%;
-    gap: 0.5rem;
+    
   }
 
   .barra-admin-cel .barra-lateral-cel::-webkit-scrollbar {
