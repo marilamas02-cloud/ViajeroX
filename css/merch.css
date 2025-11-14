@@ -27,3 +27,16 @@
     transform: translateY(-5px);
     box-shadow: 0 12px 25px rgba(0,0,0,0.15);
   }
+  .product-card, .limited-card {
+    transition: transform .2s, box-shadow .2s;
+  }
+  .product-card:hover, .limited-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  }
+  .product-small {
+    transition: transform .2s;
+  }
+  .product-small:hover {
+    transform: scale(1.05);
+  }
