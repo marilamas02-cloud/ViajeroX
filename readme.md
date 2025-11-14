@@ -43,6 +43,7 @@ Este proyecto es una página web enfocada en el **frontend**, inspirada en la te
 🏠 **Comunidad:** 
 - Suscripción: Acceso a la comunidad
 - Comunidad: Noticias y reseñas de viajeros.
+- Sumar millas: Cumplí objetivos y accedé a recompensas.
 - Comercialización: Merchandising exclusivo.
 - Contacto: Comunicación directa con la empresa.
 - Nosotros: Información equipo de trabajo.
@@ -58,8 +59,7 @@ Este proyecto es una página web enfocada en el **frontend**, inspirada en la te
 - Asistencia Viajero: Ayuda inmediata al turista.
 
 - Guías Ebooks: Información práctica y detallada.
- 
-- Sumar millas: Descuentos para el usuario.
+
 
 🌅 **Inicio / Detalle:**
 
