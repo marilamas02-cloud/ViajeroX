@@ -107,7 +107,7 @@ img{
     margin-top: 10px;
     text-align: center;
 }
-.card .description input{
+.boton-nosotros{
     padding: 10px 40px;
     margin: 50px;
     border: none;
@@ -115,6 +115,6 @@ img{
     background-color: #15616D;
 
 }
-.card .description input:hover{
+.boton-nosotros:hover{
     background-color: #FF7D00;
 }
