@@ -455,17 +455,34 @@ a:hover {
   color: var(--color-secondary-accent);
 }
 .viajeros-hablando .card {
-  background-color: var(--color-primary-dark); /* gris claro Bootstrap */
+  background-color: var(--color-primary-dark); 
   border: none;
   border-radius: 15px;
 }
 .viajeros-hablando .card-title {
-  color: var(--color-secondary-accent); /* azul Bootstrap (primary) */
+  color: var(--color-secondary-accent); 
   font-weight: 700;
 }
 .viajeros-hablando .card-text {
-  color: #6c757d; /* texto gris Bootstrap */
+  color: #6c757d; 
 }
+.destinos-nuevos p {
+  color: var(--color-secondary-accent);
+}
+.destinos-nuevos .card {
+  background-color: var(--color-primary-dark);
+}
+.destinos-nuevos .card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.destinos-nuevos .card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+
 
 
 @media (max-width: 576px) {

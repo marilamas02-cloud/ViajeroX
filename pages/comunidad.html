@@ -96,8 +96,10 @@
   <h3 class="fw-bold mb-5 px-3 text-center">
     Nuevos destinos por descubrir
   </h3>
+
   <div class="d-flex flex-wrap justify-content-center gap-5 px-3">
-    <div class="card" style="width: 18rem">
+    <div class="card" style="width: 18rem"
+         data-aos="zoom-out">
       <img
         src="../assets/img/cardVideo01.jpg"
         class="card-img-top img-fluid rounded-4"
@@ -106,18 +108,17 @@
       <div class="card-body">
         <p class="card-text fw-bold text-center">Estambul</p>
         <div class="d-flex justify-content-center align-items-center">
-          <button
-            type="button"
-            class="btn btn-detalle"
-            data-bs-toggle="modal"
-            data-bs-target="#Estambul"
-          >
+          <button type="button" class="btn btn-detalle"
+            data-bs-toggle="modal" data-bs-target="#Estambul">
             Ver más
           </button>
         </div>
       </div>
     </div>
-    <div class="card" style="width: 18rem">
+
+
+    <div class="card" style="width: 18rem"
+         data-aos="zoom-out">
       <img
         src="../assets/img/cardVideo02.jpg"
         class="card-img-top img-fluid rounded-4"
@@ -126,18 +127,17 @@
       <div class="card-body">
         <p class="card-text fw-bold text-center">Capadocia</p>
         <div class="d-flex justify-content-center align-items-center">
-          <button
-            type="button"
-            class="btn btn-detalle"
-            data-bs-toggle="modal"
-            data-bs-target="#Capadocia"
-          >
+          <button type="button" class="btn btn-detalle"
+            data-bs-toggle="modal" data-bs-target="#Capadocia">
             Ver más
           </button>
         </div>
       </div>
     </div>
-    <div class="card" style="width: 18rem">
+
+    
+    <div class="card" style="width: 18rem"
+         data-aos="zoom-out">
       <img
         src="../assets/img/cardVideo03.jpg"
         class="card-img-top img-fluid rounded-4"
@@ -146,18 +146,17 @@
       <div class="card-body">
         <p class="card-text fw-bold text-center">Tokyo</p>
         <div class="d-flex justify-content-center align-items-center">
-          <button
-            type="button"
-            class="btn btn-detalle"
-            data-bs-toggle="modal"
-            data-bs-target="#Japon"
-          >
+          <button type="button" class="btn btn-detalle"
+            data-bs-toggle="modal" data-bs-target="#Japon">
             Ver más
           </button>
         </div>
       </div>
     </div>
-    <div class="card" style="width: 18rem">
+
+  
+    <div class="card" style="width: 18rem"
+         data-aos="zoom-out">
       <img
         src="../assets/img/cardVideo04.jpg"
         class="card-img-top img-fluid rounded-4"
@@ -166,20 +165,19 @@
       <div class="card-body">
         <p class="card-text fw-bold text-center">Barcelona</p>
         <div class="d-flex justify-content-center align-items-center">
-          <button
-            type="button"
-            class="btn btn-detalle"
-            data-bs-toggle="modal"
-            data-bs-target="#Barcelona"
-          >
+          <button type="button" class="btn btn-detalle"
+            data-bs-toggle="modal" data-bs-target="#Barcelona">
             Ver más
           </button>
         </div>
       </div>
     </div>
+
   </div>
 </section>
-      <article class="reseña-experiencia container my-5">
+
+
+      <section class="reseña-experiencia container my-5">
         <h3 class="fw-bold mb-5 px-3 text-center">Nuestros Viajeros</h3>
         <div class="viajerox-masonry">
           <div
@@ -224,7 +222,7 @@
             <h4>Atención 24/7</h4>
           </div>
         </div>
-      </article>
+      </section>
       <section class="container my-5 viajeros-hablando">
         <h3 class="fw-bold mb-5 px-3 text-center">Consejos</h3>
         <div class="row g-4 px-3">
@@ -303,7 +301,7 @@
               data-aos="flip-left"
               data-aos-easing="ease-out-cubic"
               data-aos-duration="4000"
-              data-aos-delay="1200"
+              data-aos-delay="300"
             >
               <img
                 src="../assets/img/hablandoTailandia.jpg"
@@ -328,7 +326,7 @@
               data-aos="flip-left"
               data-aos-easing="ease-out-cubic"
               data-aos-duration="4000"
-              data-aos-delay="1500"
+              data-aos-delay="600"
             >
               <img
                 src="../assets/img/hablandoLondres.webp"
@@ -353,7 +351,7 @@
               data-aos="flip-left"
               data-aos-easing="ease-out-cubic"
               data-aos-duration="4000"
-              data-aos-delay="1800"
+              data-aos-delay="900"
             >
               <img
                 src="../assets/img/hablandoIslandia.webp"
@@ -447,25 +445,31 @@
  <div class="modal fade" id="Estambul" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">
+
       <div class="modal-header">
         <h5 class="modal-title">Estambul</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
+
       <div class="modal-body">
         <div class="ratio ratio-16x9">
           <iframe 
-            src="https://www.youtube.com/embed/VrmvFSdgDtA?si=XjWDzomdoMavSZX4" 
-            title="Estambul" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" 
+            src="https://www.youtube.com/embed/VrmvFSdgDtA?si=XjWDzomdoMavSZX4"
             allowfullscreen>
           </iframe>
         </div>
       </div>
+
+      <div class="modal-footer border-0">
+        <button type="button" class="btn btn-detalle" data-bs-dismiss="modal">
+          Volver
+        </button>
+      </div>
+
     </div>
   </div>
 </div>
+
 
 <div class="modal fade" id="Capadocia" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -488,7 +492,11 @@
           </iframe>
         </div>
       </div>
-
+ <div class="modal-footer border-0">
+        <button type="button" class="btn btn-detalle" data-bs-dismiss="modal">
+          Volver
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -514,7 +522,11 @@
           </iframe>
         </div>
       </div>
-
+ <div class="modal-footer border-0">
+        <button type="button" class="btn btn-detalle" data-bs-dismiss="modal">
+          Volver
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -540,7 +552,11 @@
           </iframe>
         </div>
       </div>
-
+ <div class="modal-footer border-0">
+        <button type="button" class="btn btn-detalle" data-bs-dismiss="modal">
+          Volver
+        </button>
+      </div>
     </div>
   </div>
 </div>
