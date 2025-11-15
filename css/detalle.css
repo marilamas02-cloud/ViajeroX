@@ -454,6 +454,18 @@ a:hover {
 .card-Turismo .card-text {
   color: var(--color-secondary-accent);
 }
+.viajeros-hablando .card {
+  background-color: var(--color-primary-dark); /* gris claro Bootstrap */
+  border: none;
+  border-radius: 15px;
+}
+.viajeros-hablando .card-title {
+  color: var(--color-secondary-accent); /* azul Bootstrap (primary) */
+  font-weight: 700;
+}
+.viajeros-hablando .card-text {
+  color: #6c757d; /* texto gris Bootstrap */
+}
 
 
 @media (max-width: 576px) {
