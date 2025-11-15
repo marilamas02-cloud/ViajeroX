@@ -391,9 +391,7 @@ a:hover {
 .titulo-asistencia {
   color: var(--color-secondary-accent);
 }
-
-/* 
-.card-asistencia {
+.card-opinion {
   background-color: var(--color-secondary-light);
   color: var(--color-primary-dark);
   border-radius: 15px;
@@ -401,23 +399,23 @@ a:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card-asistencia:hover {
+.card-opinion:hover {
   transform: translateY(-8px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
-.card-asistencia img {
+.card-opinion img {
   width: 120px;
   height: 120px;
   object-fit: cover;
 }
 
-.card-asistencia h5 {
+.card-opinion h5 {
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-.card-asistencia .ubicacion {
+.card-opinion .ubicacion {
   color: var(--color-primary-medium);
   font-style: italic;
   margin-bottom: 10px;
@@ -426,37 +424,30 @@ a:hover {
 .rating i {
   margin: 0 2px;
 }
-.card-asistencia p {
+.card-opinion p {
   color: var(--color-primary-dark); 
   font-size: var(--texto);
   line-height: 1.5;
-} */
-.img-cardTurismo {
+}
+.card-Turismo {
+  max-width: 18rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.card-Turismo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.card-Turismo img {
   width: 100%;
-  height: 200px; 
+  height: 200px;   
   object-fit: cover;
   object-position: center;
 }
 
-.card-Turismo {
-  max-width: 200px; 
-  margin: auto; 
-  transition: transform 0.3s;
-}
 
-.card-Turismo:hover {
-  transform: scale(1.05); 
-}
 
-.card-Turismo img {
-  height: 150px; 
-  object-fit: cover; 
-}
-.card-title {
-  font-weight: bold;
-  text-align: center;
-  margin-top: 10px;
-}
+
 
 
 @media (max-width: 576px) {
