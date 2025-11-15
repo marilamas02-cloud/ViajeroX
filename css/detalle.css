@@ -445,11 +445,6 @@ a:hover {
   object-position: center;
 }
 
-
-
-
-
-
 @media (max-width: 576px) {
   .viajerox-masonry {
     grid-template-columns: 1fr;
