@@ -148,24 +148,30 @@ a:hover {
   border: none;
   border-radius: 15px;
   overflow: hidden;
+  background-color: var(--color-primary-dark);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .reseña-card img {
   height: 250px;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
+
 .reseña-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+
 .reseña-card:hover img {
   transform: scale(1.05);
 }
+
 .rating {
   position: relative;
-  top: -8px; 
+  top: -8px;
 }
+
 .card-destino {
   border: none;
   border-radius: 15px;
@@ -433,6 +439,7 @@ a:hover {
   max-width: 18rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  background-color: var(--color-primary-dark);
 }
 .card-Turismo:hover {
   transform: scale(1.05);
@@ -444,6 +451,10 @@ a:hover {
   object-fit: cover;
   object-position: center;
 }
+.card-Turismo .card-text {
+  color: var(--color-secondary-accent);
+}
+
 
 @media (max-width: 576px) {
   .viajerox-masonry {
