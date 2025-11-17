@@ -19,11 +19,15 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <script
       src="https://kit.fontawesome.com/5cc9154e02.js"
       crossorigin="anonymous"
     ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="icon" href="../assets/img/logoBlanco.png" type="image/x-icon" />
   </head>
@@ -52,8 +56,14 @@
                     Comenzá tu camino viajero con beneficios globales.
                   </p>
                   <ul class="list-unstyled text-start my-4">
-                    <li><i class="bi bi-check-circle"></i> Descuentos en viajes y experiencias</li>
-                    <li><i class="bi bi-check-circle"></i> Sorteos mensuales de merchandising</li>
+                    <li>
+                      <i class="bi bi-check-circle"></i> Descuentos en viajes y
+                      experiencias
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle"></i> Sorteos mensuales de
+                      merchandising
+                    </li>
                   </ul>
                   <h4 class="fw-bold">$9.99 / mes</h4>
                   <a
@@ -74,9 +84,18 @@
                     viajeros.
                   </p>
                   <ul class="list-unstyled text-start my-4">
-                    <li><i class="bi bi-check-circle"></i> Todo lo del plan Explorador</li>
-                    <li><i class="bi bi-check-circle"></i> Material exclusivo (cursos, talleres y relatos)</li>
-                    <li><i class="bi bi-check-circle"></i> Experiencias de viajeros reales</li>
+                    <li>
+                      <i class="bi bi-check-circle"></i> Todo lo del plan
+                      Explorador
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle"></i> Material exclusivo
+                      (cursos, talleres y relatos)
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle"></i> Experiencias de
+                      viajeros reales
+                    </li>
                   </ul>
                   <h4 class="fw-bold">$19.99 / mes</h4>
                   <a
@@ -96,12 +115,23 @@
                     El pase total para viajeros de alma libre.
                   </p>
                   <ul class="list-unstyled text-start my-4">
-                    <li><i class="bi bi-check-circle"></i> Todo lo del plan Aventurero</li>
-                    <li><i class="bi bi-check-circle"></i> Acceso a eventos privados y meetups</li>
-                    <li><i class="bi bi-check-circle"></i> Comunidad global exclusiva de viajeros</li>
+                    <li>
+                      <i class="bi bi-check-circle"></i> Todo lo del plan
+                      Aventurero
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle"></i> Acceso a eventos
+                      privados y meetups
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle"></i> Comunidad global
+                      exclusiva de viajeros
+                    </li>
                   </ul>
                   <h4 class="fw-bold">$29.99 / mes</h4>
-                  <a href="./404.html" class="btn btn-outline-light mt-3 w-100 py-2 fw-bold text-primary boton-cards"
+                  <a
+                    href="./404.html"
+                    class="btn btn-outline-light mt-3 w-100 py-2 fw-bold text-primary boton-cards"
                     >Unirme al club Premium</a
                   >
                 </div>
@@ -109,19 +139,160 @@
             </div>
           </div>
 
-          <div class="text-center">
-            <a href="./404.html" class="btn btn-outline-primary fw-bold text-dark px-5 py-3 boton">
+          <div class="text-center my-5">
+            <a
+              href="./404.html"
+              class="fw-bold text-dark p-4 boton-suscripcion text-decoration-none"
+              data-bs-toggle="modal"
+              data-bs-target="#miModalSuscripcion"
+            >
               ¡Suscribite y empezá tu viaje con ViajeroX!
             </a>
           </div>
         </div>
       </section>
     </main>
+    <div class="modal" id="miModalSuscripcion" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Formulario de Suscripción</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="susNombre" class="form-label"
+                  >Nombre completo</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="susNombre"
+                  placeholder="Ej: María Martinez"
+                  required
+                  minlength="3"
+                  maxlength="12"
+                  pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ]{3,10}"
+                />
+                <div class="invalid-feedback">
+                  Por favor ingresa un apellido válido
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="susEmail" class="form-label"
+                  >Correo electrónico</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="susEmail"
+                  placeholder="ejemplo@gmail.com"
+                  required
+                  minlength="15"
+                  maxlength="30"
+                  pattern="[A-Za-z0-9@._-]{15,30}"
+                />
+                <div class="invalid-feedback">
+                  Por favor ingresa un correo electrónico válido
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="susInteres" class="form-label">Intereses</label>
+                <select class="form-select" id="susInteres" required>
+                  <option value="">Selecciona una opción...</option>
+                  <option value="descuentos">Descuentos</option>
+                  <option value="eventos">Eventos</option>
+                  <option value="contenido">Contenido</option>
+                  <option value="merch">Merch</option>
+                </select>
+                <div class="invalid-feedback">Selecciona un interés.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="plan" class="form-label">Opción de Plan</label>
+                <select class="form-control" id="plan" name="plan" required>
+                  <option value="" disabled selected>Seleccioná un plan</option>
+                  <option value="Explorador">Plan Explorador</option>
+                  <option value="Aventurero">Plan Aventurero</option>
+                  <option value="Nomada">Plan Nómada Premium</option>
+                </select>
+                <div class="invalid-feedback">
+                  Por favor seleccioná un plan válido.
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="susPago" class="form-label">Medio de pago</label>
+                <select class="form-select" id="susPago" required>
+                  <option value="">Seleccione una opción...</option>
+                  <option value="tarjeta">Tarjeta</option>
+                  <option value="mp">Mercado Pago</option>
+                  <option value="efectivo">Efectivo</option>
+                </select>
+                <div class="invalid-feedback">Selecciona un medio de pago.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="susMensaje" class="form-label">Mensaje</label>
+                <textarea
+                  class="form-control"
+                  id="susMensaje"
+                  placeholder="Mensaje"
+                  required
+                  minlength="15"
+                  maxlength="35"
+                  pattern="[A-Za-z0-9@ ]{15,35}"
+                  style="height: 100px"
+                ></textarea>
+                <div class="invalid-feedback">
+                  Por favor escribe un mensaje válido
+                </div>
+              </div>
+
+              <div class="text-center">
+                <button
+                  type="submit"
+                  class="boton-suscripcion fw-bold px-4 py-2"
+                >
+                  Suscribirme
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <a href="./centroAyuda.html"
+              ><button type="button" class="boton-suscripcion p-2 border-0">
+                Necesito Ayuda
+              </button></a
+            >
+
+            <a href="./404.html"
+              ><button type="button" class="boton-suscripcion p-2 border-0">
+                Volver al inicio
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer></footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

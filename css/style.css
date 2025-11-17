@@ -398,7 +398,16 @@ h2 {
   transform: translateY(-3px) scale(1.02);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
+.boton-suscripcion {
+  background-color: var(--color-primary-medium);
+  border-radius: 30px;
+  
+}
+.boton-suscripcion:hover {
+  background-color: var(--color-tertiary-contrast);
+ font-size: 18px;
 
+}
 .voto:hover {
   background-color: var(--color-primary-medium);
   font-size: 1.5rem;
