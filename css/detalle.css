@@ -554,6 +554,22 @@ a:hover {
   .cardMovil-body {
     padding: 1.5rem;
   }
+   .cardSeguros {
+    margin: 2rem auto;
+    border-radius: 1rem;
+  }
+
+  .cardSeguros img {
+    height: 240px; 
+  }
+
+  .cardSeguros-body {
+    padding: 1.4rem;
+  }
+
+  .cardSeguros-text {
+    font-size: 1rem;
+  }
   
 }
 @media (max-width: 768px) {
@@ -599,6 +615,22 @@ a:hover {
   .cardMovil-body {
     padding: 2rem;
   }
+    .cardSeguros {
+    margin: 2.5rem auto;
+    border-radius: 1.3rem;
+  }
+
+  .cardSeguros img {
+    height: 300px;
+  }
+
+  .cardSeguros-body {
+    padding: 1.8rem;
+  }
+
+  .cardSeguros-text {
+    font-size: 1.05rem;
+  }
  
 
 }
@@ -608,14 +640,6 @@ a:hover {
     grid-auto-rows: 200px;
     gap: 10px;
   }
-  .cardMovil {
-    width: 100%;       
-    max-width: 900px;  
-    margin: 3rem auto;
-  }
-
-  .cardMovil img {
-    height: 380px;
-  }
+  
  
 }
