@@ -8,7 +8,7 @@ Este proyecto es una página web enfocada en el **frontend**, inspirada en la te
 
 ## 🆗 Ingreso a pagina web:
 >
-[dazn.com](https://www.dazn.com/ "Sitio oficial")
+[viajerox.com](https://viajero-x.netlify.app/ "Sitio oficial")
 
 
 ## ✅ Integrantes:
