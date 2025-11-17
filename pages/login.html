@@ -8,25 +8,25 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8 col-lg-6">
-                <div class="login-container p-5">
-                    <div class="text-center">
-                        <h2>Bienvenido a ViajeroX 👋</h2>
-                        <p>Inicio de sesión</p>
-                    </div>
-                    <form class="d-flex flex-column">
-                        <label class="form-label" >Correo electronico</label>
-                        <input  class="form-control" type="email" required placeholder="ejemplo@gmail.com" maxlength="20">
-                        <label class="form-label">Contraseña</label>
-                        <input  class="form-control" type="password" required placeholder="********" minlength="5" maxlength="15">
-                        <a href="../index.html" class="mt-4 btn boton">Iniciar sesión</a>
-
-                    </form>
-                </div>
-            </div>
-        </div>
+      <div class="formulario">
+       <h1>Inicio de sesion</h1>
+       <form method="post">
+          <div class="input-box">
+            <input type="text" placeholder="Ingrese su correo" required maxlength="40">
+             <i class='bx  bx-user'></i> 
+          </div>
+           <div class="input-box">
+            <input type="password" placeholder="Ingrese su contraseña" required maxlength="10" minlength="4">
+            <i class='bx  bx-lock'></i> 
+          </div>
+          <div class="Recuerdame">
+            <label><input type="checkbox">Recuerdame</label>
+          </div>
+          <button type="submit" class="btn">Iniciar</button>
+          <div class="registro-link">
+            <p>Registrate aqui! <a href=""> Registrarse</a></p>
+          </div>
+       </form>
     </div>
    
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>

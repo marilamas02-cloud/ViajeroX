@@ -398,7 +398,16 @@ h2 {
   transform: translateY(-3px) scale(1.02);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
+.boton-suscripcion {
+  background-color: var(--color-primary-medium);
+  border-radius: 30px;
+  
+}
+.boton-suscripcion:hover {
+  background-color: var(--color-tertiary-contrast);
+ font-size: 18px;
 
+}
 .voto:hover {
   background-color: var(--color-primary-medium);
   font-size: 1.5rem;
@@ -688,7 +697,7 @@ h2 {
     height: 120px;
   }
   .img-banner {
-    height: 300px;
+    height: 100%;
   }
  .descuentos h2 {
     font-size: 1.75rem;
@@ -869,7 +878,7 @@ h2 {
   }
 
   .img-banner {
-    height: 400px;
+    height: 100%;
   }
 
   .boton-comunidad {
@@ -1074,7 +1083,7 @@ h2 {
   }
 
   .img-banner {
-    height: 500px;
+    height: 100%;
   }
 
   .reseñas .img-fija {
