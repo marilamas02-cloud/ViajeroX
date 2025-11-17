@@ -391,7 +391,7 @@ a:hover {
   background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
   color: var(--color-secondary-light); 
   font-weight: 600;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7); opcional */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7); 
 }
 .viajerox-masonry-item:hover img {
   transform: scale(1.08);
@@ -507,20 +507,6 @@ a:hover {
   font-size: var(--texto);
   line-height: 1.5;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 576px) {
   .viajerox-masonry {
     grid-template-columns: 1fr;
