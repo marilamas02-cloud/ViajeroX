@@ -243,7 +243,7 @@ a:hover {
   font-weight: 700; 
 }
     .cardTransporte {
-      background-color: var(--color-secondary-light);
+      background-color: var(--color-primary-dark);
       border-radius: 1rem;
       transition: all 0.3s ease;
     }
@@ -253,10 +253,10 @@ a:hover {
     }
     .cardTransporte-title {
       font-weight: 600;
-      color: var(--color-primary-medium);
+      color: var(--color-secondary-light);
     }
     .cardTransporte-text {
-  color: var(--color-tertiary-contrast);
+  color: var(--color-secondary-accent);
   font-size: var(--titulares);
 }
     .titulo-transporte {
