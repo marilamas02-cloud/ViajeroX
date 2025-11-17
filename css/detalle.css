@@ -508,6 +508,19 @@ a:hover {
   line-height: 1.5;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 576px) {
   .viajerox-masonry {
     grid-template-columns: 1fr;
@@ -527,6 +540,21 @@ a:hover {
   .viajerox-masonry-item h4 {
     font-size: 0.9rem;
   }
+   .cardMovil {
+    width: 92%;          
+    margin: 1.5rem auto;
+    border-radius: 1rem;
+  }
+
+  .cardMovil img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .cardMovil-body {
+    padding: 1.5rem;
+  }
+  
 }
 @media (max-width: 768px) {
   .spotify-embed {
@@ -558,6 +586,20 @@ a:hover {
     font-size: 0.9rem;
     padding: 0.4rem 1rem;
   }
+  .cardMovil {
+    width: 85%;          
+    margin: 2.5rem auto; 
+    border-radius: 1.2rem;
+  }
+
+  .cardMovil img {
+    height: 260px;
+  }
+
+  .cardMovil-body {
+    padding: 2rem;
+  }
+ 
 
 }
 @media (max-width: 992px) {
@@ -566,4 +608,14 @@ a:hover {
     grid-auto-rows: 200px;
     gap: 10px;
   }
+  .cardMovil {
+    width: 100%;       
+    max-width: 900px;  
+    margin: 3rem auto;
+  }
+
+  .cardMovil img {
+    height: 380px;
+  }
+ 
 }
