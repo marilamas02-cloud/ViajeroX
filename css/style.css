@@ -697,7 +697,7 @@ h2 {
     height: 120px;
   }
   .img-banner {
-    height: 300px;
+    height: 100%;
   }
  .descuentos h2 {
     font-size: 1.75rem;
@@ -878,7 +878,7 @@ h2 {
   }
 
   .img-banner {
-    height: 400px;
+    height: 100%;
   }
 
   .boton-comunidad {
@@ -1083,7 +1083,7 @@ h2 {
   }
 
   .img-banner {
-    height: 500px;
+    height: 100%;
   }
 
   .reseñas .img-fija {
