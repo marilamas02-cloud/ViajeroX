@@ -16,6 +16,7 @@
 }
 h2 {
   font-size: var(--titulares);
+  font-family: var(--fuente-principal);
   color: var(--color-secondary-light);
   letter-spacing: 3px;
   font-weight: 800;
@@ -25,18 +26,18 @@ h3 {
   font-size: var(--titulares);
   color: var(--color-secondary-light);
   letter-spacing: 2px;
+  font-family: var(--fuente-principal);
 }
-h4 {font-size: var(--titulares);
+h4, h5 {font-size: var(--titulares);
   letter-spacing: 2px;
-}
-h5 {font-size: var(--titulares);
-  letter-spacing: 2px;
+  font-family: var(--fuente-principal);
 }
 p {
   font-size: var(--texto);
   color: var(--color-secondary-light);
   font-weight: 600;
   letter-spacing: 2px;
+  font-family: var(--fuente-principal);
 }
 a {
   color: var(--color-secondary-accent);
@@ -45,25 +46,6 @@ a {
 }
 a:hover {
   color: var(--color-tertiary-contrast);
-}
-.accordion-button {
-  color: var(--color-primary-dark);
-}
-.accordion-button:hover,
-.accordion-button:not(.collapsed) {
-  color: var(--color-tertiary-contrast);
-}
-.btn-ayuda {
-  background-color: var(--color-primary-medium);   
-  color: var(--color-secondary-light);                 
-  border: none;               
-  transition: all 0.3s ease;   
-}
-.btn-ayuda:hover {
-  background-color: var(--color-tertiary-contrast);  
-  color: var(--color-secondary-light);                
-  transform: translateY(-2px); 
-  box-shadow: 0 4px 10px rgba(255, 125, 0, 0.4);
 }
 .btn-detalle {
   background-color: var(--color-primary-medium);
@@ -119,28 +101,25 @@ a:hover {
 .card-intro .card-body h5 {
   margin-top: 1rem; 
 }
-.card {
-  background-color: #1e1e1e;
-  border-radius: 1rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+.card-Turismo {
+  max-width: 18rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  font-weight: 400;
+  background-color: var(--color-primary-dark);
 }
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+.card-Turismo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
-.card .btn {
-  padding: 0.25rem 0.5rem;
-  font-size: 0.8rem;
+.card-Turismo img {
+  width: 100%;
+  height: 200px;   
+  object-fit: cover;
+  object-position: center;
 }
-.card .card-title {
-  font-weight: 700;
-  color: var(--color-primary-medium);
+.card-Turismo .card-text {
+  color: var(--color-secondary-accent);
 }
-.modal-content {
-  background-color: #1c1c1c;
-} 
 .icon-circle {
   width: 30px;
   height: 30px;
@@ -189,24 +168,30 @@ a:hover {
   border: none;
   border-radius: 15px;
   overflow: hidden;
+  background-color: var(--color-primary-dark);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .reseña-card img {
   height: 250px;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
+
 .reseña-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+
 .reseña-card:hover img {
   transform: scale(1.05);
 }
+
 .rating {
   position: relative;
-  top: -8px; 
+  top: -8px;
 }
+
 .card-destino {
   border: none;
   border-radius: 15px;
@@ -224,18 +209,6 @@ a:hover {
 }
 .card-destino .card-titulod {
   color: var(--color-primary-dark);
-}
-article.modal p {
-  font-size: var(--texto);
-  line-height: 1.6;
-  color: var(--color-secondary-light);
-}
-.modal-article h5 {
-  font-weight: 800; 
-  font-size: var(--texto); 
-  color: var(--color-primary-medium);
-  letter-spacing: 0.5px; 
-  text-transform: uppercase; 
 }
     .cardMovil {
       max-width: 900px;
@@ -274,7 +247,7 @@ article.modal p {
   font-weight: 700; 
 }
     .cardTransporte {
-      background-color: var(--color-secondary-light);
+      background-color: var(--color-primary-dark);
       border-radius: 1rem;
       transition: all 0.3s ease;
     }
@@ -284,10 +257,10 @@ article.modal p {
     }
     .cardTransporte-title {
       font-weight: 600;
-      color: var(--color-primary-medium);
+      color: var(--color-secondary-light);
     }
     .cardTransporte-text {
-  color: var(--color-tertiary-contrast);
+  color: var(--color-secondary-accent);
   font-size: var(--titulares);
 }
     .titulo-transporte {
@@ -296,18 +269,12 @@ article.modal p {
       margin-top: 2rem;
       margin-bottom: 1.5rem;
     }
-.reseñas .card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.reseñas .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.1);
-}
-.banner-principal {
-  width: 100%;
-  height: 60vh; 
-  object-fit: cover;
-  object-position: center;
+    .reseñas-traslados .img-reseña {
+  width: 120px; 
+  height: 120px;
+  object-fit: cover; 
+  border-radius: 50%;
+  border: 3px solid var(--color-secondary-accent); 
 }
 .card-comunidad {
   background-color: var(--color-secondary-light);
@@ -345,14 +312,6 @@ article.modal p {
 }
 .spotify-section {
   position: relative;
-  background: url("../assets/copacabanaPlayaGIF.gif") center/cover no-repeat;
-  color: var(--color-secondary-light);
-  border-top: 4px solid #fca311;
-  border-bottom: 4px solid #fca311;
-  overflow: hidden;
-}
-.spotify-section {
-  position: relative;
   background: url("../assets/img/musicaCopacabana.gif") center/cover no-repeat;
   color: var(--color-secondary-light);
   border-top: 4px solid #fca311;
@@ -376,6 +335,21 @@ article.modal p {
 .spotify-embed {
   max-width: 450px;
   margin: 0 auto;
+}
+.destinos-nuevos p {
+  color: var(--color-secondary-accent);
+}
+.destinos-nuevos .card {
+  background-color: var(--color-primary-dark);
+}
+.destinos-nuevos .card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.destinos-nuevos .card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
 }
 .viajerox-masonry {
   display: grid;
@@ -422,7 +396,7 @@ article.modal p {
   background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
   color: var(--color-secondary-light); 
   font-weight: 600;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7); opcional */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7); 
 }
 .viajerox-masonry-item:hover img {
   transform: scale(1.08);
@@ -431,84 +405,56 @@ article.modal p {
 .viajerox-masonry-item:hover {
   box-shadow: 0 8px 20px rgba(255, 125, 0, 0.4);
 }
-.reseñas-traslados .img-reseña {
-  width: 120px; 
-  height: 120px;
-  object-fit: cover; 
-  border-radius: 50%;
-  border: 3px solid var(--color-secondary-accent); 
-}
-.cardPrincipal {
-  position: relative;
-  overflow: hidden;
-  border-radius: 1rem;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  cursor: pointer;
-}
-.cardPrincipal img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.6s ease;
-  border-radius: 1rem;
-}
-.cardPrincipal:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-}
-.cardPrincipal:hover img {
-  transform: scale(1.05);
-}
-.cardOverlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0)); 
-  display: flex;
-  align-items: flex-end;
-  border-radius: 1rem;
-  padding: 1rem;
-}
-.overlay-content {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between; 
-}
-.overlay-content h5 {
-  flex: 1;
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #fff;
-  margin: 0;
-}
-.overlay-content .btn-detalle {
-  background-color: var(--color-primary-medium);
-  color: var(--color-secondary-light);
-  font-weight: 600;
+.viajeros-hablando .card {
+ background-color: var(--color-primary-dark); 
   border: none;
-  border-radius: 30px;
-  padding: 0.5rem 1.25rem;
-  transition: all 0.3s ease;
+  border-radius: 15px;
+} 
+.viajeros-hablando .card-title {
+  color: var(--color-secondary-accent); 
+  font-weight: 700;
 }
-.overlay-content .btn-detalle:hover {
-  background-color: var(--color-tertiary-contrast);
-  color: var(--color-secondary-light);
-  transform: scale(1.05);
+.viajeros-hablando .card-text {
+  color: #6c757d; 
 }
-.banner-asistencia-img {
-  height: 60vh;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 0; 
+.cardSeguros {
+      max-width: 900px;
+      margin: 3rem auto;
+      border-radius: 1.5rem;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      background-color: var(--color-secondary-light);
+      transition: transform 0.3s ease;
+    }
+    .cardSeguros:hover {
+      transform: translateY(-5px);
+    }
+    .cardSeguros img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+    }
+    .cardSeguros-body {
+      padding: 2rem;
+      text-align: center;
+    }
+    .cardSeguros-title {
+  font-weight: 900; 
+  letter-spacing: 0.5px; 
+  color: var(--color-primary-dark);
+}
+    .cardSeguros-text {
+      font-size: 1.1rem;
+      color: var(--color-tertiary-contrast);
+    }
+    .texto-sombra {
+  color: var(--color-primary-medium);
+  font-size: var(--texto);
+  letter-spacing: 1px; 
+  font-weight: 700; 
 }
 .card-asistencia {
-  background-color: var(--color-secondary-light);
-  color: var(--color-primary-medium);
+  background-color:var(--color-primary-dark);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -517,7 +463,10 @@ article.modal p {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-.card-asistencia {
+.titulo-asistencia {
+  color: var(--color-secondary-accent);
+}
+.card-opinion {
   background-color: var(--color-secondary-light);
   color: var(--color-primary-dark);
   border-radius: 15px;
@@ -525,23 +474,23 @@ article.modal p {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card-asistencia:hover {
+.card-opinion:hover {
   transform: translateY(-8px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
-.card-asistencia img {
+.card-opinion img {
   width: 120px;
   height: 120px;
   object-fit: cover;
 }
 
-.card-asistencia h5 {
+.card-opinion h5 {
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-.card-asistencia .ubicacion {
+.card-opinion .ubicacion {
   color: var(--color-primary-medium);
   font-style: italic;
   margin-bottom: 10px;
@@ -550,14 +499,11 @@ article.modal p {
 .rating i {
   margin: 0 2px;
 }
-.card-asistencia p {
+.card-opinion p {
   color: var(--color-primary-dark); 
   font-size: var(--texto);
   line-height: 1.5;
 }
-
-
-
 @media (max-width: 576px) {
   .viajerox-masonry {
     grid-template-columns: 1fr;
@@ -577,6 +523,37 @@ article.modal p {
   .viajerox-masonry-item h4 {
     font-size: 0.9rem;
   }
+   .cardMovil {
+    width: 92%;          
+    margin: 1.5rem auto;
+    border-radius: 1rem;
+  }
+
+  .cardMovil img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .cardMovil-body {
+    padding: 1.5rem;
+  }
+   .cardSeguros {
+    margin: 2rem auto;
+    border-radius: 1rem;
+  }
+
+  .cardSeguros img {
+    height: 240px; 
+  }
+
+  .cardSeguros-body {
+    padding: 1.4rem;
+  }
+
+  .cardSeguros-text {
+    font-size: 1rem;
+  }
+  
 }
 @media (max-width: 768px) {
   .spotify-embed {
@@ -608,6 +585,36 @@ article.modal p {
     font-size: 0.9rem;
     padding: 0.4rem 1rem;
   }
+  .cardMovil {
+    width: 85%;          
+    margin: 2.5rem auto; 
+    border-radius: 1.2rem;
+  }
+
+  .cardMovil img {
+    height: 260px;
+  }
+
+  .cardMovil-body {
+    padding: 2rem;
+  }
+    .cardSeguros {
+    margin: 2.5rem auto;
+    border-radius: 1.3rem;
+  }
+
+  .cardSeguros img {
+    height: 300px;
+  }
+
+  .cardSeguros-body {
+    padding: 1.8rem;
+  }
+
+  .cardSeguros-text {
+    font-size: 1.05rem;
+  }
+ 
 
 }
 @media (max-width: 992px) {
@@ -616,4 +623,6 @@ article.modal p {
     grid-auto-rows: 200px;
     gap: 10px;
   }
+  
+ 
 }

@@ -26,7 +26,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="../../css/detalle.css" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../../assets/img/logoBlanco.png" type="image/x-icon" />
   </head>
   <body>
     <header></header>
@@ -38,8 +38,8 @@
           <div class="col-lg-8 mx-auto">
             <section class="cristo-section my-5 text-center">
               <h2 class="mb-4 fw-bold">Muralla China</h2>
-              <hr />
-            </section>
+              <hr /></section>
+            <section class="py-5">
             <div class="container">
               <div class="row justify-content-center g-4">
                 <div class="col-12 col-md-8 col-lg-6">
@@ -57,10 +57,10 @@
                     />
                     <div class="card-body text-center">
                       <h5 class="card-title fw-bold">Ubicación</h5>
-                      <p class="card-text mb-1">
-                        <strong>Ciudad:</strong> Beijing
+                      <p class="card-text mb-1">Ciudad:
+                        <strong>Beijing</strong> Beijing
                       </p>
-                      <p class="card-text mb-0"><strong>País:</strong> China</p>
+                      <p class="card-text mb-0">País:<strong>China</strong> </p>
                     </div>
                   </div>
                 </div>
@@ -94,190 +94,169 @@
                 </div>
               </div>
             </div>
-            <section class="container my-5">
-              <h3 class="text-center mt-4 mb-5 fw-bold">
-                Actividades Turísticas
-              </h3>
-              <div class="row g-4 d-flex align-items-stretch">
-                <div class="col-sm-6 col-lg-4 d-flex">
-                  <div
-                    class="card shadow-sm border-0 flex-fill"
-                    data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="300"
+            </section>
+            <section class="cardTurismo">
+        <div class="container py-5">
+          <h3 class="text-center mb-5">Actividades Turísticas</h3>
+          <div class="d-flex flex-wrap justify-content-center gap-5 mb-5">
+            <div class="card card-Turismo" style="width: 18rem" data-aos="flip-right" data-aos-delay="300">
+              <img
+                src="../../assets/img/ciudadProhibida01.jpg"
+                class="card-img-top img-fluid img-cardTurismo"
+                alt="ciudad prohibida"
+              />
+              <div class="card-body">
+                <p class="card-text fw-bold text-center">Ciudad Prohibida</p>
+                <div
+                  class="botonTurismo d-flex justify-content-center align-items-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-detalle"
+                    data-bs-toggle="modal"
+                    data-bs-target="#CiudadP"
                   >
-                    <img
-                      src="../../assets/img/ciudadProhibida01.jpg"
-                      class="card-img-top"
-                      alt="ciudad prohibida china"
-                    />
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title text-start">Ciudad Prohibida</h5>
-                      <p class="card-text text-start mb-3">
-                        Explora el antiguo palacio imperial de los emperadores
-                        chinos, con sus salones majestuosos, patios amplios y
-                        museos que muestran la historia y la cultura de China.
-                      </p>
-                      <button
-                        class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalCiudadP"
-                      >
-                        Ver más
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 d-flex">
-                  <div
-                    class="card shadow-sm border-0 flex-fill"
-                    data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="600"
-                  >
-                    <img
-                      src="../../assets/img/lama01.jpeg"
-                      class="card-img-top"
-                      alt="Templo Lama"
-                    />
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title text-start">Templo Lama</h5>
-                      <p class="card-text text-start mb-3">
-                        Uno de los templos budistas tibetanos más importantes de
-                        China, conocido por su impresionante estatua de Buda
-                        Maitreya y su arquitectura colorida y detallada.
-                      </p>
-                      <button
-                        class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalLama"
-                      >
-                        Ver más
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 d-flex">
-                  <div
-                    class="card shadow-sm border-0 flex-fill"
-                    data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="900"
-                  >
-                    <img
-                      src="../../assets/img/muralla01.jpeg"
-                      class="card-img-top"
-                      alt="Muralla China"
-                    />
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title text-start">Muralla China</h5>
-                      <p class="card-text text-start mb-3">
-                        Camina por esta impresionante estructura milenaria y
-                        disfruta de vistas panorámicas de montañas y valles,
-                        símbolo de la historia y defensa del país.
-                      </p>
-                      <button
-                        class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalMuralla"
-                      >
-                        Ver más
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 d-flex">
-                  <div
-                    class="card shadow-sm border-0 flex-fill"
-                    data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="300"
-                  >
-                    <img
-                      src="../../assets/img/temploCielo01.jpg"
-                      alt="Templo del Cielo"
-                    />
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title text-start">Templo del Cielo</h5>
-                      <p class="card-text text-start mb-3">
-                        Un complejo religioso donde los emperadores realizaban
-                        ceremonias para asegurar buenas cosechas, famoso por su
-                        arquitectura circular y jardines amplios.
-                      </p>
-                      <button
-                        class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalTemploC"
-                      >
-                        Ver más
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 d-flex">
-                  <div
-                    class="card shadow-sm border-0 flex-fill"
-                    data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="600"
-                  >
-                    <img
-                      src="../../assets/img/palacioVerano01.jpeg"
-                      class="card-img-top"
-                      alt="Palacio de Verano"
-                    />
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title text-start">Palacio de Verano</h5>
-                      <p class="card-text text-start mb-3">
-                        Un oasis de lagos, jardines y palacios imperiales, ideal
-                        para pasear en barco o recorrer senderos rodeados de
-                        belleza arquitectónica y natural.
-                      </p>
-                      <button
-                        class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalPalacioV"
-                      >
-                        Ver más
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 d-flex">
-                  <div
-                    class="card shadow-sm border-0 flex-fill"
-                    data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="900"
-                  >
-                    <img
-                      src="../../assets/img/mercadoChina02.jpg"
-                      class="card-img-top"
-                      alt="mercados tradicionales"
-                    />
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title text-start">Mercados</h5>
-                      <p class="card-text text-start mb-3">
-                        Descubre las callejuelas tradicionales de Beijing,
-                        conocidas como hutongs, donde se respira la vida local,
-                        además de probar comida callejera y artesanías típicas.
-                      </p>
-                      <button
-                        class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalMercados"
-                      >
-                        Ver más
-                      </button>
-                    </div>
-                  </div>
+                    Ver más
+                  </button>
                 </div>
               </div>
-            </section>
-            <section
-              class="itinerario-section mt-5 pt-5"
-              id="mapa-muralla-china"
-            >
+            </div>
+
+            <div class="card card-Turismo" style="width: 18rem" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="4000"
+                    data-aos-delay="600">
+              <img
+                src="../../assets/img/lama02.jpg"
+                class="card-img-top img-fluid img-cardTurismo"
+                alt="templo lama"
+              />
+              <div class="card-body">
+                <p class="card-text fw-bold text-center">
+                  Templo Lama
+                </p>
+                <div
+                  class="botonTurismo d-flex justify-content-center align-items-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-detalle"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Lama"
+                  >
+                    Ver más
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card card-Turismo" style="width: 18rem" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="4000"
+                    data-aos-delay="900">
+              <img
+                src="../../assets/img/muralla02.jpg"
+                class="card-img-top img-fluid img-cardTurismo"
+                alt="muralla china"
+              />
+              <div class="card-body">
+                <p class="card-text fw-bold text-center">Muralla China</p>
+                <div
+                  class="botonTurismo d-flex justify-content-center align-items-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-detalle"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Muralla"
+                  >
+                    Ver más
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card card-Turismo" style="width: 18rem" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="4000"
+                    data-aos-delay="1200">
+              <img
+                src="../../assets/img/temploCielo01.jpg"
+                class="card-img-top img-fluid img-cardTurismo"
+                alt="templo cielo"
+              />
+              <div class="card-body">
+                <p class="card-text fw-bold text-center">Templo del Cielo</p>
+                <div
+                  class="botonTurismo d-flex justify-content-center align-items-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-detalle"
+                    data-bs-toggle="modal"
+                    data-bs-target="#TemploC"
+                  >
+                    Ver más
+                  </button>
+                </div>
+              </div>
+            </div>
+
+             <div class="card card-Turismo" style="width: 18rem" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="4000"
+                    data-aos-delay="1500">
+              <img
+                src="../../assets/img/palacioVerano02.jpg"
+                class="card-img-top img-fluid img-cardTurismo"
+                alt="Palacio de verano"
+              />
+              <div class="card-body">
+                <p class="card-text fw-bold text-center">Palacio de Verano</p>
+                <div
+                  class="botonTurismo d-flex justify-content-center align-items-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-detalle"
+                    data-bs-toggle="modal"
+                    data-bs-target="#PalacioV"
+                  >
+                    Ver más
+                  </button>
+                </div>
+              </div>
+            </div>
+
+             <div class="card card-Turismo" style="width: 18rem" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="4000"
+                    data-aos-delay="1800">
+              <img
+                src="../../assets/img/mercadoChina02.jpg"
+                class="card-img-top img-fluid img-cardTurismo"
+                alt="mercados en china"
+              />
+              <div class="card-body">
+                <p class="card-text fw-bold text-center">Mercados</p>
+                <div
+                  class="botonTurismo d-flex justify-content-center align-items-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-detalle"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Mercados"
+                  >
+                    Ver más
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+</section> 
+            <section class="itinerario-section mt-2 pt-3">
               <h3 class="mb-4 fw-bold text-center">
                 Cómo llegar a la Muralla China
               </h3>
@@ -286,60 +265,34 @@
               >
                 <div class="col-md-5 col-lg-4">
                   <ol
-                    class="itinerario-list text-center"
-                    data-aos="fade-right"
-                    data-aos-offset="300"
-                    data-aos-easing="ease-in-sine"
-                  >
-                    <li class="itinerario-item mb-4">
-                      <div class="icon-circle end-icon mb-2">
-                        <i
-                          class="fa-solid fa-location-dot"
-                          aria-hidden="true"
-                        ></i>
-                        <span class="visually-hidden"
-                          >Ubicación inicial: Beijing</span
-                        >
-                      </div>
-                      <h4 class="fw-bold">Beijing</h4>
-                      <p class="small text-muted">Punto de partida</p>
-                    </li>
-                    <li class="itinerario-item mb-4">
-                      <div class="icon-circle travel-icon mb-2">
-                        <i class="fa-solid fa-train" aria-hidden="true"></i>
-                        <span class="visually-hidden">Transporte en tren</span>
-                      </div>
-                      <h4 class="fw-bold">Tren</h4>
-                      <p class="small text-muted">Duración: 1 hora</p>
-                    </li>
-                    <li class="itinerario-item mb-4">
-                      <div class="icon-circle travel-icon mb-2">
-                        <i
-                          class="fa-solid fa-bus-simple"
-                          aria-hidden="true"
-                        ></i>
-                        <span class="visually-hidden"
-                          >Transporte en bus o auto</span
-                        >
-                      </div>
-                      <h4 class="fw-bold">Bus / Auto</h4>
-                      <p class="small text-muted">Autobús: 2 hs</p>
-                      <p class="small text-muted">Auto: 1.30 hs</p>
-                    </li>
-                    <li class="itinerario-item">
-                      <div class="icon-circle start-icon mb-2">
-                        <i
-                          class="fa-solid fa-flag-checkered"
-                          aria-hidden="true"
-                        ></i>
-                        <span class="visually-hidden"
-                          >Destino final: Muralla China</span
-                        >
-                      </div>
-                      <h4 class="fw-bold">Muralla China</h4>
-                      <p class="small text-muted">Entrada a Badaling</p>
-                    </li>
-                  </ol>
+  class="itinerario-list text-center"
+  data-aos="fade-right"
+  data-aos-offset="300"
+  data-aos-easing="ease-in-sine"
+>
+  <li class="itinerario-item mb-4">
+    <div class="icon-circle start-icon mb-2">
+      <i class="fa-solid fa-location-dot"></i>
+    </div>
+    <h4 class="fw-bold">Beijing</h4>
+    <p class="small text-muted">Punto de partida</p>
+  </li>
+  <li class="itinerario-item mb-4">
+    <div class="icon-circle travel-icon mb-2">
+      <i class="fa-solid fa-train"></i>
+    </div>
+    <h4 class="fw-bold">Bus / Auto</h4>
+    <p class="small text-muted">Autobús: 2 hs</p>
+    <p class="small text-muted">Auto: 1.30 hs</p>
+  </li>
+  <li class="itinerario-item">
+    <div class="icon-circle end-icon mb-2">
+      <i class="fa-solid fa-flag-checkered"></i>
+    </div>
+    <h4 class="fw-bold">Muralla China</h4>
+    <p class="small text-muted">Entrada a Badaling</p>
+  </li>
+</ol>
                 </div>
                 <div class="col-md-7 col-lg-7">
                   <figure
@@ -424,11 +377,11 @@
                         >
                           <div class="accordion-body bg-dark">
                             <p>
-                              Puedes llegar en <strong>tour guiado</strong>,
-                              <strong>coche/taxi</strong> (aprox. 1,5 horas).
+                              Puedes llegar en tour guiado,
+                              coche/taxi (aprox. 1,5 horas).
                               Los tramos más visitados son
-                              <strong>Badaling</strong> y
-                              <strong>Mutianyu</strong>.
+                              Badaling y
+                              Mutianyu.
                             </p>
                           </div>
                         </div>
@@ -457,8 +410,8 @@
                           <div class="accordion-body bg-dark">
                             <p>
                               El precio varía según el tramo: en Badaling ronda
-                              los <strong>40-45 CNY</strong> (aprox. 6-7 USD) y
-                              en Mutianyu unos <strong>60 CNY</strong> (aprox. 9
+                              los 40-45 CNY (aprox. 6-7 USD) y
+                              en Mutianyu unos 60 CNY (aprox. 9
                               USD). Algunos tramos tienen tarifas adicionales
                               para telesilla o tobogán.
                             </p>
@@ -552,7 +505,7 @@
                           <div class="accordion-body bg-dark">
                             <p>
                               Sí, existen
-                              <strong>tours guiados en varios idiomas</strong>
+                              tours guiados en varios idiomas
                               que incluyen transporte desde Beijing y
                               explicación histórica. Reservar con antelación es
                               recomendable, especialmente en temporada alta.
@@ -734,242 +687,303 @@
         </div>
       </section>
     </main>
-    <article
-      class="modal fade modal-article"
-      id="modalCiudadP"
+   <div
+      class="modal fade"
+      id="CiudadP"
       tabindex="-1"
-      aria-labelledby="CiudadPLabel"
+      aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content border-0 bg-dark text-light">
-          <div class="modal-body p-0">
-            <img
-              src="../../assets/img/ciudadProhibida02.webp"
-              class="img-fluid w-100"
-              alt="ciudad prohibida"
-            />
-            <div class="p-3">
-              <h5 class="mb-2" id="CiudadPLabel">Ciudad Prohibida</h5>
-              <p class="card-text text-start mb-3">
-                El recorrido por la Ciudad Prohibida en Pekín es una experiencia
-                histórica y cultural única. En su interior se encuentran los
-                palacios imperiales, salones ceremoniales y museos que conservan
-                tesoros de la dinastía Ming y Qing. Puede recorrerse en pocas
-                horas o durante todo un día, dependiendo del interés por la
-                historia y la arquitectura. Se recomienda hacerlo con una visita
-                guiada y reservar las entradas con anticipación, especialmente
-                durante la temporada alta, para aprovechar al máximo la
-                experiencia.
-              </p>
-              <button
-                type="button"
-                class="btn btn-detalle"
-                data-bs-dismiss="modal"
-              >
-                Cerrar
-              </button>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title fs-5" id="exampleModalLabel">Descripción</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="card border-0 w-100" style="width: 18rem">
+              <img
+                src="../../assets/img/ciudadProhibida02.webp"
+                class="card-img-top"
+                alt="ciudad prohibida"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ciudad Prohibida</h5>
+                <p class="card-text">
+                 Explora el antiguo palacio imperial de los emperadores
+                        chinos, con sus salones majestuosos, patios amplios y
+                        museos que muestran la historia y la cultura de China.
+                </p>
+              </div>
             </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-detalle"
+              data-bs-dismiss="modal"
+            >
+              Volver al inicio
+            </button>
           </div>
         </div>
       </div>
-    </article>
-    <article
-      class="modal fade modal-article"
-      id="modalLama"
+    </div>
+
+    <div
+      class="modal fade"
+      id="Lama"
       tabindex="-1"
-      aria-labelledby="LamaLabel"
+      aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content border-0 bg-dark text-light">
-          <div class="modal-body p-0">
-            <img
-              src="../../assets/img/lama02.jpg"
-              class="img-fluid w-100"
-              alt="Templo Lama"
-            />
-            <div class="p-3">
-              <h5 class="mb-2" id="LamaLabel">Templo Lama</h5>
-              <p class="card-text text-start mb-3">
-                El Templo Lama es uno de los templos budistas más importantes de
-                Beijing y un ícono de la espiritualidad china. De arquitectura
-                tradicional tibetana, destaca por sus coloridos techos,
-                intrincadas tallas de madera y la imponente estatua de Maitreya
-                de 18 metros de altura. Ubicado en el corazón de la ciudad,
-                combina religión, arte y cultura, siendo una parada
-                imprescindible para quienes visitan la capital china.
-              </p>
-              <button
-                type="button"
-                class="btn btn-detalle"
-                data-bs-dismiss="modal"
-              >
-                Cerrar
-              </button>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title fs-5" id="exampleModalLabel">
+              Descripción
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="card border-0 w-100" style="width: 18rem">
+              <img
+                src="../../assets/img/lama01.jpeg"
+                class="card-img-top"
+                alt="templo lama"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Templo Lama</h5>
+                <p class="card-text">
+                  Uno de los templos budistas tibetanos más importantes de
+                        China, conocido por su impresionante estatua de Buda
+                        Maitreya y su arquitectura colorida y detallada.
+                </p>
+              </div>
             </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-detalle"
+              data-bs-dismiss="modal"
+            >
+              Volver al inicio
+            </button>
           </div>
         </div>
       </div>
-    </article>
-    <article
-      class="modal fade modal-article"
-      id="modalMuralla"
+    </div>
+
+    <div
+      class="modal fade"
+      id="Muralla"
       tabindex="-1"
-      aria-labelledby="MurallaLabel"
+      aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content border-0 bg-dark text-light">
-          <div class="modal-body p-0">
-            <img
-              src="../../assets/img/muralla02.jpg"
-              class="img-fluid w-100"
-              alt="Muralla china"
-            />
-            <div class="p-3">
-              <h5 class="mb-2" id="MurallaLabel">Muralla China</h5>
-              <p class="card-text text-start mb-3">
-                Es uno de los monumentos más emblemáticos de China y una de las
-                maravillas del mundo antiguo. De impresionante construcción
-                defensiva, destaca por su extensión de miles de kilómetros,
-                torres de vigilancia y murallas que alguna vez protegieron el
-                Imperio Chino de invasiones. Su origen se remonta al siglo VII
-                a.C., simbolizando la fuerza y la ingeniería del antiguo
-                imperio. Ubicada a lo largo del norte de China, combina
-                historia, arquitectura y cultura, siendo una visita
-                imprescindible para quienes exploran el país.
-              </p>
-              <button
-                type="button"
-                class="btn btn-detalle"
-                data-bs-dismiss="modal"
-              >
-                Cerrar
-              </button>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title fs-5" id="exampleModalLabel">Descripción</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="card border-0 w-100" style="width: 18rem">
+              <img
+                src="../../assets/img/muralla01.jpeg"
+                class="card-img-top"
+                alt="muralla china"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Muralla China</h5>
+                <p class="card-text">
+                  Camina por esta impresionante estructura milenaria y
+                        disfruta de vistas panorámicas de montañas y valles,
+                        símbolo de la historia y defensa del país.
+                </p>
+              </div>
             </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-detalle"
+              data-bs-dismiss="modal"
+            >
+              Volver al inicio
+            </button>
           </div>
         </div>
       </div>
-    </article>
-    <article
-      class="modal fade modal-article"
-      id="modalTemploC"
+    </div>
+
+    <div
+      class="modal fade"
+      id="TemploC"
       tabindex="-1"
-      aria-labelledby="TemploCLabel"
+      aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content border-0 bg-dark text-light">
-          <div class="modal-body p-0">
-            <img
-              src="../../assets/img/temploCielo02.jpg"
-              class="img-fluid w-100"
-              alt="Templo cielo"
-            />
-            <div class="p-3">
-              <h5 class="mb-2" id="TemploCLabel">Templo Cielo</h5>
-              <p class="card-text text-start mb-3">
-                Es una de las obras maestras de la arquitectura china y un
-                símbolo de la espiritualidad imperial. Construido en el siglo XV
-                durante la dinastía Ming, destaca por su icónico Salón de la
-                Oración por la Buena Cosecha, con su estructura circular y
-                techos azules que representan el cielo. Originalmente usado por
-                los emperadores para ceremonias de culto al cielo, hoy es un
-                importante sitio turístico y cultural. Ubicado en el sur de
-                Beijing, combina historia, arte y tradición, siendo una parada
-                imprescindible para quienes exploran la capital china.
-              </p>
-              <button
-                type="button"
-                class="btn btn-detalle"
-                data-bs-dismiss="modal"
-              >
-                Cerrar
-              </button>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title fs-5" id="exampleModalLabel">
+              Descripción
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="card border-0 w-100" style="width: 18rem">
+              <img
+                src="../../assets/img/temploCielo02.jpg"
+                class="card-img-top"
+                alt="templo del cielo"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Templo del Cielo</h5>
+                <p class="card-text">
+                 Un complejo religioso donde los emperadores realizaban
+                        ceremonias para asegurar buenas cosechas, famoso por su
+                        arquitectura circular y jardines amplios.
+                </p>
+              </div>
             </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-detalle"
+              data-bs-dismiss="modal"
+            >
+              Volver al inicio
+            </button>
           </div>
         </div>
       </div>
-    </article>
-    <article
-      class="modal fade modal-article"
-      id="modalPalacioV"
+    </div>
+
+    <div
+      class="modal fade"
+      id="PalacioV"
       tabindex="-1"
-      aria-labelledby="PalacioVLabel"
+      aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content border-0 bg-dark text-light">
-          <div class="modal-body p-0">
-            <img
-              src="../../assets/img/palacioVerano02.jpg"
-              class="img-fluid w-100"
-              alt="Palacio Verano"
-            />
-            <div class="p-3">
-              <h5 class="mb-2" id="PalacioVLabel">Palacio Verano</h5>
-              <p class="card-text text-start mb-3">
-                Es uno de los complejos imperiales más famosos y bellos de
-                China, reconocido por su elegante arquitectura tradicional y sus
-                extensos jardines. Construido y ampliado principalmente durante
-                las dinastías Qing, destaca por el Lago Kunming, el icónico
-                Puente de los Diez Mil Pasos y el espléndido Pabellón de la
-                Fragancia de Buda. Rodeado de colinas, templos y senderos,
-                combina historia, arte y naturaleza, siendo una parada
-                imprescindible para quienes visitan Beijing.
-              </p>
-              <button
-                type="button"
-                class="btn btn-detalle"
-                data-bs-dismiss="modal"
-              >
-                Cerrar
-              </button>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title fs-5" id="exampleModalLabel">
+              Descripción
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="card border-0 w-100" style="width: 18rem">
+              <img
+                src="../../assets/img/palacioVerano01.jpeg"
+                class="card-img-top"
+                alt="palacio de verano"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Palacio de Verano</h5>
+                <p class="card-text">
+                   Un oasis de lagos, jardines y palacios imperiales, ideal
+                        para pasear en barco o recorrer senderos rodeados de
+                        belleza arquitectónica y natural.
+                </p>
+              </div>
             </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-detalle"
+              data-bs-dismiss="modal"
+            >
+              Volver al inicio
+            </button>
           </div>
         </div>
       </div>
-    </article>
-    <article
-      class="modal fade modal-article"
-      id="modalMercados"
+    </div>
+
+    <div
+      class="modal fade"
+      id="Mercados"
       tabindex="-1"
-      aria-labelledby="MercadosLabel"
+      aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content border-0 bg-dark text-light">
-          <div class="modal-body p-0">
-            <img
-              src="../../assets/img/mercadoChina01.jpeg"
-              class="img-fluid w-100"
-              alt="Mercado china"
-            />
-            <div class="p-3">
-              <h5 class="mb-2" id="MercadosLabel">Mercados</h5>
-              <p class="card-text text-start mb-3">
-                El Mercado de Wangfujing es uno de los más famosos y
-                emblemáticos de Beijing, reconocido por su ambiente vibrante y
-                su combinación de tradición y modernidad. Destaca por sus
-                callejones llenos de tiendas, puestos de comida típica y
-                productos artesanales que reflejan la cultura china. Rodeado de
-                centros comerciales y atracciones turísticas, combina
-                gastronomía, compras y vida cotidiana, ofreciendo además una
-                experiencia auténtica del bullicioso corazón de la ciudad
-              </p>
-              <button
-                type="button"
-                class="btn btn-detalle"
-                data-bs-dismiss="modal"
-              >
-                Cerrar
-              </button>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title fs-5" id="exampleModalLabel">
+              Descripción
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="card border-0 w-100" style="width: 18rem">
+              <img
+                src="../../assets/img/mercadoChina01.jpeg"
+                class="card-img-top"
+                alt="mercados chinos"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Mercados</h5>
+                <p class="card-text">
+                Descubre las callejuelas tradicionales de Beijing,
+                        conocidas como hutongs, donde se respira la vida local,
+                        además de probar comida callejera y artesanías típicas.
+                </p>
+              </div>
             </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-detalle"
+              data-bs-dismiss="modal"
+            >
+              Volver al inicio
+            </button>
           </div>
         </div>
       </div>
-    </article>
+    </div>
     <footer></footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
