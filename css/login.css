@@ -6,37 +6,30 @@
     font-family:"Montserrat", sans-serif;
 }
 body{
-<<<<<<< HEAD
+
     background:url(../assets/img/cr.jpg) no-repeat;
     background-size: cover;
     background-position: center; 
-=======
->>>>>>> 6c6e3e259b3e656e812d297c96b73eb3866fe45c
+
     display: flex;
     justify-content: center;
     align-items: center;
     min-width: 100vh;
 }
 .formulario{
-<<<<<<< HEAD
+
     margin-top: 150px;
     width: 420px;
     background: transparent;
     border: 2px solid rgb(0, 0, 0,0.2);
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgb(0, 0, 0, .1);
-=======
-
->>>>>>> 6c6e3e259b3e656e812d297c96b73eb3866fe45c
     border-radius: 15px;
     padding: 30px 40px;
 
 }
 .formulario h1{
-<<<<<<< HEAD
     color: black;
-=======
->>>>>>> 6c6e3e259b3e656e812d297c96b73eb3866fe45c
     text-align: center;
     font-size: 36px;
 }
@@ -102,11 +95,8 @@ body{
 
 .registro-link p a:hover{
     text-decoration: underline;
-<<<<<<< HEAD
+
 }
 a{
     text-decoration: none;
-    
-=======
->>>>>>> 6c6e3e259b3e656e812d297c96b73eb3866fe45c
-}
+ }
