@@ -12,7 +12,7 @@
       name="author"
       content="Marisol Lamas, Ornella Ricobelli, Facundo Camano, Octavio Fernandez Caram"
     />
-    <title>Streaming de viajes</title>
+    <title>ViajeroX</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -26,7 +26,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="../../css/detalle.css" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../../assets/img/logoBlanco.png" type="image/x-icon" />
   </head>
   <body>
     <header></header>
@@ -38,7 +38,8 @@
           <div class="col-lg-8 mx-auto">
             <section class="cristo-section my-5 text-center">
               <h2 class="mb-4 fw-bold">Coliseo Romano</h2>
-              <hr />
+              <hr /></section>
+              <section class="py-5">
               <div class="container">
                 <div class="row justify-content-center g-4">
                   <div class="col-12 col-md-8 col-lg-6">
@@ -56,12 +57,13 @@
                       />
                       <div class="card-body text-center">
                         <h5 class="card-title fw-bold">Ubicación</h5>
+                        <p class="card-text mb-1">Ciudad:
+                          <strong>Roma</strong> 
+                        </p>
+                        <p class="card-text mb-0">País:
+                          <strong>Italia</strong> 
+                        </p>
                         <p class="card-text mb-1">
-                          <strong>Ciudad:</strong> Roma
-                        </p>
-                        <p class="card-text mb-0">
-                          <strong>País:</strong> Italia
-                        </p>
                       </div>
                     </div>
                   </div>
@@ -95,185 +97,168 @@
                 </div>
               </div>
             </section>
-            <section class="container my-5">
-              <h3 class="text-center mt-4 mb-5 fw-bold">
-                Actividades Turísticas
-              </h3>
-              <div class="row g-4 d-flex align-items-stretch">
-                <div class="col-sm-6 col-lg-4 d-flex">
-                  <div
-                    class="card shadow-sm border-0 flex-fill"
-                    data-aos="flip-right"
-                    data-aos-delay="300"
+            <section class="cardTurismo">
+        <div class="container py-5">
+          <h3 class="text-center mb-5">Actividades Turísticas</h3>
+          <div class="d-flex flex-wrap justify-content-center gap-5 mb-5">
+            <div class="card card-Turismo" style="width: 18rem" data-aos="flip-right" data-aos-delay="300">
+              <img
+                src="../../assets/img/vaticano02.avif"
+                class="card-img-top img-fluid img-cardTurismo"
+                alt="vaticano"
+              />
+              <div class="card-body">
+                <p class="card-text fw-bold text-center">Vaticano</p>
+                <div
+                  class="botonTurismo d-flex justify-content-center align-items-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-detalle"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Vaticano"
                   >
-                    <img
-                      src="../../assets/img/vaticano01.jpeg"
-                      class="card-img-top"
-                      alt="vaticano"
-                    />
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title text-start">El Vaticano</h5>
-                      <p class="card-text text-start mb-3">
-                        Admirar la Basílica de San Pedro, la Plaza de San Pedro
-                        y los Museos Vaticanos, incluyendo la Capilla Sixtina.
-                      </p>
-                      <button
-                        class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalVati"
-                      >
-                        Ver más
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 d-flex">
-                  <div
-                    class="card shadow-sm border-0 flex-fill"
-                    data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="4000"
-                    data-aos-delay="600"
-                  >
-                    <img
-                      src="../../assets/img/fontana01.jpg"
-                      class="card-img-top"
-                      alt="fontana di trevi"
-                    />
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title text-start">Fontana di Trevi</h5>
-                      <p class="card-text text-start mb-3">
-                        Lanzar una moneda y disfrutar de esta famosa fuente
-                        barroca.
-                      </p>
-                      <button
-                        class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalFontana"
-                      >
-                        Ver más
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 d-flex">
-                  <div
-                    class="card shadow-sm border-0 flex-fill"
-                    data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="4000"
-                    data-aos-delay="900"
-                  >
-                    <img
-                      src="../../assets/img/coliseo04.jpeg"
-                      class="card-img-top"
-                      alt="coliseo romano"
-                    />
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title text-start">Coliseo Romano</h5>
-                      <p class="card-text text-start mb-3">
-                        Recorrer el emblemático anfiteatro romano y conocer su
-                        historia de gladiadores y espectáculos.
-                      </p>
-                      <button
-                        class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalColiseo"
-                      >
-                        Ver más
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 d-flex">
-                  <div
-                    class="card shadow-sm border-0 flex-fill"
-                    data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="4000"
-                    data-aos-delay="1200"
-                  >
-                    <img src="../../assets/img/panteon03.jpeg" alt="panteon" />
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title text-start">El Panteón</h5>
-                      <p class="card-text text-start mb-3">
-                        Descubrir este templo romano perfectamente conservado,
-                        con su impresionante cúpula.
-                      </p>
-                      <button
-                        class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalPanteon"
-                      >
-                        Ver más
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 d-flex">
-                  <div
-                    class="card shadow-sm border-0 flex-fill"
-                    data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="4000"
-                    data-aos-delay="1500"
-                  >
-                    <img
-                      src="../../assets/img/navona01.jpg"
-                      class="card-img-top"
-                      alt="plaza navona"
-                    />
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title text-start">Plaza Navona</h5>
-                      <p class="card-text text-start mb-3">
-                        Disfrutar de su arquitectura, fuentes monumentales y el
-                        ambiente animado de cafés y artistas callejeros.
-                      </p>
-                      <button
-                        class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalNavona"
-                      >
-                        Ver más
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 d-flex">
-                  <div
-                    class="card shadow-sm border-0 flex-fill"
-                    data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="4000"
-                    data-aos-delay="1800"
-                  >
-                    <img
-                      src="../../assets/img/campidoglio02.webp"
-                      class="card-img-top"
-                      alt="Plaza del Campidoglio"
-                    />
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title text-start">
-                        Plaza del Campidoglio
-                      </h5>
-                      <p class="card-text text-start mb-3">
-                        Diseñada por Miguel Ángel, ofrece vistas panorámicas del
-                        Foro Romano y es un punto clave para admirar la historia
-                        y la arquitectura de la ciudad.
-                      </p>
-                      <button
-                        class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalCampi"
-                      >
-                        Ver más
-                      </button>
-                    </div>
-                  </div>
+                    Ver más
+                  </button>
                 </div>
               </div>
-            </section>
-            <section class="itinerario-section mt-5 pt-5" id="mapa-coliseo">
+            </div>
+
+            <div class="card card-Turismo" style="width: 18rem" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="4000"
+                    data-aos-delay="600">
+              <img
+                src="../../assets/img/fontana02.jpg"
+                class="card-img-top img-fluid img-cardTurismo"
+                alt="fontana di trevi"
+              />
+              <div class="card-body">
+                <p class="card-text fw-bold text-center">
+                  Fontana di Trevi
+                </p>
+                <div
+                  class="botonTurismo d-flex justify-content-center align-items-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-detalle"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Fontana"
+                  >
+                    Ver más
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card card-Turismo" style="width: 18rem" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="4000"
+                    data-aos-delay="900">
+              <img
+                src="../../assets/img/coliseo01.jpg"
+                class="card-img-top img-fluid img-cardTurismo"
+                alt="Coliseo romano"
+              />
+              <div class="card-body">
+                <p class="card-text fw-bold text-center">Coliseo Romano</p>
+                <div
+                  class="botonTurismo d-flex justify-content-center align-items-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-detalle"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Coliseo"
+                  >
+                    Ver más
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card card-Turismo" style="width: 18rem" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="4000"
+                    data-aos-delay="1200">
+              <img
+                src="../../assets/img/panteon02.jpg"
+                class="card-img-top img-fluid img-cardTurismo"
+                alt="panteon"
+              />
+              <div class="card-body">
+                <p class="card-text fw-bold text-center">El Panteón</p>
+                <div
+                  class="botonTurismo d-flex justify-content-center align-items-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-detalle"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Panteon"
+                  >
+                    Ver más
+                  </button>
+                </div>
+              </div>
+            </div>
+
+             <div class="card card-Turismo" style="width: 18rem" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="4000"
+                    data-aos-delay="1500">
+              <img
+                src="../../assets/img/navona01.jpg"
+                class="card-img-top img-fluid img-cardTurismo"
+                alt="plaza navona"
+              />
+              <div class="card-body">
+                <p class="card-text fw-bold text-center">Plaza Navona</p>
+                <div
+                  class="botonTurismo d-flex justify-content-center align-items-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-detalle"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Navona"
+                  >
+                    Ver más
+                  </button>
+                </div>
+              </div>
+            </div>
+
+             <div class="card card-Turismo" style="width: 18rem" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="4000"
+                    data-aos-delay="1800">
+              <img
+                src="../../assets/img/campidoglio02.webp"
+                class="card-img-top img-fluid img-cardTurismo"
+                alt="Plaza del Campidoglio"
+              />
+              <div class="card-body">
+                <p class="card-text fw-bold text-center">Plaza del Campidoglio</p>
+                <div
+                  class="botonTurismo d-flex justify-content-center align-items-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-detalle"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Campi"
+                  >
+                    Ver más
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+</section> 
+            <section class="itinerario-section mt-2 pt-3">
               <h3 class="mb-4 fw-bold text-center">
                 Cómo llegar al Coliseo Romano
               </h3>
@@ -288,38 +273,31 @@
                     data-aos-easing="ease-in-sine"
                   >
                     <ol class="list-unstyled">
-                      <li class="itinerario-item mb-4">
-                        <div class="icon-circle end-icon mb-2">
-                          <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-                          <span class="visually-hidden">Punto de partida</span>
-                        </div>
-                        <h4 class="fw-bold">Roma</h4>
-                        <p class="small text-muted">Punto de partida</p>
-                      </li>
-                      <li class="itinerario-item mb-4">
-                        <div class="icon-circle travel-icon mb-2">
-                          <i class="fa-solid fa-train" aria-hidden="true"></i>
-                          <span class="visually-hidden"
-                            >Transporte en tren o metro</span
-                          >
-                        </div>
-                        <h4 class="fw-bold">Metro / Bus</h4>
-                        <p class="small text-muted">Metro: Línea B (10 min)</p>
-                        <p class="small text-muted">
-                          Bus: desde el centro histórico (20 min)
-                        </p>
-                      </li>
-                      <li class="itinerario-item">
-                        <div class="icon-circle start-icon mb-2">
-                          <i class="fa-solid fa-flag-checkered" aria-hidden="true"></i>
-                          <span class="visually-hidden">Destino final</span>
-                        </div>
-                        <h4 class="fw-bold">Coliseo Romano</h4>
-                        <p class="small text-muted">
-                          Entrada principal al anfiteatro
-                        </p>
-                      </li>
-                    </ol>
+  <li class="itinerario-item mb-4">
+    <div class="icon-circle start-icon mb-2">
+      <i class="fa-solid fa-location-dot"></i>
+    </div>
+    <h4 class="fw-bold">Roma</h4>
+    <p class="small text-muted">Punto de partida</p>
+  </li>
+  <li class="itinerario-item mb-4">
+    <div class="icon-circle travel-icon mb-2">
+      <i class="fa-solid fa-train"></i>
+    </div>
+    <h4 class="fw-bold">Metro / Bus</h4>
+    <p class="small text-muted">Metro: Línea B (10 min)</p>
+    <p class="small text-muted">Bus: desde el centro histórico (20 min)</p>
+  </li>
+  <li class="itinerario-item">
+    <div class="icon-circle end-icon mb-2">
+      <i class="fa-solid fa-flag-checkered"></i>
+    </div>
+    <h4 class="fw-bold">Coliseo Romano</h4>
+    <p class="small text-muted">Entrada principal al anfiteatro</p>
+  </li>
+
+</ol>
+
                   </div>
                 </div>
                 <div class="col-md-7 col-lg-7">
@@ -351,7 +329,7 @@
                 <div class="row justify-content-center">
                   <div class="col-12 col-md-10 col-lg-8">
                     <h3 id="faq-title" class="text-center mb-5 fw-bold">
-                      Todo lo que debes saber antes de visitar el Coliseo Romano
+                      Todo lo que debes saber antes de visitar
                     </h3>
                     <div class="accordion" id="faqAccordionDetalle">
                       <article
@@ -411,7 +389,7 @@
                               El Coliseo se encuentra en el corazón de Roma y es
                               fácilmente accesible en metro, autobús o a pie. La
                               estación más cercana es
-                              <strong>Colosseo</strong> (línea B del metro).
+                              Colosseo (línea B del metro).
                               También puedes llegar caminando desde el Foro
                               Romano o la Piazza Venezia.
                             </p>
@@ -442,7 +420,7 @@
                           <div class="accordion-body bg-dark">
                             <p>
                               El precio general es de unos
-                              <strong>16 euros</strong> e incluye el acceso al
+                              16 euros e incluye el acceso al
                               Coliseo, el Foro Romano y el Monte Palatino.
                               Existen descuentos para jóvenes de la Unión
                               Europea y entrada gratuita para menores de 18
@@ -538,7 +516,7 @@
                           <div class="accordion-body bg-dark">
                             <p>
                               Sí, se ofrecen
-                              <strong>visitas guiadas en varios idiomas</strong>
+                              visitas guiadas en varios idiomas
                               que incluyen acceso al anfiteatro, el subsuelo y
                               las gradas superiores. También hay tours
                               combinados con el Foro Romano. Es recomendable
@@ -655,6 +633,7 @@
                       <a
                         href="../../pages/detalleProducto/detalleChichen.html"
                         class="btn btn-detalle btn-sm w-50 mt-auto ms-auto"
+                         target="_blank"
                         >Ver más</a
                       >
                     </div>
@@ -665,13 +644,14 @@
                     <img
                       src="../../assets/img/machuIntro.jpg"
                       class="card-img-top img-carddestino"
-                      alt="Coliseo Romano"
+                      alt="machu picchu"
                     />
                     <div class="card-body d-flex flex-column">
                       <h5 class="card-titulod">Machu Picchu</h5>
                       <a
                         href="../../pages/detalleProducto/detalleMachu.html"
                         class="btn btn-detalle btn-sm w-50 mt-auto ms-auto"
+                         target="_blank"
                         >Ver más</a
                       >
                     </div>
@@ -689,6 +669,7 @@
                       <a
                         href="../../pages/detalleProducto/detallePetra.html"
                         class="btn btn-detalle btn-sm w-50 mt-auto ms-auto"
+                         target="_blank"
                         >Ver más</a
                       >
                     </div>
@@ -706,6 +687,7 @@
                       <a
                         href="../../pages/detalleProducto/detalleTaj.html"
                         class="btn btn-detalle btn-sm w-50 mt-auto ms-auto"
+                         target="_blank"
                         >Ver más</a
                       >
                     </div>
@@ -716,240 +698,297 @@
           </div>
         </div>
       </section>
-    </main>
-    <article
-      class="modal fade modal-article"
-      id="modalVati"
+    <div
+      class="modal fade"
+      id="Vaticano"
       tabindex="-1"
-      aria-labelledby="VatiLabel"
+      aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content border-0 bg-dark text-light">
-          <div class="modal-body p-0">
-            <img
-              src="../../assets/img/vaticano02.avif"
-              class="img-fluid w-100"
-              alt="Vaticano"
-            />
-            <div class="p-3">
-              <h5 class="mb-2" id="VatiLabel">El Vaticano</h5>
-              <p class="card-text text-start mb-3">
-                El recorrido por la Ciudad del Vaticano es una experiencia
-                espiritual y cultural única. En su interior se encuentran la
-                Basílica de San Pedro, la Capilla Sixtina y los Museos
-                Vaticanos, que guardan obras maestras de la humanidad. Puede
-                recorrerse en pocas horas o durante un día completo. Se
-                recomienda hacerlo con una visita guiada y reservar entradas con
-                anticipación, especialmente en temporada alta.
-              </p>
-              <button
-                type="button"
-                class="btn btn-detalle"
-                data-bs-dismiss="modal"
-              >
-                Cerrar
-              </button>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title fs-5" id="exampleModalLabel">Descripción</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="card border-0 w-100" style="width: 18rem">
+              <img
+                src="../../assets/img/vaticano01.jpeg"
+                class="card-img-top"
+                alt="vaticano"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Vaticano</h5>
+                <p class="card-text">
+               Admirar la Basílica de San Pedro, la Plaza de San Pedro
+                        y los Museos Vaticanos, incluyendo la Capilla Sixtina.
+                </p>
+              </div>
             </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-detalle"
+              data-bs-dismiss="modal"
+            >
+              Volver al inicio
+            </button>
           </div>
         </div>
       </div>
-    </article>
-    <article
-      class="modal fade modal-article"
-      id="modalFontana"
+    </div>
+
+    <div
+      class="modal fade"
+      id="Fontana"
       tabindex="-1"
-      aria-labelledby="FontanaLabel"
+      aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content border-0 bg-dark text-light">
-          <div class="modal-body p-0">
-            <img
-              src="../../assets/img/fontana02.jpg"
-              class="img-fluid w-100"
-              alt="Fontana di trevi"
-            />
-            <div class="p-3">
-              <h5 class="mb-2" id="FontanaLabel">Fontana di Trevi</h5>
-              <p class="card-text text-start mb-3">
-                La Fontana di Trevi es una de las fuentes más famosas del mundo
-                y un ícono de Roma. De estilo barroco, destaca por su imponente
-                escultura de Neptuno rodeado de figuras mitológicas y su
-                impresionante diseño en mármol. Es tradición lanzar una moneda
-                al agua para asegurar el regreso a la ciudad. Ubicada en el
-                corazón de Roma, combina arte, historia y romanticismo, siendo
-                una parada obligada para todo visitante.
-              </p>
-              <button
-                type="button"
-                class="btn btn-detalle"
-                data-bs-dismiss="modal"
-              >
-                Cerrar
-              </button>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title fs-5" id="exampleModalLabel">
+              Descripción
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="card border-0 w-100" style="width: 18rem">
+              <img
+                src="../../assets/img/fontana01.jpg"
+                class="card-img-top"
+                alt="fontana di trevi"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fontana di Trevi</h5>
+                <p class="card-text">
+                  Lanzar una moneda y disfrutar de esta famosa fuente
+                        barroca.
+                </p>
+              </div>
             </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-detalle"
+              data-bs-dismiss="modal"
+            >
+              Volver al inicio
+            </button>
           </div>
         </div>
       </div>
-    </article>
-    <article
-      class="modal fade modal-article"
-      id="modalColiseo"
+    </div>
+
+    <div
+      class="modal fade"
+      id="Coliseo"
       tabindex="-1"
-      aria-labelledby="ColiseoLabel"
+      aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content border-0 bg-dark text-light">
-          <div class="modal-body p-0">
-            <img
-              src="../../assets/img/coliseo03.jpg"
-              class="img-fluid w-100"
-              alt="Coliseo"
-            />
-            <div class="p-3">
-              <h5 class="mb-2" id="ColiseoLabel">Coliseo Romano</h5>
-              <p class="card-text text-start mb-3">
-                El Coliseo Romano es uno de los monumentos más emblemáticos de
-                Roma y una de las maravillas del mundo antiguo. De estilo
-                imperial, destaca por su grandiosa estructura de piedra y arcos
-                que alguna vez albergaron combates de gladiadores y espectáculos
-                públicos. Inaugurado en el año 80 d.C., simboliza la grandeza
-                del Imperio Romano. Ubicado en el corazón de la ciudad, combina
-                historia, arquitectura y cultura, siendo una visita
-                imprescindible para quienes exploran Roma.
-              </p>
-              <button
-                type="button"
-                class="btn btn-detalle"
-                data-bs-dismiss="modal"
-              >
-                Cerrar
-              </button>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title fs-5" id="exampleModalLabel">Descripción</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="card border-0 w-100" style="width: 18rem">
+              <img
+                src="../../assets/img/coliseo02.jpg"
+                class="card-img-top"
+                alt="coliseo romano"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Coliseo Romano</h5>
+                <p class="card-text">
+                  Recorrer el emblemático anfiteatro romano y conocer su
+                        historia de gladiadores y espectáculos.
+                </p>
+              </div>
             </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-detalle"
+              data-bs-dismiss="modal"
+            >
+              Volver al inicio
+            </button>
           </div>
         </div>
       </div>
-    </article>
-    <article
-      class="modal fade modal-article"
-      id="modalPanteon"
+    </div>
+
+    <div
+      class="modal fade"
+      id="Panteon"
       tabindex="-1"
-      aria-labelledby="PanteonLabel"
+      aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content border-0 bg-dark text-light">
-          <div class="modal-body p-0">
-            <img
-              src="../../assets/img/panteon02.jpg"
-              class="img-fluid w-100"
-              alt="Panteon de roma"
-            />
-            <div class="p-3">
-              <h5 class="mb-2" id="PanteonLabel">El Panteon</h5>
-              <p class="card-text text-start mb-3">
-                El Panteón de Roma es una de las obras maestras mejor
-                conservadas del Imperio Romano y un símbolo de la ingeniería
-                antigua. Construido en el siglo II d.C. bajo el mandato de
-                Adriano, destaca por su imponente cúpula con un óculo central
-                que ilumina el interior. Originalmente dedicado a todos los
-                dioses, hoy funciona como iglesia y mausoleo de grandes figuras
-                italianas. Ubicado en la Piazza della Rotonda, combina arte,
-                historia y arquitectura, siendo una parada esencial en la visita
-                a Roma.
-              </p>
-              <button
-                type="button"
-                class="btn btn-detalle"
-                data-bs-dismiss="modal"
-              >
-                Cerrar
-              </button>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title fs-5" id="exampleModalLabel">
+              Descripción
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="card border-0 w-100" style="width: 18rem">
+              <img
+                src="../../assets/img/panteon01.jpg"
+                class="card-img-top"
+                alt="panteon"
+              />
+              <div class="card-body">
+                <h5 class="card-title">El Panteón</h5>
+                <p class="card-text">
+                  Descubrir este templo romano perfectamente conservado,
+                        con su impresionante cúpula.
+                </p>
+              </div>
             </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-detalle"
+              data-bs-dismiss="modal"
+            >
+              Volver al inicio
+            </button>
           </div>
         </div>
       </div>
-    </article>
-    <article
-      class="modal fade modal-article"
-      id="modalNavona"
+    </div>
+
+    <div
+      class="modal fade"
+      id="Navona"
       tabindex="-1"
-      aria-labelledby="NavonaLabel"
+      aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content border-0 bg-dark text-light">
-          <div class="modal-body p-0">
-            <img
-              src="../../assets/img/navona02.jpg"
-              class="img-fluid w-100"
-              alt="Plaza Navona"
-            />
-            <div class="p-3">
-              <h5 class="mb-2" id="NavonaLabel">Plaza Navona</h5>
-              <p class="card-text text-start mb-3">
-                La Plaza Navona es una de las más famosas y animadas de Roma,
-                reconocida por su elegante estilo barroco y su ambiente
-                vibrante. Construida sobre el antiguo Estadio de Domiciano,
-                conserva su forma alargada original. Destaca por sus tres
-                fuentes monumentales, especialmente la Fuente de los Cuatro
-                Ríos, obra de Bernini. Rodeada de cafés, restaurantes y artistas
-                callejeros, combina historia, arte y vida cotidiana, siendo un
-                punto de encuentro imperdible en el corazón de la ciudad.
-              </p>
-              <button
-                type="button"
-                class="btn btn-detalle"
-                data-bs-dismiss="modal"
-              >
-                Cerrar
-              </button>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title fs-5" id="exampleModalLabel">
+              Descripción
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="card border-0 w-100" style="width: 18rem">
+              <img
+                src="../../assets/img/navona02.jpg"
+                class="card-img-top"
+                alt="plaza navona"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Plaza Navona</h5>
+                <p class="card-text">
+                   Disfrutar de su arquitectura, fuentes monumentales y el
+                        ambiente animado de cafés y artistas callejeros.
+                </p>
+              </div>
             </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-detalle"
+              data-bs-dismiss="modal"
+            >
+              Volver al inicio
+            </button>
           </div>
         </div>
       </div>
-    </article>
-    <article
-      class="modal fade modal-article"
-      id="modalCampi"
+    </div>
+
+    <div
+      class="modal fade"
+      id="Campi"
       tabindex="-1"
-      aria-labelledby="CampiLabel"
+      aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content border-0 bg-dark text-light">
-          <div class="modal-body p-0">
-            <img
-              src="../../assets/img/campidoglio01.webp"
-              class="img-fluid w-100"
-              alt="campidoglio"
-            />
-            <div class="p-3">
-              <h5 class="mb-2" id="CampiLabel">Plaza Campidoglio</h5>
-              <p class="card-text text-start mb-3">
-                La Plaza del Campidoglio es una de las más elegantes y
-                simbólicas de Roma, diseñada por Miguel Ángel en el siglo XVI
-                sobre la colina Capitolina, el corazón político de la antigua
-                Roma. Destaca por su armoniosa disposición arquitectónica y la
-                estatua ecuestre de Marco Aurelio en su centro. Rodeada por los
-                Museos Capitolinos y el Palacio Senatorio, combina arte,
-                historia y poder, ofreciendo además una de las vistas más bellas
-                hacia el Foro Romano.
-              </p>
-              <button
-                type="button"
-                class="btn btn-detalle"
-                data-bs-dismiss="modal"
-              >
-                Cerrar
-              </button>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title fs-5" id="exampleModalLabel">
+              Descripción
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="card border-0 w-100" style="width: 18rem">
+              <img
+                src="../../assets/img/campidoglio01.webp"
+                class="card-img-top"
+                alt="plaza de campidoglio"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Plaza de Campidoglio</h5>
+                <p class="card-text">
+               Diseñada por Miguel Ángel, ofrece vistas panorámicas del
+                        Foro Romano y es un punto clave para admirar la historia.
+                </p>
+              </div>
             </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-detalle"
+              data-bs-dismiss="modal"
+            >
+              Volver al inicio
+            </button>
           </div>
         </div>
       </div>
-    </article>
+    </div>
     <footer></footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
