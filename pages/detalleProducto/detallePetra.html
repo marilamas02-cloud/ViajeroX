@@ -12,7 +12,7 @@
       name="author"
       content="Marisol Lamas, Ornella Ricobelli, Facundo Camano, Octavio Fernandez Caram"
     />
-    <title>Streaming de viajes</title>
+    <title>ViajeroX</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -26,7 +26,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="../../css/detalle.css" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../../assets/img/logoBlanco.png" type="image/x-icon" />
   </head>
   <body>
     <header></header>
@@ -38,7 +38,8 @@
           <div class="col-lg-8 mx-auto">
             <section class="cristo-section my-5 text-center">
               <h2 class="mb-4 fw-bold">Petra: la Ciudad Rosa de Jordania</h2>
-              <hr>
+              <hr></section>
+              <section class="py-5">
               <div class="container">
                 <div class="row justify-content-center g-4">
                   <div class="col-12 col-md-8 col-lg-6">
@@ -56,11 +57,11 @@
                       />
                       <div class="card-body text-center">
                         <h5 class="card-title fw-bold">Ubicación</h5>
-                        <p class="card-text mb-1">
-                          <strong>Ciudad:</strong> Wadi Musa
+                        <p class="card-text mb-1">Ciudad:
+                          <strong>Wadi Musa</strong> 
                         </p>
-                        <p class="card-text mb-0">
-                          <strong>País:</strong> Jordania
+                        <p class="card-text mb-0">País:
+                          <strong>Jordania</strong> 
                         </p>
                       </div>
                     </div>
@@ -94,240 +95,202 @@
                 </div>
               </div>
             </section>
-            <section class="container my-5">
-              <h3 class="text-center mt-4 mb-5 fw-bold">
-                Actividades Turísticas
-              </h3>
-              <div class="row g-4 d-flex align-items-stretch">
-                <div class="col-sm-6 col-lg-4 d-flex">
-                  <div
-                    class="card shadow-sm border-0 flex-fill"
-                    data-aos="flip-right"
-                    data-aos-delay="300"
+            <section class="cardTurismo">
+        <div class="container py-5">
+          <h3 class="text-center mb-5">Actividades Turísticas</h3>
+          <div class="d-flex flex-wrap justify-content-center gap-5 mb-5">
+            <div class="card card-Turismo" style="width: 18rem" data-aos="flip-right" data-aos-delay="300">
+              <img
+                src="../../assets/img/marMuerto01.jpeg"
+                class="card-img-top img-fluid img-cardTurismo"
+                alt="mar muerto"
+              />
+              <div class="card-body">
+                <p class="card-text fw-bold text-center">Mar Muerto</p>
+                <div
+                  class="botonTurismo d-flex justify-content-center align-items-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-detalle"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Mar"
                   >
-                    <img
-                      src="../../assets/img/marMuerto02.jpeg"
-                      class="card-img-top"
-                      alt="mar muerto"
-                    />
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title text-start">Mar Muerto</h5>
-                      <p class="card-text text-start mb-3">
-                        Flotar en las aguas saladas del Mar Muerto y disfrutar
-                        de sus energias.
-                      </p>
-                      <button
-                        class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalMar"
-                      >
-                        Ver más
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 d-flex">
-                  <div
-                    class="card shadow-sm border-0 flex-fill"
-                    data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="4000"
-                    data-aos-delay="600"
-                  >
-                    <img
-                      src="../../assets/img/desiertoRum01.webp"
-                      class="card-img-top"
-                      alt="Desierto Wadi Rum"
-                    />
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title text-start">Desierto Wadi Rum</h5>
-                      <p class="card-text text-start mb-3">
-                        Explorar el desierto de Wadi Rum, formaciones rocosas y
-                        cielos estrellados.
-                      </p>
-                      <button
-                        class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalWadi"
-                      >
-                        Ver más
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 d-flex">
-                  <div
-                    class="card shadow-sm border-0 flex-fill"
-                    data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="4000"
-                    data-aos-delay="900"
-                  >
-                    <img
-                      src="../../assets/img/petra03.jpg"
-                      class="card-img-top"
-                      alt="Petra"
-                    />
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title text-start">Petra</h5>
-                      <p class="card-text text-start mb-3">
-                        Recorrer la antigua ciudad de Petra, admirando sus
-                        templos y ciudades.
-                      </p>
-                      <button
-                        class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalPetra"
-                      >
-                        Ver más
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 d-flex">
-                  <div
-                    class="card shadow-sm border-0 flex-fill"
-                    data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="4000"
-                    data-aos-delay="1200"
-                  >
-                    <img
-                      src="../../assets/img/castilloDesierto01.jpeg"
-                      alt="Castillo desierto"
-                    />
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title text-start">Castillo desierto</h5>
-                      <p class="card-text text-start mb-3">
-                        Visitar los castillos del desierto Qasr Amra y Qasr
-                        Kharana con su arquitectura.
-                      </p>
-                      <button
-                        class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalCastillo"
-                      >
-                        Ver más
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 d-flex">
-                  <div
-                    class="card shadow-sm border-0 flex-fill"
-                    data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="4000"
-                    data-aos-delay="1500"
-                  >
-                    <img
-                      src="../../assets/img/buceoAqaba02.webp"
-                      class="card-img-top"
-                      alt="bueceo aqaba"
-                    />
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title text-start">Buceo en Aqaba</h5>
-                      <p class="card-text text-start mb-3">
-                        Explora la vida marina del Mar Rojo en un entorno
-                        natural impresionante.
-                      </p>
-                      <button
-                        class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalAqaba"
-                      >
-                        Ver más
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 d-flex">
-                  <div
-                    class="card shadow-sm border-0 flex-fill"
-                    data-aos="flip-left"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="4000"
-                    data-aos-delay="1800"
-                  >
-                    <img
-                      src="../../assets/img/amman01.jpg"
-                      class="card-img-top"
-                      alt="Ammán"
-                    />
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title text-start">Ciudad de Ammán</h5>
-                      <p class="card-text text-start mb-3">
-                        Descubre la Ciudadela que combinan historia antigua y
-                        vida moderna.
-                      </p>
-                      <button
-                        class="btn btn-detalle btn-sm ms-auto mt-auto w-50"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalAmman"
-                      >
-                        Ver más
-                      </button>
-                    </div>
-                  </div>
+                    Ver más
+                  </button>
                 </div>
               </div>
-            </section>
-            <section class="itinerario-section mt-5 pt-5" id="mapa-petra">
-              <h3 class="mb-4 fw-bold text-center">Cómo llegar a Petra</h3>
+            </div>
 
+            <div class="card card-Turismo" style="width: 18rem" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="4000"
+                    data-aos-delay="600">
+              <img
+                src="../../assets/img/desiertoRum01.webp"
+                class="card-img-top img-fluid img-cardTurismo"
+                alt="desierto wadi rum"
+              />
+              <div class="card-body">
+                <p class="card-text fw-bold text-center">
+                  Desierto Wadi Rum
+                </p>
+                <div
+                  class="botonTurismo d-flex justify-content-center align-items-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-detalle"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Wadi"
+                  >
+                    Ver más
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card card-Turismo" style="width: 18rem" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="4000"
+                    data-aos-delay="900">
+              <img
+                src="../../assets/img/petra02.webp"
+                class="card-img-top img-fluid img-cardTurismo"
+                alt="Petra"
+              />
+              <div class="card-body">
+                <p class="card-text fw-bold text-center">Petra</p>
+                <div
+                  class="botonTurismo d-flex justify-content-center align-items-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-detalle"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Petra"
+                  >
+                    Ver más
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card card-Turismo" style="width: 18rem" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="4000"
+                    data-aos-delay="1200">
+              <img
+                src="../../assets/img/castilloDesierto01.jpeg"
+                class="card-img-top img-fluid img-cardTurismo"
+                alt="castillo desierto"
+              />
+              <div class="card-body">
+                <p class="card-text fw-bold text-center">Castillo Desierto</p>
+                <div
+                  class="botonTurismo d-flex justify-content-center align-items-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-detalle"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Castillo"
+                  >
+                    Ver más
+                  </button>
+                </div>
+              </div>
+            </div>
+
+             <div class="card card-Turismo" style="width: 18rem" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="4000"
+                    data-aos-delay="1500">
+              <img
+                src="../../assets/img/buceoAqaba02.webp"
+                class="card-img-top img-fluid img-cardTurismo"
+                alt="buceo en aqaba"
+              />
+              <div class="card-body">
+                <p class="card-text fw-bold text-center">Buceo en Aqaba</p>
+                <div
+                  class="botonTurismo d-flex justify-content-center align-items-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-detalle"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Aqaba"
+                  >
+                    Ver más
+                  </button>
+                </div>
+              </div>
+            </div>
+
+             <div class="card card-Turismo" style="width: 18rem"  data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="4000"
+                    data-aos-delay="1800">
+              <img
+                src="../../assets/img/amman01.jpg"
+                class="card-img-top img-fluid img-cardTurismo"
+                alt="ciudad de ammán"
+              />
+              <div class="card-body">
+                <p class="card-text fw-bold text-center">Ciudad de Ammán</p>
+                <div
+                  class="botonTurismo d-flex justify-content-center align-items-center"
+                >
+                  <button
+                    type="button"
+                    class="btn btn-detalle"
+                    data-bs-toggle="modal"
+                    data-bs-target="#Amman"
+                  >
+                    Ver más
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+</section>   
+            <section class="itinerario-section mt-2 pt-3">
+              <h3 class="mb-4 fw-bold text-center">Cómo llegar a Petra</h3>
               <div
                 class="row justify-content-center align-items-start g-4 pt-3"
               >
                 <div class="col-md-5 col-lg-4">
                   <ol
-                    class="itinerario-list text-center"
-                    data-aos="fade-right"
-                    data-aos-offset="300"
-                    data-aos-easing="ease-in-sine"
-                  >
-                    <li class="itinerario-item mb-4">
-                      <div class="icon-circle end-icon mb-2">
-                        <i
-                          class="fa-solid fa-location-dot"
-                          aria-hidden="true"
-                        ></i>
-                        <span class="visually-hidden"
-                          >Ubicación inicial: Ammán</span
-                        >
-                      </div>
-                      <h4 class="fw-bold">Ammán - Jordania</h4>
-                      <p class="small text-muted">Punto de partida</p>
-                    </li>
-                    <li class="itinerario-item mb-4">
-                      <div class="icon-circle travel-icon mb-2">
-                        <i
-                          class="fa-solid fa-bus-simple"
-                          aria-hidden="true"
-                        ></i>
-                        <span class="visually-hidden"
-                          >Transporte en bus o auto</span
-                        >
-                      </div>
-                      <h4 class="fw-bold">Bus / Auto</h4>
-                      <p class="small text-muted">Bus: 4 a 5 horas</p>
-                      <p class="small text-muted">Auto: 3 horas</p>
-                    </li>
-                    <li class="itinerario-item">
-                      <div class="icon-circle start-icon mb-2">
-                        <i
-                          class="fa-solid fa-flag-checkered"
-                          aria-hidden="true"
-                        ></i>
-                        <span class="visually-hidden"
-                          >Destino final: Petra</span
-                        >
-                      </div>
-                      <h4 class="fw-bold">Petra</h4>
-                      <p class="small text-muted">
-                        Entrada principal al sitio arqueológico
-                      </p>
-                    </li>
-                  </ol>
+  class="itinerario-list text-center"
+  data-aos="fade-right"
+  data-aos-offset="300"
+  data-aos-easing="ease-in-sine"
+>
+  <li class="itinerario-item mb-4">
+    <div class="icon-circle start-icon mb-2">
+      <i class="fa-solid fa-location-dot"></i>
+    </div>
+    <h4 class="fw-bold">Ammán - Jordania</h4>
+    <p class="small text-muted">Punto de partida</p>
+  </li>
+  <li class="itinerario-item mb-4">
+    <div class="icon-circle travel-icon mb-2">
+      <i class="fa-solid fa-train"></i>
+    </div>
+    <h4 class="fw-bold">Bus / Auto</h4>
+    <p class="small text-muted">Bus: 4 a 5 horas</p>
+    <p class="small text-muted">Auto: 3 horas</p>
+  </li>
+  <li class="itinerario-item">
+    <div class="icon-circle end-icon mb-2">
+      <i class="fa-solid fa-flag-checkered"></i>
+    </div>
+    <h4 class="fw-bold">Petra</h4>
+    <p class="small text-muted">Entrada principal al sitio arqueológico</p>
+  </li>
+</ol>
                 </div>
                 <div class="col-md-7 col-lg-7">
                   <figure
@@ -358,7 +321,7 @@
                 <div class="row justify-content-center">
                   <div class="col-12 col-md-10 col-lg-8">
                     <h3 id="faq-title" class="text-center mb-5 fw-bold">
-                      Todo lo que debes saber antes de visitar Petra
+                      Todo lo que debes saber antes de visitar
                     </h3>
                     <div class="accordion" id="faqAccordionDetalle">
                       <article
@@ -385,8 +348,8 @@
                           <div class="accordion-body bg-dark">
                             <p>
                               Petra abre todos los días desde las
-                              <strong>6:00 a.m. hasta las 6:00 p.m.</strong> en
-                              verano y hasta las <strong>4:00 p.m.</strong> en
+                              6:00 a.m. hasta las 6:00 p.m. en
+                              verano y hasta las 4:00 p.m.en
                               invierno. Se recomienda llegar temprano para
                               evitar el calor y las multitudes.
                             </p>
@@ -417,12 +380,12 @@
                           <div class="accordion-body bg-dark">
                             <p>
                               Petra se encuentra a unos
-                              <strong>230 km al sur de Ammán</strong>. Puedes
-                              llegar en <strong>bus turístico (JETT)</strong> en
+                              230 km al sur de Ammán. Puedes
+                              llegar en bus turístico (JETT) en
                               unas 4 a 5 horas o en
-                              <strong>auto/tour privado</strong> en
+                              auto/tour privado en
                               aproximadamente 3 horas. La ciudad más cercana es
-                              <strong>Wadi Musa</strong>, donde se ubican la
+                             Wadi Musa, donde se ubican la
                               mayoría de los hoteles.
                             </p>
                           </div>
@@ -452,9 +415,9 @@
                           <div class="accordion-body bg-dark">
                             <p>
                               El boleto general cuesta alrededor de
-                              <strong>50 dinares jordanos (JD)</strong> para un
+                              50 dinares jordanos (JD) para un
                               día de visita. También hay opciones de
-                              <strong>2 o 3 días</strong> y descuentos para
+                              2 o 3 días y descuentos para
                               residentes y grupos. La entrada incluye acceso al
                               Siq, el Tesoro y las principales estructuras del
                               sitio arqueológico.
@@ -486,11 +449,11 @@
                           <div class="accordion-body bg-dark">
                             <p>
                               Se recomienda llevar
-                              <strong>ropa ligera y transpirable</strong>,
+                              ropa ligera y transpirable,
                               calzado cómodo para caminar largas distancias,
                               sombrero o gorra, protector solar y suficiente
                               agua. También es útil llevar una linterna si
-                              planeas visitar <strong>Petra by Night</strong>.
+                              planeas visitar Petra by Night.
                             </p>
                           </div>
                         </div>
@@ -519,8 +482,8 @@
                           <div class="accordion-body bg-dark">
                             <p>
                               Las mejores épocas son
-                              <strong>primavera (marzo a mayo)</strong> y
-                              <strong>otoño (septiembre a noviembre)</strong>,
+                              primavera (marzo a mayo) y
+                              otoño (septiembre a noviembre),
                               cuando las temperaturas son más suaves. En verano
                               hace mucho calor y en invierno puede haber
                               lluvias.
@@ -552,13 +515,13 @@
                           <div class="accordion-body bg-dark">
                             <p>
                               Sí, hay
-                              <strong>guías locales certificados</strong> y
+                             guías locales certificados y
                               tours organizados en varios idiomas. También
                               puedes realizar
-                              <strong>rutas de senderismo</strong> con guía
+                              rutas de senderismo con guía
                               hacia puntos panorámicos como el
-                              <strong>Monasterio</strong> o el
-                              <strong>Altar del Sacrificio</strong>. Es
+                              Monasterio o el
+                              Altar del Sacrificio. Es
                               recomendable reservar con anticipación.
                             </p>
                           </div>
@@ -632,7 +595,7 @@
                   <div class="card reseña-card h-100 shadow-sm">
                     <img
                       src="../../assets/img/reseñaPetra05.jpg"
-                      alt="familia coliseo"
+                      alt="mujer petra"
                     />
                     <div class="card-body">
                       <h5 class="card-title text-primary fw-bold">
@@ -672,6 +635,7 @@
                       <a
                         href="../../pages/detalleProducto/detalleChichen.html"
                         class="btn btn-detalle btn-sm w-50 mt-auto ms-auto"
+                        target="_blank"
                         >Ver más</a
                       >
                     </div>
@@ -682,13 +646,14 @@
                     <img
                       src="../../assets/img/machuIntro.jpg"
                       class="card-img-top img-carddestino"
-                      alt="Coliseo Romano"
+                      alt="machu picchu"
                     />
                     <div class="card-body d-flex flex-column">
                       <h5 class="card-titulod">Machu Picchu</h5>
                       <a
                         href="../../pages/detalleProducto/detalleMachu.html"
                         class="btn btn-detalle btn-sm w-50 mt-auto ms-auto"
+                        target="_blank"
                         >Ver más</a
                       >
                     </div>
@@ -706,6 +671,7 @@
                       <a
                         href="../../pages/detalleProducto/detalleColiseo.html"
                         class="btn btn-detalle btn-sm w-50 mt-auto ms-auto"
+                        target="_blank"
                         >Ver más</a
                       >
                     </div>
@@ -723,6 +689,7 @@
                       <a
                         href="../../pages/detalleProducto/detalleTaj.html"
                         class="btn btn-detalle btn-sm w-50 mt-auto ms-auto"
+                        target="_blank"
                         >Ver más</a
                       >
                     </div>
@@ -734,229 +701,297 @@
         </div>
       </section>
     </main>
-    <article
-      class="modal fade modal-article"
-      id="modalMar"
+   <div
+      class="modal fade"
+      id="Mar"
       tabindex="-1"
-      aria-labelledby="MarLabel"
+      aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content border-0 bg-dark text-light">
-          <div class="modal-body p-0">
-            <img
-              src="../../assets/img/marMuerto03.webp"
-              class="img-fluid w-100"
-              alt="Mar muerto"
-            />
-            <div class="p-3">
-              <h5 class="mb-2" id="MarLabel">Mar muerto</h5>
-              <p class="card-text text-start mb-3">
-                La visita al Mar Muerto es una experiencia natural y relajante
-                única en el mundo. Situado entre Jordania e Israel, destaca por
-                sus aguas extremadamente saladas que permiten flotar sin
-                esfuerzo y por sus lodos ricos en minerales con propiedades
-                terapéuticas. Es ideal para disfrutar de un baño, tratamientos
-                de spa y contemplar el paisaje desértico que lo rodea.
-              </p>
-              <button
-                type="button"
-                class="btn btn-detalle"
-                data-bs-dismiss="modal"
-              >
-                Cerrar
-              </button>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title fs-5" id="exampleModalLabel">Descripción</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="card border-0 w-100" style="width: 18rem">
+              <img
+                src="../../assets/img/marMuerto04.jpeg"
+                class="card-img-top"
+                alt="Mar Muerto"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Mar Muerto</h5>
+                <p class="card-text">
+                  Flotar en las aguas saladas del Mar Muerto y disfrutar
+                        de sus energias.
+                </p>
+              </div>
             </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-detalle"
+              data-bs-dismiss="modal"
+            >
+              Volver al inicio
+            </button>
           </div>
         </div>
       </div>
-    </article>
-    <article
-      class="modal fade modal-article"
-      id="modalWadi"
+    </div>
+
+    <div
+      class="modal fade"
+      id="Wadi"
       tabindex="-1"
-      aria-labelledby="WadiLabel"
+      aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content border-0 bg-dark text-light">
-          <div class="modal-body p-0">
-            <img
-              src="../../assets/img/desiertoRum03.jpg"
-              class="img-fluid w-100"
-              alt="desierto Wadi Rum"
-            />
-            <div class="p-3">
-              <h5 class="mb-2" id="WadiLabel">Desierto Wadi Rum</h5>
-              <p class="card-text text-start mb-3">
-                La visita al desierto de Wadi Rum es una experiencia inolvidable
-                en plena naturaleza árabe. Conocido como el “Valle de la Luna”,
-                destaca por sus montañas de arenisca, dunas rojizas y
-                formaciones rocosas únicas. Es ideal para recorrer en jeep,
-                practicar senderismo o pasar la noche en campamentos beduinos
-                bajo un cielo estrellado incomparable.
-              </p>
-              <button
-                type="button"
-                class="btn btn-detalle"
-                data-bs-dismiss="modal"
-              >
-                Cerrar
-              </button>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title fs-5" id="exampleModalLabel">
+              Descripción
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="card border-0 w-100" style="width: 18rem">
+              <img
+                src="../../assets/img/desiertoRum03.jpg"
+                class="card-img-top"
+                alt="Desierto Wadi Rum"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Desierto Wadi Rum</h5>
+                <p class="card-text">
+                  Explorar el desierto de Wadi Rum, formaciones rocosas y
+                        cielos estrellados.
+                </p>
+              </div>
             </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-detalle"
+              data-bs-dismiss="modal"
+            >
+              Volver al inicio
+            </button>
           </div>
         </div>
       </div>
-    </article>
-    <article
-      class="modal fade modal-article"
-      id="modalPetra"
+    </div>
+
+    <div
+      class="modal fade"
+      id="Petra"
       tabindex="-1"
-      aria-labelledby="PetraLabel"
+      aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content border-0 bg-dark text-light">
-          <div class="modal-body p-0">
-            <img
-              src="../../assets/img/petra01.jpg"
-              class="img-fluid w-100"
-              alt="Petra"
-            />
-            <div class="p-3">
-              <h5 class="mb-2" id="PetraLabel">Petra</h5>
-              <p class="card-text text-start mb-3">
-                La visita a Petra es una experiencia arqueológica y cultural
-                única en el mundo. Conocida como la “Ciudad Rosa”, impresiona
-                por sus templos, tumbas y fachadas talladas en la roca. Su
-                monumento más famoso, el Tesoro (Al-Khazneh), asombra a los
-                visitantes al final del estrecho desfiladero del Siq. Recorrerla
-                permite revivir la historia nabatea en un entorno misterioso y
-                fascinante.
-              </p>
-              <button
-                type="button"
-                class="btn btn-detalle"
-                data-bs-dismiss="modal"
-              >
-                Cerrar
-              </button>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title fs-5" id="exampleModalLabel">Descripción</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="card border-0 w-100" style="width: 18rem">
+              <img
+                src="../../assets/img/petra03.jpg"
+                class="card-img-top"
+                alt="Petra"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Petra</h5>
+                <p class="card-text">
+                  Recorrer la antigua ciudad de Petra, admirando sus
+                        templos y ciudades.
+                </p>
+              </div>
             </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-detalle"
+              data-bs-dismiss="modal"
+            >
+              Volver al inicio
+            </button>
           </div>
         </div>
       </div>
-    </article>
-    <article
-      class="modal fade modal-article"
-      id="modalCastillo"
+    </div>
+
+    <div
+      class="modal fade"
+      id="Castillo"
       tabindex="-1"
-      aria-labelledby="CastilloLabel"
+      aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content border-0 bg-dark text-light">
-          <div class="modal-body p-0">
-            <img
-              src="../../assets/img/castilloDesierto03.jpg"
-              class="img-fluid w-100"
-              alt="Castillo desierto"
-            />
-            <div class="p-3">
-              <h5 class="mb-2" id="CastilloLabel">Castillo del Desierto</h5>
-              <p class="card-text text-start mb-3">
-                La visita a los castillos del desierto Qasr Amra y Qasr Kharana
-                es un viaje al pasado islámico de Jordania. Estas construcciones
-                omeyas, situadas en medio del árido paisaje del desierto,
-                destacan por su arquitectura y valor histórico. Qasr Amra es
-                famoso por sus frescos y murales bien conservados, mientras que
-                Qasr Kharana impresiona por su diseño fortificado y misterioso
-                origen.
-              </p>
-              <button
-                type="button"
-                class="btn btn-detalle"
-                data-bs-dismiss="modal"
-              >
-                Cerrar
-              </button>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title fs-5" id="exampleModalLabel">
+              Descripción
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="card border-0 w-100" style="width: 18rem">
+              <img
+                src="../../assets/img/castilloDesierto02.webp"
+                class="card-img-top"
+                alt="Castillo Desierto"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Castillo Desierto</h5>
+                <p class="card-text">
+                  Visitar los castillos del desierto Qasr Amra y Qasr
+                        Kharana con su arquitectura.
+                </p>
+              </div>
             </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-detalle"
+              data-bs-dismiss="modal"
+            >
+              Volver al inicio
+            </button>
           </div>
         </div>
       </div>
-    </article>
-    <article
-      class="modal fade modal-article"
-      id="modalAqaba"
+    </div>
+
+    <div
+      class="modal fade"
+      id="Aqaba"
       tabindex="-1"
-      aria-labelledby="AqabaLabel"
+      aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content border-0 bg-dark text-light">
-          <div class="modal-body p-0">
-            <img
-              src="../../assets/img/buceoAqaba01.jpg"
-              class="img-fluid w-100"
-              alt="buceo en Aqaba"
-            />
-            <div class="p-3">
-              <h5 class="mb-2" id="AqabaLabel">Buceo en Aqaba</h5>
-              <p class="card-text text-start mb-3">
-                La visita a Aqaba ofrece una experiencia marina incomparable en
-                el Mar Rojo. Este destino costero es ideal para practicar buceo
-                y esnórquel, explorando sus arrecifes de coral, barcos hundidos
-                y una rica vida marina. Sus aguas cristalinas y su cálido clima
-                hacen de Aqaba un paraíso para los amantes del mar y la
-                aventura.
-              </p>
-              <button
-                type="button"
-                class="btn btn-detalle"
-                data-bs-dismiss="modal"
-              >
-                Cerrar
-              </button>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title fs-5" id="exampleModalLabel">
+              Descripción
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="card border-0 w-100" style="width: 18rem">
+              <img
+                src="../../assets/img/buceoAqaba03.jpeg"
+                class="card-img-top"
+                alt="Buceo en Aqaba"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Buceo en Aqaba</h5>
+                <p class="card-text">
+                   Explora la vida marina del Mar Rojo en un entorno
+                        natural impresionante.
+                </p>
+              </div>
             </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-detalle"
+              data-bs-dismiss="modal"
+            >
+              Volver al inicio
+            </button>
           </div>
         </div>
       </div>
-    </article>
-    <article
-      class="modal fade modal-article"
-      id="modalAmman"
+    </div>
+
+    <div
+      class="modal fade"
+      id="Amman"
       tabindex="-1"
-      aria-labelledby="AmmanLabel"
+      aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content border-0 bg-dark text-light">
-          <div class="modal-body p-0">
-            <img
-              src="../../assets/img/amman02.jpeg"
-              class="img-fluid w-100"
-              alt="Amman"
-            />
-            <div class="p-3">
-              <h5 class="mb-2" id="AmmanLabel">Ciudad de Ammán</h5>
-              <p class="card-text text-start mb-3">
-                La visita a Ammán permite descubrir la vibrante capital de
-                Jordania, donde lo antiguo y lo moderno conviven en perfecta
-                armonía. La ciudad destaca por su Ciudadela, el Teatro Romano y
-                sus bulliciosos zocos llenos de aromas y colores. Ammán ofrece
-                una mezcla fascinante de historia, cultura y vida contemporánea
-              </p>
-              <button
-                type="button"
-                class="btn btn-detalle"
-                data-bs-dismiss="modal"
-              >
-                Cerrar
-              </button>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title fs-5" id="exampleModalLabel">
+              Descripción
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="card border-0 w-100" style="width: 18rem">
+              <img
+                src="../../assets/img/amman02.jpeg"
+                class="card-img-top"
+                alt="Ciudad de Ammán"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ciudad de Ammán</h5>
+                <p class="card-text">
+                 Descubre la Ciudadela que combinan historia antigua y
+                        vida moderna.
+                </p>
+              </div>
             </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-detalle"
+              data-bs-dismiss="modal"
+            >
+              Volver al inicio
+            </button>
           </div>
         </div>
       </div>
-    </article>
+    </div>
 <footer></footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
