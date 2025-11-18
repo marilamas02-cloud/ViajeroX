@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
@@ -27,7 +29,6 @@ body {
 .navbar .dropdown-toggle::after {
   display: none;
 }
-
 
 .button-container:hover {
   width: 300px;
@@ -60,27 +61,21 @@ body {
 .dropdown-item:hover,
 .dropdown-item:focus {
   background-color: #000000;
-  /* Fondo al pasar el mouse */
   color: rgb(0, 0, 0);
-  /* Texto amarillo al pasar el mouse */
 }
 
 .navbar .nav-link,
 .navbar .dropdown-toggle {
   position: relative;
   color: rgb(255, 0, 0);
-
 }
-
 
 .navbar .nav-link,
 .navbar .dropdown-toggle {
   position: relative;
   color: rgb(0, 0, 0);
-
   transition: color 0.3s ease;
 }
-
 
 .navbar .dropdown-toggle::after {
   display: none !important;
@@ -106,26 +101,19 @@ body {
   color: #000;
 }
 
-
-
-
-
 .dropdown-item {
   color: #000000;
   padding: 15px 40px;
   transition: all 0.1s ease;
 }
 
-
 .dropdown-item:hover,
 .dropdown-item:focus {
   background-color: #ff7d00
 }
 
-
 .dropdown-menu.show {
   background-color: #ffecd1;
-  border-radius: 10px;
   border-radius: 10px;
   border: none;
   padding: 10px 0;
@@ -154,9 +142,6 @@ body {
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
-
-
-
 .search-bar:focus {
   outline: none;
   border-color: #000000;
@@ -178,7 +163,6 @@ body {
   color: white;
   font-size: 14px;
   transition: all 0.7s ease;
-  ;
 }
 
 .input::placeholder {
@@ -192,7 +176,6 @@ body {
   outline: none;
 }
 
-
 .search__icon {
   position: absolute;
   right: 10px;
@@ -201,12 +184,10 @@ body {
   fill: #000000;
   cursor: pointer;
   transition: transform 0.3s ease;
-  
 }
 
 .search__icon:hover {
   transform: scale(1.5);
-  
 }
 
 #currencyModal .modal-content {
@@ -277,6 +258,7 @@ body {
   transform: scale(1.6);
   color: #ff7d00
 }
+
 .language-list label,
 .currency-list label {
   display: flex;
@@ -286,7 +268,6 @@ body {
   font-size: 14px;
   cursor: pointer;
   padding: 5px 0;
-  border-bottom: 1px solid transparent;
   transition: all 0.3s ease;
 }
 
@@ -294,22 +275,87 @@ body {
 .currency-list label:hover {
   color: #ff9800;
 }
+
 .language-list input,
 .currency-list input {
   display: none;
 }
+
 .language-list input:checked + span,
 .currency-list input:checked + span {
   color: #ff9800;
   border-bottom: 2px solid #ff9800;
   font-weight: 600;
 }
+
 .language-list label:has(input:checked)::after,
 .currency-list label:has(input:checked)::after {
   content: "✔️";
   font-size: 14px;
   margin-left: 8px;
 }
+
+
+/* ----------------------------------------------------------------------- */
+/* --------------------  MEDIAQUERY AÑADIDO (RESPONSIVE) ----------------- */
+/* ----------------------------------------------------------------------- */
+
+@media (max-width: 992px) {
+
+  /* Logo más chico y alineado */
+  .navbar-brand img {
+    height: 90px !important;
+    margin-top: 10px;
+  }
+
+  /* Navbar más compacto */
+  .navbar {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  /* Texto en negro */
+  .navbar .nav-link,
+  .navbar .dropdown-toggle {
+    color: #000000 !important;
+  }
+
+  /* 🔶 Subrayado naranja */
+  .navbar .nav-link::after,
+  .navbar .dropdown-toggle::before {
+    background-color: #ff7d00 !important;
+  }
+
+  /* Iconos del nav en negro */
+  .navbar .nav-link i,
+  .navbar .dropdown-toggle i {
+    color: #000000 !important;
+  }
+
+  /* Hamburguesa en negro */
+  .navbar-toggler-icon {
+    filter: invert(100%) brightness(0%) !important;
+  }
+
+  /* Dropdown en blanco */
+  .dropdown-menu.show {
+    background-color: #ffffff !important;
+  }
+
+  .dropdown-item {
+    color: #000000 !important;
+  }
+
+  .dropdown-item:hover {
+    background-color: #ff7d00 !important;
+    color: #000 !important;
+  }
+
+  .input {
+    width: 180px;
+  }
+}
+
 
 
 
