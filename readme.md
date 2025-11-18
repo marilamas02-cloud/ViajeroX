@@ -4,7 +4,7 @@ Este proyecto es una página web enfocada en el **frontend**, inspirada en la te
 
 
 
-![visual code](../ViajeroX/assets/img/logoBlanco.png)
+![viajerox](../ViajeroX/assets/img/logoBlanco.png)
 
 ## 🆗 Ingreso a pagina web:
 >
