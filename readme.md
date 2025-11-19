@@ -34,38 +34,44 @@ Este proyecto es una página web enfocada en el **frontend**, inspirada en la te
 
 👤 **Perfil:** 
 - Administrador: Control completo página web.
+- Adm Panel: Cargar información a la pagina.
 - Iniciar sesión: Acceso al perfil del usuario.
 - Registro: Crear nueva cuenta.
 - Colaboración: Participación en contenido o proyectos.
 - Centro ayuda: Asistencia al usuario
 - Descarga app: Acceder a la app de forma explicativa.
 
-🏠 **Comunidad:** 
-- Suscripción: Acceso a la comunidad
-- Comunidad: Noticias y reseñas de viajeros.
-- Sumar millas: Cumplí objetivos y accedé a recompensas.
-- Comercialización: Merchandising exclusivo.
-- Contacto: Comunicación directa con la empresa.
-- Nosotros: Información equipo de trabajo.
+⭐ **Comunidad:** 
+- 🔒 Suscripción: Acceso a la comunidad.
 
-✅ **Servicios Complementarios:** Beneficios exclusivos. Descuentos especiales para suscriptores.😎
+- 🌍 Comunidad: Noticias y reseñas de viajeros.
 
-- Transporte: Rutas rápidas y seguras.
+- ✈️ Sumar millas: Cumplí objetivos y accedé a recompensas.
 
-- Alojamiento: Hospedaje cómodo y accesible.
+- 🛍️ Comercialización: Merchandising exclusivo.
 
-- Gastronomía: Sabores locales y variados.
+- 📞 Contacto: Comunicación directa con la empresa.
 
-- Asistencia Viajero: Ayuda inmediata al turista.
+- 👥 Nosotros: Información equipo de trabajo.
 
-- Guías Ebooks: Información práctica y detallada.
+🛎️ **Servicios Complementarios:** 
+
+-  🚌 Transporte: Rutas rápidas y seguras
+
+-  🏨 Alojamiento: Hospedaje cómodo y accesible
+
+-  🍽️ Gastronomía: Sabores locales y variados
+
+-  🆘 Asistencia Viajero: Ayuda inmediata al turista
+
+-  📚 Guías Ebooks: Información práctica y detallada
 
 
-🌅 **Inicio / Detalle:**
+🏠 **Inicio / Detalle:**
 
-- Inicio: Presenta las 7 maravillas del mundo con imágenes impactantes y cards interactivas que invitan a explorar cada destino.
+- 🔝 Inicio: Presenta las 7 maravillas del mundo con imágenes impactantes y cards interactivas que invitan a explorar cada destino.
 
-- Detalle: Al hacer clic en una maravilla, se muestra información histórica, consejos de viaje, fotos, videos y opiniones de otros viajeros, ofreciendo una guía completa y visualmente atractiva para planificar la visita.
+- 🔍 Detalle: Al hacer clic en una maravilla, se muestra información histórica, consejos de viaje, fotos, videos y opiniones de otros viajeros, ofreciendo una guía completa y visualmente atractiva para planificar la visita.
 
 ## ▶️ Tecnologías utilizadas
 
