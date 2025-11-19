@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body{
+
     background-color: #001524;
     margin: 0;
     padding: 0;
@@ -16,6 +17,9 @@ img{
     gap: 10px;
     align-items: center;
     justify-content: center;
+h3{
+    color: #FF7D00;
+    
 }
 section{
     display: flex;
@@ -30,6 +34,7 @@ h1 a{
     width: 20px;
     
 }
+
 figure img{
     height: 250px;
     width: 250px;
@@ -44,4 +49,24 @@ figure img{
 }
 .btn:hover{
     background-color: #FF7D00;
+
+img{
+    width: 350px;
+    height: 350px;
+
+}
+p{
+    color:#FF7D00;
+    text-align: center;
+    font-family: 12px;
+}
+.btn{
+    color: #FF7D00;
+    background-color: #15616D;
+}
+
+.btn :hover{
+    background-color: #FF7D00;
+
+
 }
