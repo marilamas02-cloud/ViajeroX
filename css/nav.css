@@ -177,7 +177,6 @@ body {
   font-size: 14px;
   margin-left: 8px;
 }
-<<<<<<< HEAD
 @media (max-width: 1200px) {
   .navbar {
     height: 130px;
@@ -198,17 +197,6 @@ body {
     height: 130px;
     padding: 10px 25px;
   }
-=======
-
-
-/* ----------------------------------------------------------------------- */
-/* --------------------  MEDIAQUERY AÑADIDO (RESPONSIVE) ----------------- */
-/* ----------------------------------------------------------------------- */
-
-@media (min-width: 992px) {
-
-  /* Logo más chico y alineado */
->>>>>>> 27af1e246b62319e9e65f16a382d0b800c40b6a9
   .navbar-brand img {
     height: 120px;
   }
