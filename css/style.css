@@ -534,6 +534,7 @@ h2 {
 .layout {
   display: grid;
   gap: 0;
+  grid-template-columns: 270px 1fr;
 
 }
 
@@ -657,7 +658,7 @@ h2 {
 --------------------------------*/
 
 /* Ocultar aside en móviles */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .layout {
     grid-template-columns: 1fr;
   
@@ -717,6 +718,8 @@ h2 {
     flex-wrap: nowrap;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
+    width: 100%;
+    justify-content: space-between;
     
   }
 
@@ -749,7 +752,7 @@ h2 {
   }
 }
 
-@media all and (min-width: 577px) and (max-width: 768px){
+@media all and (min-width: 577px) and (max-width: 767px){
 .siete-maravillas .card {
     width: 18rem;
     max-width: none;
@@ -915,7 +918,7 @@ h2 {
 
  
   .barra-admin {
-    display: block;
+    display: none;
     
   }
 .barra-lateral {
@@ -943,7 +946,11 @@ h2 {
   
 }
 
- @media all and (min-width: 769px) and (max-width:991px) {
+ @media all and (min-width: 768px) and (max-width:991px) {
+  .layout {
+    display: grid;
+    grid-template-columns: 200px 1fr
+  }
 .siete-maravillas h2,
   .experiencias h2,
   .reseñas h2,
@@ -1127,7 +1134,7 @@ h2 {
     height: 20vh;
   }
   .barra-admin {
-    display: block;
+    display: none;
   }
 
   .barra-admin-cel {
@@ -1135,7 +1142,7 @@ h2 {
   }
 
   main {
-    margin-left: 240px;
+    margin-left: 10px;
   }
   .tarjetas-estadisticas .container .card {
     margin-top: 1rem;
@@ -1306,7 +1313,7 @@ h2 {
   }
 
   .adminPanel-main {
-    margin-left: 260px;
+    margin-left: 10px;
   }
   .tarjetas-estadisticas .container .card {
     margin-top: 1rem;
@@ -1321,16 +1328,14 @@ h2 {
     height: 20vh;
   }
   .barra-admin {
-    display: block;
+    display: none;
   }
 
   .barra-admin-cel {
     display: none;
   }
 
-  .adminPanel-main {
-    margin-left: 260px;
-  }
+
   .tarjetas-estadisticas .container .card {
     margin-top: 1rem;
   }
