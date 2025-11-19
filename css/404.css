@@ -1,17 +1,27 @@
-
-.text-color{
-    color: #FF7D00;
-}
-section{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-   justify-content: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    background-color: #001524;
+    margin: 0;
+    padding: 0;
     height: 100vh;
-    align-items: center;
+    font-family:  "Montserrat", sans-serif;
 }
-a{
-    text-decoration: none;
-    width: 200px;
-    
+
+img{
+    width: 350px;
+    height: 350px;
+
+}
+p{
+    color:#FF7D00;
+    text-align: center;
+    font-family: 12px;
+}
+.btn{
+    color: #FF7D00;
+    background-color: #15616D;
+}
+
+.btn :hover{
+    background-color: #FF7D00;
 }

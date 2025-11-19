@@ -1,119 +1,127 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 .body {
   font-family: "Montserrat", sans-serif;
 }
+
 footer {
-    background-color:  #ffecd1;
-    color: #000000;
-    padding: 40px 8%;
-  }
-  .footer-top {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 40px;
-    border-bottom: 1px solid #000000;
-    padding-bottom: 30px;
-  }
+  background-color: #ffecd1;
+  color: #000000;
+  padding: 40px 8%;
+}
 
-  .footer-columnas {
-    flex: 1;
-    min-width: 180px;
-  }
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 30px;
+}
 
-  .footer-columnas h4 {
-    font-size: 16px;
-    margin-bottom: 15px;
-    color: rgb(0, 0, 0);
-  }
+.footer-columnas {
+  flex: 1;
+  min-width: 180px;
+}
 
-  .footer-columnas ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+.footer-columnas h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: rgb(0, 0, 0);
+}
 
-  .footer-columnas ul li {
-    margin-bottom: 10px;
-  }
+.footer-columnas ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-columnas ul li {
+  margin-bottom: 10px;
+}
 
 .footer-columnas ul li a {
-  display: inline-block;         
+  display: inline-block;
   text-decoration: underline;
-  text-decoration-color: inherit;    
+  text-decoration-color: inherit;
   color: #000000;
   font-size: 13px;
   font-weight: 500;
-  transform-origin: center;          
-  transition: color 0.6s ease,       
-              transform 0.6s ease,
-              text-decoration-color 0.6s ease;
+  transform-origin: center;
+  transition: color 0.6s ease,
+    transform 0.6s ease,
+    text-decoration-color 0.6s ease;
 }
 
 .footer-columnas ul li a:hover {
   color: #ff9800;
-  transform: scale(1.08);            
+  transform: scale(1.08);
   text-decoration-color: #ff9800;
 }
 
- 
-
-  .selector {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  select {
-    padding: 10px;
-    border: none;
-    border-radius: 6px;
-    background-color:  #ff7d00;
-    color: rgb(0, 0, 0);
-    font-size: 14px;
-  }
-  .store-buttons img {
-    width: 50px;
-    height: auto;
-    display: block;
-    margin-bottom: 10px;
-    cursor: pointer;
-  }
- .store-buttons img:hover {
-    transform: scale(1.65);
-    transition: all 0.9s ease;
+.selector {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
-  .footer-bottom {
-    text-align: center;
-    font-size: 13px;
-    color: #000000;
-    margin-top: 25px;
-  }
 
-  .payment-icons img {
-    height: 28px;
-    margin-right: 8px;
-    vertical-align: middle;
-  }
+select {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ff7d00;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+}
 
-  .socials {
-    margin-top: 25px;
-  }
+.store-buttons img {
+  width: 50px;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
 
-  .socials img {
-    width: 34px;
-    height: 34px;
-    margin-right: 10px;
-    vertical-align: middle;
-    filter: saturate(100%);
-  }
+.store-buttons img:hover {
+  transform: scale(1.65);
+  transition: all 0.9s ease;
+}
 
-  .socials img:hover {
-    transform: scale(1.65);
-    transition: all 0.9s ease;
-  }
+.footer-bottom {
+  text-align: center;
+  font-size: 13px;
+  color: #000000;
+  margin-top: 25px;
+}
+
+.payment-icons img {
+  height: 28px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.socials {
+  margin-top: 25px;
+}
+
+.socials img {
+  width: 34px;
+  height: 34px;
+  margin-right: 10px;
+  vertical-align: middle;
+  filter: saturate(100%);
+}
+
+.socials img:hover {
+  transform: scale(1.65);
+  transition: all 0.9s ease;
+}
+
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
+
 .footer-logo {
   flex: 1;
   min-width: 180px;
@@ -122,18 +130,156 @@ a {
 }
 
 .footer-logo img.logo-footer {
-  width: 200px;          /* Ajustable */
+  width: 200px;
   height: auto;
   margin-bottom: 15px;
   filter: saturate(110%);
   cursor: pointer;
   transition: transform 0.6s ease;
 }
-
 .footer-logo img.logo-footer:hover {
   transform: scale(1.15);
 }
+@media (max-width: 1200px) {
+  footer {
+    padding: 40px 6%;
+  }
 
+  .footer-top {
+    gap: 30px;
+  }
+
+  .footer-columnas h4 {
+    font-size: 15px;
+  }
+
+  .footer-columnas ul li a {
+    font-size: 12.5px;
+  }
+
+  .footer-logo img.logo-footer {
+    width: 180px;
+  }
+}
+@media (max-width: 992px) {
+  .footer-top {
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .footer-columnas,
+  .footer-logo {
+    flex: 1 1 45%;
+    min-width: 200px;
+  }
+
+  .footer-logo {
+    justify-content: center;
+  }
+
+  .footer-logo img.logo-footer {
+    width: 160px;
+  }
+
+  .selector {
+    align-items: center;
+  }
+
+  select {
+    width: 80%;
+  }
+
+  .store-buttons img {
+    margin: 0 auto 10px auto;
+  }
+
+  .socials {
+    text-align: center;
+  }
+
+  .socials img {
+    margin: 5px;
+  }
+}
+@media (max-width: 768px) {
+  footer {
+    padding: 30px 5%;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-columnas {
+    width: 100%;
+  }
+
+  .footer-logo img.logo-footer {
+    width: 150px;
+  }
+
+  .payment-icons img {
+    height: 24px;
+  }
+
+  .store-buttons img {
+    width: 45px;
+  }
+
+  .footer-columnas h4 {
+    font-size: 14px;
+  }
+
+  .footer-columnas ul li a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) {
+  footer {
+    padding: 25px 5%;
+  }
+
+  .footer-top {
+    gap: 18px;
+  }
+
+  .footer-logo img.logo-footer {
+    width: 130px;
+  }
+
+  .footer-columnas h4 {
+    font-size: 13px;
+  }
+
+  .footer-columnas ul li a {
+    font-size: 11.5px;
+  }
+
+  select {
+    width: 100%;
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .store-buttons img {
+    width: 40px;
+  }
+
+  .socials img {
+    width: 30px;
+    height: 30px;
+    margin: 4px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+    margin-top: 15px;
+  }
+}
 
 
 

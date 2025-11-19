@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #001524 ;
+}
+.cnt{
+    text-align: center;
+    text-decoration: double;
+    font-size:24px ;
+}
+
+section h2{
+     color: #FF7D00;
+}
+section h2:hover{
+    color: #15616D;
+}
+
+section h3:hover{
+     transform: translateY(-3%);
+}
+section{
+    text-align:center;
+    border:2px #FF7D00;
+}
+
+.cards-info{
+    padding: 10px;
+    margin: 10px;
+    height: 300px;
+    display: flex;
+    
+ }
+ h2{
+    text-align: center;
+    color: #15616D;
+ }
+
+.content{
+    padding: 150px;
+    max-width: 1200px;
+    margin: 20px ;
+    flex: 50%;
+    border: 2px solid  #FF7D00;
+    box-shadow:  5px 5px 15px #FF7D00;
+}
+.card-inf .content{
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 30px;
+    text-align: center;
+
+}
+.card-inf{
+    width: 300px ;
+    height: 30s0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-cards{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    width: 250pxpx;
+    box-shadow: 7px 13px 37px #FF7D00 ;
+    margin: 10px;
+    overflow: hidden;
+    cursor: default;
+    transition: all 400ms ease;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0,0.4);
+    transform: translateY(-3%);
+}
+.card .cover{
+    width: 250px;
+    justify-content: center;
+
+}
+
+img{
+    width: 240px;
+    border-radius: 180px;
+    justify-content: center;
+    display: flex;
+    margin: 5px;
+}
+
+.card .description h2{
+    padding: 10px;
+    text-align: center;
+}
+.card .description p{
+    margin-top: 10px;
+    text-align: center;
+}
+.boton-nosotros{
+    padding: 10px 40px;
+    margin: 50px;
+    border: none;
+    text-align: center;
+    background-color: #15616D;
+
+}
+.boton-nosotros:hover{
+    background-color: #FF7D00;
+}
+
+@media (max-width: 768px) {
+    .container.d-flex {
+        flex-direction: column; 
+        flex-wrap: wrap; 
+        gap: 1.5rem; 
+    }
+    
+    .card {
+        width: 90% !important; 
+        margin: 0.5rem 0; 
+    }
+}
