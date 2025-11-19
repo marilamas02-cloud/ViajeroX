@@ -528,116 +528,179 @@ h2 {
   transform: scale(1.1);
   box-shadow: #ff7d00 0 8px 20px;
 }
+/* ------------------------------
+   LAYOUT GENERAL
+--------------------------------*/
+.layout {
+  display: grid;
+  gap: 0;
 
-.container-admin {
-  background-color: var(--color-primary-medium);
-}
-.a-admin:hover {
-  background-color: var(--color-primary-medium);
-  border-radius: 15px;
-  padding: 10px;
-}
-
-.barra-admin-cel {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #222;
-  padding: 10px 0;
-  text-align: center;
-  z-index: 999;
 }
 
-.barra-admin-cel a {
-  color: white;
-  margin: 0 15px;
-  font-size: 1.3rem;
-}
-
-.barra-lateral {
-  width: 30vh;
-  background-color: var(--color-primary-medium);
-  position: fixed;
-  top: 0;
-  left: 0;
+/* ------------------------------
+   ASIDE ESCRITORIO
+--------------------------------*/
+.aside {
+  background: #111;
+  color: #fff;
+  padding: 25px 20px;
+  position: sticky;
   height: 100%;
-  padding-top: 1rem;
-}
-.barra-lateral a {
-  color: white;
-  text-decoration: none;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  border-radius: 10px;
-  margin: 5px 10px;
-}
-.barra-lateral a:hover {
-  background-color: var(--color-primary-dark);
-  color: white;
-  transform: scale(1.08);
+  border-right: 1px solid #222;
 }
 
+.aside h4 {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.aside a {
+  display: block;
+  color: #bbb;
+  padding: 12px 10px;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  transition: all .2s ease;
+}
+
+.aside a:hover {
+  background: #222;
+  color: #fff;
+}
+
+/* ------------------------------
+   CONTENIDO PRINCIPAL
+--------------------------------*/
+.adminPanel-main {
+  padding: 30px;
+  padding-bottom: 60px;
+  overflow-y: auto;
+}
+
+/* ------------------------------
+   ESTADÍSTICAS
+--------------------------------*/
 .card-admin {
-  background-color: var(--color-primary-medium);
-  
-}
-.card-admin:hover {
-  transform: scale(1.08);
-  box-shadow: #15616d 0 7px 15px;
-}
-.boton-adminpanel {
-  background-color: var(--color-primary-dark);
-  border: 0;
-  border-radius: 30px;
-  padding: 5px;
-}
-.boton-adminpanel:hover {
-  background-color: #78290f;
-  transform: scale(1.05);
-  box-shadow: #ff7d00 0 7px 15px;
-}
-.boton-adminNav {
-  background-color: var(--color-primary-medium);
-  border: 0;
-  border-radius: 30px;
-  padding: 10px;
-}
-.boton-adminNav:hover {
-  background-color: var(--color-tertiary-contrast);
+  background: #191919;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 12px;
+  transition: transform .2s ease;
 }
 
-@media all and (max-width: 576px) {
-  .barra-admin {
+.card-admin:hover {
+  transform: translateY(-4px);
+}
+
+/* ------------------------------
+   TABLA
+--------------------------------*/
+.table {
+  color: #fff;
+}
+
+.table thead th {
+  border-bottom: 2px solid #444;
+}
+
+.table tbody tr td,
+.table tbody tr th {
+  border-bottom: 1px solid #333;
+}
+
+/* ------------------------------
+   FORMULARIO ADMIN
+--------------------------------*/
+.container-admin {
+  background: #171717;
+  border-radius: 15px;
+  border: 1px solid #333;
+  color: #fff;
+}
+
+.boton-adminpanel {
+  background: #0d6efd;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background .2s ease;
+}
+
+.boton-adminpanel:hover {
+  background: #0a58ca;
+}
+
+/* ------------------------------
+   NAV SECUNDARIO (barra-admin)
+   Ocultamos el del HTML duplicado si no lo necesitás
+--------------------------------*/
+.barra-admin {
+  display: none; /* si no lo usás, escondido */
+}
+
+/* ------------------------------
+   RESPONSIVE
+--------------------------------*/
+
+/* Ocultar aside en móviles */
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+  
+  }
+
+  .aside {
     display: none;
   }
 
-  .barra-admin-cel {
+  .adminPanel-main {
+    padding: 15px;
+  }
+
+  /* Si querés activar la barra móvil en algún momento */
+  .barra-admin {
+    display: block;
+  }
+}
+
+/* Ajuste desktop grande */
+@media (min-width: 1200px) {
+  .layout {
+    grid-template-columns: 270px 1fr;
+  }
+}
+
+
+@media all and (max-width: 576px) {
+  
+.aside {
+    display: none;
+  }
+
+  .barra-admin {
     display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 12vh;
     background: var(--color-primary-medium);
-    z-index: 999;
     align-items: center;
     justify-content: space-between;
     padding: 0 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     margin-bottom: 1rem;
+    
   }
 
-  .barra-admin-cel h4 {
+  .barra-admin h4 {
     font-size: 1rem;
     color: #fff;
     margin: 0;
     display: none;
   }
 
-  .barra-admin-cel .barra-lateral-cel {
+  .barra-admin .barra-lateral {
     display: flex;
     align-items: center;  
     flex-wrap: nowrap;
@@ -645,15 +708,15 @@ h2 {
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     width: 100%;
-    gap: 0.5rem;
+    gap: 2rem;
 
   }
 
-  .barra-admin-cel .barra-lateral-cel::-webkit-scrollbar {
+  .barra-admin .barra-lateral::-webkit-scrollbar {
     display: none;
   }
 
-  .barra-admin-cel a i {
+  .barra-admin a i {
     font-size: 1.4rem;
     color: #fff;
     flex-shrink: 0;
@@ -661,7 +724,8 @@ h2 {
 
   .adminPanel-main {
     margin-left: 0;
-    padding-top: 80px; 
+    padding: 0;
+    
   }
  
   .tarjetas-estadisticas .container .card {

@@ -1,0 +1,106 @@
+/* /* ------------------------------
+   LAYOUT GENERAL
+--------------------------------*/
+.layout {
+  display: grid;
+  /* aside + contenido */
+  gap: 0;
+  
+}
+
+/* ------------------------------
+   ASIDE ESCRITORIO
+--------------------------------*/
+.aside {
+  background: #111;
+  color: #fff;
+  padding: 25px 20px;
+  position: sticky;
+  height: 100%;
+  border-right: 1px solid #222;
+}
+
+.aside h4 {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.aside a {
+  display: block;
+  color: #bbb;
+  padding: 12px 10px;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  transition: all .2s ease;
+}
+
+.aside a:hover {
+  background: #222;
+  color: #fff;
+}
+
+/* ------------------------------
+   CONTENIDO PRINCIPAL
+--------------------------------*/
+.adminPanel-main {
+  padding: 30px;
+  padding-bottom: 60px;
+  overflow-y: auto;
+}
+
+/* ------------------------------
+   ESTADÍSTICAS
+--------------------------------*/
+.card-admin {
+  background: #191919;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 12px;
+  transition: transform .2s ease;
+}
+
+.card-admin:hover {
+  transform: translateY(-4px);
+}
+
+/* ------------------------------
+   TABLA
+--------------------------------*/
+.table {
+  color: #fff;
+}
+
+.table thead th {
+  border-bottom: 2px solid #444;
+}
+
+.table tbody tr td,
+.table tbody tr th {
+  border-bottom: 1px solid #333;
+}
+
+/* ------------------------------
+   FORMULARIO ADMIN
+--------------------------------*/
+.container-admin {
+  background: #171717;
+  border-radius: 15px;
+  border: 1px solid #333;
+  color: #fff;
+}
+
+.boton-adminpanel {
+  background: #0d6efd;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background .2s ease;
+}
+
+.boton-adminpanel:hover {
+  background: #0a58ca;
+}
+ */
