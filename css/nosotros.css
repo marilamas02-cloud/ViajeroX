@@ -9,20 +9,20 @@
 body{
     background-color: #001524 ;
 }
-header{
+.cnt{
     text-align: center;
     text-decoration: double;
     font-size:24px ;
 }
 
-header h1{
+section h2{
      color: #FF7D00;
 }
-header h1:hover{
+section h2:hover{
     color: #15616D;
 }
 
-header h3:hover{
+section h3:hover{
      transform: translateY(-3%);
 }
 section{
@@ -117,4 +117,17 @@ img{
 }
 .boton-nosotros:hover{
     background-color: #FF7D00;
+}
+
+@media (max-width: 768px) {
+    .container.d-flex {
+        flex-direction: column; 
+        flex-wrap: wrap; 
+        gap: 1.5rem; 
+    }
+    
+    .card {
+        width: 90% !important; 
+        margin: 0.5rem 0; 
+    }
 }
