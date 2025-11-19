@@ -1,6 +1,10 @@
+body{
+   background-color: #001524;
 
-.text-color{
+}
+h3{
     color: #FF7D00;
+    
 }
 section{
     display: flex;
@@ -14,4 +18,23 @@ a{
     text-decoration: none;
     width: 200px;
     
+}
+img{
+    width: 350px;
+    height: 350px;
+
+}
+p{
+    color:#FF7D00;
+    text-align: center;
+    font-family: 12px;
+}
+.btn{
+    color: #FF7D00;
+    background-color: #15616D;
+}
+
+.btn :hover{
+    background-color: #FF7D00;
+
 }
