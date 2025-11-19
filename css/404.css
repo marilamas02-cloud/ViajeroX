@@ -1,7 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body{
-   background-color: #001524;
 
+    background-color: #001524;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family:  "Montserrat", sans-serif;
 }
+img{
+    width: 50%;
+}
+.text-color{
+    color: #FFECD1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
 h3{
     color: #FF7D00;
     
@@ -14,11 +29,27 @@ section{
     height: 100vh;
     align-items: center;
 }
-a{
-    text-decoration: none;
-    width: 200px;
+h1 a{
+   
+    width: 20px;
     
 }
+
+figure img{
+    height: 250px;
+    width: 250px;
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.btn{
+    border-radius: 5px;
+    background-color: #15616D;
+    box-shadow:1px 1px 2px #FF7D00;
+}
+.btn:hover{
+    background-color: #FF7D00;
+
 img{
     width: 350px;
     height: 350px;
@@ -36,5 +67,6 @@ p{
 
 .btn :hover{
     background-color: #FF7D00;
+
 
 }
