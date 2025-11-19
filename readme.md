@@ -94,6 +94,9 @@ La página web está diseñada para ofrecer una experiencia de viaje interactiva
 
 ## ✨ Características principales
 
+**Administración y Panel:** 
+Se incorporó una página exclusiva para el administrador que actúa como panel de control del sitio. Desde allí se pueden gestionar contenidos, supervisar la actividad, actualizar información y administrar las funciones interactivas para mantener la plataforma organizada y en correcto funcionamiento.
+
 **Animaciones interactivas:** Elementos que responden a la interacción del usuario, haciendo la navegación más dinámica y atractiva.
 
 **Modales de video e información:** Para mostrar contenido detallado de cada lugar de forma elegante.
