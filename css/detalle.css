@@ -523,8 +523,8 @@ a:hover {
   .viajerox-masonry-item h4 {
     font-size: 0.9rem;
   }
-   .cardMovil {
-    width: 92%;          
+    .cardMovil {
+    width: 92%;
     margin: 1.5rem auto;
     border-radius: 1rem;
   }
@@ -536,6 +536,10 @@ a:hover {
 
   .cardMovil-body {
     padding: 1.5rem;
+  }
+
+  .cardMovil-text {
+    font-size: 0.95rem;
   }
    .cardSeguros {
     margin: 2rem auto;
@@ -585,9 +589,9 @@ a:hover {
     font-size: 0.9rem;
     padding: 0.4rem 1rem;
   }
-  .cardMovil {
-    width: 85%;          
-    margin: 2.5rem auto; 
+    .cardMovil {
+    width: 85%;
+    margin: 2.5rem auto;
     border-radius: 1.2rem;
   }
 
@@ -597,6 +601,10 @@ a:hover {
 
   .cardMovil-body {
     padding: 2rem;
+  }
+
+  .cardMovil-text {
+    font-size: 1rem;
   }
     .cardSeguros {
     margin: 2.5rem auto;

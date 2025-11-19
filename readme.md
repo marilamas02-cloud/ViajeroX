@@ -4,11 +4,11 @@ Este proyecto es una página web enfocada en el **frontend**, inspirada en la te
 
 
 
-![visual code](ViajeroX/assets/img/logo.png)
+![viajerox](../ViajeroX/assets/img/logoBlanco.png)
 
 ## 🆗 Ingreso a pagina web:
 >
-[dazn.com](https://www.dazn.com/ "Sitio oficial")
+[www.viajerox.com](https://viajero-x.netlify.app/ "Sitio oficial")
 
 
 ## ✅ Integrantes:
@@ -32,46 +32,46 @@ Este proyecto es una página web enfocada en el **frontend**, inspirada en la te
 ## 📂  Estructura del proyecto
 
 
-👤 **Administrador:** Control completo página web
+👤 **Perfil:** 
+- Administrador: Control completo página web.
+- Adm Panel: Cargar información a la pagina.
+- Iniciar sesión: Acceso al perfil del usuario.
+- Registro: Crear nueva cuenta.
+- Colaboración: Participación en contenido o proyectos.
+- Centro ayuda: Asistencia al usuario
+- Descarga app: Acceder a la app de forma explicativa.
 
-🏠 **Inicio / Detalle:** Novedades y cards interactivas
-Información maravillas del mundo
+⭐ **Comunidad:** 
+- 🔒 Suscripción: Acceso a la comunidad.
 
-🔑 **Registro / Login / Contacto / Nosotros / Centro Ayuda / Descarga App:**
+- 🌍 Comunidad: Noticias y reseñas de viajeros.
 
-- Registro y login usuarios.
+- ✈️ Sumar millas: Cumplí objetivos y accedé a recompensas.
 
-- Contacto rápido con empresa.
+- 🛍️ Comercialización: Merchandising exclusivo.
 
-- Información equipo de trabajo.
+- 📞 Contacto: Comunicación directa con la empresa.
 
-- Centro ayuda al usuario.
+- 👥 Nosotros: Información equipo de trabajo.
 
-- Descarga aplicación explicativa.
+🛎️ **Servicios Complementarios:** 
 
-💳 **Suscripción / Comunidad:**
+-  🚌 Transporte: Rutas rápidas y seguras
 
-- Gestión de suscripciones activas.
+-  🏨 Alojamiento: Hospedaje cómodo y accesible
 
-- Espacio comunidad y colaboración.
+-  🍽️ Gastronomía: Sabores locales y variados
 
-🛎️ Servicio Complementarios
----
+-  🆘 Asistencia Viajero: Ayuda inmediata al turista
 
-🚌 Transporte: Rutas rápidas y seguras
+-  📚 Guías Ebooks: Información práctica y detallada
 
-🏨 Alojamiento: Hospedaje cómodo y accesible
 
-🍽️ Gastronomía: Sabores locales y variados
+🏠 **Inicio / Detalle:**
 
-🆘 Asistencia Viajero: Ayuda inmediata al turista
+- 🔝 Inicio: Presenta las 7 maravillas del mundo con imágenes impactantes y cards interactivas que invitan a explorar cada destino.
 
-✈️ Sumar Millas: Beneficios por cada viaje
-
-🤝 Colaboración: Participación en proyectos conjuntos
-
-📚 Guías Ebooks: Información práctica y detallada
-
+- 🔍 Detalle: Al hacer clic en una maravilla, se muestra información histórica, consejos de viaje, fotos, videos y opiniones de otros viajeros, ofreciendo una guía completa y visualmente atractiva para planificar la visita.
 
 ## ▶️ Tecnologías utilizadas
 
@@ -88,8 +88,18 @@ Información maravillas del mundo
 
 
 
-## ☑️ Características del Proyecto
+## ☑️ Descripción del Proyecto
 
-La página cuenta con formularios funcionales de login, registro y contacto (solo frontend). Está diseñada para ser responsive en todos los dispositivos, garantizando una experiencia óptima en móviles, tablets y desktops. 
+La página web está diseñada para ofrecer una experiencia de viaje interactiva y moderna. Incluye formularios funcionales de login, registro y contacto (solo frontend) y es completamente responsive, adaptándose perfectamente a móviles, tablets y desktops.
 
-Las secciones incluyen animaciones interactivas que responden al usuario, haciendo la navegación más dinámica. Además, se aplican modales de video e información para mostrar contenido detallado de cada lugar, y cards interactivas en la página principal que permiten acceder a más información de manera atractiva y organizada. Por último, la navegación es responsiva gracias a un navbar adaptativo, que mantiene la coherencia en todo el sitio.
+## ✨ Características principales
+
+**Animaciones interactivas:** Elementos que responden a la interacción del usuario, haciendo la navegación más dinámica y atractiva.
+
+**Modales de video e información:** Para mostrar contenido detallado de cada lugar de forma elegante.
+
+**Cards interactivas:** En la página principal, permiten explorar información adicional de manera organizada y visualmente atractiva.
+
+**Navbar adaptativo:** Navegación responsiva que mantiene la coherencia en todo el sitio.
+
+Con este diseño, los usuarios pueden explorar las 7 maravillas del mundo de manera intuitiva, divertida y visualmente impactante.

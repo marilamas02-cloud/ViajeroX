@@ -1,13 +1,212 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="Streaming de viajes" />
+    <meta
+      name="keywords"
+      content="Streaming, viajes, 7Maravillas, paisajes, turismo"
+    />
+    <meta
+      name="author"
+      content="Marisol Lamas, Ornella Ricobelli, Facundo Camano, Octavio Fernandez Caram"
+    />
+    <title>ViajeroX</title>
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
      <link rel="stylesheet" href="../css/reg.css">
-    <title>Registro de usuario</title>
+      <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="shortcut icon" href="../assets/img/logoBlanco.png" type="image/x-icon">
 </head>
 <body>
+    <header>
+    <nav class="navbar navbar-expand-lg my-navbar">
+        <div class="container-fluid d-flex align-items-center justify-content-between flex-wrap">         
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../assets/img/LOGOEDITADO1.png" alt="Logo" height="180" class="d-inline-block align-text-top">
+            </a>         
+            <div class="search-container me-3">
+                <input class="input" type="text" placeholder="Buscar...">
+                <svg viewBox="0 0 24 24" class="search__icon" aria-hidden="true">
+                    <g>
+                        <path
+                            d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-start" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0" style="gap: 10px; margin-left: 50px;">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-gear-fill me-1"></i> SERV.COMPLEMENTARIOS
+                        </a>
+                        <ul class="dropdown-menu modal-style">
+                            <li><a class="dropdown-item" href="./alojamiento.html"><i
+                                        class="bi bi-house-door me-2"></i>ALOJAMIENTO</a></li>
+                            <li><a class="dropdown-item" href="./transporte.html"><i
+                                        class="bi bi-bus-front me-2"></i>TRANSPORTE</a></li>
+                            <li><a class="dropdown-item" href="./asistenciaViajero.html"><i
+                                        class="bi bi-heart-pulse me-2"></i>ASISTENCIA VIAJERO</a></li>
+                            <li><a class="dropdown-item" href="./gastronomia.html"><i
+                                        class="bi bi-cup-hot me-2"></i>GASTRONOMIA</a></li>
+                            <li><a class="dropdown-item" href="./guias.html"><i class="bi bi-book me-2"></i>GUIAS EBOOK</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-people-fill me-1"></i> COMUNIDAD
+                        </a>
+                        <ul class="dropdown-menu modal-style">
+                            <li><a class="dropdown-item" href="./suscripcion.html"><i
+                                        class="bi bi-person-badge me-2"></i>SUSCRIPCION</a></li>
+                            <li><a class="dropdown-item" href="./comunidad.html"><i
+                                        class="bi bi-people me-2"></i>NUESTRA COMUNIDAD</a></li>
+                            <li><a class="dropdown-item" href="./millas.html"><i
+                                        class="bi bi-airplane-engines me-2"></i>SUMAR MILLAS</a></li>
+                            <li><a class="dropdown-item" href="./comercializacion.html"><i
+                                        class="bi bi-shop me-2"></i>TIENDA</a></li>
+                            <li><a class="dropdown-item" href="./contacto.html"><i
+                                        class="bi bi-envelope-paper me-2"></i>CONTACTO</a></li>
+                            <li><a class="dropdown-item" href="./nosotros.html"><i
+                                        class="bi bi-info-circle me-2"></i>NOSOTROS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#currencyModal">
+                            <i class="bi bi-translate me-1"></i> ES/USD
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-person-circle me-1"></i> PERFIL
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./login.html"><i
+                                        class="bi bi-box-arrow-in-right me-2"></i>INICIAR SESION</a></li>
+                            <li><a class="dropdown-item" href="./registro.html"><i
+                                        class="bi bi-person-plus me-2"></i>REGISTRARSE</a></li>
+                            <li><a class="dropdown-item" href="./colaboraciones.html"><i
+                                        class="bi bi-people me-2"></i>COLABORACION</a></li>
+                            <li><a class="dropdown-item" href="./centroAyuda.html"><i
+                                        class="bi bi-question-circle me-2"></i>AYUDA</a></li>
+                            <li><a class="dropdown-item" href="./descargaApp.html"><i
+                                        class="bi bi-download me-2"></i>DESCARGA LA APP</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div> 
+        </div> 
+    <section aria-labelledby="currencyModalLabel">
+        <div class="modal fade" id="currencyModal" tabindex="-1" aria-labelledby="currencyModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-header bg-dark text-white">
+                        <h5 class="modal-title" id="currencyModalLabel">Configuración de idioma y divisa</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h5 class="mb-3 fw-bold">Idioma</h5>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled language-list">
+                                        <li><label><input type="radio" name="language"> English (United States)</label>
+                                        </li>
+                                        <li><label><input type="radio" name="language"> Español (México)</label></li>
+                                        <li><label><input type="radio" name="language"> Bahasa Indonesia</label></li>
+                                        <li><label><input type="radio" name="language"> Bahasa Melayu</label></li>
+                                        <li><label><input type="radio" name="language"> Čeština</label></li>
+                                        <li><label><input type="radio" name="language"> Deutsch (Österreich)</label>
+                                        </li>
+                                        <li><label><input type="radio" name="language"> 简体中文</label></li>
+                                        <li><label><input type="radio" name="language"> 繁體中文（台灣）</label></li>
+                                        <li><label><input type="radio" name="language"> Italiano</label></li>
+                                        <li><label><input type="radio" name="language"> Magyar</label></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled language-list">
+                                        <li><label><input type="radio" name="language"> Polski</label></li>
+                                        <li><label><input type="radio" name="language"> Română</label></li>
+                                        <li><label><input type="radio" name="language"> Српски</label></li>
+                                        <li><label><input type="radio" name="language"> Türkçe</label></li>
+                                        <li><label><input type="radio" name="language"> Русский</label></li>
+                                        <li><label><input type="radio" name="language"> 한국어</label></li>
+                                        <li><label><input type="radio" name="language"> Français</label></li>
+                                        <li><label><input type="radio" name="language"> Deutsch (Schweiz)</label></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>             
+                    <div class="modal-body">
+                        <h5 class="mb-3 fw-bold">Divisa</h5>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <ul class="list-unstyled currency-list">
+                                        <li><label><input type="radio" name="currency"> Dólar americano $</label></li>
+                                        <li><label><input type="radio" name="currency"> Dólar australiano A$</label>
+                                        </li>
+                                        <li><label><input type="radio" name="currency"> Dólar canadiense C$</label></li>
+                                        <li><label><input type="radio" name="currency"> Euro €</label></li>
+                                        <li><label><input type="radio" name="currency"> Franco suizo CHF</label></li>
+                                        <li><label><input type="radio" name="currency"> Libra esterlina £</label></li>
+                                        <li><label><input type="radio" name="currency"> Baht tailandés ฿</label></li>
+                                        <li><label><input type="radio" name="currency"> Corona checa Kč</label></li>
+                                        <li><label><input type="radio" name="currency"> Corona danesa DKK</label></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul class="list-unstyled currency-list">
+                                        <li><label><input type="radio" name="currency"> Dírham EAU د.إ</label></li>
+                                        <li><label><input type="radio" name="currency"> Dírham marroquí د.م.‏</label>
+                                        </li>
+                                        <li><label><input type="radio" name="currency"> Dólar de Hong Kong HK$</label>
+                                        </li>
+                                        <li><label><input type="radio" name="currency"> Dólar de Nueva Zelanda
+                                                NZ$</label></li>
+                                        <li><label><input type="radio" name="currency"> Dólar de Singapur S$</label>
+                                        </li>
+                                        <li><label><input type="radio" name="currency"> Dólar vietnamita ₫</label></li>
+                                        <li><label><input type="radio" name="currency"> Forinto húngaro Ft</label></li>
+                                        <li><label><input type="radio" name="currency"> Franco suizo CHF</label></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul class="list-unstyled currency-list">
+                                        <li><label><input type="radio" name="currency"> Peso argentino $</label></li>
+                                        <li><label><input type="radio" name="currency"> Peso dominicano RD$</label></li>
+                                        <li><label><input type="radio" name="currency"> Bolívar venezolano Bs.</label>
+                                        </li>
+                                        <li><label><input type="radio" name="currency"> Real brasileño R$</label></li>
+                                        <li><label><input type="radio" name="currency"> Sol peruano S/</label></li>
+                                        <li><label><input type="radio" name="currency"> Yen japonés ¥</label></li>
+                                        <li><label><input type="radio" name="currency"> Yuan chino ¥</label></li>
+                                        <li><label><input type="radio" name="currency"> Won surcoreano ₩</label></li>
+                                        <li><label><input type="radio" name="currency"> Rupia india ₹</label></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div> 
+        </div> 
+    </section>
+</header>
     <main>
     <section>
 
@@ -72,7 +271,105 @@
  </form>
 </section>
     </main>
-    
+    <footer>
+    <div class="footer-top">
+      <div class="footer-col footer-logo">
+        <a href="../index.html" target="_blank" rel="noopener noreferrer">
+          <img src="../assets/img/LOGOEDITADO1.png" alt="Logo ViajeroX" class="logo-footer">
+        </a>
+      </div>
+      <div class="footer-col">
+        <h4>Idioma</h4>
+        <div class="selector">
+          <select>
+            <option>Español (España)</option>
+            <option>Español (Latinoamérica)</option>
+            <option>English</option>
+            <option>Français</option>
+            <option>Italiano</option>
+            <option>Deutsch (Österreich)</option>
+            <option>简体中文</option>
+          </select>
+          <h4>Moneda</h4>
+          <select>
+            <option>Dólar americano ($)</option>
+            <option>Euro (€)</option>
+            <option>Peso argentino ($)</option>
+            <option>Libra esterlina (£)</option>
+            <option>Yen japonés (¥)</option>
+          </select>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Móvil</h4>
+        <div class="store-buttons">
+          <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/img/google-play.png" alt="Google Play" class="google-play-img">
+          </a>
+          <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/img/pago-de-apple.png" alt="App Store">
+          </a>
+        </div>
+      </div>
+      <div class="footer-columnas">
+        <h4>ASISTENCIA</h4>
+        <ul>
+          <li><a href="./contacto.html">CONTACTO</a></li>
+          <li><a href="./404.html">INFORMACION LEGAL</a></li>
+          <li><a href="./404.html">POLITICA Y PRIVACIDAD</a></li>
+          <li><a href="./404.html">COOKIES Y PREFERENCIAS</a></li>
+          <li><a href="./404.html">TERMINOS Y CONDICIONES GENERALES</a></li>
+          <li><a href="./404.html">MAPA DEL SITIO</a></li>
+          <li><a href="./404.html">INFORMACION CONFORME A LA LEY DE SERVICIOS DIGITALES</a></li>
+          <li><a href="./404.html">NO VENDER NI COMPARTIR MI INFORMACION PERSONAL</a></li>
+        </ul>
+      </div>
+      <div class="footer-columnas">
+        <h4>EMPRESA</h4>
+        <ul>
+          <li><a href="./nosotros.html">NOSOTROS</a></li>
+          <li><a href="./404.html">EMPLEO</a></li>
+          <li><a href="./404.html">BLOG</a></li>
+          <li><a href="./404.html">PRENSA</a></li>
+          <li><a href="./404.html">TARJETAS REGALO</a></li>
+          <li><a href="./404.html">EXPLORER</a></li>
+        </ul>
+      </div>
+      <div class="footer-columnas">
+        <h4>TRABAJA CON NOSOTROS</h4>
+        <ul>
+          <li><a href="./404.html">COMO PROVEEDOR DE ACTIVIDADES</a></li>
+          <li><a href="./404.html">COMO CREADOR DE CONTENIDO</a></li>
+          <li><a href="./suscripcion.html">COMO AFILIADO</a></li>
+        </ul>
+        <h4>METODOS DE PAGO</h4>
+        <div class="payment-icons" style="margin-top:15px;">
+          <img src="../assets/img/paypal.png" alt="PayPal">
+          <img src="../assets/img/visa.png" alt="Visa">
+          <img src="../assets/img/mastercard.png" alt="Mastercard">
+        </div>
+        <div class="socials">
+          <h4>ENCONTRANOS EN</h4>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/img/instagram (1).png" alt="Instagram" class="social-icon">
+          </a>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/img/facebook.png" alt="Facebook" class="social-icon">
+          </a>
+          <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/img/tik-tok.png" alt="TikTok" class="social-icon">
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/img/twiiiter.png" alt="X" class="social-icon">
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom"></div>
+      <div class="footer-content">
+        <p>© 2025 ViajeroX. Todos los derechos reservados.</p>
+        <p>Creado por <span class="autor">ViajerosX</span></p>
+      </div>
+  </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
