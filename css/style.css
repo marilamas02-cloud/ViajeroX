@@ -572,9 +572,9 @@ h2 {
    CONTENIDO PRINCIPAL
 --------------------------------*/
 .adminPanel-main {
-  padding: 30px;
+  
   padding-bottom: 60px;
-  overflow-y: auto;
+  
 }
 
 /* ------------------------------
@@ -598,6 +598,17 @@ h2 {
 .table {
   color: #fff;
 }
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table-responsive .tabla{
+  width: 100%;
+  border-collapse: collapse;
+}
+
 
 .table thead th {
   border-bottom: 2px solid #444;
@@ -704,12 +715,9 @@ h2 {
     display: flex;
     align-items: center;  
     flex-wrap: nowrap;
-    overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
-    width: 100%;
-    gap: 2rem;
-
+    
   }
 
   .barra-admin .barra-lateral::-webkit-scrollbar {
@@ -725,6 +733,7 @@ h2 {
   .adminPanel-main {
     margin-left: 0;
     padding: 0;
+    overflow-x: hidden
     
   }
  
@@ -920,6 +929,7 @@ h2 {
   .adminPanel-main {
     margin-left: 220px; 
     padding: 2rem 1rem;
+    
   }
 
 
