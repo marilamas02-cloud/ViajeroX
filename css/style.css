@@ -7,19 +7,13 @@
 }
 
 :root {
-  /* Colores primarios */
+  
   --color-primary-dark: #001524;
   --color-primary-medium: #15616d;
-
-  /* Colores secundarios */
   --color-secondary-light: #ffecd1;
   --color-secondary-accent: #ff7d00;
-
-  /* Color terciario / acento especial */
   --color-tertiary-contrast: #78290f;
-  /* 🧱 Tipografía */
   --fuente-principal: "Montserrat", sans-serif;
-
   --texto: 16px;
   --titulares: 24px;
   --description: 1rem;
@@ -528,9 +522,6 @@ h2 {
   transform: scale(1.1);
   box-shadow: #ff7d00 0 8px 20px;
 }
-/* ------------------------------
-   LAYOUT GENERAL
---------------------------------*/
 .layout {
   display: grid;
   gap: 0;
@@ -538,9 +529,6 @@ h2 {
 
 }
 
-/* ------------------------------
-   ASIDE ESCRITORIO
---------------------------------*/
 .aside {
   background: #111;
   color: #fff;
@@ -569,18 +557,12 @@ h2 {
   color: #fff;
 }
 
-/* ------------------------------
-   CONTENIDO PRINCIPAL
---------------------------------*/
 .adminPanel-main {
   
   padding-bottom: 60px;
   
 }
 
-/* ------------------------------
-   ESTADÍSTICAS
---------------------------------*/
 .card-admin {
   background: #191919;
   color: #fff;
@@ -593,9 +575,6 @@ h2 {
   transform: translateY(-4px);
 }
 
-/* ------------------------------
-   TABLA
---------------------------------*/
 .table {
   color: #fff;
 }
@@ -620,9 +599,6 @@ h2 {
   border-bottom: 1px solid #333;
 }
 
-/* ------------------------------
-   FORMULARIO ADMIN
---------------------------------*/
 .container-admin {
   background: #171717;
   border-radius: 15px;
@@ -645,19 +621,10 @@ h2 {
   background: #0a58ca;
 }
 
-/* ------------------------------
-   NAV SECUNDARIO (barra-admin)
-   Ocultamos el del HTML duplicado si no lo necesitás
---------------------------------*/
 .barra-admin {
-  display: none; /* si no lo usás, escondido */
+  display: none; 
 }
 
-/* ------------------------------
-   RESPONSIVE
---------------------------------*/
-
-/* Ocultar aside en móviles */
 @media (max-width: 767px) {
   .layout {
     grid-template-columns: 1fr;
@@ -672,19 +639,17 @@ h2 {
     padding: 15px;
   }
 
-  /* Si querés activar la barra móvil en algún momento */
+  
   .barra-admin {
     display: block;
   }
 }
 
-/* Ajuste desktop grande */
 @media (min-width: 1200px) {
   .layout {
     grid-template-columns: 270px 1fr;
   }
 }
-
 
 @media all and (max-width: 576px) {
   
@@ -737,14 +702,12 @@ h2 {
     margin-left: 0;
     padding: 0;
     overflow-x: hidden
-    
   }
  
   .tarjetas-estadisticas .container .card {
     margin-top: 2rem;
     padding: 1rem;
     
-   
   }
 
   .tabla .table {
@@ -1335,73 +1298,7 @@ h2 {
     display: none;
   }
 
-
   .tarjetas-estadisticas .container .card {
     margin-top: 1rem;
-  }
-}
-
-.login-box {
-  background-color: transparent;
-  border-radius: 10px;
-  border: 1 solid black;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}
-.login-admin {
-  background-image: url(../assets/img/admin-fondo.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100vh;
-}
-.login-box input {
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 8px;
-  padding: 10px 15px;
-  color: white;
-  width: 100%;
-  margin-bottom: 15px;
-}
-.boton-admin {
-  display: inline-block;
-  background-color: var(--color-primary-dark);
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 25px;
-  border-radius: 10px;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.boton-admin:hover {
-  background-color: var(--color-tertiary-contrast);
-  transform: scale(1.05);
-}
-@media (max-width: 576px) {
-  .login-admin {
-    padding-top: 20vh;
-  }
-
-  .login-box {
-    padding: 1.5rem;
-    backdrop-filter: blur(8px);
-  }
-}
-
-@media (min-width: 768px) {
-  .login-admin {
-    padding: 15vh;
-  }
-
-  .login-box {
-    width: 60%;
-  }
-}
-
-@media (min-width: 992px) {
-  .login-box {
-    width: 400px;
   }
 }
