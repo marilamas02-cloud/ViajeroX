@@ -137,16 +137,9 @@ a {
   cursor: pointer;
   transition: transform 0.6s ease;
 }
-
 .footer-logo img.logo-footer:hover {
   transform: scale(1.15);
 }
-
-/* =====================================================
-   MEDIA QUERIES - RESPONSIVE FOOTER
-===================================================== */
-
-/* --- Laptops (≤1200px) --- */
 @media (max-width: 1200px) {
   footer {
     padding: 40px 6%;
@@ -168,8 +161,6 @@ a {
     width: 180px;
   }
 }
-
-/* --- Tablets (≤992px) --- */
 @media (max-width: 992px) {
   .footer-top {
     justify-content: center;
@@ -211,8 +202,6 @@ a {
     margin: 5px;
   }
 }
-
-/* --- Móviles horizontales (≤768px) --- */
 @media (max-width: 768px) {
   footer {
     padding: 30px 5%;
@@ -249,8 +238,6 @@ a {
     font-size: 12px;
   }
 }
-
-/* --- Móviles pequeños (≤576px) --- */
 @media (max-width: 576px) {
   footer {
     padding: 25px 5%;
