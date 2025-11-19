@@ -99,18 +99,19 @@ body {
 }
 .search-container {
   position: relative;
-  display: flex;
-  align-items: center;
+  display: inline-block;
+  max-width: 220px;
+  width: 100%;
 }
 .input {
-  width: 280px;
-  padding: 6px 30px 6px 12px;
-  border-radius: 100px;
-  border: 4px solid #15616d;
-  background-color: #5f5c5c9e;
-  color: white;
-  font-size: 14px;
-  transition: all 0.7s ease;
+  width: 100%;
+  padding: .45rem .9rem;
+  padding-right: 2.6rem; /* espacio para icono */
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: #fff;
+  color: #000;
+  box-sizing: border-box;
 }
 .input::placeholder {
   color: #fff;
@@ -124,14 +125,26 @@ body {
 .search__icon {
   position: absolute;
   right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
   width: 18px;
   height: 18px;
-  fill: #000;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+  fill: currentColor;
+  color: rgba(0,0,0,0.6);
+  pointer-events: none;
 }
-.search__icon:hover {
-  transform: scale(1.5);
+
+/* ajustes para logo y búsqueda */
+.navbar-logo {
+  max-height: 56px;
+  height: auto;
+  width: auto;
+  display: block;
+}
+
+/* ocultar buscador en móviles pequeños */
+@media (max-width: 767.98px) {
+  .search-container { display: none; }
 }
 #currencyModal .modal-content {
   background-color: #ffecd1;
