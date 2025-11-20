@@ -8,7 +8,7 @@ Este proyecto es una página web enfocada en el **frontend**, inspirada en la te
 
 ## 🆗 Ingreso a pagina web:
 >
-[www.viajerox.com](https://viajero-x.netlify.app/ "Sitio oficial")
+[www.viajerox.com](https://viajero-x.vercel.app// "Sitio oficial")
 
 
 ## ✅ Integrantes:
