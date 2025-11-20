@@ -6,129 +6,150 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-body{
-    background-color: #001524 ;
-}
-.cnt{
-    text-align: center;
-    text-decoration: double;
-    font-size:24px ;
+.nosotros-page {
+  padding: 40px 20px;
+  color: #001524;
+  
 }
 
-section h2{
-     color: #FF7D00;
-}
-section h2:hover{
-    color: #15616D;
-}
-
-section h3:hover{
-     transform: translateY(-3%);
-}
-section{
-    text-align:center;
-    border:2px #FF7D00;
+.nosotros-page h2,
+.nosotros-page h3,
+.nosotros-page h5 {
+  text-align: center;
+  color: #15616D;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
-.cards-info{
-    padding: 10px;
-    margin: 10px;
-    height: 300px;
-    display: flex;
-    
- }
- h2{
-    text-align: center;
-    color: #15616D;
- }
 
-.content{
-    padding: 150px;
-    max-width: 1200px;
-    margin: 20px ;
-    flex: 50%;
-    border: 2px solid  #FF7D00;
-    box-shadow:  5px 5px 15px #FF7D00;
-}
-.card-inf .content{
-    flex-grow: 1;
-    flex-shrink: 1;
-    padding: 30px;
-    text-align: center;
-
-}
-.card-inf{
-    width: 300px ;
-    height: 30s0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.container-cards{
-    max-width: 1200px;
-    margin: auto;
-    margin-top: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.nosotros-page h5 {
+  max-width: 900px;
+  margin: 0 auto 25px auto;
+  color: #fff;
+  font-size: 1.1rem;
 }
 
-.card{
-    width: 250pxpx;
-    box-shadow: 7px 13px 37px #FF7D00 ;
-    margin: 10px;
-    overflow: hidden;
-    cursor: default;
-    transition: all 400ms ease;
-}
-.card:hover{
-    box-shadow: 5px 5px 20px rgba(0, 0, 0,0.4);
-    transform: translateY(-3%);
-}
-.card .cover{
-    width: 250px;
-    justify-content: center;
 
+.nosotros-page hr {
+  border: none;
+  border-top: 2px solid #15616D;
+  opacity: 0.4;
 }
 
-img{
-    width: 240px;
-    border-radius: 180px;
-    justify-content: center;
-    display: flex;
-    margin: 5px;
+
+.nosotros-page .info-cards {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 30px;
 }
 
-.card .description h2{
-    padding: 10px;
-    text-align: center;
-}
-.card .description p{
-    margin-top: 10px;
-    text-align: center;
-}
-.boton-nosotros{
-    padding: 10px 40px;
-    margin: 50px;
-    border: none;
-    text-align: center;
-    background-color: #15616D;
 
+.nosotros-page .card {
+  width: 18rem;
+  background-color: #f0f8ff;
+  border-radius: 12px;
+  border: 1px solid #cce5ff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform .3s ease, box-shadow .3s ease;
 }
-.boton-nosotros:hover{
-    background-color: #FF7D00;
+
+.nosotros-page .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(21,97,109,0.25);
+}
+
+.nosotros-page .card h2 {
+  font-size: 1.4rem;
+  color: #15616D;
+}
+
+.nosotros-page .card-text {
+  color: #001524;
+  font-size: 0.95rem;
+}
+
+.nosotros-page .team-section {
+  margin-top: 70px;
+}
+
+.nosotros-page .team-section h3 {
+  font-size: 1.8rem;
+  color: #15616D;
+  margin-bottom: 30px;
+}
+
+
+.nosotros-page .team-grid {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+
+.nosotros-page .team-card {
+  width: 280px;
+  border-radius: 14px;
+  background-color: #ffffff;
+  border: 1px solid #cce5ff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+  overflow: hidden;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.nosotros-page .team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 22px rgba(21,97,109,0.35);
+}
+
+
+.nosotros-page .team-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 15px auto;
+  border-radius: 50%;
+  border: 3px solid #15616D;
+}
+
+
+.nosotros-page .team-card .card-title {
+  color: #15616D;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.nosotros-page .team-card .card-text {
+  color: #001524;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.nosotros-page .boton-nosotros {
+  background-color: #15616D;
+  color: #FFECD1;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color .3s ease;
+}
+
+.nosotros-page .boton-nosotros:hover {
+  background-color: #FF7D00;
+  color: #001524;
 }
 
 @media (max-width: 768px) {
-    .container.d-flex {
-        flex-direction: column; 
-        flex-wrap: wrap; 
-        gap: 1.5rem; 
-    }
-    
-    .card {
-        width: 90% !important; 
-        margin: 0.5rem 0; 
-    }
+  .nosotros-page {
+    padding: 20px;
+  }
+  .nosotros-page .team-card {
+    width: 90%;
+    max-width: 330px;
+  }
 }
+
 
