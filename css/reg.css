@@ -80,3 +80,8 @@ body{
 .botons:hover{
     background-color: #78290F;
 }
+@media (max-width: 576px) {
+    .form-regist{
+        width: 80vw;
+    }
+ }

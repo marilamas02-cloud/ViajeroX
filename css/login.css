@@ -98,4 +98,8 @@ a{
     text-decoration: none;
  }
  
- 
+ @media (max-width: 576px) {
+    .formulario{
+        width: 80vw;
+    }
+ }
