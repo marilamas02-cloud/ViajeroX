@@ -106,7 +106,7 @@ body {
 .input {
   width: 100%;
   padding: .45rem .9rem;
-  padding-right: 2.6rem; /* espacio para icono */
+  padding-right: 2.6rem; 
   border-radius: 20px;
   border: 1px solid rgba(255,255,255,0.08);
   background: #fff;
@@ -134,7 +134,7 @@ body {
   pointer-events: none;
 }
 
-/* ajustes para logo y búsqueda */
+
 .navbar-logo {
   max-height: 56px;
   height: auto;
@@ -142,7 +142,7 @@ body {
   display: block;
 }
 
-/* ocultar buscador en móviles pequeños */
+
 @media (max-width: 767.98px) {
   .search-container { display: none; }
 }

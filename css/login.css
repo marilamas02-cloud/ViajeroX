@@ -97,9 +97,5 @@ body{
 a{
     text-decoration: none;
  }
-@media all and (max-width: 576px) {
-    .formulario {
-        width: 90%;
-        margin-bottom: 5rem;
-    }
-}
+ 
+ 
