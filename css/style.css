@@ -531,7 +531,7 @@ h2 {
 }
 
 .aside {
-  background: #111;
+  background: var(--color-primary-medium);
   color: #fff;
   padding: 25px 20px;
   position: sticky;
@@ -542,11 +542,12 @@ h2 {
 .aside h4 {
   font-size: 1.2rem;
   margin-bottom: 25px;
+  
 }
 
 .aside a {
   display: block;
-  color: #bbb;
+  color: var(--color-primary-dark);
   padding: 12px 10px;
   font-size: 0.95rem;
   border-radius: 8px;
@@ -554,8 +555,8 @@ h2 {
 }
 
 .aside a:hover {
-  background: #222;
-  color: #fff;
+  background: var(--color-primary-dark);
+  color: var(--color-secondary-light);
 }
 
 .adminPanel-main {
@@ -565,7 +566,7 @@ h2 {
 }
 
 .card-admin {
-  background: #191919;
+  background: var(--color-primary-medium);
   color: #fff;
   border: 1px solid #333;
   border-radius: 12px;
@@ -577,7 +578,7 @@ h2 {
 }
 
 .table {
-  color: #fff;
+  color: var(--color-secondary-accent);
 }
 .table-responsive {
   width: 100%;
@@ -608,7 +609,7 @@ h2 {
 }
 
 .boton-adminpanel {
-  background: #0d6efd;
+  background: var(--color-primary-medium);
   border: none;
   padding: 12px;
   border-radius: 8px;
@@ -619,7 +620,8 @@ h2 {
 }
 
 .boton-adminpanel:hover {
-  background: #0a58ca;
+  background: var(--color-tertiary-contrast);
+  scale: 1.05;
 }
 
 .barra-admin {
