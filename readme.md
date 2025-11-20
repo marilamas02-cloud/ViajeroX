@@ -3,7 +3,7 @@
 Este proyecto es una página web enfocada en el **frontend**, inspirada en la temática maravillas del mundo. Fue desarrollada utilizando **HTML, CSS y Bootstrap**, buscando un diseño moderno, adaptable y fácil de navegar
 
 <a href="https://viajero-x.vercel.app/"
-              ><img src="../ViajeroX/assets/img/logoBlanco.png" width="100" alt="viajerox"
+              ><img src="../assets/img/logoBlanco.png" width="100" alt="viajerox"
             /></a>
 
 ## ✅ Integrantes:
