@@ -14,24 +14,19 @@
   --texto: 16px;
   --titulares: 24px;
 }
-body { 
-         
-           
-            line-height: 1.6;
-            padding: 20px;
-        }
+body {
+    line-height: 1.6;
+    padding: 0; /* IMPORTANTE */
+}
 
-        
         .guia {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 30px;
-            background: #FFECD1;
-            border-radius: 10px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            border-top: 5px solid #15616D;  
-        }
-
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #FFECD1;
+    border-radius: 10px;
+    border-top: 5px solid #15616D;
+}
         .guia h2 {
             font-size: 2.2em;
             color: #007bff;
@@ -40,21 +35,18 @@ body {
             margin-bottom: 25px;
             text-align: center;
         }
-
         .intro-text {
             font-size: 1.1em;
             margin-bottom: 30px;
             color: #5a6268;
             text-align: center;
         }
-
-        .container {
-            display: flex;
-            gap: 20px;
-            margin-top: 30px;
-            flex-wrap: wrap; 
-        }
-
+      .guia-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap; 
+}
         .items {
             flex: 1;
             min-width: 300px;
@@ -64,12 +56,10 @@ body {
             border: 1px solid #cce5ff;
             transition: transform 0.3s, box-shadow 0.3s;
         }
-
         .items:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 15px rgba(0, 123, 255, 0.2);
         }
-
         .items h3 {
             font-size: var(--titulares);
             color: var(--color-primary-medium); 
@@ -78,28 +68,22 @@ body {
             align-items: center;
             gap: 10px;
         }
-
       .guia p {
         color:var(--color-primary-dark);
       }
         .icon {
             font-size: 1.2em;
         }
-
-       
         .items ul {
             list-style: none;
             padding-left: 0;
         }
-
         .items li {
             margin-bottom: 10px;
             position: relative;
             padding-left: 25px;
             color: #495057;
         }
-
-       
         .items ul li::before {
             content: '✈️'; 
             position: absolute;
@@ -107,20 +91,16 @@ body {
             color: var(--color-secondary-accent);
             font-weight: bold;
         }
-
-       
         .content-focus {
             font-style: italic;
             color: #007bff;
             font-weight: 600;
         }
-
-    
         @media (max-width: 650px) {
-            .highlight-container {
-                flex-direction: column;
-            }
-            .highlight-box {
-                min-width: 100%;
-            }
-        }
+    .highlight-container {
+        flex-direction: column;
+    }
+    .highlight-box {
+        min-width: 100%;
+    }
+}
