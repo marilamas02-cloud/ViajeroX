@@ -522,6 +522,7 @@ h2 {
   transform: scale(1.1);
   box-shadow: #ff7d00 0 8px 20px;
 }
+
 .layout {
   display: grid;
   gap: 0;
@@ -652,7 +653,18 @@ h2 {
 }
 
 @media all and (max-width: 576px) {
-  
+   .formulario {
+        width: 90%;
+        margin-bottom: 5rem;
+    }
+    .login-admin {
+    padding-top: 5rem;
+  }
+
+  .login-box {
+    padding: 1.5rem;
+    backdrop-filter: blur(8px);
+  }
 .aside {
     display: none;
   }
@@ -1104,9 +1116,7 @@ h2 {
     display: none;
   }
 
-  main {
-    margin-left: 10px;
-  }
+ 
   .tarjetas-estadisticas .container .card {
     margin-top: 1rem;
    
